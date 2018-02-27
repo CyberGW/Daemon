@@ -196,6 +196,7 @@ public class MainBattle : MonoBehaviour {
 	/// <summary>
 	/// Checks if the player has won\n
 	/// If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle
+	/// [EXTENSION] - Log the enemy defeated
 	/// </summary>
 	/// <returns>Coroutine function to update exp bar</returns>
 	private IEnumerator checkIfPlayerWon() {
@@ -215,6 +216,7 @@ public class MainBattle : MonoBehaviour {
 			}
 			Debug.Log ("Money: " + PlayerData.instance.data.Money);
 			GlobalFunctions.instance.endBattle ();
+			QManagerObj.manager.logEnemyDefeated (enemy.Name);
 		}
 	}
 
@@ -259,6 +261,7 @@ public class MainBattle : MonoBehaviour {
 	/// <summary>
 	/// Checks if player lost. If so and no player's left return to main menu, reactivating the player so the menu script can find it.
 	/// If so and player's left, open switch player menu. Otherwise pass.
+	/// [EXTENSION] - Log if a player has died
 	/// </summary>
 	private IEnumerator checkIfPlayerLost() {
 		if (manager.playerFainted()) {
@@ -275,6 +278,7 @@ public class MainBattle : MonoBehaviour {
 				textBox.text = player.Name + " fainted!";
 				yield return new WaitForSeconds (3);
 				SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
+				QManagerObj.manager.logPlayerDied ();
 			}
 		}
 	}

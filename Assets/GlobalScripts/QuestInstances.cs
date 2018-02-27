@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class QuestInstances{
+public class QuestInstances : MonoBehaviour{
 
-	public Quest CS = new Quest("BSc Computer Science", "CS", new Quest.questCond(QuestManager.getEnemyDefeated),
-		new Quest.questCond(QuestManager.getGainedItem), new Quest.questCond(QuestManager.doneInTimeLimit),
-		10, 200, "Shield", -1, "Haskell Simulation", "");		
+	public static bool fun() {
+		return true;
+	}
+
+	public static Quest CS = new Quest("BSc Computer Science", "CS", "enemyDefeated",
+		"getGainedItem", "doneInTimeLimit",
+		10, 200, "Shield", -1, "Haskell Simulation", "");
+
 
 }

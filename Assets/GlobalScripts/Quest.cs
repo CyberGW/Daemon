@@ -6,10 +6,12 @@ public class Quest {
 
 	public string title;
 	public string location;
-	public delegate bool questCond();
-	private questCond main;
-	private questCond side;
-	private questCond cond;
+	/// The dictionary key representing the varaible condition for the main part of the quest
+	private string main;
+	/// The dictionary key representing the varaible condition for side quest part
+	private string side;
+	/// The dictionary key representing the varaible condition for extra quest condition
+	private string cond;
 	//Conditional Parameters
 	public string itemName;
 	public int timeLimit;
@@ -19,7 +21,7 @@ public class Quest {
 	public int money;
 	public int exp;
 
-	public Quest (string title, string location, questCond main, questCond side, questCond cond, int moneyReward, int expReward,
+	public Quest (string title, string location, string main, string side, string cond, int moneyReward, int expReward,
 		string itemName = "", int timeLimit = -1, string enemyTarget = "", string NPCTarget = "")
 	{
 		this.title = title;
@@ -36,7 +38,7 @@ public class Quest {
 	}
 
 	public bool questCompleted() {
-		return main() && side() && cond();
+		return QManagerObj.manager.conditions[main] && QManagerObj.manager.conditions[side] && QManagerObj.manager.conditions[cond];
 	}
 	
 

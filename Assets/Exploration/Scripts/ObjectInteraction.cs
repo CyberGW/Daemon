@@ -96,13 +96,16 @@ public class ObjectInteraction : MonoBehaviour {
 	/// Called by <see cref="DialogueScript"/> once all dialogue lines have been read, giving the user an item and/or
 	/// starting a battle as appropiate
     /// closes shop as appropriate
+	/// [EXTENSION] - Log that an item has been given where appropriate, and log that the character has been talked to
 	/// </summary>
 	public void endOfDialogue() {
 		if (treasure != GlobalFunctions.ItemTypes.None) {
 			DataManager data = PlayerData.instance.data;
-			data.addItem ( GlobalFunctions.instance.createItem (treasure) );
+			Item item = GlobalFunctions.instance.createItem (treasure);
+			data.addItem (item);
 			GlobalFunctions.instance.objectsActive [id] = false;
 			Destroy (gameObject); //Remove trigger to stop player obtaining item again
+			QManagerObj.manager.logGainedItem(item.Name);
 		}
 		if (createBattle) {
 			GlobalFunctions.instance.objectsActive [id] = false;
@@ -112,6 +115,7 @@ public class ObjectInteraction : MonoBehaviour {
         {
             gameObject.GetComponent<Vendor>().setDraw(false);
         }
+		QManagerObj.manager.logTalkedToNPC (gameObject.name);
     }
 			
 }
