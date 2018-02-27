@@ -19,10 +19,110 @@ MonoBehaviour:
     height: 685
   m_ShowMode: 4
   m_Title: 
-  m_RootView: {fileID: 2}
+  m_RootView: {fileID: 6}
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children:
+  - {fileID: 9}
+  - {fileID: 3}
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 30
+    width: 1366
+    height: 635
+  m_MinSize: {x: 683, y: 342}
+  m_MaxSize: {x: 12008, y: 8042}
+  vertical: 0
+  controlID: 870
+--- !u!114 &3
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 1089
+    y: 0
+    width: 277
+    height: 635
+  m_MinSize: {x: 277, y: 71}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 14}
+  m_Panes:
+  - {fileID: 14}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &4
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 0
+    width: 269
+    height: 364
+  m_MinSize: {x: 202, y: 221}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 15}
+  m_Panes:
+  - {fileID: 15}
+  m_Selected: 0
+  m_LastSelected: 0
+--- !u!114 &5
+MonoBehaviour:
+  m_ObjectHideFlags: 52
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 1
+  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Children: []
+  m_Position:
+    serializedVersion: 2
+    x: 0
+    y: 364
+    width: 1089
+    height: 271
+  m_MinSize: {x: 102, y: 121}
+  m_MaxSize: {x: 4002, y: 4021}
+  m_ActualView: {fileID: 18}
+  m_Panes:
+  - {fileID: 13}
+  - {fileID: 18}
+  m_Selected: 1
+  m_LastSelected: 0
+--- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -34,9 +134,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Children:
-  - {fileID: 3}
-  - {fileID: 5}
-  - {fileID: 4}
+  - {fileID: 7}
+  - {fileID: 2}
+  - {fileID: 8}
   m_Position:
     serializedVersion: 2
     x: 0
@@ -45,7 +145,7 @@ MonoBehaviour:
     height: 685
   m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
---- !u!114 &3
+--- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -65,8 +165,8 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
-  m_LastLoadedLayoutName: 
---- !u!114 &4
+  m_LastLoadedLayoutName: Default
+--- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -86,101 +186,6 @@ MonoBehaviour:
     height: 20
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
---- !u!114 &5
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 6}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 30
-    width: 1366
-    height: 635
-  m_MinSize: {x: 583, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
-  vertical: 1
-  controlID: 121
---- !u!114 &6
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 7}
-  - {fileID: 12}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1366
-    height: 635
-  m_MinSize: {x: 583, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
-  vertical: 0
-  controlID: 122
---- !u!114 &7
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 8}
-  - {fileID: 11}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 876
-    height: 635
-  m_MinSize: {x: 306, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
-  vertical: 1
-  controlID: 78
---- !u!114 &8
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Children:
-  - {fileID: 9}
-  - {fileID: 10}
-  m_Position:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 876
-    height: 348
-  m_MinSize: {x: 306, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
-  vertical: 0
-  controlID: 57
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -189,23 +194,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
+  m_Children:
+  - {fileID: 10}
+  - {fileID: 5}
   m_Position:
     serializedVersion: 2
     x: 0
     y: 0
-    width: 286
-    height: 348
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 15}
-  m_Panes:
-  - {fileID: 15}
-  m_Selected: 0
-  m_LastSelected: 0
+    width: 1089
+    height: 635
+  m_MinSize: {x: 406, y: 342}
+  m_MaxSize: {x: 8006, y: 8042}
+  vertical: 1
+  controlID: 871
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -214,26 +218,22 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12010, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
+  m_Children:
+  - {fileID: 4}
+  - {fileID: 11}
   m_Position:
     serializedVersion: 2
-    x: 286
+    x: 0
     y: 0
-    width: 590
-    height: 348
-  m_MinSize: {x: 104, y: 121}
-  m_MaxSize: {x: 4004, y: 4021}
-  m_ActualView: {fileID: 16}
-  m_Panes:
-  - {fileID: 16}
-  - {fileID: 14}
-  - {fileID: 13}
-  - {fileID: 17}
-  m_Selected: 0
-  m_LastSelected: 1
+    width: 1089
+    height: 364
+  m_MinSize: {x: 406, y: 221}
+  m_MaxSize: {x: 8006, y: 4021}
+  vertical: 0
+  controlID: 872
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -248,19 +248,19 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
-    x: 0
-    y: 348
-    width: 876
-    height: 287
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 18}
+    x: 269
+    y: 0
+    width: 820
+    height: 364
+  m_MinSize: {x: 204, y: 221}
+  m_MaxSize: {x: 4004, y: 4021}
+  m_ActualView: {fileID: 16}
   m_Panes:
-  - {fileID: 18}
-  - {fileID: 19}
-  - {fileID: 20}
+  - {fileID: 16}
+  - {fileID: 17}
+  - {fileID: 12}
   m_Selected: 0
-  m_LastSelected: 2
+  m_LastSelected: 1
 --- !u!114 &12
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -269,25 +269,25 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_Children: []
-  m_Position:
+  m_AutoRepaintOnSceneChange: 0
+  m_MinSize: {x: 400, y: 100}
+  m_MaxSize: {x: 2048, y: 2048}
+  m_TitleContent:
+    m_Text: Asset Store
+    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
+      type: 0}
+    m_Tooltip: 
+  m_DepthBufferBits: 0
+  m_Pos:
     serializedVersion: 2
-    x: 876
-    y: 0
-    width: 490
-    height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 21}
-  m_Panes:
-  - {fileID: 21}
-  - {fileID: 22}
-  - {fileID: 23}
-  m_Selected: 0
-  m_LastSelected: 0
+    x: 468
+    y: 181
+    width: 973
+    height: 501
+  m_PersistentViewDataDictionary: {fileID: 0}
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -296,27 +296,132 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12071, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 230, y: 250}
+  m_MaxSize: {x: 10000, y: 10000}
   m_TitleContent:
-    m_Text: Animation
-    m_Image: {fileID: 1561878555887300916, guid: 0000000000000000d000000000000000,
+    m_Text: Project
+    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 403
-    y: 92
-    width: 826
-    height: 498
+    x: 0
+    y: 456
+    width: 1087
+    height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_AnimEditor: {fileID: 0}
-  m_Locked: 0
+  m_SearchFilter:
+    m_NameFilter: 
+    m_ClassNames: []
+    m_AssetLabels: []
+    m_AssetBundleNames: []
+    m_VersionControlStates: []
+    m_SoftLockControlStates: []
+    m_ReferencingInstanceIDs: 
+    m_ScenePaths: []
+    m_ShowAllHits: 0
+    m_SearchArea: 0
+    m_Folders:
+    - Assets/GlobalScripts
+  m_ViewMode: 1
+  m_StartGridSize: 64
+  m_LastFolders:
+  - Assets/GlobalScripts
+  m_LastFoldersGridSize: -1
+  m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase4
+  m_IsLocked: 0
+  m_FolderTreeState:
+    scrollPos: {x: 0, y: 216.85}
+    m_SelectedIDs: d42d0000
+    m_LastClickedID: 11732
+    m_ExpandedIDs: 000000001c28000036280000ac280000e828000018290000442900003a2a00001e2c0000462c0000d42d0000282e0000a02e00009a2f0000f62f00001e30000060300000fc3000005033000082330000a03300005c3500005e35000060350000623500006435000000ca9a3bffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_AssetTreeState:
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 000000001c28000036280000ac280000e828000018290000442900003a2a00001e2c0000462c0000d42d0000282e0000a02e00009a2f0000f62f00001e30000060300000fc3000005033000082330000a03300005c3500005e35000060350000623500006435000000ca9a3bffffff7f
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 0}
+    m_SearchString: 
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+  m_ListAreaState:
+    m_SelectedInstanceIDs: 8a3d0000
+    m_LastClickedInstanceID: 15754
+    m_HadKeyboardFocusLastEvent: 1
+    m_ExpandedInstanceIDs: c6230000
+    m_RenameOverlay:
+      m_UserAcceptedRename: 0
+      m_Name: 
+      m_OriginalName: 
+      m_EditFieldRect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 0
+        height: 0
+      m_UserData: 0
+      m_IsWaitingForDelay: 0
+      m_IsRenaming: 0
+      m_OriginalEventType: 11
+      m_IsRenamingFilename: 1
+      m_ClientGUIView: {fileID: 5}
+    m_CreateAssetUtility:
+      m_EndAction: {fileID: 0}
+      m_InstanceID: 0
+      m_Path: 
+      m_Icon: {fileID: 0}
+      m_ResourceFile: 
+    m_NewAssetIndexInList: -1
+    m_ScrollPosition: {x: 0, y: 0}
+    m_GridSize: 64
+  m_DirectoriesAreaWidth: 115
 --- !u!114 &14
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,75 +430,32 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 1
-  m_MinSize: {x: 100, y: 100}
+  m_AutoRepaintOnSceneChange: 0
+  m_MinSize: {x: 275, y: 50}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Game
-    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
+    m_Text: Inspector
+    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 409
-    y: 100
-    width: 818
-    height: 489
+    x: 1091
+    y: 92
+    width: 275
+    height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_MaximizeOnPlay: 0
-  m_Gizmos: 0
-  m_Stats: 0
-  m_SelectedSizes: 05000000000000000000000000000000000000000000000000000000000000000000000000000000
-  m_TargetDisplay: 0
-  m_ZoomArea:
-    m_HRangeLocked: 0
-    m_VRangeLocked: 0
-    m_HBaseRangeMin: -409
-    m_HBaseRangeMax: 409
-    m_VBaseRangeMin: -230.0625
-    m_VBaseRangeMax: 230.0625
-    m_HAllowExceedBaseRangeMin: 1
-    m_HAllowExceedBaseRangeMax: 1
-    m_VAllowExceedBaseRangeMin: 1
-    m_VAllowExceedBaseRangeMax: 1
-    m_ScaleWithWindow: 0
-    m_HSlider: 0
-    m_VSlider: 0
-    m_IgnoreScrollWheelUntilClicked: 0
-    m_EnableMouseInput: 0
-    m_EnableSliderZoom: 0
-    m_UniformScale: 1
-    m_UpDirection: 1
-    m_DrawArea:
-      serializedVersion: 2
-      x: 0
-      y: 17
-      width: 818
-      height: 472
-    m_Scale: {x: 1, y: 1}
-    m_Translation: {x: 409, y: 236}
-    m_MarginLeft: 0
-    m_MarginRight: 0
-    m_MarginTop: 0
-    m_MarginBottom: 0
-    m_LastShownAreaInsideMargins:
-      serializedVersion: 2
-      x: -409
-      y: -236
-      width: 818
-      height: 472
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_TargetTexture: {fileID: 0}
-  m_CurrentColorSpace: 0
-  m_LastWindowPixelSize: {x: 818, y: 489}
-  m_ClearInEditMode: 1
-  m_NoCameraWarning: 1
-  m_LowResolutionForAspectRatios: 01000000000100000100
+  m_ScrollPosition: {x: 0, y: 0}
+  m_InspectorMode: 0
+  m_PreviewResizer:
+    m_CachedPref: 160
+    m_ControlHash: -371814159
+    m_PrefName: Preview_InspectorPreview
+  m_PreviewWindow: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -418,14 +480,14 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 92
-    width: 284
-    height: 327
+    width: 267
+    height: 343
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
+    m_SelectedIDs: 8a3d0000
     m_LastClickedID: 0
-    m_ExpandedIDs: eee5ffff00000000
+    m_ExpandedIDs: 6ea7ffff72aaffff9aacffff42b0ffffa2b5ffffbeb7ffff04c2ffff16c2ffff0ed8ffff00000000b8360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -441,10 +503,10 @@ MonoBehaviour:
       m_IsRenaming: 0
       m_OriginalEventType: 11
       m_IsRenamingFilename: 0
-      m_ClientGUIView: {fileID: 9}
+      m_ClientGUIView: {fileID: 0}
     m_SearchString: 
   m_ExpandedScenes:
-  - mainmenu1
+  - TFTV-Floor2
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -460,30 +522,30 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_AutoRepaintOnSceneChange: 1
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
     m_Text: Scene
     m_Image: {fileID: 2318424515335265636, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
-  m_DepthBufferBits: 0
+  m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 288
+    x: 271
     y: 92
-    width: 586
-    height: 327
+    width: 816
+    height: 343
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 75.09893276072572
+  lastFramingTime: 3216.0749300835387
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 8.49584, y: 2.7566905, z: -0.24609375}
+    m_Target: {x: 119.59555, y: -104.962845, z: -0.015625}
     speed: 2
-    m_Value: {x: 8.49584, y: 2.7566905, z: -0.24609375}
+    m_Value: {x: 119.59555, y: -104.962845, z: -0.015625}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -511,9 +573,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 27.60564
+    m_Target: 22.760386
     speed: 2
-    m_Value: 27.60564
+    m_Value: 22.760386
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -533,237 +595,76 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
-  m_Script: {fileID: 12111, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 400, y: 100}
-  m_MaxSize: {x: 2048, y: 2048}
-  m_TitleContent:
-    m_Text: Asset Store
-    m_Image: {fileID: 357073275683767465, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 330
-    y: 92
-    width: 556
-    height: 321
-  m_PersistentViewDataDictionary: {fileID: 0}
---- !u!114 &18
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12014, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 230, y: 250}
-  m_MaxSize: {x: 10000, y: 10000}
-  m_TitleContent:
-    m_Text: Project
-    m_Image: {fileID: -7501376956915960154, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 0
-    y: 440
-    width: 874
-    height: 266
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_SearchFilter:
-    m_NameFilter: 
-    m_ClassNames: []
-    m_AssetLabels: []
-    m_AssetBundleNames: []
-    m_VersionControlStates: []
-    m_SoftLockControlStates: []
-    m_ReferencingInstanceIDs: 
-    m_ScenePaths: []
-    m_ShowAllHits: 0
-    m_SearchArea: 0
-    m_Folders:
-    - Assets
-  m_ViewMode: 1
-  m_StartGridSize: 64
-  m_LastFolders:
-  - Assets
-  m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase4
-  m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 79}
-    m_SelectedIDs: 88350000
-    m_LastClickedID: 13704
-    m_ExpandedIDs: 0000000088350000a0350000103600004a3600007636000092360000663700002039000046390000a83a0000e03a0000523b00003a3c0000923c0000b83c0000f83c0000843d00008c3f0000b03f0000ce3f000026410000284100002a4100002c4100002e41000000ca9a3bffffff7f
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_AssetTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 0000000088350000a0350000103600004a3600007636000092360000663700002039000046390000a83a0000e03a0000523b00003a3c0000923c0000b83c0000f83c0000843d00008c3f0000b03f0000ce3f000026410000284100002a4100002c4100002e410000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 0}
-    m_SearchString: 
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-  m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
-    m_ExpandedInstanceIDs: c6230000ce280000682700007a270000543100004034fbffce2a0000bc290000d42a0000000000004c2c0000382a0000e83f0000542a0000ec33000048280000843300003c2b0000b47df7ff02330000a02b0000f63a0000c6450000
-    m_RenameOverlay:
-      m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
-      m_EditFieldRect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 0
-        height: 0
-      m_UserData: 0
-      m_IsWaitingForDelay: 0
-      m_IsRenaming: 0
-      m_OriginalEventType: 11
-      m_IsRenamingFilename: 1
-      m_ClientGUIView: {fileID: 11}
-    m_CreateAssetUtility:
-      m_EndAction: {fileID: 0}
-      m_InstanceID: 0
-      m_Path: 
-      m_Icon: {fileID: 0}
-      m_ResourceFile: 
-    m_NewAssetIndexInList: -1
-    m_ScrollPosition: {x: 0, y: 0}
-    m_GridSize: 64
-  m_DirectoriesAreaWidth: 200
---- !u!114 &19
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 12914, guid: 0000000000000000e000000000000000, type: 0}
+  m_Script: {fileID: 12015, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: 
   m_EditorClassIdentifier: 
   m_AutoRepaintOnSceneChange: 1
-  m_MinSize: {x: 100, y: 100}
+  m_MinSize: {x: 200, y: 200}
   m_MaxSize: {x: 4000, y: 4000}
   m_TitleContent:
-    m_Text: Animator
-    m_Image: {fileID: 663490763026382308, guid: 0000000000000000d000000000000000,
+    m_Text: Game
+    m_Image: {fileID: -2087823869225018852, guid: 0000000000000000d000000000000000,
       type: 0}
     m_Tooltip: 
-  m_DepthBufferBits: 0
+  m_DepthBufferBits: 32
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 610
-    width: 1219
-    height: 400
+    x: 507
+    y: 94
+    width: 1532
+    height: 790
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ViewTransforms:
-    m_KeySerializationHelper:
-    - {fileID: 1107664555147047378, guid: 63008fd8d5480a649aaeda05cbd643f3, type: 2}
-    - {fileID: 1107854213613293300, guid: 04b85e4332a2d484d9d800eadc1b85dd, type: 2}
-    m_ValueSerializationHelper:
-    - e00: 0.8869243
-      e01: 0
-      e02: 0
-      e03: 206.57568
-      e10: 0
-      e11: 0.8869243
-      e12: 0
-      e13: 115.11143
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-    - e00: 0.9386842
-      e01: 0
-      e02: 0
-      e03: -31.934204
-      e10: 0
-      e11: 0.9386842
-      e12: 0
-      e13: 103.71185
-      e20: 0
-      e21: 0
-      e22: 1
-      e23: 0
-      e30: 0
-      e31: 0
-      e32: 0
-      e33: 1
-  m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 0}
-  m_BreadCrumbs: []
-  stateMachineGraph: {fileID: 0}
-  stateMachineGraphGUI: {fileID: 0}
-  blendTreeGraph: {fileID: 0}
-  blendTreeGraphGUI: {fileID: 0}
-  m_AutoLiveLink: 1
-  m_MiniTool: 0
-  m_SerializedLocked: 0
-  m_CurrentEditor: 1
-  m_LayerEditor:
-    m_SelectedLayerIndex: 0
---- !u!114 &20
+  m_MaximizeOnPlay: 0
+  m_Gizmos: 0
+  m_Stats: 0
+  m_SelectedSizes: 00000000000000000000000000000000000000000000000000000000000000000000000000000000
+  m_TargetDisplay: 0
+  m_ZoomArea:
+    m_HRangeLocked: 0
+    m_VRangeLocked: 0
+    m_HBaseRangeMin: -766
+    m_HBaseRangeMax: 766
+    m_VBaseRangeMin: -386.5
+    m_VBaseRangeMax: 386.5
+    m_HAllowExceedBaseRangeMin: 1
+    m_HAllowExceedBaseRangeMax: 1
+    m_VAllowExceedBaseRangeMin: 1
+    m_VAllowExceedBaseRangeMax: 1
+    m_ScaleWithWindow: 0
+    m_HSlider: 0
+    m_VSlider: 0
+    m_IgnoreScrollWheelUntilClicked: 0
+    m_EnableMouseInput: 1
+    m_EnableSliderZoom: 0
+    m_UniformScale: 1
+    m_UpDirection: 1
+    m_DrawArea:
+      serializedVersion: 2
+      x: 0
+      y: 17
+      width: 1532
+      height: 773
+    m_Scale: {x: 1, y: 1}
+    m_Translation: {x: 766, y: 386.5}
+    m_MarginLeft: 0
+    m_MarginRight: 0
+    m_MarginTop: 0
+    m_MarginBottom: 0
+    m_LastShownAreaInsideMargins:
+      serializedVersion: 2
+      x: -766
+      y: -386.5
+      width: 1532
+      height: 773
+    m_MinimalGUI: 1
+  m_defaultScale: 1
+  m_TargetTexture: {fileID: 0}
+  m_CurrentColorSpace: 1
+  m_LastWindowPixelSize: {x: 1532, y: 790}
+  m_ClearInEditMode: 1
+  m_NoCameraWarning: 1
+  m_LowResolutionForAspectRatios: 01000000000100000100
+--- !u!114 &18
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_PrefabParentObject: {fileID: 0}
@@ -785,1173 +686,8 @@ MonoBehaviour:
   m_DepthBufferBits: 0
   m_Pos:
     serializedVersion: 2
-    x: 8
-    y: 610
-    width: 1219
-    height: 400
+    x: 0
+    y: 456
+    width: 1087
+    height: 250
   m_PersistentViewDataDictionary: {fileID: 0}
---- !u!114 &21
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12019, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Inspector
-    m_Image: {fileID: -6905738622615590433, guid: 0000000000000000d000000000000000,
-      type: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 878
-    y: 92
-    width: 488
-    height: 614
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
-  m_InspectorMode: 0
-  m_PreviewResizer:
-    m_CachedPref: 192
-    m_ControlHash: -371814159
-    m_PrefName: Preview_InspectorPreview
-  m_PreviewWindow: {fileID: 0}
---- !u!114 &22
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 13401, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Test Runner
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 1232
-    y: 92
-    width: 688
-    height: 926
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_TestTypeToolbarIndex: 0
-  m_PlayModeTestListGUI:
-    m_Window: {fileID: 22}
-    newResultList:
-    - id: "[Da\xE9mons_ York Edition][suite]"
-      name: "Da\xE9mons_ York Edition"
-      fullName: "Da\xE9mons_ York Edition"
-      resultStatus: 2
-      duration: 104.1496
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[C:/Users/CyberGW/Documents/Unity/SEPRPhase4/Library/ScriptAssemblies/Assembly-CSharp.dll][suite]'
-      name: Assembly-CSharp.dll
-      fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase4/Library/ScriptAssemblies/Assembly-CSharp.dll
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp][BattleModeTest1][suite]'
-      name: BattleModeTest1
-      fullName: BattleModeTest1
-      resultStatus: 1
-      duration: 35.948566
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp][BattleModeTest1.B0StartBattle]'
-      name: B0StartBattle
-      fullName: BattleModeTest1.B0StartBattle
-      resultStatus: 1
-      duration: 3.1783154
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B1AttackButton]'
-      name: B1AttackButton
-      fullName: BattleModeTest1.B1AttackButton
-      resultStatus: 1
-      duration: 0.0496359
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B2AttackPanelDisplay]'
-      name: B2AttackPanelDisplay
-      fullName: BattleModeTest1.B2AttackPanelDisplay
-      resultStatus: 1
-      duration: 0.0333811
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B3AttackMove]'
-      name: B3AttackMove
-      fullName: BattleModeTest1.B3AttackMove
-      resultStatus: 1
-      duration: 3.0467458
-      messages: 
-      output: "George\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B4MagicMove]'
-      name: B4MagicMove
-      fullName: BattleModeTest1.B4MagicMove
-      resultStatus: 1
-      duration: 3.0531006
-      messages: 
-      output: "George\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B5WinBattle]'
-      name: B5WinBattle
-      fullName: BattleModeTest1.B5WinBattle
-      resultStatus: 1
-      duration: 6.4915323
-      messages: 
-      output: "100\r\nMoney: 50\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B6StartNextBattle]'
-      name: B6StartNextBattle
-      fullName: BattleModeTest1.B6StartNextBattle
-      resultStatus: 1
-      duration: 2.7177305
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B7ChangePlayerMenu]'
-      name: B7ChangePlayerMenu
-      fullName: BattleModeTest1.B7ChangePlayerMenu
-      resultStatus: 1
-      duration: 6.4179363
-      messages: 
-      output: "Hannah\r\nHannah\r\nHannah\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B8ChangePlayerOnceFainted]'
-      name: B8ChangePlayerOnceFainted
-      fullName: BattleModeTest1.B8ChangePlayerOnceFainted
-      resultStatus: 1
-      duration: 4.0511026
-      messages: 
-      output: "George\r\nGeorge\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][BattleModeTest1.B9CheckWhenGameOver]'
-      name: B9CheckWhenGameOver
-      fullName: BattleModeTest1.B9CheckWhenGameOver
-      resultStatus: 1
-      duration: 6.562185
-      messages: 
-      output: "George\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest][suite]'
-      name: ExplorationTest
-      fullName: ExplorationTest
-      resultStatus: 1
-      duration: 54.2104
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp][ExplorationTest.CameraMovement]'
-      name: CameraMovement
-      fullName: ExplorationTest.CameraMovement
-      resultStatus: 1
-      duration: 5.3042707
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest.DialogueBox]'
-      name: DialogueBox
-      fullName: ExplorationTest.DialogueBox
-      resultStatus: 1
-      duration: 6.4258504
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest.HealingStation]'
-      name: HealingStation
-      fullName: ExplorationTest.HealingStation
-      resultStatus: 1
-      duration: 6.6960764
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest.ItemObtain]'
-      name: ItemObtain
-      fullName: ExplorationTest.ItemObtain
-      resultStatus: 1
-      duration: 5.188703
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest.ObjectCollision]'
-      name: ObjectCollision
-      fullName: ExplorationTest.ObjectCollision
-      resultStatus: 1
-      duration: 7.4424677
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest.PlayerAnimation]'
-      name: PlayerAnimation
-      fullName: ExplorationTest.PlayerAnimation
-      resultStatus: 1
-      duration: 5.261188
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest.PlayerMovement]'
-      name: PlayerMovement
-      fullName: ExplorationTest.PlayerMovement
-      resultStatus: 1
-      duration: 9.850226
-      messages: 
-      output: "No random encounter here\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][ExplorationTest.Portal]'
-      name: Portal
-      fullName: ExplorationTest.Portal
-      resultStatus: 1
-      duration: 7.6941957
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][MenuTest][suite]'
-      name: MenuTest
-      fullName: MenuTest
-      resultStatus: 1
-      duration: 6.9763803
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp][MenuTest.M0OpenAndCloseMenu]'
-      name: M0OpenAndCloseMenu
-      fullName: MenuTest.M0OpenAndCloseMenu
-      resultStatus: 1
-      duration: 1.5574027
-      messages: 
-      output: "Close\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][MenuTest.M1OpenItemMenu]'
-      name: M1OpenItemMenu
-      fullName: MenuTest.M1OpenItemMenu
-      resultStatus: 1
-      duration: 1.348713
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][MenuTest.M2SwapItems]'
-      name: M2SwapItems
-      fullName: MenuTest.M2SwapItems
-      resultStatus: 1
-      duration: 0.026926
-      messages: 
-      output: "Source: Item\r\nDestination: Item\r\nSource: Item\r\nDestination: Player\r\nSource:
-        Player\r\nDestination: Player\r\nSource: Player\r\nDestination: Item\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][MenuTest.M3ItemBackButton]'
-      name: M3ItemBackButton
-      fullName: MenuTest.M3ItemBackButton
-      resultStatus: 1
-      duration: 1.237242
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][MenuTest.M4OpenPlayerMenu]'
-      name: M4OpenPlayerMenu
-      fullName: MenuTest.M4OpenPlayerMenu
-      resultStatus: 1
-      duration: 1.2172087
-      messages: 
-      output: "PartyCanvas (PlayerMenu)\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][MenuTest.M5SwitchPlayers]'
-      name: M5SwitchPlayers
-      fullName: MenuTest.M5SwitchPlayers
-      resultStatus: 1
-      duration: 0.0214152
-      messages: 
-      output: "Source: Player\r\nDestination: Player\r\nSource: Player\r\nDestination:
-        Player\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][MenuTest.M6PartyBackButton]'
-      name: M6PartyBackButton
-      fullName: MenuTest.M6PartyBackButton
-      resultStatus: 1
-      duration: 1.3506666
-      messages: 
-      output: "Close\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][WorldMapTest][suite]'
-      name: WorldMapTest
-      fullName: WorldMapTest
-      resultStatus: 2
-      duration: 6.7037215
-      messages: One or more child tests had errors
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp][WorldMapTest.W0DepartmentColouring]'
-      name: W0DepartmentColouring
-      fullName: WorldMapTest.W0DepartmentColouring
-      resultStatus: 1
-      duration: 0.3368487
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][WorldMapTest.W1CantEnterPreviousDepartments]'
-      name: W1CantEnterPreviousDepartments
-      fullName: WorldMapTest.W1CantEnterPreviousDepartments
-      resultStatus: 1
-      duration: 0.4941118
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][WorldMapTest.W2CantEnterFutureDepartments]'
-      name: W2CantEnterFutureDepartments
-      fullName: WorldMapTest.W2CantEnterFutureDepartments
-      resultStatus: 1
-      duration: 0.4925184
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp][WorldMapTest.W4CanEnterAndReturnFromCurrentLevel]'
-      name: W4CanEnterAndReturnFromCurrentLevel
-      fullName: WorldMapTest.W4CanEnterAndReturnFromCurrentLevel
-      resultStatus: 1
-      duration: 3.4829028
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    m_ResultText: "B5WinBattle (6.492s)\n---\n100\r\nMoney: 50"
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 1752cadc
-      m_LastClickedID: -590720489
-      m_ExpandedIDs: 36faac8e70c743c529caabc87cf13ee28d3385f465154d1c3769f12267c6ec2c101c9c4ea46c015ac1574275ffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories: []
-  m_EditModeTestListGUI:
-    m_Window: {fileID: 22}
-    newResultList:
-    - id: "[Da\xE9mons_ York Edition][suite]"
-      name: "Da\xE9mons_ York Edition"
-      fullName: "Da\xE9mons_ York Edition"
-      resultStatus: 0
-      duration: 0
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[C:/Users/Toby/Documents/SEPRGame/Coffee-more/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
-      name: Assembly-CSharp-Editor.dll
-      fullName: C:/Users/Toby/Documents/SEPRGame/Coffee-more/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-      resultStatus: 1
-      duration: 0.971951
-      messages: One or more child tests were ignored
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest][suite]'
-      name: BattleScriptTest
-      fullName: BattleScriptTest
-      resultStatus: 1
-      duration: 0.254726
-      messages: One or more child tests were ignored
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.BattleWon]'
-      name: BattleWon
-      fullName: BattleScriptTest.BattleWon
-      resultStatus: 1
-      duration: 0.0137932
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.ChangePlayer]'
-      name: ChangePlayer
-      fullName: BattleScriptTest.ChangePlayer
-      resultStatus: 1
-      duration: 0.0272977
-      messages: 
-      output: "Second Player\r\nSecond Player\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.CharacterFainted]'
-      name: CharacterFainted
-      fullName: BattleScriptTest.CharacterFainted
-      resultStatus: 1
-      duration: 0.0103578
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.Constructor]'
-      name: Constructor
-      fullName: BattleScriptTest.Constructor
-      resultStatus: 1
-      duration: 0.0097913
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.CriticalHitCalculation]'
-      name: CriticalHitCalculation
-      fullName: BattleScriptTest.CriticalHitCalculation
-      resultStatus: 1
-      duration: 0.0112503
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.CriticalHitGeneration]'
-      name: CriticalHitGeneration
-      fullName: BattleScriptTest.CriticalHitGeneration
-      resultStatus: 4
-      duration: 0.0003648
-      messages: Manual Probability Test
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 1
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.EnemySpecialMoveAI]'
-      name: EnemySpecialMoveAI
-      fullName: BattleScriptTest.EnemySpecialMoveAI
-      resultStatus: 1
-      duration: 0.014578
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.Items]'
-      name: Items
-      fullName: BattleScriptTest.Items
-      resultStatus: 1
-      duration: 0.0106136
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.PlayerSpecialMove]'
-      name: PlayerSpecialMove
-      fullName: BattleScriptTest.PlayerSpecialMove
-      resultStatus: 1
-      duration: 0.0106789
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.StandardAttack]'
-      name: StandardAttack
-      fullName: BattleScriptTest.StandardAttack
-      resultStatus: 1
-      duration: 0.0104285
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][BattleScriptTest.TurnOrder]'
-      name: TurnOrder
-      fullName: BattleScriptTest.TurnOrder
-      resultStatus: 1
-      duration: 0.0090178
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][EnemyTest][suite]'
-      name: EnemyTest
-      fullName: EnemyTest
-      resultStatus: 1
-      duration: 0.0431134
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][EnemyTest.Attributes]'
-      name: Attributes
-      fullName: EnemyTest.Attributes
-      resultStatus: 1
-      duration: 0.0048368
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][EnemyTest.Setters]'
-      name: Setters
-      fullName: EnemyTest.Setters
-      resultStatus: 1
-      duration: 0.0047926
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ItemTest][suite]'
-      name: ItemTest
-      fullName: ItemTest
-      resultStatus: 1
-      duration: 0.040007
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][ItemTest.ApplyBuffs]'
-      name: ApplyBuffs
-      fullName: ItemTest.ApplyBuffs
-      resultStatus: 1
-      duration: 0.010427
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][ItemTest.Attributes]'
-      name: Attributes
-      fullName: ItemTest.Attributes
-      resultStatus: 1
-      duration: 0.0106122
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest][suite]'
-      name: PlayerDataTest
-      fullName: PlayerDataTest
-      resultStatus: 1
-      duration: 0.1534104
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest.AddItem]'
-      name: AddItem
-      fullName: PlayerDataTest.AddItem
-      resultStatus: 1
-      duration: 0.0107726
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest.AddPlayer]'
-      name: AddPlayer
-      fullName: PlayerDataTest.AddPlayer
-      resultStatus: 1
-      duration: 0.0110783
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest.Constructor]'
-      name: Constructor
-      fullName: PlayerDataTest.Constructor
-      resultStatus: 1
-      duration: 0.0098818
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest.CountItems]'
-      name: CountItems
-      fullName: PlayerDataTest.CountItems
-      resultStatus: 1
-      duration: 0.0119665
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest.GetFirstPlayer]'
-      name: GetFirstPlayer
-      fullName: PlayerDataTest.GetFirstPlayer
-      resultStatus: 1
-      duration: 0.0096967
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest.PlayersAlive]'
-      name: PlayersAlive
-      fullName: PlayerDataTest.PlayersAlive
-      resultStatus: 1
-      duration: 0.0105395
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerDataTest.SwapPlayers]'
-      name: SwapPlayers
-      fullName: PlayerDataTest.SwapPlayers
-      resultStatus: 1
-      duration: 0.0098024
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerTest][suite]'
-      name: PlayerTest
-      fullName: PlayerTest
-      resultStatus: 1
-      duration: 0.0935967
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][PlayerTest.Attributes]'
-      name: Attributes
-      fullName: PlayerTest.Attributes
-      resultStatus: 1
-      duration: 0.010715
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerTest.expToNextLevel]'
-      name: expToNextLevel
-      fullName: PlayerTest.expToNextLevel
-      resultStatus: 1
-      duration: 0.0105928
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerTest.gainExp]'
-      name: gainExp
-      fullName: PlayerTest.gainExp
-      resultStatus: 1
-      duration: 0.0148317
-      messages: 
-      output: "Levelled Up!\r\nLevelled Up!\r\nLevelled Up!\r\nLevelled Up!\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][PlayerTest.levelUp]'
-      name: levelUp
-      fullName: PlayerTest.levelUp
-      resultStatus: 1
-      duration: 0.011681
-      messages: 
-      output: "Levelled Up!\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SavingLoadingTest][suite]'
-      name: SavingLoadingTest
-      fullName: SavingLoadingTest
-      resultStatus: 1
-      duration: 0.1589826
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][SavingLoadingTest.ObjectsActiveSaveLoad]'
-      name: ObjectsActiveSaveLoad
-      fullName: SavingLoadingTest.ObjectsActiveSaveLoad
-      resultStatus: 1
-      duration: 0.0144563
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SavingLoadingTest.SaveLoadItem]'
-      name: SaveLoadItem
-      fullName: SavingLoadingTest.SaveLoadItem
-      resultStatus: 1
-      duration: 0.0172889
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nHammer\r\nIncreases
-        user's attack power by 5\r\nHammer\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SavingLoadingTest.SaveLoadPlayer]'
-      name: SaveLoadPlayer
-      fullName: SavingLoadingTest.SaveLoadPlayer
-      resultStatus: 1
-      duration: 0.0192571
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\nHammer\r\nIncreases
-        user's attack power by 5\r\nHammer\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SavingLoadingTest.SpecialMoveSaveLoad]'
-      name: SpecialMoveSaveLoad
-      fullName: SavingLoadingTest.SpecialMoveSaveLoad
-      resultStatus: 1
-      duration: 0.012449
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SavingLoadingTest.TextureSaveLoad]'
-      name: TextureSaveLoad
-      fullName: SavingLoadingTest.TextureSaveLoad
-      resultStatus: 1
-      duration: 0.0142702
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SavingLoadingTest.VectorSaveLoad]'
-      name: VectorSaveLoad
-      fullName: SavingLoadingTest.VectorSaveLoad
-      resultStatus: 1
-      duration: 0.013295
-      messages: 
-      output: "You are trying to create a MonoBehaviour using the 'new' keyword.  This
-        is not allowed.  MonoBehaviours can only be added using AddComponent().  Alternatively,
-        your script can inherit from ScriptableObject or no base class at all\r\n"
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SpecialMoveTest][suite]'
-      name: SpecialMoveTest
-      fullName: SpecialMoveTest
-      resultStatus: 1
-      duration: 0.1351966
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 1
-    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.LowerDefence]'
-      name: LowerDefence
-      fullName: SpecialMoveTest.LowerDefence
-      resultStatus: 1
-      duration: 0.0099533
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.LowerSpeed]'
-      name: LowerSpeed
-      fullName: SpecialMoveTest.LowerSpeed
-      resultStatus: 1
-      duration: 0.0112848
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.MagicAttack]'
-      name: MagicAttack
-      fullName: SpecialMoveTest.MagicAttack
-      resultStatus: 1
-      duration: 0.0100069
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.MoneyIncrease]'
-      name: MoneyIncrease
-      fullName: SpecialMoveTest.MoneyIncrease
-      resultStatus: 1
-      duration: 0.0092472
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.RaiseAttack]'
-      name: RaiseAttack
-      fullName: SpecialMoveTest.RaiseAttack
-      resultStatus: 1
-      duration: 0.0100426
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    - id: '[Assembly-CSharp-Editor][SpecialMoveTest.RaiseDefence]'
-      name: RaiseDefence
-      fullName: SpecialMoveTest.RaiseDefence
-      resultStatus: 1
-      duration: 0.0101749
-      messages: 
-      output: 
-      stacktrace: 
-      notRunnable: 0
-      ignoredOrSkipped: 0
-      description: 
-      isSuite: 0
-    m_ResultText: Constructor (0.010s)
-    m_ResultStacktrace: 
-    m_TestListState:
-      scrollPos: {x: 0, y: 109}
-      m_SelectedIDs: 4fd80c18
-      m_LastClickedID: 403494991
-      m_ExpandedIDs: d33c63859bef5c9018e98f9e51a899a87a729ab029caabc89d8d08d772f0e1db65d137e8dfd98cec431375fbe888c91b101c9c4e0df8175b0dd2fd5bffffff7f
-      m_RenameOverlay:
-        m_UserAcceptedRename: 0
-        m_Name: 
-        m_OriginalName: 
-        m_EditFieldRect:
-          serializedVersion: 2
-          x: 0
-          y: 0
-          width: 0
-          height: 0
-        m_UserData: 0
-        m_IsWaitingForDelay: 0
-        m_IsRenaming: 0
-        m_OriginalEventType: 11
-        m_IsRenamingFilename: 0
-        m_ClientGUIView: {fileID: 0}
-      m_SearchString: 
-    m_TestRunnerUIFilter:
-      PassedHidden: 0
-      FailedHidden: 0
-      NotRunHidden: 0
-      m_SearchString: 
-      selectedCategoryMask: 0
-      availableCategories: []
---- !u!114 &23
-MonoBehaviour:
-  m_ObjectHideFlags: 52
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 1
-  m_Script: {fileID: 12157, guid: 0000000000000000e000000000000000, type: 0}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_AutoRepaintOnSceneChange: 0
-  m_MinSize: {x: 275, y: 50}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_TitleContent:
-    m_Text: Services
-    m_Image: {fileID: 0}
-    m_Tooltip: 
-  m_DepthBufferBits: 0
-  m_Pos:
-    serializedVersion: 2
-    x: 1232
-    y: 92
-    width: 688
-    height: 926
-  m_PersistentViewDataDictionary: {fileID: 0}
-  m_InitialOpenURL: https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
-  m_GlobalObjectTypeName: 
-  m_RegisteredViewURLs:
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/hub
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/build
-  - https://public-cdn.cloud.unity3d.com/editor/production/cloud/collab
-  m_RegisteredViewInstances:
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
