@@ -18,69 +18,68 @@ public class QuestManager {
 
 	public delegate bool questCond ();
 	private Quest[] chosenQuests;
-	private Quest currentQuest;
 
 	//Start variables
 	private int startTime;
 
-	//Conditions dictionary
-	public IDictionary<string, bool> conditions = new Dictionary<string, bool>() {
-		{"gainedItem", false}, {"playerDied", false}, {"enemyDefeated", false}, {"talkedToNPC", false}
-	};
+	//Conditions dictionary - with initial conditions
+	public IDictionary<QuestDef, bool> conditions = new Dictionary<QuestDef, bool>();
 
 	public QuestManager (Quest[] chosenQuests)
 	{
 		this.chosenQuests = chosenQuests;
 		//[TEMP]
-		currentQuest = chosenQuests[0];
+		startQuest(QuestInstances.CS);
 	}
 
-	public bool doneInTimeLimit() {
-		return Time.time - startTime <= currentQuest.timeLimit;
-	}
-
-	public void logGainedItem(string itemName) {
-		Debug.Log ("Logged item");
-		if (currentQuest.itemName == itemName) {
-			conditions["gainedItem"] = true;
-		}
-		Debug.Log ("New value: " + conditions["gainedItem"]);
-	}
-
-	public void logPlayerDied() {
-		conditions["playerDied"] = true;
-	}
-
-	public void logEnemyDefeated(string enemyName) {
-		if (currentQuest.enemyTarget == enemyName) {
-			conditions["enemyDefeated"] = true;
+	private void startQuest(Quest quest) {
+		foreach (QuestDef def in new List<QuestDef>() {quest.Main, quest.Side, quest.Cond}) {
+			conditions.Add (def, questDefVal(def.Type));
 		}
 	}
 
-	public void logTalkedToNPC(string NPCName) {
-		if (currentQuest.NPCTarget == NPCName) {
-			conditions["talkedToNPC"] = true;
+	private bool questDefVal(questTypes type) {
+		return type == questTypes.noFainting;
+	}
+
+//	public bool doneInTimeLimit() {
+//		return Time.time - startTime <= currentQuest.timeLimit;
+//	}
+
+	public void logQuestVariable(questTypes type, string data = "") {
+		Debug.Log ("Logged type " + type);
+		Debug.Log ("Data: " + data);
+		var buffer = new List<QuestDef> (conditions.Keys);
+		foreach (QuestDef def in buffer) {
+			if (def.Type == type && (def.Data == data || def.Data == "")) {
+				if (def.Type == questTypes.noFainting) {
+					conditions [def] = false;
+				} else {
+					conditions [def] = true;
+				}
+				Debug.Log ("New Value: " + conditions [def]);
+			}
 		}
 	}
 
-	private void resetVariables() {
-		conditions["gainedItem"] = false;
-		conditions["playerDied"] = false;
-		conditions["enemyDefeated"] = false;
-		conditions["talkedToNPC"] = false;
-	}
+//	private void resetVariables() {
+//		conditions[questTypes.gainItem] = false;
+//		conditions[questTypes.noFainting] = true;
+//		conditions[questTypes.defeatEnemy] = false;
+//		conditions[questTypes.talkToNPC] = false;
+//	}
 
 	private void startNewQuest() {
-		resetVariables ();
+		//resetVariables ();
 	}
 
-	private void checkQuestCompletion() {
-		if (currentQuest.questCompleted()) {
-			Debug.Log ("Quest completed!");
-			//Give exp
-			//Give money
-		} else {
-			//fail
-		}
-	}
+//	private void checkQuestCompletion() {
+//		if (currentQuest.questCompleted()) {
+//			Debug.Log ("Quest completed!");
+//			//Give exp
+//			//Give money
+//		} else {
+//			//fail
+//		}
+//	}
 }

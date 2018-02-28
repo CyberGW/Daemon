@@ -2,27 +2,46 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum questTypes {gainItem, noFainting, defeatEnemy, talkToNPC, inTimeLimit };
+
+public class QuestDef {
+
+	private KeyValuePair<questTypes, string> pair;
+
+	public QuestDef(questTypes type, string data) {
+		this.pair = new KeyValuePair<questTypes, string> (type, data);
+	}
+
+	public questTypes Type {
+		get {
+			return this.pair.Key;
+		}
+	}
+
+	public string Data {
+		get {
+			return this.pair.Value;
+		}
+	}
+
+}
+
 public class Quest {
 
 	public string title;
 	public string location;
 	/// The dictionary key representing the varaible condition for the main part of the quest
-	private string main;
+	private QuestDef main;
 	/// The dictionary key representing the varaible condition for side quest part
-	private string side;
+	private QuestDef side;
 	/// The dictionary key representing the varaible condition for extra quest condition
-	private string cond;
-	//Conditional Parameters
-	public string itemName;
-	public int timeLimit;
-	public string enemyTarget;
-	public string NPCTarget;
+	private QuestDef cond;
 	//Reward Parameters
 	public int money;
 	public int exp;
 
-	public Quest (string title, string location, string main, string side, string cond, int moneyReward, int expReward,
-		string itemName = "", int timeLimit = -1, string enemyTarget = "", string NPCTarget = "")
+	public Quest (string title, string location, QuestDef main, QuestDef side, QuestDef cond,
+		int moneyReward, int expReward)
 	{
 		this.title = title;
 		this.location = location;
@@ -31,10 +50,24 @@ public class Quest {
 		this.cond = cond;
 		this.money = moneyReward;
 		this.exp = expReward;
-		this.itemName = itemName;
-		this.timeLimit = timeLimit;
-		this.enemyTarget = enemyTarget;
-		this.NPCTarget = NPCTarget;
+	}
+
+	public QuestDef Main {
+		get {
+			return this.main;
+		}
+	}
+
+	public QuestDef Side {
+		get {
+			return this.side;
+		}
+	}
+
+	public QuestDef Cond {
+		get {
+			return this.cond;
+		}
 	}
 
 	public bool questCompleted() {

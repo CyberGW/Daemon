@@ -8,9 +8,7 @@ public class QuestInstances : MonoBehaviour{
 		return true;
 	}
 
-	public static Quest CS = new Quest("BSc Computer Science", "CS", "enemyDefeated",
-		"getGainedItem", "doneInTimeLimit",
-		10, 200, "Shield", -1, "Haskell Simulation", "");
-
+	public static Quest CS = new Quest ("BSc Computer Science", "CS", new QuestDef (questTypes.defeatEnemy, "Haskell Simulation"),
+		                         new QuestDef (questTypes.gainItem, "Shield"), new QuestDef (questTypes.inTimeLimit, "200"), 10, 200);
 
 }

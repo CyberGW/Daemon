@@ -216,7 +216,7 @@ public class MainBattle : MonoBehaviour {
 			}
 			Debug.Log ("Money: " + PlayerData.instance.data.Money);
 			GlobalFunctions.instance.endBattle ();
-			QManagerObj.manager.logEnemyDefeated (enemy.Name);
+			QManagerObj.manager.logQuestVariable (questTypes.defeatEnemy, enemy.Name);
 		}
 	}
 
@@ -278,7 +278,7 @@ public class MainBattle : MonoBehaviour {
 				textBox.text = player.Name + " fainted!";
 				yield return new WaitForSeconds (3);
 				SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
-				QManagerObj.manager.logPlayerDied ();
+				QManagerObj.manager.logQuestVariable (questTypes.noFainting, "");
 			}
 		}
 	}

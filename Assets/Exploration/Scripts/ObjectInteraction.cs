@@ -105,7 +105,7 @@ public class ObjectInteraction : MonoBehaviour {
 			data.addItem (item);
 			GlobalFunctions.instance.objectsActive [id] = false;
 			Destroy (gameObject); //Remove trigger to stop player obtaining item again
-			QManagerObj.manager.logGainedItem(item.Name);
+			QManagerObj.manager.logQuestVariable(questTypes.gainItem, item.Name);
 		}
 		if (createBattle) {
 			GlobalFunctions.instance.objectsActive [id] = false;
@@ -115,7 +115,7 @@ public class ObjectInteraction : MonoBehaviour {
         {
             gameObject.GetComponent<Vendor>().setDraw(false);
         }
-		QManagerObj.manager.logTalkedToNPC (gameObject.name);
+		QManagerObj.manager.logQuestVariable (questTypes.talkToNPC, gameObject.transform.parent.name);
     }
 			
 }
