@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Exploration/Scenes/CS-Floor1.unity
+- path: Assets/Exploration/Scenes/Ass3 Scenes/Law-Maze4.unity
   isLoaded: 1
   isActive: 1

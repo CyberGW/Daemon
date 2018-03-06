@@ -107,3 +107,15 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Exploration/Scenes/Ass3 Scenes/EndScene.unity
     guid: 7a0fd583485b26c40b110fc5c9bffc41
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Ass3 Scenes/Law-Maze1.unity
+    guid: 4436ba9abce73984bbed030278634257
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Ass3 Scenes/Law-Maze2.unity
+    guid: 73b55f441c7f4d343bb83c3c7081041f
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Ass3 Scenes/Law-Maze3.unity
+    guid: fd0da59ee26e78e4dbc7b3bcd6a5846d
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Ass3 Scenes/Law-Maze4.unity
+    guid: 7cb84d0526abf5841a52d3ff538f46c3
