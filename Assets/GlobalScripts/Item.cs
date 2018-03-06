@@ -200,7 +200,7 @@ public class RabbitCarcass : Item
 
     public RabbitCarcass()
     {
-        this.name = "Rabbit carcas";
+        this.name = "Rabbit Carcass";
         this.desc = "Increases user's luck by 10";
     }
 

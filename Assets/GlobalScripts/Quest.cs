@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// List of all quest types, to be used as QManagerObj dictionary key
 /// </summary>
-public enum questTypes {gainItem, noFainting, defeatEnemy, talkToNPC, inTimeLimit };
+public enum questTypes {gainItem, noFainting, defeatEnemy, talkToNPC, inTimeLimit, noSpecialAttacks, onlyOneCharacter, noHealingStations};
 
 /// <summary>
 /// Class defining one quest condition (part of a sequence of 3 in Quest)
@@ -17,9 +17,11 @@ public class QuestDef {
 	/// you must defeat for the defeatEnemy type)
 	/// </summary>
 	private KeyValuePair<questTypes, string> pair;
+	private string desc;
 
-	public QuestDef(questTypes type, string data) {
+	public QuestDef(string desc, questTypes type, string data = "" ) {
 		this.pair = new KeyValuePair<questTypes, string> (type, data);
+		this.desc = desc;
 	}
 
 	public questTypes Type {
@@ -31,6 +33,12 @@ public class QuestDef {
 	public string Data {
 		get {
 			return this.pair.Value;
+		}
+	}
+
+	public string Desc {
+		get {
+			return this.desc;
 		}
 	}
 

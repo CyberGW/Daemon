@@ -59,7 +59,7 @@ public class QuestManager {
 	/// <returns><c>true</c>, if default value is true, <c>false</c> otherwise.</returns>
 	/// <param name="type">Type.</param>
 	private bool questDefVal(questTypes type) {
-		return type == questTypes.noFainting;
+		return type == questTypes.noFainting || type == questTypes.noSpecialAttacks || type == questTypes.noHealingStations || type == questTypes.onlyOneCharacter;
 	}
 
 //	public bool doneInTimeLimit() {
