@@ -2,10 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// List of all quest types, to be used as QManagerObj dictionary key
+/// </summary>
 public enum questTypes {gainItem, noFainting, defeatEnemy, talkToNPC, inTimeLimit };
 
+/// <summary>
+/// Class defining one quest condition (part of a sequence of 3 in Quest)
+/// </summary>
 public class QuestDef {
 
+	/// <summary>
+	/// A pair relating the type of quest to a string storing specific data (e.g. the name of the specific enemy
+	/// you must defeat for the defeatEnemy type)
+	/// </summary>
 	private KeyValuePair<questTypes, string> pair;
 
 	public QuestDef(questTypes type, string data) {
@@ -26,6 +36,11 @@ public class QuestDef {
 
 }
 
+/// <summary>
+/// A class to store a whole quest, being a sequence of 3 QuestDefs
+/// Also stores a name of the quest, the location at which it's active along with the rewards for completing
+/// the quest (being an amount of money and amount of exp)
+/// </summary>
 public class Quest {
 
 	public string title;
@@ -70,6 +85,10 @@ public class Quest {
 		}
 	}
 
+	/// <summary>
+	/// Determines if the quest has been completed or not
+	/// </summary>
+	/// <returns><c>true</c>,  if the dictionary values for all 3 parts of the quest return true, <c>false</c> otherwise.</returns>
 	public bool questCompleted() {
 		return QManagerObj.manager.conditions[main] && QManagerObj.manager.conditions[side] && QManagerObj.manager.conditions[cond];
 	}

@@ -1,0 +1,5 @@
+<map id="SaveData.PlayerSaveData" name="SaveData.PlayerSaveData">
+<area shape="rect" id="node3" href="$class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. " alt="" coords="269,202,479,279"/>
+<area shape="rect" id="node8" href="$class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. " alt="" coords="84,202,245,279"/>
+<area shape="rect" id="node6" href="$class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. " alt="" coords="657,202,808,279"/>
+</map>

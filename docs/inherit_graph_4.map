@@ -1,9 +1,16 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="5,132,52,159"/>
-<area shape="rect" id="node2" href="$class_armour.html" title="An item that increases a player&#39;s attack stat by 2 and defence stat by 3 " alt="" coords="117,5,181,32"/>
-<area shape="rect" id="node3" href="$class_hammer.html" title="An item that increases a player&#39;s attack stat by 5 " alt="" coords="114,56,185,83"/>
-<area shape="rect" id="node4" href="$class_magic_amulet.html" title="An item that increases a player&#39;s maximum magic points by 3 " alt="" coords="100,107,199,133"/>
-<area shape="rect" id="node5" href="$class_rabbit_foot.html" title="An item that increases a player&#39;s luck stat by 5 " alt="" coords="107,157,192,184"/>
-<area shape="rect" id="node6" href="$class_shield.html" title="An item that increases a player&#39;s defence stat by 5 " alt="" coords="120,208,179,235"/>
-<area shape="rect" id="node7" href="$class_trainers.html" title="An item that increases a player&#39;s speed stat by 5 " alt="" coords="115,259,183,285"/>
+<area shape="rect" id="node1" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="5,309,52,336"/>
+<area shape="rect" id="node2" href="$class_armour.html" title="An item that increases a player&#39;s attack stat by 2 and defence stat by 3 " alt="" coords="140,5,204,32"/>
+<area shape="rect" id="node3" href="$class_diamond_shield.html" title="An item that increases a player&#39;s defence stat by 10 " alt="" coords="117,56,227,83"/>
+<area shape="rect" id="node4" href="$class_golden_armour.html" title="An item that increases a player&#39;s attack stat by 5 and defence stat by 7 " alt="" coords="119,107,225,133"/>
+<area shape="rect" id="node5" href="$class_hammer.html" title="An item that increases a player&#39;s attack stat by 5 " alt="" coords="137,157,207,184"/>
+<area shape="rect" id="node6" href="$class_magic_amulet.html" title="An item that increases a player&#39;s maximum magic points by 3 " alt="" coords="123,208,221,235"/>
+<area shape="rect" id="node7" href="$class_magic_hat.html" title="An item that increases a player&#39;s maximum magic points by 6 " alt="" coords="133,259,211,285"/>
+<area shape="rect" id="node8" href="$class_magic_sword.html" title="An item that increases a player&#39;s attack stat by 25 " alt="" coords="125,309,219,336"/>
+<area shape="rect" id="node9" href="$class_nikes_premium_shoes.html" title="An item that increases a player&#39;s speed stat by 10 " alt="" coords="100,360,244,387"/>
+<area shape="rect" id="node10" href="$class_rabbit_carcass.html" title="An item that increases a player&#39;s luck stat by 10 " alt="" coords="119,411,225,437"/>
+<area shape="rect" id="node11" href="$class_rabbit_foot.html" title="An item that increases a player&#39;s luck stat by 5 " alt="" coords="129,461,215,488"/>
+<area shape="rect" id="node12" href="$class_shield.html" title="An item that increases a player&#39;s defence stat by 5 " alt="" coords="143,512,201,539"/>
+<area shape="rect" id="node13" href="$class_sword.html" title="An item that increases a player&#39;s attack stat by 10 " alt="" coords="143,563,201,589"/>
+<area shape="rect" id="node14" href="$class_trainers.html" title="An item that increases a player&#39;s speed stat by 5 " alt="" coords="138,613,206,640"/>
 </map>

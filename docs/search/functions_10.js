@@ -1,24 +1,11 @@
 var searchData=
 [
-  ['savepressed',['savePressed',['../class_exploration_menu_script.html#a1de9f80c034a9cff2d2bd4da37299bac',1,'ExplorationMenuScript']]],
-  ['scenechanged',['sceneChanged',['../class_scene_changer.html#a279c813f371ec3214b1d9898dfb293d3',1,'SceneChanger']]],
-  ['setcanmove',['setCanMove',['../class_player_movement.html#a407332fad927bbddd860b3dff2d37651',1,'PlayerMovement']]],
-  ['setexptonextlevel',['setExpToNextLevel',['../class_player.html#a6717692fe70ba9184e0450473e2cdd54',1,'Player']]],
-  ['setidle',['setIdle',['../class_player_movement.html#a6df0ef73c19f064ff01c23c943fb2807',1,'PlayerMovement']]],
-  ['setinactive',['setInactive',['../class_dialogue_script.html#a532998bf3ae70ec539b6e908b6f00fbc',1,'DialogueScript.setInactive()'],['../class_exploration_menu_script.html#aa1d804b3ea884b3782b9e99a01c4a649',1,'ExplorationMenuScript.setInactive()']]],
-  ['setpanelactive',['setPanelActive',['../class_battle_buttons.html#a898865f8835d1fbf6c8955dfd4155823',1,'BattleButtons']]],
-  ['setup',['setUp',['../class_special_move.html#ac27c159bd46f515cb9e7bf40c6ce9dd1',1,'SpecialMove']]],
-  ['setupdisplay',['setUpDisplay',['../class_stats_script.html#affa636a95e8a20e7bc4e8e1240189744',1,'StatsScript']]],
-  ['showdialogue',['showDialogue',['../class_dialogue_script.html#ae71a2a83f77c3401681cb6ec7f8b47b6',1,'DialogueScript']]],
-  ['showline',['showLine',['../class_dialogue_script.html#a5a14b8c27afb68f3df14604e86982995',1,'DialogueScript']]],
-  ['showplayermenu',['showPlayerMenu',['../class_battle_buttons.html#a60883c560f6d8baf80df4104230e9175',1,'BattleButtons']]],
-  ['sound',['sound',['../class_menu_script.html#a6368dd464ce8d0733989f469ade833c9',1,'MenuScript']]],
-  ['soundon',['soundOn',['../class_sound_manager.html#a9c006fe80702defc96289c139c0aa217',1,'SoundManager']]],
-  ['special1',['special1',['../class_main_battle.html#af07e8602e4c524a4803ab5f20aff30ad',1,'MainBattle']]],
-  ['special2',['special2',['../class_main_battle.html#ae469cabaeab438d23b8306191ce18461',1,'MainBattle']]],
-  ['standardattack',['standardAttack',['../class_main_battle.html#a7e1ab667b7ab20e3d76d49e26fbd58d2',1,'MainBattle']]],
-  ['start',['Start',['../class_battle_buttons.html#a5b72ffcd45aa953dc361097096488d89',1,'BattleButtons.Start()'],['../class_main_battle.html#a1edecee3e50baa7d9e5f54b5544536d0',1,'MainBattle.Start()'],['../class_switch_players_script.html#a39390045343f171cd72a5f93f46ae588',1,'SwitchPlayersScript.Start()'],['../class_canvas_script.html#a83f135bf296cd6e9ea9cc295bddaf55c',1,'CanvasScript.Start()'],['../class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce',1,'LevelManager.Start()'],['../class_items_menu_script.html#a87c0925afb970e5cae12e944032bae4a',1,'ItemsMenuScript.Start()'],['../class_menu_script.html#a7e50d38073f9796c3035ab0b5a562003',1,'MenuScript.Start()'],['../class_world_map_script.html#ad1149b034672faaa3cbacab0ae0e59d7',1,'WorldMapScript.Start()']]],
-  ['startlevel',['StartLevel',['../class_menu_script.html#a7cdfe12262c0302aa013905ab25e49e2',1,'MenuScript']]],
-  ['swapplayers',['swapPlayers',['../class_data_manager.html#a7bf79fc76115d0c5586d2819e0bbcdfc',1,'DataManager']]],
-  ['switchplayers',['switchPlayers',['../class_battle_manager.html#a58ede6e934ea8982e65b8f34b665693f',1,'BattleManager.switchPlayers()'],['../class_main_battle.html#a3ef523eee69439b2b66eaf495f735a06',1,'MainBattle.switchPlayers()'],['../class_switch_players_script.html#a9b4b6ed645fd2a06cb4e514193881002',1,'SwitchPlayersScript.switchPlayers()']]]
+  ['raiseattack',['RaiseAttack',['../class_raise_attack.html#a3119b5882fc610701e7b88176aa51f63',1,'RaiseAttack']]],
+  ['raisedefence',['RaiseDefence',['../class_raise_defence.html#a9b84ff754f6094b10c2d05e05eadb2f7',1,'RaiseDefence']]],
+  ['ranaway',['ranAway',['../class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355',1,'BattleManager.ranAway()'],['../class_main_battle.html#a7c8675673979fe7b0f2fcadc3b2fb3db',1,'MainBattle.ranAway()']]],
+  ['randomencounter',['randomEncounter',['../class_player_movement.html#a18f2ad7eb5c710c42e85eb517f3311b9',1,'PlayerMovement']]],
+  ['renderbuilding',['renderBuilding',['../class_world_map_script.html#a0c76550ed3c4cfc7191de966204e2f9f',1,'WorldMapScript']]],
+  ['restart',['Restart',['../class_car_controller.html#a95e567fdb8689f821c1c9c364eef809b',1,'CarController.Restart()'],['../class_car_spawner.html#ac3c2cf976506bb5aa1762ec9a4aea00c',1,'CarSpawner.Restart()']]],
+  ['revertbuffs',['revertBuffs',['../class_item.html#a7bc703970d9a6dd3fbbc54f52a0f8d1d',1,'Item.revertBuffs()'],['../class_hammer.html#aee61cd7269a0529f34c7fade83a8d207',1,'Hammer.revertBuffs()'],['../class_sword.html#a08e1bad7076aedfb179bfee797852e4e',1,'Sword.revertBuffs()'],['../class_magic_sword.html#aef8d07f08e457f9fd25d23c127de85c8',1,'MagicSword.revertBuffs()'],['../class_trainers.html#af021792ba4f2a6153f312aa01fde5698',1,'Trainers.revertBuffs()'],['../class_nikes_premium_shoes.html#a85bb70e04febd107d9e55df968aebafa',1,'NikesPremiumShoes.revertBuffs()'],['../class_rabbit_foot.html#a3860b6f5bfb708636a338b135b17a0a6',1,'RabbitFoot.revertBuffs()'],['../class_rabbit_carcass.html#a84d4c6f24ff8689bb47f2fa266b2d26b',1,'RabbitCarcass.revertBuffs()'],['../class_magic_amulet.html#a62958fc438f37bec3738e6d1c936e730',1,'MagicAmulet.revertBuffs()'],['../class_magic_hat.html#aec519bede064dc7d3352a1a3c7124b5f',1,'MagicHat.revertBuffs()'],['../class_shield.html#a52f2ca1e6dcd2a30e48d2e036a6aff70',1,'Shield.revertBuffs()'],['../class_diamond_shield.html#aaa1af4fc0c5946f5a6aa36499b5162b1',1,'DiamondShield.revertBuffs()'],['../class_armour.html#a274fd12af39643f65947cb96cd300721',1,'Armour.revertBuffs()'],['../class_golden_armour.html#ac0c5cc1504c0c8bb21ad13a5d3672591',1,'GoldenArmour.revertBuffs()']]],
+  ['runaway',['runAway',['../class_main_battle.html#ae52c6e2eb1d4fac5ae8b1a86f95e92b3',1,'MainBattle']]]
 ];

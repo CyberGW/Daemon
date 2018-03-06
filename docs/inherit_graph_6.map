@@ -1,4 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$class_item.html" title="Item" alt="" coords="5,5,52,32"/>
-<area shape="rect" id="node2" href="$class_hammer.html" title="Hammer" alt="" coords="100,5,171,32"/>
+<area shape="rect" id="node1" href="$class_quest.html" title="A class to store a whole quest, being a sequence of 3 QuestDefs Also stores a name of the quest..." alt="" coords="5,5,63,32"/>
 </map>

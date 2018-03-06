@@ -81,9 +81,12 @@ Collaboration diagram for DataManager:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a25f86c59f07a95df2776fed8211f502f"><td class="memItemLeft" align="right" valign="top"><a id="a25f86c59f07a95df2776fed8211f502f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>DataManager</b> (<a class="el" href="class_player.html">Player</a> initialPlayer)</td></tr>
+<tr class="memitem:a25f86c59f07a95df2776fed8211f502f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a25f86c59f07a95df2776fed8211f502f">DataManager</a> (<a class="el" href="class_player.html">Player</a> initialPlayer)</td></tr>
+<tr class="memdesc:a25f86c59f07a95df2776fed8211f502f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Normal constructor, for use when a new game is started, an initial player is needed.  <a href="#a25f86c59f07a95df2776fed8211f502f">More...</a><br /></td></tr>
 <tr class="separator:a25f86c59f07a95df2776fed8211f502f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35770e76737b1bdbcfdab3d2e5d652e4"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a35770e76737b1bdbcfdab3d2e5d652e4">DataManager</a> ()</td></tr>
+<tr class="memdesc:a35770e76737b1bdbcfdab3d2e5d652e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor for loading, no player need be defined as it will be loaded from the save file.  <a href="#a35770e76737b1bdbcfdab3d2e5d652e4">More...</a><br /></td></tr>
+<tr class="separator:a35770e76737b1bdbcfdab3d2e5d652e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9c9256958cd8245360b53384741fa170"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a9c9256958cd8245360b53384741fa170">getFirstPlayer</a> ()</td></tr>
 <tr class="memdesc:a9c9256958cd8245360b53384741fa170"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the first player.  <a href="#a9c9256958cd8245360b53384741fa170">More...</a><br /></td></tr>
 <tr class="separator:a9c9256958cd8245360b53384741fa170"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -102,6 +105,48 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afde59e90b0d45a759a820866aced4484"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#afde59e90b0d45a759a820866aced4484">countItems</a> ()</td></tr>
 <tr class="memdesc:afde59e90b0d45a759a820866aced4484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts all items in items which are not null  <a href="#afde59e90b0d45a759a820866aced4484">More...</a><br /></td></tr>
 <tr class="separator:afde59e90b0d45a759a820866aced4484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7aea7271a392273234c062b420a149d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#ad7aea7271a392273234c062b420a149d">Save</a> ()</td></tr>
+<tr class="memdesc:ad7aea7271a392273234c062b420a149d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves data necessary to restore game state to a <a class="el" href="class_save_data.html" title="Fully serializable class with variables for the data required to save and restore game states...">SaveData</a> instance and exports this to a file with a binary formatter.  <a href="#ad7aea7271a392273234c062b420a149d">More...</a><br /></td></tr>
+<tr class="separator:ad7aea7271a392273234c062b420a149d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9a160e6fd71c00b13b3663363b0833e0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a9a160e6fd71c00b13b3663363b0833e0">Load</a> ()</td></tr>
+<tr class="memdesc:a9a160e6fd71c00b13b3663363b0833e0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Loads data to restore game state, using a serialized binary formatted instance of <a class="el" href="class_save_data.html" title="Fully serializable class with variables for the data required to save and restore game states...">SaveData</a> stored in user's AppData.  <a href="#a9a160e6fd71c00b13b3663363b0833e0">More...</a><br /></td></tr>
+<tr class="separator:a9a160e6fd71c00b13b3663363b0833e0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abd0bf9c24b4740ca635116c3ba23bc25"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_data_1_1_player_save_data.html">SaveData.PlayerSaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#abd0bf9c24b4740ca635116c3ba23bc25">PlayerToSerializable</a> (<a class="el" href="class_player.html">Player</a> player)</td></tr>
+<tr class="memdesc:abd0bf9c24b4740ca635116c3ba23bc25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_player.html" title="Defines a playable character for use in battle scenes">Player</a> and converts it to a <a class="el" href="class_save_data_1_1_player_save_data.html" title="A serialzable class to represent a Player. ">SaveData.PlayerSaveData</a> format for serialization.  <a href="#abd0bf9c24b4740ca635116c3ba23bc25">More...</a><br /></td></tr>
+<tr class="separator:abd0bf9c24b4740ca635116c3ba23bc25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff305d6a2f21aff6698ce9a833e57088"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#aff305d6a2f21aff6698ce9a833e57088">SerializableToPLayer</a> (<a class="el" href="class_save_data_1_1_player_save_data.html">SaveData.PlayerSaveData</a> serializedPlayer)</td></tr>
+<tr class="memdesc:aff305d6a2f21aff6698ce9a833e57088"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_save_data_1_1_player_save_data.html" title="A serialzable class to represent a Player. ">SaveData.PlayerSaveData</a> and converts it to an actual <a class="el" href="class_player.html" title="Defines a playable character for use in battle scenes">Player</a> for use in game.  <a href="#aff305d6a2f21aff6698ce9a833e57088">More...</a><br /></td></tr>
+<tr class="separator:aff305d6a2f21aff6698ce9a833e57088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a07ea5934474d6bcb6bd897903dccb94d"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_data_1_1_item_save_data.html">SaveData.ItemSaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a07ea5934474d6bcb6bd897903dccb94d">ItemToSerializable</a> (<a class="el" href="class_item.html">Item</a> item)</td></tr>
+<tr class="memdesc:a07ea5934474d6bcb6bd897903dccb94d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ...">Item</a> and converts it to a <a class="el" href="class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. ">SaveData.ItemSaveData</a> format for serialization.  <a href="#a07ea5934474d6bcb6bd897903dccb94d">More...</a><br /></td></tr>
+<tr class="separator:a07ea5934474d6bcb6bd897903dccb94d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a50902bf6af8fcad2c8fee4e3ef8f1408"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a50902bf6af8fcad2c8fee4e3ef8f1408">SerializableToItem</a> (<a class="el" href="class_save_data_1_1_item_save_data.html">SaveData.ItemSaveData</a> serializedItem)</td></tr>
+<tr class="memdesc:a50902bf6af8fcad2c8fee4e3ef8f1408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. ">SaveData.ItemSaveData</a> and converts it to an <a class="el" href="class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ...">Item</a> for use in game.  <a href="#a50902bf6af8fcad2c8fee4e3ef8f1408">More...</a><br /></td></tr>
+<tr class="separator:a50902bf6af8fcad2c8fee4e3ef8f1408"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4c38df50a5211a75b078c1d8ee58f400"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_data_1_1_special_move_save_data.html">SaveData.SpecialMoveSaveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a4c38df50a5211a75b078c1d8ee58f400">SpecialMoveToSerializable</a> (<a class="el" href="class_special_move.html">SpecialMove</a> move)</td></tr>
+<tr class="memdesc:a4c38df50a5211a75b078c1d8ee58f400"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ...">SpecialMove</a> and converts it to a <a class="el" href="class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. ">SaveData.SpecialMoveSaveData</a> format for serialization.  <a href="#a4c38df50a5211a75b078c1d8ee58f400">More...</a><br /></td></tr>
+<tr class="separator:a4c38df50a5211a75b078c1d8ee58f400"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a17f98d09c730d144c0c0d85d41fbd8e8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_special_move.html">SpecialMove</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a17f98d09c730d144c0c0d85d41fbd8e8">SerializableToSpecialMove</a> (<a class="el" href="class_save_data_1_1_special_move_save_data.html">SaveData.SpecialMoveSaveData</a> serializedMove)</td></tr>
+<tr class="memdesc:a17f98d09c730d144c0c0d85d41fbd8e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. ">SaveData.SpecialMoveSaveData</a> and converts it to a <a class="el" href="class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ...">SpecialMove</a> for use in game.  <a href="#a17f98d09c730d144c0c0d85d41fbd8e8">More...</a><br /></td></tr>
+<tr class="separator:a17f98d09c730d144c0c0d85d41fbd8e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af982f53ce978c341fe96531a30da2516"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_data_1_1_objects_active_data.html">SaveData.ObjectsActiveData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#af982f53ce978c341fe96531a30da2516">ObjectsActiveToSerializable</a> (IDictionary&lt; string, bool &gt; dictionary)</td></tr>
+<tr class="memdesc:af982f53ce978c341fe96531a30da2516"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a dictionary of string and bool and converts it to a <a class="el" href="class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. ">SaveData.ObjectsActiveData</a> format for serialization.  <a href="#af982f53ce978c341fe96531a30da2516">More...</a><br /></td></tr>
+<tr class="separator:af982f53ce978c341fe96531a30da2516"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aff180810159c90eb6aff26e84edcd577"><td class="memItemLeft" align="right" valign="top">IDictionary&lt; string, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#aff180810159c90eb6aff26e84edcd577">SerializableToObjectsActive</a> (<a class="el" href="class_save_data_1_1_objects_active_data.html">SaveData.ObjectsActiveData</a> serializedObjectsActive)</td></tr>
+<tr class="memdesc:aff180810159c90eb6aff26e84edcd577"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a dictionary of string and bool and converts it to a <a class="el" href="class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. ">SaveData.ObjectsActiveData</a> format for serialization.  <a href="#aff180810159c90eb6aff26e84edcd577">More...</a><br /></td></tr>
+<tr class="separator:aff180810159c90eb6aff26e84edcd577"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa27c6eeb6ec2c43d6d5fe6a7ab04d9e6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_data_1_1_texture_data.html">SaveData.TextureData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#aa27c6eeb6ec2c43d6d5fe6a7ab04d9e6">Texture2DToSerializable</a> (Texture2D playerTexture2D)</td></tr>
+<tr class="memdesc:aa27c6eeb6ec2c43d6d5fe6a7ab04d9e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Encodes a Unity Texture2D to a PNG format and stores it to a <a class="el" href="class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. ">SaveData.TextureData</a> for saving. Ensure the image has Read/Write Enabled and is not compressed in the Unity Editor for this to work.  <a href="#aa27c6eeb6ec2c43d6d5fe6a7ab04d9e6">More...</a><br /></td></tr>
+<tr class="separator:aa27c6eeb6ec2c43d6d5fe6a7ab04d9e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abba0ac7b826f2552ca6348300e7d58ff"><td class="memItemLeft" align="right" valign="top">Texture2D&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#abba0ac7b826f2552ca6348300e7d58ff">SerializableToTexture2D</a> (<a class="el" href="class_save_data_1_1_texture_data.html">SaveData.TextureData</a> serializedPlayerTexture2D)</td></tr>
+<tr class="memdesc:abba0ac7b826f2552ca6348300e7d58ff"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. ">SaveData.TextureData</a> and converts it to a Unity Texure2D for use in game.  <a href="#abba0ac7b826f2552ca6348300e7d58ff">More...</a><br /></td></tr>
+<tr class="separator:abba0ac7b826f2552ca6348300e7d58ff"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a49ec5a67aadb874570be31057534f356"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_save_data_1_1_vector_data.html">SaveData.VectorData</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a49ec5a67aadb874570be31057534f356">VectorToSerializable</a> (Vector2 vector)</td></tr>
+<tr class="memdesc:a49ec5a67aadb874570be31057534f356"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a Unity Vector2 and converts it to a <a class="el" href="class_save_data_1_1_vector_data.html" title="A serialzable class to represent 2D vector information. ">SaveData.VectorData</a> format for serialization.  <a href="#a49ec5a67aadb874570be31057534f356">More...</a><br /></td></tr>
+<tr class="separator:a49ec5a67aadb874570be31057534f356"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40265682a34680d1529dadddf7d8f967"><td class="memItemLeft" align="right" valign="top">Vector2&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a40265682a34680d1529dadddf7d8f967">SerializableToVector</a> (<a class="el" href="class_save_data_1_1_vector_data.html">SaveData.VectorData</a> serializedVector)</td></tr>
+<tr class="memdesc:a40265682a34680d1529dadddf7d8f967"><td class="mdescLeft">&#160;</td><td class="mdescRight">Takes a <a class="el" href="class_save_data_1_1_vector_data.html" title="A serialzable class to represent 2D vector information. ">SaveData.VectorData</a> and converts it to a Unity Texure2D for use in game.  <a href="#a40265682a34680d1529dadddf7d8f967">More...</a><br /></td></tr>
+<tr class="separator:a40265682a34680d1529dadddf7d8f967"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="properties"></a>
 Properties</h2></td></tr>
@@ -129,7 +174,69 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An object to store all player data including players, items and money and provide useful functions </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a25f86c59f07a95df2776fed8211f502f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a25f86c59f07a95df2776fed8211f502f">&#9670;&nbsp;</a></span>DataManager() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataManager.DataManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>initialPlayer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Normal constructor, for use when a new game is started, an initial player is needed. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">initialPlayer</td><td>First player in the party.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="a35770e76737b1bdbcfdab3d2e5d652e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a35770e76737b1bdbcfdab3d2e5d652e4">&#9670;&nbsp;</a></span>DataManager() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">DataManager.DataManager </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor for loading, no player need be defined as it will be loaded from the save file. </p>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="a6cecf2aa09b2c5a98bf9569fb2725883"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a6cecf2aa09b2c5a98bf9569fb2725883">&#9670;&nbsp;</a></span>addItem()</h2>
 
@@ -254,6 +361,103 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 
 </div>
 </div>
+<a id="a07ea5934474d6bcb6bd897903dccb94d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a07ea5934474d6bcb6bd897903dccb94d">&#9670;&nbsp;</a></span>ItemToSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_data_1_1_item_save_data.html">SaveData.ItemSaveData</a> DataManager.ItemToSerializable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_item.html">Item</a>&#160;</td>
+          <td class="paramname"><em>item</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ...">Item</a> and converts it to a <a class="el" href="class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. ">SaveData.ItemSaveData</a> format for serialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">item</td><td><a class="el" href="class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ...">Item</a> instance to serialize.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Serializable <a class="el" href="class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. ">SaveData.ItemSaveData</a> for saving.</dd></dl>
+
+</div>
+</div>
+<a id="a9a160e6fd71c00b13b3663363b0833e0"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9a160e6fd71c00b13b3663363b0833e0">&#9670;&nbsp;</a></span>Load()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager.Load </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Loads data to restore game state, using a serialized binary formatted instance of <a class="el" href="class_save_data.html" title="Fully serializable class with variables for the data required to save and restore game states...">SaveData</a> stored in user's AppData. </p>
+
+</div>
+</div>
+<a id="af982f53ce978c341fe96531a30da2516"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af982f53ce978c341fe96531a30da2516">&#9670;&nbsp;</a></span>ObjectsActiveToSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_data_1_1_objects_active_data.html">SaveData.ObjectsActiveData</a> DataManager.ObjectsActiveToSerializable </td>
+          <td>(</td>
+          <td class="paramtype">IDictionary&lt; string, bool &gt;&#160;</td>
+          <td class="paramname"><em>dictionary</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a dictionary of string and bool and converts it to a <a class="el" href="class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. ">SaveData.ObjectsActiveData</a> format for serialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">dictionary</td><td>The dictionary to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Serializable <a class="el" href="class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. ">SaveData.ObjectsActiveData</a> for saving. </dd></dl>
+
+</div>
+</div>
 <a id="a2df915d726f196e9ca423be29c030f37"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a2df915d726f196e9ca423be29c030f37">&#9670;&nbsp;</a></span>playersAlive()</h2>
 
@@ -279,6 +483,313 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 
 <p>Returns the number of players in players that are not null and have health above zero </p>
 <dl class="section return"><dt>Returns</dt><dd>The number of players alive</dd></dl>
+
+</div>
+</div>
+<a id="abd0bf9c24b4740ca635116c3ba23bc25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abd0bf9c24b4740ca635116c3ba23bc25">&#9670;&nbsp;</a></span>PlayerToSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_data_1_1_player_save_data.html">SaveData.PlayerSaveData</a> DataManager.PlayerToSerializable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a>&#160;</td>
+          <td class="paramname"><em>player</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_player.html" title="Defines a playable character for use in battle scenes">Player</a> and converts it to a <a class="el" href="class_save_data_1_1_player_save_data.html" title="A serialzable class to represent a Player. ">SaveData.PlayerSaveData</a> format for serialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">player</td><td>A player instance to serialize.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Serializable player, or null if player is null. </dd></dl>
+
+</div>
+</div>
+<a id="ad7aea7271a392273234c062b420a149d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7aea7271a392273234c062b420a149d">&#9670;&nbsp;</a></span>Save()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager.Save </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Saves data necessary to restore game state to a <a class="el" href="class_save_data.html" title="Fully serializable class with variables for the data required to save and restore game states...">SaveData</a> instance and exports this to a file with a binary formatter. </p>
+
+</div>
+</div>
+<a id="a50902bf6af8fcad2c8fee4e3ef8f1408"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a50902bf6af8fcad2c8fee4e3ef8f1408">&#9670;&nbsp;</a></span>SerializableToItem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_item.html">Item</a> DataManager.SerializableToItem </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_data_1_1_item_save_data.html">SaveData.ItemSaveData</a>&#160;</td>
+          <td class="paramname"><em>serializedItem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. ">SaveData.ItemSaveData</a> and converts it to an <a class="el" href="class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ...">Item</a> for use in game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedItem</td><td>The serilaizable <a class="el" href="class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. ">SaveData.ItemSaveData</a> item. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Real <a class="el" href="class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ...">Item</a> instance, or null if passed null. </dd></dl>
+
+</div>
+</div>
+<a id="aff180810159c90eb6aff26e84edcd577"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff180810159c90eb6aff26e84edcd577">&#9670;&nbsp;</a></span>SerializableToObjectsActive()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">IDictionary&lt;string, bool&gt; DataManager.SerializableToObjectsActive </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_data_1_1_objects_active_data.html">SaveData.ObjectsActiveData</a>&#160;</td>
+          <td class="paramname"><em>serializedObjectsActive</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a dictionary of string and bool and converts it to a <a class="el" href="class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. ">SaveData.ObjectsActiveData</a> format for serialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedObjectsActive</td><td>The serializable <a class="el" href="class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. ">SaveData.ObjectsActiveData</a>.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A dictionary that can be used for ObjectsActive in <a class="el" href="class_global_functions.html" title="Provides functions and variables to be accessed by any game object to allow data to be passed between...">GlobalFunctions</a></dd></dl>
+
+</div>
+</div>
+<a id="aff305d6a2f21aff6698ce9a833e57088"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aff305d6a2f21aff6698ce9a833e57088">&#9670;&nbsp;</a></span>SerializableToPLayer()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player.html">Player</a> DataManager.SerializableToPLayer </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_data_1_1_player_save_data.html">SaveData.PlayerSaveData</a>&#160;</td>
+          <td class="paramname"><em>serializedPlayer</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_save_data_1_1_player_save_data.html" title="A serialzable class to represent a Player. ">SaveData.PlayerSaveData</a> and converts it to an actual <a class="el" href="class_player.html" title="Defines a playable character for use in battle scenes">Player</a> for use in game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedPlayer</td><td>The serializable <a class="el" href="class_save_data_1_1_player_save_data.html" title="A serialzable class to represent a Player. ">SaveData.PlayerSaveData</a> player. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A real <a class="el" href="class_player.html" title="Defines a playable character for use in battle scenes">Player</a> instance, or null if passed null.</dd></dl>
+
+</div>
+</div>
+<a id="a17f98d09c730d144c0c0d85d41fbd8e8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a17f98d09c730d144c0c0d85d41fbd8e8">&#9670;&nbsp;</a></span>SerializableToSpecialMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_special_move.html">SpecialMove</a> DataManager.SerializableToSpecialMove </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_data_1_1_special_move_save_data.html">SaveData.SpecialMoveSaveData</a>&#160;</td>
+          <td class="paramname"><em>serializedMove</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. ">SaveData.SpecialMoveSaveData</a> and converts it to a <a class="el" href="class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ...">SpecialMove</a> for use in game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedMove</td><td>The serializable <a class="el" href="class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. ">SaveData.SpecialMoveSaveData</a> move. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ...">SpecialMove</a> instance for use in game.</dd></dl>
+
+</div>
+</div>
+<a id="abba0ac7b826f2552ca6348300e7d58ff"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abba0ac7b826f2552ca6348300e7d58ff">&#9670;&nbsp;</a></span>SerializableToTexture2D()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Texture2D DataManager.SerializableToTexture2D </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_data_1_1_texture_data.html">SaveData.TextureData</a>&#160;</td>
+          <td class="paramname"><em>serializedPlayerTexture2D</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. ">SaveData.TextureData</a> and converts it to a Unity Texure2D for use in game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedPlayerTexture2D</td><td><a class="el" href="class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. ">SaveData.TextureData</a> to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Unity Texture2D. </dd></dl>
+
+</div>
+</div>
+<a id="a40265682a34680d1529dadddf7d8f967"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a40265682a34680d1529dadddf7d8f967">&#9670;&nbsp;</a></span>SerializableToVector()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Vector2 DataManager.SerializableToVector </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_save_data_1_1_vector_data.html">SaveData.VectorData</a>&#160;</td>
+          <td class="paramname"><em>serializedVector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_save_data_1_1_vector_data.html" title="A serialzable class to represent 2D vector information. ">SaveData.VectorData</a> and converts it to a Unity Texure2D for use in game. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">serializedVector</td><td></td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>A Unity Vector2 for use in game.</dd></dl>
+
+</div>
+</div>
+<a id="a4c38df50a5211a75b078c1d8ee58f400"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4c38df50a5211a75b078c1d8ee58f400">&#9670;&nbsp;</a></span>SpecialMoveToSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_data_1_1_special_move_save_data.html">SaveData.SpecialMoveSaveData</a> DataManager.SpecialMoveToSerializable </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_special_move.html">SpecialMove</a>&#160;</td>
+          <td class="paramname"><em>move</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a <a class="el" href="class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ...">SpecialMove</a> and converts it to a <a class="el" href="class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. ">SaveData.SpecialMoveSaveData</a> format for serialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">move</td><td><a class="el" href="class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ...">SpecialMove</a> insatnce to serialize. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Serializable <a class="el" href="class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. ">SaveData.SpecialMoveSaveData</a> for saving.</dd></dl>
 
 </div>
 </div>
@@ -324,6 +835,76 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="aa27c6eeb6ec2c43d6d5fe6a7ab04d9e6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa27c6eeb6ec2c43d6d5fe6a7ab04d9e6">&#9670;&nbsp;</a></span>Texture2DToSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_data_1_1_texture_data.html">SaveData.TextureData</a> DataManager.Texture2DToSerializable </td>
+          <td>(</td>
+          <td class="paramtype">Texture2D&#160;</td>
+          <td class="paramname"><em>playerTexture2D</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Encodes a Unity Texture2D to a PNG format and stores it to a <a class="el" href="class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. ">SaveData.TextureData</a> for saving. Ensure the image has Read/Write Enabled and is not compressed in the Unity Editor for this to work. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">playerTexture2D</td><td>The Texture2D to convert. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Serializable <a class="el" href="class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. ">SaveData.TextureData</a> for saving. </dd></dl>
+
+</div>
+</div>
+<a id="a49ec5a67aadb874570be31057534f356"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a49ec5a67aadb874570be31057534f356">&#9670;&nbsp;</a></span>VectorToSerializable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_save_data_1_1_vector_data.html">SaveData.VectorData</a> DataManager.VectorToSerializable </td>
+          <td>(</td>
+          <td class="paramtype">Vector2&#160;</td>
+          <td class="paramname"><em>vector</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Takes a Unity Vector2 and converts it to a <a class="el" href="class_save_data_1_1_vector_data.html" title="A serialzable class to represent 2D vector information. ">SaveData.VectorData</a> format for serialization. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">vector</td><td>A Unity Vector2.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. ">SaveData.TextureData</a> for serialization.</dd></dl>
 
 </div>
 </div>

@@ -8,6 +8,7 @@ var searchData=
   ['playerfirst',['playerFirst',['../class_battle_manager.html#af986266f49468bbbbf4001b454a43d40',1,'BattleManager']]],
   ['playersalive',['playersAlive',['../class_data_manager.html#a2df915d726f196e9ca423be29c030f37',1,'DataManager']]],
   ['playerthenenemy',['playerThenEnemy',['../class_main_battle.html#aa34d241aa0ea4ce5bb6eb74a659028b9',1,'MainBattle']]],
+  ['playertoserializable',['PlayerToSerializable',['../class_data_manager.html#abd0bf9c24b4740ca635116c3ba23bc25',1,'DataManager']]],
   ['playsfx',['playSFX',['../class_sound_manager.html#a44e3498e902544ad35886a987d2cae89',1,'SoundManager']]],
   ['prepareturn',['prepareTurn',['../class_main_battle.html#aeafd9a98996791467186ee14286706cc',1,'MainBattle']]]
 ];

@@ -76,7 +76,8 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for SpecialMove:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_special_move__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_special_move__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for SpecialMove:</div>
@@ -100,9 +101,8 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:a5ade214d50e46a06cb1330ea2a599cb3"><td class="memItemLeft" align="right" valign="top"><a id="a5ade214d50e46a06cb1330ea2a599cb3"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>SpecialMove</b> (string <a class="el" href="class_character_move.html#a256db7805687e5254354724ec41cbb72">text</a>, string desc, int magic)</td></tr>
-<tr class="separator:a5ade214d50e46a06cb1330ea2a599cb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6c2f12a5492125800837083ec386125"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_special_move.html#aa6c2f12a5492125800837083ec386125">SpecialMove</a> (string <a class="el" href="class_character_move.html#a256db7805687e5254354724ec41cbb72">text</a>, string desc, int magic, float special)</td></tr>
+<tr class="separator:aa6c2f12a5492125800837083ec386125"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -112,6 +112,9 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>desc</b></td></tr>
 <tr class="memitem:a8de88a381235adf1f0ddef9e35409fb8"><td class="memItemLeft" align="right" valign="top"><a id="a8de88a381235adf1f0ddef9e35409fb8"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>magic</b></td></tr>
 <tr class="separator:a8de88a381235adf1f0ddef9e35409fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aad96064ca6b98ecce02f68ad6a0c4589"><td class="memItemLeft" align="right" valign="top"><a id="aad96064ca6b98ecce02f68ad6a0c4589"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>special</b></td></tr>
+<tr class="separator:aad96064ca6b98ecce02f68ad6a0c4589"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_class_character_move"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_class_character_move')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="class_character_move.html">CharacterMove</a></td></tr>
 <tr class="memitem:a5003308af61faafbf293023b1de4e0d1 inherit pro_attribs_class_character_move"><td class="memItemLeft" align="right" valign="top"><a id="a5003308af61faafbf293023b1de4e0d1"></a>
 <a class="el" href="class_battle_manager.html">BattleManager</a>&#160;</td><td class="memItemRight" valign="bottom"><b>manager</b></td></tr>
@@ -134,6 +137,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>Magic</b><code> [get]<
 <tr class="memitem:a8f3c99f12d216fa412538040d70c222e"><td class="memItemLeft" align="right" valign="top"><a id="a8f3c99f12d216fa412538040d70c222e"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>Desc</b><code> [get]</code></td></tr>
 <tr class="separator:a8f3c99f12d216fa412538040d70c222e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac71acf7585dff569ce9936adc59f1124"><td class="memItemLeft" align="right" valign="top"><a id="ac71acf7585dff569ce9936adc59f1124"></a>
+float&#160;</td><td class="memItemRight" valign="bottom"><b>Special</b><code> [get]</code></td></tr>
+<tr class="separator:ac71acf7585dff569ce9936adc59f1124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header properties_class_character_move"><td colspan="2" onclick="javascript:toggleInherit('properties_class_character_move')"><img src="closed.png" alt="-"/>&#160;Properties inherited from <a class="el" href="class_character_move.html">CharacterMove</a></td></tr>
 <tr class="memitem:a45ac2445b31c3c578a3499f914f3c5a2 inherit properties_class_character_move"><td class="memItemLeft" align="right" valign="top"><a id="a45ac2445b31c3c578a3499f914f3c5a2"></a>
 <a class="el" href="class_character.html">Character</a>&#160;</td><td class="memItemRight" valign="bottom"><b>User</b><code> [get]</code></td></tr>
@@ -147,7 +153,65 @@ string&#160;</td><td class="memItemRight" valign="bottom"><b>Text</b><code> [get
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Special move abstract base class that expands upon <a class="el" href="class_character_move.html" title="Astract base class for character moves ">CharacterMove</a>, adding magic properties </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="aa6c2f12a5492125800837083ec386125"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa6c2f12a5492125800837083ec386125">&#9670;&nbsp;</a></span>SpecialMove()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SpecialMove.SpecialMove </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>text</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>desc</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>magic</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>special</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">text</td><td>The text to display when the move is executed.</td></tr>
+    <tr><td class="paramname">desc</td><td>Description of the move's effect.</td></tr>
+    <tr><td class="paramname">magic</td><td>Magic amount move costs.</td></tr>
+    <tr><td class="paramname">special</td><td>Stat for the move's unique effect.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
 <a id="acbf8abeccda2b2588c18717e19ff9f22"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#acbf8abeccda2b2588c18717e19ff9f22">&#9670;&nbsp;</a></span>decreaseMagic()</h2>
 

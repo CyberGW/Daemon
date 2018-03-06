@@ -1,0 +1,5 @@
+<map id="QuestInstances" name="QuestInstances">
+<area shape="rect" id="node2" href="$class_mono_behaviour.html" title="{MonoBehaviour\n||}" alt="" coords="5,366,116,443"/>
+<area shape="rect" id="node3" href="$class_quest.html" title="A class to store a whole quest, being a sequence of 3 QuestDefs Also stores a name of the quest..." alt="" coords="141,344,277,465"/>
+<area shape="rect" id="node4" href="$class_quest_def.html" title="Class defining one quest condition (part of a sequence of 3 in Quest) " alt="" coords="61,160,157,252"/>
+</map>
