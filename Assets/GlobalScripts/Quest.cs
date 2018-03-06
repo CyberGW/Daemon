@@ -5,7 +5,7 @@ using UnityEngine;
 /// <summary>
 /// List of all quest types, to be used as QManagerObj dictionary key
 /// </summary>
-public enum questTypes {gainItem, noFainting, defeatEnemy, talkToNPC, inTimeLimit, noSpecialAttacks, onlyOneCharacter, noHealingStations};
+public enum questTypes {gainItem, noFainting, defeatEnemy, talkToNPC, inTimeLimit, noSpecialMoves, onlyOneCharacter, noHealingStations};
 
 /// <summary>
 /// Class defining one quest condition (part of a sequence of 3 in Quest)
@@ -96,28 +96,9 @@ public class Quest {
 	/// <summary>
 	/// Determines if the quest has been completed or not
 	/// </summary>
-	/// <returns><c>true</c>,  if the dictionary values for all 3 parts of the quest return true, <c>false</c> otherwise.</returns>
+	/// <returns><c>true</c>, if the dictionary values for all 3 parts of the quest return true, <c>false</c> otherwise.</returns>
 	public bool questCompleted() {
 		return QManagerObj.manager.conditions[main] && QManagerObj.manager.conditions[side] && QManagerObj.manager.conditions[cond];
-	}
-	
-
-//	public delegate bool questElement();
-//	public delegate void questInitialisor();
-//	questElement mainQuest;
-//	questElement sideQuest;
-//	questElement conditional;
-//	questInitialisor startQuest;
-//
-//	public Quest (string title, string location, questElement mainQuest, questElement sideQuest, questElement conditional, questInitialisor startQuest)
-//	{
-//		this.title = title;
-//		this.location = location;
-//		this.mainQuest = mainQuest;
-//		this.sideQuest = sideQuest;
-//		this.conditional = conditional;
-//		this.startQuest = startQuest;
-//	}
-	
+	}	
 
 }

@@ -31,6 +31,7 @@ public class HealingStation : MonoBehaviour {
 	/// When collides with the player and <see cref="inRange"/> is <c>false</c> , trigger functionality.
 	/// This involves setting <see cref="inRange"/> to <c>true</c>,
 	/// playing sound effect, displaying text and calling <see cref="healPlayers"/>  
+	/// [EXTENSION] - Log that healing station has been used
 	/// </summary>
 	/// <param name="other">The object this has collided with, triggering functionality when it's the player</param>
 	void OnTriggerStay2D(Collider2D other) {
@@ -43,6 +44,7 @@ public class HealingStation : MonoBehaviour {
 			dManager.showDialogue (text);
 			movementScript.setCanMove (false);
 			healPlayers ();
+			QManagerObj.manager.logQuestVariable (questTypes.noHealingStations);
 		}
 	}
 

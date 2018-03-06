@@ -28,7 +28,7 @@ public class QuestInstances : MonoBehaviour{
 	public static Quest LAW = new Quest ("LLB Law", "LAW",
 		new QuestDef ("Beat the boss", questTypes.defeatEnemy, "Boss"),
 		new QuestDef ("Talk to Bartholomew", questTypes.talkToNPC, "Bartholomew"),
-		new QuestDef ("Don't use any special moves", questTypes.noSpecialAttacks, ""),
+		new QuestDef ("Don't use any special moves", questTypes.noSpecialMoves),
 		10, 200);
 	
 	public static Quest MUS = new Quest ("BA Music", "MUS",

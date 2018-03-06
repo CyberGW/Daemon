@@ -12,8 +12,7 @@ public class QManagerObj : MonoBehaviour {
 	void Start() {
 		DontDestroyOnLoad (gameObject);
 		manager = new QuestManager (new Quest[3] {QuestInstances.CS, null, null});
-	}
-		
+	}		
 
 }
 
@@ -26,9 +25,10 @@ public class QuestManager {
 	/// A list containing all the quests chosen
 	/// </summary>
 	private Quest[] chosenQuests;
+	private Quest currentQuest = null;
 
-	//Start variables
-	private int startTime;
+	//The time the quest should be finished by to pass an inTimeLimit quest
+	private int finishTime;
 
 	/// <summary>
 	/// Dictionary storing the current values of all possible quest conditions
@@ -36,6 +36,16 @@ public class QuestManager {
 	/// </summary>
 	public IDictionary<QuestDef, bool> conditions = new Dictionary<QuestDef, bool>();
 
+	/// <summary>
+	/// Stores all questTypes where an event being triggered would fail the quest instead of completing it.
+	/// Consequently, these quest conditions should also be initalised to true rather than false
+	/// </summary>
+	public List<questTypes> negativeQuestConds = new List<questTypes> () {questTypes.noFainting, questTypes.noSpecialMoves, questTypes.onlyOneCharacter, questTypes.noHealingStations};
+
+	/// <summary>
+	/// Initializes a new instance of the <see cref="QuestManager"/> class
+	/// </summary>
+	/// <param name="chosenQuests">Chosen quests.</param>
 	public QuestManager (Quest[] chosenQuests)
 	{
 		this.chosenQuests = chosenQuests;
@@ -44,13 +54,26 @@ public class QuestManager {
 	}
 
 	/// <summary>
-	/// Set all dictionary objects to their default value
+	/// Set current quest, set all dictionary objects to their default value and start timer if an inTimeLimit quest
 	/// </summary>
 	/// <param name="quest">Quest.</param>
 	private void startQuest(Quest quest) {
+		currentQuest = quest;
 		foreach (QuestDef def in new List<QuestDef>() {quest.Main, quest.Side, quest.Cond}) {
-			conditions.Add (def, questDefVal(def.Type));
+			if (conditions.ContainsKey (def)) {
+				conditions [def] = questDefVal (def.Type);
+			} else {
+				conditions.Add (def, questDefVal (def.Type));
+			}
+			if (def.Type == questTypes.inTimeLimit) {
+				finishTime = (int) Time.time + int.Parse (def.Data);
+			}
 		}
+
+	}
+
+	private bool isNegativeQuestCond(questTypes type) {
+		return negativeQuestConds.Contains (type);
 	}
 
 	/// <summary>
@@ -59,12 +82,8 @@ public class QuestManager {
 	/// <returns><c>true</c>, if default value is true, <c>false</c> otherwise.</returns>
 	/// <param name="type">Type.</param>
 	private bool questDefVal(questTypes type) {
-		return type == questTypes.noFainting || type == questTypes.noSpecialAttacks || type == questTypes.noHealingStations || type == questTypes.onlyOneCharacter;
+		return !isNegativeQuestCond (type);
 	}
-
-//	public bool doneInTimeLimit() {
-//		return Time.time - startTime <= currentQuest.timeLimit;
-//	}
 
 	/// <summary>
 	/// Logs a quest condition
@@ -76,8 +95,18 @@ public class QuestManager {
 		Debug.Log ("Data: " + data);
 		var buffer = new List<QuestDef> (conditions.Keys);
 		foreach (QuestDef def in buffer) {
+			//Needs to invert option for the onlyOneCharacter quest type
+			//If using the character specified, set string to "n/a" so that the quest condition is not changed.
+			//If not using the character specified, then set to the empty string so that the quest condition is changed.
+			if (def.Type == questTypes.onlyOneCharacter && type == questTypes.onlyOneCharacter) {
+				if (def.Data == data) {
+					data = "n/a";
+				} else {
+					data = "";
+				}
+			}
 			if (def.Type == type && (def.Data == data || def.Data == "")) {
-				if (def.Type == questTypes.noFainting) {
+				if (isNegativeQuestCond(type)) {
 					conditions [def] = false;
 				} else {
 					conditions [def] = true;
@@ -85,26 +114,26 @@ public class QuestManager {
 				Debug.Log ("New Value: " + conditions [def]);
 			}
 		}
+	}		
+
+	/// <summary>
+	/// Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully
+	/// </summary>
+	private void finishQuest() {
+		var buffer = new List<QuestDef> (conditions.Keys);
+		foreach (QuestDef def in buffer) {
+			if (def.Type == questTypes.inTimeLimit) {
+				conditions [def] = Time.time <= finishTime;
+			}
+		}
+		if (currentQuest.questCompleted ()) {
+			Debug.Log ("Quest completed!");
+			PlayerData.instance.data.Money += currentQuest.money;
+			foreach (Player player in PlayerData.instance.data.Players) {
+				player.gainExp (currentQuest.exp);
+			}
+			currentQuest = null;
+		}
 	}
 
-//	private void resetVariables() {
-//		conditions[questTypes.gainItem] = false;
-//		conditions[questTypes.noFainting] = true;
-//		conditions[questTypes.defeatEnemy] = false;
-//		conditions[questTypes.talkToNPC] = false;
-//	}
-
-	private void startNewQuest() {
-		//resetVariables ();
-	}
-
-//	private void checkQuestCompletion() {
-//		if (currentQuest.questCompleted()) {
-//			Debug.Log ("Quest completed!");
-//			//Give exp
-//			//Give money
-//		} else {
-//			//fail
-//		}
-//	}
 }

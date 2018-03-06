@@ -56,6 +56,7 @@ public class MainBattle : MonoBehaviour {
 
 	/// <summary>
 	/// Includes finding game objects, setting references and changing background music
+	/// [EXTENSION] - Log the player initally being sent into battle
 	/// </summary>
 	void Start () {
 		
@@ -85,6 +86,9 @@ public class MainBattle : MonoBehaviour {
 		enemySprite.sprite = Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
 		image = player.Image;
 		playerSprite.sprite = Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
+
+		//Log player being used
+		QManagerObj.manager.logQuestVariable(questTypes.onlyOneCharacter, player.Name);
 
 
 		expBar = playerStats.transform.Find ("Exp").GetComponent<StatsScript> ();
@@ -300,8 +304,10 @@ public class MainBattle : MonoBehaviour {
 
 	/// <summary>
 	/// Setup the first special move for the player
+	/// [EXTENSION] - Log that a special move has been used
 	/// </summary>
 	public void special1() {
+		QManagerObj.manager.logQuestVariable (questTypes.noSpecialMoves);
 		player.Special1.setUp (manager, player, enemy);
 		playerMove = player.Special1;
 		prepareTurn ();
@@ -309,8 +315,10 @@ public class MainBattle : MonoBehaviour {
 
 	/// <summary>
 	/// Setup the second special move for the player
+	/// [EXTENSION] - Log that a special move has been used
 	/// </summary>
 	public void special2() {
+		QManagerObj.manager.logQuestVariable (questTypes.noSpecialMoves);
 		player.Special2.setUp (manager, player, enemy);
 		playerMove = player.Special2;
 		prepareTurn ();
@@ -318,10 +326,12 @@ public class MainBattle : MonoBehaviour {
 
 	/// <summary>
 	/// Switchs the players.
+	/// [EXTENSION] - Log the new player that is being switched in
 	/// </summary>
 	/// <param name="playerIndex">Index of new player in <see cref="DataManager.players"/> array </param>
 	public void switchPlayers(int playerIndex) {
 		Player newPlayer = PlayerData.instance.data.Players [playerIndex];
+		QManagerObj.manager.logQuestVariable (questTypes.onlyOneCharacter, newPlayer.Name);
 		playerMove = new SwitchPlayers (manager, player, newPlayer);
 		PlayerData.instance.data.swapPlayers (0, playerIndex);
 		playerSprite.sprite = Sprite.Create (newPlayer.Image, new Rect (0.0f, 0.0f, newPlayer.Image.width, newPlayer.Image.height),
