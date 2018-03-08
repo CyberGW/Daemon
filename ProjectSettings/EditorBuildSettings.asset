@@ -119,3 +119,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Exploration/Scenes/Ass3 Scenes/Law-Maze4.unity
     guid: 7cb84d0526abf5841a52d3ff538f46c3
+  - enabled: 1
+    path: Assets/Exploration/Scenes/RCH-Floor1.unity
+    guid: ac1577aa282ba234b8a9c6b2169e5374
