@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 556
+  controlID: 51
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 557
+  controlID: 52
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 558
+  controlID: 53
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -367,9 +367,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 8c070000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: e8b0feff06f2ffff9efbfffff4ffffff00000000
+    m_ExpandedIDs: 94f0ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -535,19 +535,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Battle/Scripts
+    - Assets
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Battle/Scripts
+  - Assets
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase4
+  m_LastProjectPath: C:\Users\Chris\Google Drive\York Uni\2nd Year\SEPR\Daemon - Assessment
+    4\Daemon
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: f8340000
-    m_LastClickedID: 13560
-    m_ExpandedIDs: 00000000222800003c280000c6280000082900003e29000074290000802a0000a42c0000ce2c0000962e0000ec2e0000762f00009e30000010310000383100009231000034320000c0340000f83400001635000086360000883600008a3600008c3600008e36000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: e0310000
+    m_LastClickedID: 12768
+    m_ExpandedIDs: 00000000e0310000fa31000080320000c2320000f63200002a3300002e340000323600005c3600000e38000064380000e8380000f4390000563a00007e3a0000d03a00006e3b0000e23d0000183e0000363e0000883f00008a3f00008c3f00008e3f0000903f000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -575,7 +576,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000222800003c280000c6280000082900003e29000074290000802a0000a42c0000ce2c0000962e0000ec2e0000762f00009e30000010310000383100009231000034320000c0340000f83400001635000086360000883600008a3600008c3600008e36000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000e0310000fa31000080320000c2320000f63200002a3300002e340000323600005c3600000e38000064380000e8380000f4390000563a00007e3a0000d03a00006e3b0000e23d0000183e0000363e0000883f00008a3f00008c3f00008e3f0000903f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -602,7 +603,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
