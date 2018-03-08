@@ -230,17 +230,26 @@ public class MainBattle : MonoBehaviour {
 	/// <returns>Coroutine function to update exp bar</returns>
 	/// <param name="totalExp">The total exp the player has gained</param>
 	private IEnumerator updateExp(int totalExp) {
+		Debug.Log ("totalExp: " + totalExp);
 		yield return new WaitForSeconds (1f);
 		int gainedExp;
 		int remainingExp = totalExp;
+		Debug.Log ("remainingExp: " + remainingExp);
+		Debug.Log ("playerExp: " + player.Exp);
+		Debug.Log ("ExpToNextLevel: " + player.ExpToNextLevel);
 		while ( (player.Exp + remainingExp) >= player.ExpToNextLevel) {
+			Debug.Log ("In While");
 			gainedExp = player.ExpToNextLevel - player.Exp;
+			Debug.Log ("gainedExp: " + gainedExp);
 			remainingExp -= gainedExp;
+			Debug.Log ("remainingExp: " + remainingExp);
 			yield return StartCoroutine (updateExpHelper (gainedExp, true));
 			expBar.setUpDisplay (0, player.ExpToNextLevel);
 		}
 		if (remainingExp > 0) {
-			gainedExp = player.Exp + remainingExp;
+			Debug.Log ("In If condition");
+			gainedExp = remainingExp;
+			Debug.Log ("gainedExp: " + gainedExp);
 			yield return StartCoroutine (updateExpHelper (gainedExp, false));
 		}
 	}
@@ -253,6 +262,7 @@ public class MainBattle : MonoBehaviour {
 	/// <param name="gainedExp">Exp gained within this level interval</param>
 	/// <param name="levelledUp">If set to <c>true</c> indicates the player is about to level up.</param>
 	private IEnumerator updateExpHelper(int gainedExp, bool levelledUp) {
+		Debug.Log ("In Helper, levelledUp: " + levelledUp);
 		yield return StartCoroutine (expBar.updateDisplay (player.Exp, player.Exp + gainedExp));
 		player.gainExp (gainedExp);
 		if (levelledUp) {
