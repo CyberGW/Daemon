@@ -372,6 +372,7 @@ public class MainBattle : MonoBehaviour {
 			moveChosen = true;
 			attacksPanel.SetActive (false);
 			setButtonsInteractable (false);
+			BattleButtons.panelActive = false;
 		} else {
 			//Perform the switch character move
 			StartCoroutine(performTurn(playerMove));

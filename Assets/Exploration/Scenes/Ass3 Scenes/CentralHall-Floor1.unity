@@ -1039,7 +1039,7 @@ MonoBehaviour:
   name: Servant of Time and Space
   sprite: {fileID: 2800000, guid: a30ee70bf21da8143a10d57deeab75e0, type: 3}
   level: 13
-  health: 150
+  health: 100
   attack: 20
   defence: 20
   maximumMagic: 20
@@ -1048,7 +1048,7 @@ MonoBehaviour:
   special1: 4
   special1Text: see patern
   special1Magic: 5
-  special1Value: 2
+  special1Value: 0.3
   special2: 0
   special2Text: nows the time
   special2Magic: 2

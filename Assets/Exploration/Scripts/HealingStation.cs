@@ -35,7 +35,7 @@ public class HealingStation : MonoBehaviour {
 	/// </summary>
 	/// <param name="other">The object this has collided with, triggering functionality when it's the player</param>
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.gameObject.name == "Player" && !inRange && !dManager.dialogueActive) {
+		if (other.gameObject.name == "Player" && !inRange && !dManager.dialogueActive && !SceneChanger.instance.menuOpen) {
 			inRange = true;
 			SoundManager.instance.playSFX ("interact");
 			if (dManager == null) {

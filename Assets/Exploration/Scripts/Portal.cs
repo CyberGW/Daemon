@@ -28,8 +28,10 @@ public class Portal : MonoBehaviour {
 	void OnTriggerEnter2D (Collider2D other) {
 		if (other.gameObject.name == "Player" || other.gameObject.name == "MiniPlayer") {
 			SoundManager.instance.playSFX ("transition");
+			Debug.Log (newScene);
+			Debug.Log (newPosition);
 			sceneChanger.loadLevel (newScene, newPosition);
-		    PlayerData.instance.data.Save();
+		    //PlayerData.instance.data.Save();
         }
     }
 }

@@ -329,10 +329,10 @@ MonoBehaviour:
   canRunAway: 0
   name: Resurected Dinasuar
   sprite: {fileID: 2800000, guid: 8d03301ca5f90364799053e80e9c6bb9, type: 3}
-  level: 14
-  health: 140
+  level: 19
+  health: 100
   attack: 20
-  defence: 50
+  defence: 60
   maximumMagic: 100
   luck: 15
   speed: 30
@@ -343,7 +343,7 @@ MonoBehaviour:
   special2: 0
   special2Text: DNA Splurged over
   special2Magic: 23
-  special2Value: 100
+  special2Value: 80
 --- !u!1001 &173203695
 Prefab:
   m_ObjectHideFlags: 0

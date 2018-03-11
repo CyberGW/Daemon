@@ -138,12 +138,14 @@ public class DataManager {
 
 	/// <summary>
 	/// Add an item to <see cref="items"/> 
+	/// [EXTENSION] - Log the gained item
 	/// </summary>
 	/// <param name="item">The item to add</param>
 	public void addItem(Item item) {
 		for (int i = 0; i < items.Length; i++) {
 			if (items [i] == null) {
 				items [i] = item;
+				QManagerObj.manager.logQuestVariable (questTypes.gainItem, item.Name);
 				break;
 			}
 		}

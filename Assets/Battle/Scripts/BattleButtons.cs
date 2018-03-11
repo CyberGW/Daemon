@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class BattleButtons : MonoBehaviour {
 
 	private GameObject attacksPanel;
-	private bool panelActive;
+	public static bool panelActive;
 
 	/// <summary>At first hide the attack panel and set <see cref="panelActive"/> accordingly</summary>
 	void Start () {
