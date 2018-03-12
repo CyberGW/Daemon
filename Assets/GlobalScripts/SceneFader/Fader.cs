@@ -49,7 +49,7 @@ public class Fader : MonoBehaviour {
         //Load scene
 		if (alpha >= 1 && !isFadeIn) {
             SceneManager.LoadScene(fadeScene);
-            DontDestroyOnLoad(gameObject);		
+            DontDestroyOnLoad(gameObject);	
 		} else
 		if (alpha <= 0 && isFadeIn) {
 			Destroy(gameObject);		

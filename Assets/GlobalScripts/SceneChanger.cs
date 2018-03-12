@@ -65,10 +65,6 @@ public class SceneChanger : MonoBehaviour {
 		}
 	}
 
-	public void hidePlayer() {
-		player.SetActive (false);
-	}
-
 	/// <summary>Load a new level, without moving the player. </summary>
 	/// <param name="newScene">The scene to load</param>
 	public void loadLevel(string newScene) {

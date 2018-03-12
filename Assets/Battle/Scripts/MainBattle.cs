@@ -28,6 +28,7 @@ public class MainBattle : MonoBehaviour {
 	//Local Variables
 	private string text;
 	public bool playerDied;
+	private bool gorillaMove;
 	//Test Enemy
 	private Enemy enemyObject;
 	//Moves
@@ -176,7 +177,12 @@ public class MainBattle : MonoBehaviour {
 		if (move is SwitchPlayers) {
 			updateToNewPlayer ();
 		}
-		yield return updateBars(move, previousHealth, previousMagic);
+		if (!gorillaMove) {
+			yield return updateBars (move, previousHealth, previousMagic);
+		} else {
+			yield return new WaitForSeconds (1);
+			gorillaMove = false;
+		}
 		if (move.Target is Enemy) {
 			StartCoroutine( checkIfPlayerWon ());
 		} else {
@@ -200,7 +206,7 @@ public class MainBattle : MonoBehaviour {
 	/// <summary>
 	/// Checks if the player has won\n
 	/// If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle
-	/// [EXTENSION] - Log the enemy defeated
+	/// [EXTENSION] - Log the enemy defeated, call <see cref="PlayerData.expShare"/> 
 	/// </summary>
 	/// <returns>Coroutine function to update exp bar</returns>
 	private IEnumerator checkIfPlayerWon() {
@@ -210,9 +216,9 @@ public class MainBattle : MonoBehaviour {
 			//Wait a frame before changing button states
 			yield return null;
 			setButtonsInteractable (false);
-			Debug.Log(enemy.ExpGiven);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
 			playerArray [0] = player;
+			PlayerData.instance.data.expShare (player.Name, enemy.ExpGiven);
 			PlayerData.instance.data.Players = playerArray;
 			PlayerData.instance.data.Money += manager.money;
 			if (itemReward != null) {
@@ -369,6 +375,12 @@ public class MainBattle : MonoBehaviour {
 	/// </summary>
 	private void prepareTurn() {
 		if (!playerDied) {
+			if (player.Name == "Gorilla") {
+				if (Random.value <= 0.25) {
+					playerMove = new StandardAttack (manager, player, PlayerData.instance.data.Players [1]);
+					gorillaMove = true;
+				}
+			}
 			moveChosen = true;
 			attacksPanel.SetActive (false);
 			setButtonsInteractable (false);

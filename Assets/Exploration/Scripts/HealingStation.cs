@@ -16,8 +16,9 @@ public class HealingStation : MonoBehaviour {
 	/// <summary>
 	/// Holds whether the user is in range of the station, so that it is not continually triggered when the user
 	/// is within range
+	/// [CHANGE] - Make static so not reset when menu is loaded
 	/// </summary>
-	private bool inRange = false;
+	private static bool inRange = false;
 
 	// Use this for initialization
 	void Start () {
@@ -31,7 +32,7 @@ public class HealingStation : MonoBehaviour {
 	/// When collides with the player and <see cref="inRange"/> is <c>false</c> , trigger functionality.
 	/// This involves setting <see cref="inRange"/> to <c>true</c>,
 	/// playing sound effect, displaying text and calling <see cref="healPlayers"/>  
-	/// [EXTENSION] - Log that healing station has been used
+	/// [EXTENSION] - Log that healing station has been used, don't activate when menu open
 	/// </summary>
 	/// <param name="other">The object this has collided with, triggering functionality when it's the player</param>
 	void OnTriggerStay2D(Collider2D other) {

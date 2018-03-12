@@ -49,8 +49,6 @@ public class DataManager {
 		money = 0;
 	}
 
-
-
     /// <summary>
     /// Constructor for loading, no player need be defined as it will be loaded from the save file.
     /// </summary>
@@ -163,6 +161,21 @@ public class DataManager {
 			}
 		}
 		return count;
+	}
+
+	/// <summary>
+	/// [EXTENSION] - Give half exp to all but one player (the player that won the fight)
+	/// </summary>
+	/// <param name="excPlayer">The player not to give the half exp to</param>
+	/// <param name="totalExp">The total exp received (to be halfed)</param>
+	public void expShare(string excPlayer, int totalExp) {
+		foreach (Player player in players) {
+			if (player != null) {
+				if (player.Name != excPlayer) {
+					player.gainExp (totalExp / 2);
+				}
+			}
+		}
 	}
 
     // ALL METHODS BELOW ARE NEW FOR ASSESSMENT 3
