@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 06/03/2018 10:52:58-->
+<!--Last exported: 13/03/2018 09:46:45-->
 <Tiled2Unity version="1.0.13.1">
   <AssignMaterial mesh="Law-Floor4_mesh_0001" material="roguelikeSheet_transparent" />
   <AssignMaterial mesh="Law-Floor4_mesh_0002" material="roguelikeSheet_transparent" />
@@ -13,15 +13,15 @@
   <Prefab name="Law-Floor4" orientation="Orthogonal" staggerAxis="Y" staggerIndex="Odd" hexSideLength="0" numLayers="5" numTilesWide="20" numTilesHigh="24" tileWidth="16" tileHeight="16" exportScale="0.06666667" mapWidthInPixels="320" mapHeightInPixels="384" backgroundColor="#808080">
     <GameObject name="Floor" x="0" y="0" z="0">
       <TileLayer offsetX="0" offsetY="0" />
-      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0001" sortingLayerName="WorldObjects" sortingOrder="0" opacity="1" />
+      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0001" sortingLayerName="" sortingOrder="0" opacity="1" />
     </GameObject>
     <GameObject name="Carpet" x="0" y="0" z="0">
       <TileLayer offsetX="0" offsetY="0" />
-      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0002" sortingLayerName="WorldObjects" sortingOrder="1" opacity="1" />
+      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0002" sortingLayerName="" sortingOrder="1" opacity="1" />
     </GameObject>
     <GameObject name="Other Walls" x="0" y="0" z="0">
       <TileLayer offsetX="0" offsetY="0" />
-      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0003" sortingLayerName="WorldObjects" sortingOrder="2" opacity="1" />
+      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0003" sortingLayerName="" sortingOrder="2" opacity="1" />
       <GameObject name="Collision">
         <PolygonCollider2D>
           <Path>1.066667,-20.26667 1.066667,-3.2 19.2,-3.2 19.2,-20.26667 20.26667,-20.26667 20.26667,-1.066667 0,-1.066667 0,-20.26667</Path>
@@ -30,13 +30,13 @@
     </GameObject>
     <GameObject name="Decor" x="0" y="0" z="0">
       <TileLayer offsetX="0" offsetY="0" />
-      <GameObject name="roguelikeSheet_transparent[0-100][200]" x="0" y="0" mesh="Law-Floor4_mesh_0004" sortingLayerName="WorldObjects" sortingOrder="3" opacity="1">
+      <GameObject name="roguelikeSheet_transparent[0-100][200]" x="0" y="0" mesh="Law-Floor4_mesh_0004" sortingLayerName="" sortingOrder="3" opacity="1">
         <TileAnimator startTimeMs="0" durationMs="100" fullTimeMs="200" />
       </GameObject>
-      <GameObject name="roguelikeSheet_transparent[100-200][200]" x="0" y="0" mesh="Law-Floor4_mesh_0005" sortingLayerName="WorldObjects" sortingOrder="3" opacity="1">
+      <GameObject name="roguelikeSheet_transparent[100-200][200]" x="0" y="0" mesh="Law-Floor4_mesh_0005" sortingLayerName="" sortingOrder="3" opacity="1">
         <TileAnimator startTimeMs="100" durationMs="100" fullTimeMs="200" />
       </GameObject>
-      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0006" sortingLayerName="WorldObjects" sortingOrder="3" opacity="1" />
+      <GameObject name="roguelikeSheet_transparent" x="0" y="0" mesh="Law-Floor4_mesh_0006" sortingLayerName="" sortingOrder="3" opacity="1" />
     </GameObject>
     <GameObject name="Front Wall" x="0" y="0" z="0">
       <TileLayer offsetX="0" offsetY="0" />
