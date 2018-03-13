@@ -377,7 +377,7 @@ public class MainBattle : MonoBehaviour {
 		if (!playerDied) {
 			if (player.Name == "Gorilla") {
 				if (Random.value <= 0.25) {
-					playerMove = new StandardAttack (manager, player, PlayerData.instance.data.Players [1]);
+					playerMove = new StandardAttack (manager, player, PlayerData.instance.data.getAlivePlayer());
 					gorillaMove = true;
 				}
 			}

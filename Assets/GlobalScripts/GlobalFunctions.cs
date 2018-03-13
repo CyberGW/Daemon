@@ -37,7 +37,9 @@ public class GlobalFunctions : MonoBehaviour
     public int currentLevel;
     /// <summary>The last level of the game </summary>
     [System.NonSerialized]
-    public int lastLevel=9;
+    public int lastLevel = 10;
+	/// <summary> The player not in party during the Biology section of the game </summary>
+	public Player takenPlayer = null;
 
     //ADDED 7 More items for assesment 3 
     /// <summary>

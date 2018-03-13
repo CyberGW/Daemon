@@ -91,6 +91,24 @@ public class DataManager {
 		return players [0];
 	}
 
+	public int getPlayerIndex(string name) {
+		for (int i = 0; i < players.Length; i++) {
+			if (players[i].Name == name) {
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public Player getAlivePlayer() {
+		foreach (Player player in players) {
+			if (player.Health > 0) {
+				return player;
+			}
+		}
+		return null;
+	}
+
 	/// <summary>
 	/// Returns the number of players in <see cref="players"/> that are not null and have health above zero 
 	/// </summary>
@@ -196,6 +214,13 @@ public class DataManager {
             savedData.serializedPlayers[i] = PlayerToSerializable(players[i]);
         }
 
+		//if on Biology
+		if (GlobalFunctions.instance.currentLevel == 8) {
+			savedData.biologyPlayer = PlayerToSerializable (GlobalFunctions.instance.takenPlayer);
+		} else {
+			savedData.biologyPlayer = null;
+		}
+
         // Save inventory items.
         for (var i = 0; i < items.Length; i++)
         {
@@ -249,6 +274,11 @@ public class DataManager {
             {
                 players[i] = SerializableToPLayer(savedGame.serializedPlayers[i]);
             }
+
+			//if on biology
+			if (savedGame.currentLevel == 8) {
+				GlobalFunctions.instance.takenPlayer = SerializableToPLayer(savedGame.biologyPlayer);
+			}
 
             // Restore items.
             for (var i = 0; i < items.Length; i++)

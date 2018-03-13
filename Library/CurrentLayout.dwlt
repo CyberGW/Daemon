@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1366
     height: 685
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -367,9 +367,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 0e9dffff
-    m_LastClickedID: -25330
-    m_ExpandedIDs: d49cffffd89cffff1c9dffff06a9ffff18a9ffff20a9ffff38b0ffff3cb0ffff54b0ffff8ab9ffff8cb9ffffb0b9ffffe8bfffff00000000
+    m_SelectedIDs: a6fb0000
+    m_LastClickedID: 64422
+    m_ExpandedIDs: 2eebfcff1aecfcff3aedfcfff420fdfff620fdff5e21fdff8e38fdff7a09feff8080feff8280feffea80feff7ed4feffc889ffff168affff0c96ffff34a1ffff0cb3ffffeabffffff4ffffff00000000a6fb0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -388,7 +388,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Law-Maze3
+  - GameMenu
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -420,14 +420,14 @@ MonoBehaviour:
     height: 343
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 4355.1054706359555
+  lastFramingTime: 4208.735508472071
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 11.198277, y: -10.364599, z: -0.10546875}
+    m_Target: {x: 208.47736, y: 88.5389, z: 0}
     speed: 2
-    m_Value: {x: 11.198277, y: -10.364599, z: -0.10546875}
+    m_Value: {x: 208.47736, y: 88.5389, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -455,9 +455,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 13.667565
+    m_Target: 440.4049
     speed: 2
-    m_Value: 13.667565
+    m_Value: 440.4049
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -535,20 +535,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Exploration/Scenes/Ass3 Scenes
+    - Assets/Menus/ExplorationMenu
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Exploration/Scenes/Ass3 Scenes
+  - Assets/Menus/ExplorationMenu
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\Chris\Google Drive\York Uni\2nd Year\SEPR\Daemon - Assessment
-    4\Daemon
+  m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase4
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: be350000
-    m_LastClickedID: 13758
-    m_ExpandedIDs: 000000005a3500005c3500008e3500009435000096350000ba350000f8350000fa350000fe36000004370000083700003a3700003c370000523700006e37000074370000a2370000a8370000ae370000bc370000fa380000d4420000d6420000d8420000da420000dc42000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 319}
+    m_SelectedIDs: 3c370000
+    m_LastClickedID: 14140
+    m_ExpandedIDs: 000000005a3500005c3500008e3500009435000096350000ba350000f8350000fa350000fe36000004370000083700003a3700003c370000523700006e37000074370000a2370000a8370000ae370000bc370000f8380000fa410000fc410000fe410000004200000242000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -576,7 +575,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000005a3500005c3500008e3500009435000096350000ba350000f8350000fa350000fe36000004370000083700003a3700003c370000523700006e37000074370000a2370000a8370000ae370000bc370000fa380000d4420000d6420000d8420000da420000dc420000
+    m_ExpandedIDs: 000000005a3500005c3500008e3500009435000096350000ba350000f8350000fa350000fe36000004370000083700003a3700003c370000523700006e37000074370000a2370000a8370000ae370000bc370000f8380000fa410000fc410000fe4100000042000002420000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -685,7 +684,7 @@ MonoBehaviour:
     width: 275
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_ScrollPosition: {x: 0, y: 0}
+  m_ScrollPosition: {x: 0, y: 112.95508}
   m_InspectorMode: 0
   m_PreviewResizer:
     m_CachedPref: 160

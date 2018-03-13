@@ -18,7 +18,7 @@ public class LevelManager : MonoBehaviour {
 	/// The position that the player should spawn at on the world map once beat
 	/// </summary>
 	private Player newPlayer;
-	private string playerDesc;
+	private string desc;
     private bool addPlayer = false;
 	[SerializeField]
 	private Vector2 worldMapExitPosition;
@@ -36,7 +36,7 @@ public class LevelManager : MonoBehaviour {
 				new LowerDefence ("sung Langwith chants at", "Decrease enemy defence by 30%", 3, 0.3f),
 				new MagicAttack ("used the power of 2 for 1 cocktails against", "Use 2 for 1 cocktails to attack at power 15", 4, 15),
 				(Texture2D) Resources.Load("Character3", typeof(Texture2D)));
-			playerDesc = "You got a new team member, Jamie! He's from Langwith and has high attack and defence" +
+			desc = "You got a new team member, Jamie! He's from Langwith and has high attack and defence" +
 				" but low magic points. His specials can decrease the enemy's defence or attack using 2 for 1 cocktails";
 			break;
 		case (1):
@@ -45,7 +45,7 @@ public class LevelManager : MonoBehaviour {
 				new LowerSpeed ("tripped", "Decrease enemy speed by 30%", 3, 0.3f),
 				new MagicAttack ("charged at", "Charge at the enemy with damage 18", 5, 18),
 				(Texture2D) Resources.Load("Character4", typeof(Texture2D)));
-			playerDesc = "You got a new team member, Alice! She's from James and has very high speed but lower" +
+			desc = "You got a new team member, Alice! She's from James and has very high speed but lower" +
 				" defence. Her specials can slow the enemy and attack by charging straight at them";
 			break;
 		case (2):
@@ -54,7 +54,7 @@ public class LevelManager : MonoBehaviour {
 				new RaiseAttack ("strengthened up against", "Increase attack by 20%", 6, 0.2f),
 				new MagicAttack ("gave asbestos poisoning to", "Use asbestos to damage with power 15", 3, 15),
 				(Texture2D) Resources.Load("Character5", typeof(Texture2D)));
-			playerDesc = "You got a new team member, Josh! He's from Derwent and has very high defence" +
+			desc = "You got a new team member, Josh! He's from Derwent and has very high defence" +
 				" but low speed. His specials can raise his attack or give asbestos poison to the enemy";
 			break;
 		case (3):
@@ -63,8 +63,32 @@ public class LevelManager : MonoBehaviour {
 				new MagicAttack ("outsmarted", "Attack with power 13", 4, 13),
 				new MagicAttack ("threw their dissertation at", "Use dissertation to attack with power 20", 6, 20),
 				(Texture2D) Resources.Load("Character6", typeof(Texture2D)));
-			playerDesc = "You got a new team member, Lucy! She's from Wentworth and has great magic spells" +
+			desc = "You got a new team member, Lucy! She's from Wentworth and has great magic spells" +
 				" but low standard attack. Both her specials attack using her superior intelect.";
+			break;
+		case (4):
+			addPlayer = false;
+			desc = "You beat the Library! No need to worry about those overdue books now.";
+			break;
+		case (5):
+			addPlayer = false;
+			desc = "You beat Law, viva la revolution!";
+			break;
+		case (6):
+			addPlayer = false;
+			desc = "You beat Central Hall, but sadly there were no aliens inside... :(";
+			break;
+		case (7):
+			addPlayer = false;
+			desc = "You beat Music, like a drum";
+			break;
+		case (8):
+			addPlayer = false;
+			desc = "You beat Biology. Time to say goodbye to the Gorilla, he's got advertisement work to attend to";
+			break;
+		case (9):
+			addPlayer = false;
+			desc = "You beat Heslington Hall, it's a miracle you were even allowed inside!";
 			break;
 		default: 
 			break;
@@ -90,7 +114,10 @@ public class LevelManager : MonoBehaviour {
 		GameObject dialogueBox = GameObject.Find ("Dialogue Manager").transform.Find ("DialogueBox").gameObject;
 		dialogueBox.SetActive (true);
 		Text dialogueText = dialogueBox.transform.Find("DialogueText").GetComponent<Text> ();
-		dialogueText.text = playerDesc;
+		dialogueText.text = desc;
+		if (GlobalFunctions.instance.currentLevel == 8) {
+			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer ();
+		}
 		GlobalFunctions.instance.currentLevel += 1;
 		Debug.Log ("Beat the level!");
 		GameObject.FindObjectOfType<PlayerMovement> ().setCanMove (false);

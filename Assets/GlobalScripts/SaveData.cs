@@ -16,6 +16,7 @@ public class SaveData
     public ObjectsActiveData serializedObjectsActive = new ObjectsActiveData();
     public string currentSceneName;
     public int currentLevel;
+	public PlayerSaveData biologyPlayer;
 
     /// <summary>
     /// A serialzable class to represent 2D vector information.
