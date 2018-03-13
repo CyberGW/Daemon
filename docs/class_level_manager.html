@@ -74,12 +74,14 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for LevelManager:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_level_manager__inherit__graph.svg" width="166" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_level_manager__inherit__graph.svg" width="166" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for LevelManager:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_level_manager__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_level_manager__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
@@ -88,7 +90,7 @@ Private Member Functions</h2></td></tr>
 <tr class="memdesc:afcd5c1d3d30954925d73f22ec1d0ecce"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase <a class="el" href="class_global_functions.html#adc1d068e5df57486aedf7b29213ad606" title="The current level that the player is up to">GlobalFunctions.currentLevel</a> and send the player back to the world map. A new player will also be added to the team with a brief description shown  <a href="#afcd5c1d3d30954925d73f22ec1d0ecce">More...</a><br /></td></tr>
 <tr class="separator:afcd5c1d3d30954925d73f22ec1d0ecce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad4f687800eb11cdf26ba2e9cb17f26bb"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_manager.html#ad4f687800eb11cdf26ba2e9cb17f26bb">WaitThenLoad</a> ()</td></tr>
-<tr class="memdesc:ad4f687800eb11cdf26ba2e9cb17f26bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by <a class="el" href="class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce" title="When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase GlobalFunctions.currentLevel and send the player back to the world map. A new player will also be added to the team with a brief description shown ">Start</a> once boss has been beaten Applies all functions along with waiting 5 seconds for user to read dialogue about new player  <a href="#ad4f687800eb11cdf26ba2e9cb17f26bb">More...</a><br /></td></tr>
+<tr class="memdesc:ad4f687800eb11cdf26ba2e9cb17f26bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Function called by <a class="el" href="class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce" title="When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase GlobalFunctions.currentLevel and send the player back to the world map. A new player will also be added to the team with a brief description shown ">Start</a> once boss has been beaten Applies all functions along with waiting 5 seconds for user to read dialogue about new player [EXTENSION] - Swap gorilla with the taken player if just finished Biology  <a href="#ad4f687800eb11cdf26ba2e9cb17f26bb">More...</a><br /></td></tr>
 <tr class="separator:ad4f687800eb11cdf26ba2e9cb17f26bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -99,9 +101,9 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a9bf0fe4741e414bbb192b1d554fabfa0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_level_manager.html#a9bf0fe4741e414bbb192b1d554fabfa0">newPlayer</a></td></tr>
 <tr class="memdesc:a9bf0fe4741e414bbb192b1d554fabfa0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The position that the player should spawn at on the world map once beat  <a href="#a9bf0fe4741e414bbb192b1d554fabfa0">More...</a><br /></td></tr>
 <tr class="separator:a9bf0fe4741e414bbb192b1d554fabfa0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a26cb72e6fb6b6175a238baa701827a2f"><td class="memItemLeft" align="right" valign="top"><a id="a26cb72e6fb6b6175a238baa701827a2f"></a>
-string&#160;</td><td class="memItemRight" valign="bottom"><b>playerDesc</b></td></tr>
-<tr class="separator:a26cb72e6fb6b6175a238baa701827a2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4b7716b0bcc34c3adc47a00ad44baeb"><td class="memItemLeft" align="right" valign="top"><a id="ae4b7716b0bcc34c3adc47a00ad44baeb"></a>
+string&#160;</td><td class="memItemRight" valign="bottom"><b>desc</b></td></tr>
+<tr class="separator:ae4b7716b0bcc34c3adc47a00ad44baeb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0a8cc9d6ab11c1ebded217fb7fd6ef58"><td class="memItemLeft" align="right" valign="top"><a id="a0a8cc9d6ab11c1ebded217fb7fd6ef58"></a>
 bool&#160;</td><td class="memItemRight" valign="bottom"><b>addPlayer</b> = false</td></tr>
 <tr class="separator:a0a8cc9d6ab11c1ebded217fb7fd6ef58"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -162,7 +164,7 @@ Vector2&#160;</td><td class="memItemRight" valign="bottom"><b>worldMapExitPositi
 </table>
 </div><div class="memdoc">
 
-<p>Function called by <a class="el" href="class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce" title="When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase GlobalFunctions.currentLevel and send the player back to the world map. A new player will also be added to the team with a brief description shown ">Start</a> once boss has been beaten Applies all functions along with waiting 5 seconds for user to read dialogue about new player </p>
+<p>Function called by <a class="el" href="class_level_manager.html#afcd5c1d3d30954925d73f22ec1d0ecce" title="When the scene is loaded (either at the start or after exiting the boss battle scene, check if boss has been defeated and if so increase GlobalFunctions.currentLevel and send the player back to the world map. A new player will also be added to the team with a brief description shown ">Start</a> once boss has been beaten Applies all functions along with waiting 5 seconds for user to read dialogue about new player [EXTENSION] - Swap gorilla with the taken player if just finished Biology </p>
 <dl class="section return"><dt>Returns</dt><dd>The then load.</dd></dl>
 
 </div>

@@ -91,6 +91,11 @@ public class DataManager {
 		return players [0];
 	}
 
+	/// <summary>
+	/// [EXTENSION] - Get the index of a specific player by their name
+	/// </summary>
+	/// <returns>The player's index</returns>
+	/// <param name="name">The name of the player to find</param>
 	public int getPlayerIndex(string name) {
 		for (int i = 0; i < players.Length; i++) {
 			if (players[i].Name == name) {
@@ -100,6 +105,10 @@ public class DataManager {
 		return -1;
 	}
 
+	/// <summary>
+	/// Gets the first alive player
+	/// </summary>
+	/// <returns>A player who is alive</returns>
 	public Player getAlivePlayer() {
 		foreach (Player player in players) {
 			if (player.Health > 0) {
@@ -199,7 +208,8 @@ public class DataManager {
     // ALL METHODS BELOW ARE NEW FOR ASSESSMENT 3
 
     /// <summary>
-    /// Saves data necessary to restore game state to a <see cref="SaveData"/> instance and exports this to a file with a binary formatter.  
+    /// Saves data necessary to restore game state to a <see cref="SaveData"/> instance and exports this to a file with a binary formatter.
+	/// [EXTENSION] - Save the taken player if in Biology  
     /// </summary>
     public void Save()
     {
@@ -255,7 +265,8 @@ public class DataManager {
     }
 
     /// <summary>
-    /// Loads data to restore game state, using a serialized binary formatted instance of <see cref="SaveData"/> stored in user's AppData. 
+    /// Loads data to restore game state, using a serialized binary formatted instance of <see cref="SaveData"/> stored in user's AppData.
+	/// [EXTENSION] - Load in the taken player if in Biology
     /// </summary>
     public void Load()
     {

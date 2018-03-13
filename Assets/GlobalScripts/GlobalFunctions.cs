@@ -38,7 +38,7 @@ public class GlobalFunctions : MonoBehaviour
     /// <summary>The last level of the game </summary>
     [System.NonSerialized]
     public int lastLevel = 10;
-	/// <summary> The player not in party during the Biology section of the game </summary>
+	/// <summary> [EXTENSION]  - The player not in party during the Biology section of the game </summary>
 	public Player takenPlayer = null;
 
     //ADDED 7 More items for assesment 3 
@@ -68,6 +68,13 @@ public class GlobalFunctions : MonoBehaviour
         //Set References
         player = GameObject.Find("Player").gameObject;
     }
+
+	/// <summary>
+	/// [EXTENSION] - Load the menu canvas
+	/// </summary>
+	public void loadMenu() {
+		Instantiate(Resources.Load ("MenuCanvas", typeof(GameObject)) as GameObject).name = "MenuCanvas";
+	}
 
     /// <summary>
     /// Starts a battle, setting <see cref="previousScene"/> and <see cref="previousBGM"/> and making the <see cref="player"/>

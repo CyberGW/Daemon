@@ -9,6 +9,7 @@ var searchData=
   ['lives',['lives',['../class_mini_move.html#a336c768772e7b89cbfc79e6d2385a379',1,'MiniMove']]],
   ['load',['Load',['../class_data_manager.html#a9a160e6fd71c00b13b3663363b0833e0',1,'DataManager']]],
   ['loadlevel',['loadLevel',['../class_scene_changer.html#a47b11efe0991dd2a9c697efe25e609dc',1,'SceneChanger.loadLevel(string newScene)'],['../class_scene_changer.html#addc24361fb05a54354067986d83e783e',1,'SceneChanger.loadLevel(string newScene, Vector2 newPosition)']]],
+  ['loadmenu',['loadMenu',['../class_global_functions.html#af28cc07fdb8486a87e02d11acc3963c4',1,'GlobalFunctions']]],
   ['loadpress',['LoadPress',['../class_menu_script.html#a37b53f86dfb4d3efae9185c1fff514b7',1,'MenuScript']]],
   ['logquestvariable',['logQuestVariable',['../class_quest_manager.html#ae1c17f8a1db34fdbc9bf2e297033b12e',1,'QuestManager']]],
   ['lowerdefence',['LowerDefence',['../class_lower_defence.html',1,'LowerDefence'],['../class_lower_defence.html#a527b84678c10f01c0064e2fcfe527637',1,'LowerDefence.LowerDefence()']]],

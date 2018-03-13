@@ -15,7 +15,7 @@
 <polyline fill="none" stroke="black" points="0,-93.5 116,-93.5 "/>
 <text text-anchor="start" x="8" y="-81.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; bossObjectName</text>
 <text text-anchor="start" x="8" y="-70.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; newPlayer</text>
-<text text-anchor="start" x="8" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; playerDesc</text>
+<text text-anchor="start" x="8" y="-59.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; desc</text>
 <text text-anchor="start" x="8" y="-48.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; addPlayer</text>
 <text text-anchor="start" x="8" y="-37.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; worldMapExitPosition</text>
 <polyline fill="none" stroke="black" points="0,-30.5 116,-30.5 "/>

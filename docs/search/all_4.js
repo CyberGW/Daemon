@@ -17,5 +17,6 @@ var searchData=
   ['expgiven',['expGiven',['../class_enemy.html#a593dc3bd5318ee30cebbd94de87b2209',1,'Enemy']]],
   ['explorationmenu',['explorationMenu',['../class_player_movement.html#add6f222159b26d96e05accace2b74207',1,'PlayerMovement']]],
   ['explorationmenuscript',['ExplorationMenuScript',['../class_exploration_menu_script.html',1,'']]],
+  ['expshare',['expShare',['../class_data_manager.html#a5f739bcb0908909238e95db2937d2d57',1,'DataManager']]],
   ['exptonextlevel',['expToNextLevel',['../class_player.html#a84746363be7e10b44f70b1e3f1584fe7',1,'Player']]]
 ];

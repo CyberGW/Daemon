@@ -49,7 +49,7 @@
 <path fill="none" stroke="#404040" d="M553.677,-998.056C555.381,-992.16 556.922,-985.928 557.914,-980 592.687,-772.201 586.628,-519.101 582.256,-417.452"/>
 <polygon fill="none" stroke="#404040" points="582.247,-417.244 577.982,-411.429 581.708,-405.256 585.974,-411.07 582.247,-417.244"/>
 <text text-anchor="middle" x="625.914" y="-669" font-family="Helvetica,sans-Serif" font-size="10.00"> &#45;bossObjectName</text>
-<text text-anchor="middle" x="625.914" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;playerDesc</text>
+<text text-anchor="middle" x="625.914" y="-658" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;desc</text>
 </g>
 <!-- Node8 -->
 <g id="node7" class="node"><title>Node8</title>

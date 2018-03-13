@@ -371,7 +371,8 @@ public class MainBattle : MonoBehaviour {
 	/// <summary>
 	/// Called by any of <see cref="standardAttack"/>, <see cref="special1"/> or <see cref="special2"/>
 	/// Uses <see cref="BattleManager.enemyMove"/> to decide on the enemy's move, and hides attack panel and makes
-	/// attack button unclickable    
+	/// attack button unclickable
+	/// [EXTENSION] - If Gorilla, randomly swap to an attack that damages a team member 25% of the time
 	/// </summary>
 	private void prepareTurn() {
 		if (!playerDied) {

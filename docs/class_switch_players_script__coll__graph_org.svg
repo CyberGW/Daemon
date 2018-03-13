@@ -444,8 +444,9 @@
 <g id="edge40" class="edge"><title>Node15&#45;&gt;Node4</title>
 <path fill="none" stroke="#404040" d="M399.826,-1481.86C446.675,-1476.57 574.183,-1455.66 640,-1381 724.693,-1284.93 758.984,-947.408 772,-820 772.994,-810.273 778.156,-805.596 772,-798 747.687,-767.999 717.314,-803.921 687,-780 617.864,-725.443 644.664,-678.046 602,-601 589.995,-579.32 578.945,-577.788 572,-554 557.211,-503.343 556.878,-445.832 561.84,-394.937"/>
 <polygon fill="none" stroke="#404040" points="561.859,-394.763 558.518,-388.372 563.131,-382.83 566.472,-389.221 561.859,-394.763"/>
-<text text-anchor="middle" x="799.5" y="-892" font-family="Helvetica,sans-Serif" font-size="10.00"> +playerDied</text>
-<text text-anchor="middle" x="799.5" y="-881" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;moveChosen</text>
+<text text-anchor="middle" x="799.5" y="-897.5" font-family="Helvetica,sans-Serif" font-size="10.00"> +playerDied</text>
+<text text-anchor="middle" x="799.5" y="-886.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;moveChosen</text>
+<text text-anchor="middle" x="799.5" y="-875.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45;gorillaMove</text>
 </g>
 <!-- Node15&#45;&gt;Node14 -->
 <g id="edge21" class="edge"><title>Node15&#45;&gt;Node14</title>

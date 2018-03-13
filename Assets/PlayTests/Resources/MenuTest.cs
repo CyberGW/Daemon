@@ -52,14 +52,14 @@ public class MenuTest
         //Open
         movementScript.pseudoEscapeKeyPress = true;
         yield return WaitForFrames(3);
-        Assert.True(SceneManager.GetSceneByName("GameMenu").isLoaded);
+		Assert.NotNull (GameObject.Find ("MenuCanvas"));
         //Check can't move
         yield return moveForFrames(30, "Down");
         Assert.AreEqual(0, playableCharacter.transform.position.y);
 
         movementScript.pseudoEscapeKeyPress = true;
         yield return WaitForFrames(3);
-        Assert.False(SceneManager.GetSceneByName("GameMenu").isLoaded);
+		Assert.Null (GameObject.Find ("MenuCanvas"));
         //Check can move
         yield return moveForFrames(30, "Down");
         Assert.AreNotEqual(0, playableCharacter.transform.position.y);
@@ -141,7 +141,7 @@ public class MenuTest
         //Check back in previous scene
         Assert.AreEqual("ExplorationTestScene", SceneManager.GetActiveScene().name);
         //Check menu is still open
-        Assert.True(SceneManager.GetSceneByName("GameMenu").isLoaded);
+		Assert.NotNull (GameObject.Find ("MenuCanvas"));
     }
 
     [UnityTest]
@@ -196,7 +196,7 @@ public class MenuTest
         //Check back in previous scene
         Assert.AreEqual("ExplorationTestScene", SceneManager.GetActiveScene().name);
         //Check menu is still open
-        Assert.True(SceneManager.GetSceneByName("GameMenu").isLoaded);
+		Assert.NotNull (GameObject.Find ("MenuCanvas"));
         //Close
         movementScript.pseudoEscapeKeyPress = true;
     }

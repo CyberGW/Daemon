@@ -67,7 +67,7 @@ public class ObjectInteraction : MonoBehaviour {
 	/// </summary>
 	/// <param name="other">The object that has been collided with, checked to see if "Player"</param>
 	void OnTriggerStay2D(Collider2D other) {
-		if (other.gameObject.name == "Player" && keyPressed() && !dManager.dialogueActive) {
+		if (other.gameObject.name == "Player" && keyPressed() && !dManager.dialogueActive && !SceneChanger.instance.menuOpen) {
 			//Test debug
 			if (dManager == null) {
 				dManager = FindObjectOfType<DialogueScript> ();

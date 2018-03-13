@@ -16,6 +16,7 @@ public class SaveData
     public ObjectsActiveData serializedObjectsActive = new ObjectsActiveData();
     public string currentSceneName;
     public int currentLevel;
+	/// <summary> [EXTENSION] - Save the player currently taken for the Biology level </summary>
 	public PlayerSaveData biologyPlayer;
 
     /// <summary>

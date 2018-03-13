@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['takenplayer',['takenPlayer',['../class_global_functions.html#ad7e8f7229650b46f4726a007f241c83a',1,'GlobalFunctions']]],
   ['tex',['tex',['../class_vendor.html#ae8a7355ab70b7cb2e418285708ed5e45',1,'Vendor']]],
   ['text',['text',['../class_character_move.html#a256db7805687e5254354724ec41cbb72',1,'CharacterMove.text()'],['../class_healing_station.html#abc484b8da1cefce5313e91991de950b1',1,'HealingStation.text()']]],
   ['textfooter',['textFooter',['../class_stats_script.html#ad060d872788984b015bb68d30ed75221',1,'StatsScript']]],

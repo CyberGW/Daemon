@@ -106,6 +106,7 @@ public class LevelManager : MonoBehaviour {
 	/// <summary>
 	/// Function called by <see cref="Start"/> once boss has been beaten
 	/// Applies all functions along with waiting 5 seconds for user to read dialogue about new player
+	/// [EXTENSION] - Swap gorilla with the taken player if just finished Biology
 	/// </summary>
 	/// <returns>The then load.</returns>
 	private IEnumerator WaitThenLoad() {

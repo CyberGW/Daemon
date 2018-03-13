@@ -76,13 +76,14 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for QuestManager:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_quest_manager__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_quest_manager__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a891c46486e704794678112367852b82f"><td class="memItemLeft" align="right" valign="top"><a id="a891c46486e704794678112367852b82f"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>QuestManager</b> (<a class="el" href="class_quest.html">Quest</a>[] <a class="el" href="class_quest_manager.html#ad3461123bea7d083ba7423f72b09c534">chosenQuests</a>)</td></tr>
+<tr class="memitem:a891c46486e704794678112367852b82f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#a891c46486e704794678112367852b82f">QuestManager</a> (<a class="el" href="class_quest.html">Quest</a>[] <a class="el" href="class_quest_manager.html#ad3461123bea7d083ba7423f72b09c534">chosenQuests</a>)</td></tr>
+<tr class="memdesc:a891c46486e704794678112367852b82f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes a new instance of the <a class="el" href="class_quest_manager.html" title="A class to manage the tracking and completion of quests ">QuestManager</a> class  <a href="#a891c46486e704794678112367852b82f">More...</a><br /></td></tr>
 <tr class="separator:a891c46486e704794678112367852b82f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae1c17f8a1db34fdbc9bf2e297033b12e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#ae1c17f8a1db34fdbc9bf2e297033b12e">logQuestVariable</a> (questTypes type, string data=&quot;&quot;)</td></tr>
 <tr class="memdesc:ae1c17f8a1db34fdbc9bf2e297033b12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a quest condition  <a href="#ae1c17f8a1db34fdbc9bf2e297033b12e">More...</a><br /></td></tr>
@@ -93,31 +94,102 @@ Public Attributes</h2></td></tr>
 <tr class="memitem:ae74692c230f97484e8e7c656a4ed1526"><td class="memItemLeft" align="right" valign="top">IDictionary&lt; <a class="el" href="class_quest_def.html">QuestDef</a>, bool &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#ae74692c230f97484e8e7c656a4ed1526">conditions</a> = new Dictionary&lt;<a class="el" href="class_quest_def.html">QuestDef</a>, bool&gt;()</td></tr>
 <tr class="memdesc:ae74692c230f97484e8e7c656a4ed1526"><td class="mdescLeft">&#160;</td><td class="mdescRight">Dictionary storing the current values of all possible quest conditions (e.g. one for each in questTypes  <a href="#ae74692c230f97484e8e7c656a4ed1526">More...</a><br /></td></tr>
 <tr class="separator:ae74692c230f97484e8e7c656a4ed1526"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7e038b367416c818021561626783813b"><td class="memItemLeft" align="right" valign="top">List&lt; questTypes &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#a7e038b367416c818021561626783813b">negativeQuestConds</a> = new List&lt;questTypes&gt; () {questTypes.noFainting, questTypes.noSpecialMoves, questTypes.onlyOneCharacter, questTypes.noHealingStations}</td></tr>
+<tr class="memdesc:a7e038b367416c818021561626783813b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stores all questTypes where an event being triggered would fail the quest instead of completing it. Consequently, these quest conditions should also be initalised to true rather than false  <a href="#a7e038b367416c818021561626783813b">More...</a><br /></td></tr>
+<tr class="separator:a7e038b367416c818021561626783813b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aba9f92b02d4d437e03ba0690fd0fcfbc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#aba9f92b02d4d437e03ba0690fd0fcfbc">startQuest</a> (<a class="el" href="class_quest.html">Quest</a> quest)</td></tr>
-<tr class="memdesc:aba9f92b02d4d437e03ba0690fd0fcfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set all dictionary objects to their default value  <a href="#aba9f92b02d4d437e03ba0690fd0fcfbc">More...</a><br /></td></tr>
+<tr class="memdesc:aba9f92b02d4d437e03ba0690fd0fcfbc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set current quest, set all dictionary objects to their default value and start timer if an inTimeLimit quest  <a href="#aba9f92b02d4d437e03ba0690fd0fcfbc">More...</a><br /></td></tr>
 <tr class="separator:aba9f92b02d4d437e03ba0690fd0fcfbc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3e643ac96e17f3207ae99e015ca6e07"><td class="memItemLeft" align="right" valign="top"><a id="ac3e643ac96e17f3207ae99e015ca6e07"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><b>isNegativeQuestCond</b> (questTypes type)</td></tr>
+<tr class="separator:ac3e643ac96e17f3207ae99e015ca6e07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac258b601650f4e18622d0138108dd2d2"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#ac258b601650f4e18622d0138108dd2d2">questDefVal</a> (questTypes type)</td></tr>
 <tr class="memdesc:ac258b601650f4e18622d0138108dd2d2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the default value for all quest types  <a href="#ac258b601650f4e18622d0138108dd2d2">More...</a><br /></td></tr>
 <tr class="separator:ac258b601650f4e18622d0138108dd2d2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdca0af195fe147e4499d8052a0031e7"><td class="memItemLeft" align="right" valign="top"><a id="abdca0af195fe147e4499d8052a0031e7"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>startNewQuest</b> ()</td></tr>
-<tr class="separator:abdca0af195fe147e4499d8052a0031e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa733878f5ed998c281a97595f1fc0207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#aa733878f5ed998c281a97595f1fc0207">finishQuest</a> ()</td></tr>
+<tr class="memdesc:aa733878f5ed998c281a97595f1fc0207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully  <a href="#aa733878f5ed998c281a97595f1fc0207">More...</a><br /></td></tr>
+<tr class="separator:aa733878f5ed998c281a97595f1fc0207"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:ad3461123bea7d083ba7423f72b09c534"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_quest.html">Quest</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#ad3461123bea7d083ba7423f72b09c534">chosenQuests</a></td></tr>
 <tr class="memdesc:ad3461123bea7d083ba7423f72b09c534"><td class="mdescLeft">&#160;</td><td class="mdescRight">A list containing all the quests chosen  <a href="#ad3461123bea7d083ba7423f72b09c534">More...</a><br /></td></tr>
 <tr class="separator:ad3461123bea7d083ba7423f72b09c534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9e34253b2b4a3e9769157a8ed54ad5ab"><td class="memItemLeft" align="right" valign="top"><a id="a9e34253b2b4a3e9769157a8ed54ad5ab"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>startTime</b></td></tr>
-<tr class="separator:a9e34253b2b4a3e9769157a8ed54ad5ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aac33432764991e3bd77dede74b166092"><td class="memItemLeft" align="right" valign="top"><a id="aac33432764991e3bd77dede74b166092"></a>
+<a class="el" href="class_quest.html">Quest</a>&#160;</td><td class="memItemRight" valign="bottom"><b>currentQuest</b> = null</td></tr>
+<tr class="separator:aac33432764991e3bd77dede74b166092"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a451a76c93cf93a96e7e17332ad986d59"><td class="memItemLeft" align="right" valign="top"><a id="a451a76c93cf93a96e7e17332ad986d59"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>finishTime</b></td></tr>
+<tr class="separator:a451a76c93cf93a96e7e17332ad986d59"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to manage the tracking and completion of quests </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a891c46486e704794678112367852b82f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a891c46486e704794678112367852b82f">&#9670;&nbsp;</a></span>QuestManager()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">QuestManager.QuestManager </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_quest.html">Quest</a> []&#160;</td>
+          <td class="paramname"><em>chosenQuests</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Initializes a new instance of the <a class="el" href="class_quest_manager.html" title="A class to manage the tracking and completion of quests ">QuestManager</a> class </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">chosenQuests</td><td>Chosen quests.</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a id="aa733878f5ed998c281a97595f1fc0207"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa733878f5ed998c281a97595f1fc0207">&#9670;&nbsp;</a></span>finishQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestManager.finishQuest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully </p>
+
+</div>
+</div>
 <a id="ae1c17f8a1db34fdbc9bf2e297033b12e"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae1c17f8a1db34fdbc9bf2e297033b12e">&#9670;&nbsp;</a></span>logQuestVariable()</h2>
 
@@ -222,7 +294,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>startTime</b></td></tr
 </table>
 </div><div class="memdoc">
 
-<p>Set all dictionary objects to their default value </p>
+<p>Set current quest, set all dictionary objects to their default value and start timer if an inTimeLimit quest </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quest</td><td><a class="el" href="class_quest.html" title="A class to store a whole quest, being a sequence of 3 QuestDefs Also stores a name of the quest...">Quest</a>.</td></tr>
@@ -270,6 +342,22 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>startTime</b></td></tr
 </div><div class="memdoc">
 
 <p>Dictionary storing the current values of all possible quest conditions (e.g. one for each in questTypes </p>
+
+</div>
+</div>
+<a id="a7e038b367416c818021561626783813b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7e038b367416c818021561626783813b">&#9670;&nbsp;</a></span>negativeQuestConds</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">List&lt;questTypes&gt; QuestManager.negativeQuestConds = new List&lt;questTypes&gt; () {questTypes.noFainting, questTypes.noSpecialMoves, questTypes.onlyOneCharacter, questTypes.noHealingStations}</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Stores all questTypes where an event being triggered would fail the quest instead of completing it. Consequently, these quest conditions should also be initalised to true rather than false </p>
 
 </div>
 </div>

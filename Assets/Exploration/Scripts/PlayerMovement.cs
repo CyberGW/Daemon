@@ -111,10 +111,6 @@ public class PlayerMovement : MonoBehaviour {
 						move ("Right");
 					} else 
 						setIdle ();
-					
-				
-			
-		
 	}
 
 	/// <summary>
@@ -129,11 +125,11 @@ public class PlayerMovement : MonoBehaviour {
 				Debug.Log ("Close");
 				SceneChanger.instance.menuOpen = false;
 				setCanMove (true);
-				UnityEngine.SceneManagement.SceneManager.UnloadSceneAsync ("GameMenu");
+				Destroy(GameObject.Find("MenuCanvas"));
 			} else if (GameObject.Find("MenuCanvas") == null) { //Double check menu isn't already open before displayings
 				SceneChanger.instance.menuOpen = true;
 				SceneChanger.instance.menuScene = SceneManager.GetActiveScene ().name;
-				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
+				GlobalFunctions.instance.loadMenu ();
 			}
 			pseudoEscapeKeyPress = false;
 		}

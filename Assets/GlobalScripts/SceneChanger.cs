@@ -59,9 +59,7 @@ public class SceneChanger : MonoBehaviour {
 		}
 		if (menuOpen) {
 			movementScript.setCanMove (false);
-			if (scene.name != "GameMenu") {
-				SceneManager.LoadScene ("GameMenu", LoadSceneMode.Additive);
-			}
+			GlobalFunctions.instance.loadMenu ();
 		}
 	}
 
