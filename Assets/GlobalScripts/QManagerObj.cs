@@ -11,7 +11,7 @@ public class QManagerObj : MonoBehaviour {
 
 	void Start() {
 		DontDestroyOnLoad (gameObject);
-		manager = new QuestManager (new Quest[3] {QuestInstances.CS, null, null});
+		manager = new QuestManager (new Quest[3] {QuestInstances.defs["CS"], null, null});
 	}		
 
 }
@@ -50,7 +50,7 @@ public class QuestManager {
 	{
 		this.chosenQuests = chosenQuests;
 		//[TEMP]
-		startQuest(QuestInstances.CS);
+		startQuest(QuestInstances.defs["CS"]);
 	}
 
 	/// <summary>
