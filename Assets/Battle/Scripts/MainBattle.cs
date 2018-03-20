@@ -180,7 +180,8 @@ public class MainBattle : MonoBehaviour {
 		if (!gorillaMove) {
 			yield return updateBars (move, previousHealth, previousMagic);
 		} else {
-			yield return new WaitForSeconds (1);
+			SoundManager.instance.playSFX ("gorilla");
+			yield return new WaitForSeconds (1.5f);
 			gorillaMove = false;
 		}
 		if (move.Target is Enemy) {

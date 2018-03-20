@@ -11,7 +11,7 @@ public class QManagerObj : MonoBehaviour {
 
 	void Start() {
 		DontDestroyOnLoad (gameObject);
-		manager = new QuestManager (new Quest[3] {QuestInstances.defs["CS"], null, null});
+		manager = new QuestManager ();
 	}		
 
 }
@@ -25,6 +25,7 @@ public class QuestManager {
 	/// A list containing all the quests chosen
 	/// </summary>
 	private Quest[] chosenQuests;
+	private int noOfQuests = 0;
 	private Quest currentQuest = null;
 
 	//The time the quest should be finished by to pass an inTimeLimit quest
@@ -46,11 +47,9 @@ public class QuestManager {
 	/// Initializes a new instance of the <see cref="QuestManager"/> class
 	/// </summary>
 	/// <param name="chosenQuests">Chosen quests.</param>
-	public QuestManager (Quest[] chosenQuests)
+	public QuestManager ()
 	{
-		this.chosenQuests = chosenQuests;
-		//[TEMP]
-		startQuest(QuestInstances.defs["CS"]);
+		this.chosenQuests = new Quest[2];
 	}
 
 	/// <summary>
@@ -83,6 +82,11 @@ public class QuestManager {
 	/// <param name="type">Type.</param>
 	private bool questDefVal(questTypes type) {
 		return !isNegativeQuestCond (type);
+	}
+
+	public void addQuest (Quest quest) {
+		chosenQuests [noOfQuests] = quest;
+		noOfQuests++;
 	}
 
 	/// <summary>

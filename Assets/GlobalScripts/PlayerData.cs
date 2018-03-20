@@ -106,12 +106,12 @@ public class DataManager {
 	}
 
 	/// <summary>
-	/// Gets the first alive player
+	/// Gets the first alive player, excluding the gorilla
 	/// </summary>
 	/// <returns>A player who is alive</returns>
 	public Player getAlivePlayer() {
 		foreach (Player player in players) {
-			if (player.Health > 0) {
+			if (player.Health > 0 && player.Name != "Gorilla") {
 				return player;
 			}
 		}
