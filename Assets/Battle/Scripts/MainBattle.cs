@@ -219,7 +219,7 @@ public class MainBattle : MonoBehaviour {
 			setButtonsInteractable (false);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
 			playerArray [0] = player;
-			PlayerData.instance.data.expShare (player.Name, enemy.ExpGiven);
+			PlayerData.instance.data.giveExpToAll (enemy.ExpGiven / 2, player.Name);
 			PlayerData.instance.data.Players = playerArray;
 			PlayerData.instance.data.Money += manager.money;
 			if (itemReward != null) {

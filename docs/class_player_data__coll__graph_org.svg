@@ -60,7 +60,7 @@
 <text text-anchor="start" x="159.635" y="-879.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ swapPlayers()</text>
 <text text-anchor="start" x="159.635" y="-868.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ addItem()</text>
 <text text-anchor="start" x="159.635" y="-857.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ countItems()</text>
-<text text-anchor="start" x="159.635" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ expShare()</text>
+<text text-anchor="start" x="159.635" y="-846.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ giveExpToAll()</text>
 <text text-anchor="start" x="159.635" y="-835.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Save()</text>
 <text text-anchor="start" x="159.635" y="-824.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ Load()</text>
 <text text-anchor="start" x="159.635" y="-813.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ PlayerToSerializable()</text>

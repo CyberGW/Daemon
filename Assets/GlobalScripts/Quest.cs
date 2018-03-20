@@ -8,8 +8,15 @@ using UnityEngine;
 public enum questTypes {gainItem, noFainting, defeatEnemy, talkToNPC, inTimeLimit, noSpecialMoves, onlyOneCharacter, noHealingStations};
 
 /// <summary>
+/// Represents all whether a quest has not started, completed and failed.
+/// The currently undertaken status is not needed as this is represent in <see cref="QManagerObj"/> by <see cref="QManagerObj.currentQuest"/>  
+/// </summary>
+public enum questStatues {notStarted, completed, failed};
+
+/// <summary>
 /// Class defining one quest condition (part of a sequence of 3 in Quest)
 /// </summary>
+[System.Serializable]
 public class QuestDef {
 
 	/// <summary>
@@ -49,6 +56,7 @@ public class QuestDef {
 /// Also stores a name of the quest, the location at which it's active along with the rewards for completing
 /// the quest (being an amount of money and amount of exp)
 /// </summary>
+[System.Serializable]
 public class Quest {
 
 	public string title;
@@ -59,6 +67,8 @@ public class Quest {
 	private QuestDef side;
 	/// The dictionary key representing the varaible condition for extra quest condition
 	private QuestDef cond;
+	//Status Parameter
+	private questStatues completed = questStatues.notStarted;
 	//Reward Parameters
 	public int money;
 	public int exp;
@@ -93,12 +103,23 @@ public class Quest {
 		}
 	}
 
+	public questStatues Completed {
+		get {
+			return this.completed;
+		}
+	}
+
 	/// <summary>
 	/// Determines if the quest has been completed or not
 	/// </summary>
 	/// <returns><c>true</c>, if the dictionary values for all 3 parts of the quest return true, <c>false</c> otherwise.</returns>
-	public bool questCompleted() {
-		return QManagerObj.manager.conditions[main] && QManagerObj.manager.conditions[side] && QManagerObj.manager.conditions[cond];
+	public questStatues checkQuestCompleted() {
+		if (QManagerObj.manager.conditions [main] && QManagerObj.manager.conditions [side] && QManagerObj.manager.conditions [cond]) {
+			completed = questStatues.completed;
+		} else {
+			completed = questStatues.failed;
+		}
+		return completed;
 	}	
 
 }

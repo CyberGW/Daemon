@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 3}
-  m_MinSize: {x: 950, y: 300}
+  m_MinSize: {x: 950, y: 392}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -133,8 +133,8 @@ MonoBehaviour:
     y: 30
     width: 1366
     height: 635
-  m_MinSize: {x: 683, y: 492}
-  m_MaxSize: {x: 14004, y: 14042}
+  m_MinSize: {x: 679, y: 342}
+  m_MaxSize: {x: 12004, y: 8042}
   vertical: 0
   controlID: 119
 --- !u!114 &7
@@ -157,10 +157,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 635
-  m_MinSize: {x: 406, y: 492}
-  m_MaxSize: {x: 10002, y: 14042}
+  m_MinSize: {x: 404, y: 342}
+  m_MaxSize: {x: 8004, y: 8042}
   vertical: 1
-  controlID: 99
+  controlID: 10
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -181,10 +181,10 @@ MonoBehaviour:
     y: 0
     width: 1089
     height: 364
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 100
+  controlID: 11
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -203,8 +203,8 @@ MonoBehaviour:
     y: 0
     width: 214
     height: 364
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -228,14 +228,14 @@ MonoBehaviour:
     y: 364
     width: 1089
     height: 271
-  m_MinSize: {x: 232, y: 271}
-  m_MaxSize: {x: 10002, y: 10021}
-  m_ActualView: {fileID: 17}
+  m_MinSize: {x: 100, y: 100}
+  m_MaxSize: {x: 4000, y: 4000}
+  m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 17}
   - {fileID: 18}
-  m_Selected: 0
-  m_LastSelected: 1
+  m_Selected: 1
+  m_LastSelected: 0
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -254,8 +254,8 @@ MonoBehaviour:
     y: 0
     width: 277
     height: 635
-  m_MinSize: {x: 277, y: 71}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 275, y: 50}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 19}
   m_Panes:
   - {fileID: 19}
@@ -288,7 +288,7 @@ MonoBehaviour:
     width: 275
     height: 614
   m_PersistentViewDataDictionary: {fileID: 0}
-  m_TestTypeToolbarIndex: 0
+  m_TestTypeToolbarIndex: 1
   m_PlayModeTestListGUI:
     m_Window: {fileID: 12}
     newResultList:
@@ -767,8 +767,8 @@ MonoBehaviour:
     - id: '[C:/Users/CyberGW/Documents/Unity/SEPRPhase4/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
       name: Assembly-CSharp-Editor.dll
       fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase4/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.1014075
       messages: 
       output: 
       stacktrace: 
@@ -995,8 +995,8 @@ MonoBehaviour:
     - id: '[Assembly-CSharp-Editor][PlayerDataTest][suite]'
       name: PlayerDataTest
       fullName: PlayerDataTest
-      resultStatus: 0
-      duration: 0
+      resultStatus: 1
+      duration: 0.0817915
       messages: 
       output: 
       stacktrace: 
@@ -1057,6 +1057,18 @@ MonoBehaviour:
       fullName: PlayerDataTest.GetFirstPlayer
       resultStatus: 0
       duration: 0
+      messages: 
+      output: 
+      stacktrace: 
+      notRunnable: 0
+      ignoredOrSkipped: 0
+      description: 
+      isSuite: 0
+    - id: '[Assembly-CSharp-Editor][PlayerDataTest.GiveExpToAll]'
+      name: GiveExpToAll
+      fullName: PlayerDataTest.GiveExpToAll
+      resultStatus: 1
+      duration: 0.0355071
       messages: 
       output: 
       stacktrace: 
@@ -1316,12 +1328,12 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 0
-    m_ResultText: 
+    m_ResultText: GiveExpToAll (0.036s)
     m_ResultStacktrace: 
     m_TestListState:
-      scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
-      m_LastClickedID: 0
+      scrollPos: {x: 0, y: 240}
+      m_SelectedIDs: 3731d5d4
+      m_LastClickedID: -724225737
       m_ExpandedIDs: 9bef5c90eac9b49018e98f9e7a729ab029caabc89d8d08d772f0e1db65d137e80dd2fd5bffffff7f
       m_RenameOverlay:
         m_UserAcceptedRename: 0
@@ -1455,7 +1467,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 42290000
     m_LastClickedID: 0
-    m_ExpandedIDs: 00f0feff6e05ffff104dffff5c4effff726bffff8672ffff8e78fffff0bbffff80cdffff78d8ffff54dfffffb4e8ffffb0edffff9efbfffff4ffffff0000000048360000c0470000ee4700001e4c0000284c00004c4c00007c4c0000a24c0000546900005e69000082690000ba690000d8690000
+    m_ExpandedIDs: ca6df9ffb48cf9ff60aef9ff20b8f9ff38e0f9ff3ae0f9ff5ce0f9ff72e0f9ff9ae0f9ffa6e0f9ff9e15fafff01ffaff3e21faff9223faff362bfaff1cb7fcfffec1fcff4cc3fcff58defcff6400feff6600feff7800feffd450feff60adfeff9a95ffff12c2ffff0cc8ffff0ec8ffffb8d3ffff52daffff38dbffff6cf8ffff9efbfffff4ffffff000000007e3700007ac60000a8c60000e8c6000006c70000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1506,14 +1518,14 @@ MonoBehaviour:
     height: 343
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 888.0222669081237
+  lastFramingTime: 13308.026988213567
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 597.2687, y: 84.12311, z: 6.4163055}
+    m_Target: {x: 290, y: 163, z: 0}
     speed: 2
-    m_Value: {x: 597.2687, y: 84.12311, z: 6.4163055}
+    m_Value: {x: 290, y: 163, z: 0}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -1541,15 +1553,15 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 455.68033
+    m_Target: 362.77936
     speed: 2
-    m_Value: 455.68033
+    m_Value: 362.77936
   m_Ortho:
     m_Target: 1
     speed: 2
     m_Value: 1
   m_ShowGlobalGrid: 1
-  m_LastSceneViewRotation: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
+  m_LastSceneViewRotation: {x: 0.08717229, y: -0.89959055, z: 0.21045254, w: 0.3726226}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -1630,10 +1642,10 @@ MonoBehaviour:
   m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase4
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 395}
+    scrollPos: {x: 0, y: 311}
     m_SelectedIDs: fa2c0000
     m_LastClickedID: 11514
-    m_ExpandedIDs: 00000000402800005a280000e8280000282900005e29000094290000aa2a0000d22c0000fa2c0000ce2e0000242f0000bc2f0000f63000006a31000092310000ea31000028320000943200002a3500006235000080350000423700004437000046370000483700004a37000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000402800005a280000e8280000282900005e29000094290000aa2a0000d22c0000fa2c0000ce2e0000242f0000bc2f0000f63000006a31000092310000ea31000026320000923200002a3500006235000080350000403700004237000044370000463700004837000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1661,7 +1673,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000402800005a280000e8280000282900005e29000094290000aa2a0000d22c0000fa2c0000ce2e0000242f0000bc2f0000f63000006a31000092310000ea31000028320000943200002a3500006235000080350000423700004437000046370000483700004a370000
+    m_ExpandedIDs: 00000000402800005a280000e8280000282900005e29000094290000aa2a0000d22c0000fa2c0000ce2e0000242f0000bc2f0000f63000006a31000092310000ea31000026320000923200002a35000062350000803500004037000042370000443700004637000048370000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1686,8 +1698,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 
-    m_LastClickedInstanceID: 0
+    m_SelectedInstanceIDs: 42290000
+    m_LastClickedInstanceID: 10562
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:

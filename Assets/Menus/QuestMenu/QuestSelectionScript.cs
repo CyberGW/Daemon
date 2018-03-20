@@ -60,6 +60,8 @@ public class QuestSelectionScript : MonoBehaviour {
 		GlobalFunctions.instance.currentLevel = 0;
 		GlobalFunctions.instance.objectsActive = new Dictionary<string, bool> ();
 
+		QManagerObj.manager.updateCurrentQuest ("CS");
+
 		SoundManager.instance.playSFX ("interact");
 		player.SetActive (true);
 		SceneChanger.instance.loadLevel ("CS-Jail", new Vector2 (0, 0));

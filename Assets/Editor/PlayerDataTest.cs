@@ -61,6 +61,11 @@ public class PlayerDataTest {
 	}
 
 	[Test]
+	public void GiveExpToAll() {
+		data.giveExpToAll (99 / 2);
+	}
+
+	[Test]
 	public void PlayersAlive() { 
 		//Add one more player
 		Player newPlayer = new Player ("Player2", 1, 1, 1, 1, 1, 1, 1, 1, 1, null, null, null);

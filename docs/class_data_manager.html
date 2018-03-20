@@ -94,7 +94,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a25c32613c435a867a361c6016b7291cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - Get the index of a specific player by their name  <a href="#a25c32613c435a867a361c6016b7291cd">More...</a><br /></td></tr>
 <tr class="separator:a25c32613c435a867a361c6016b7291cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a627256044386af544c73c8014c173267"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a627256044386af544c73c8014c173267">getAlivePlayer</a> ()</td></tr>
-<tr class="memdesc:a627256044386af544c73c8014c173267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the first alive player  <a href="#a627256044386af544c73c8014c173267">More...</a><br /></td></tr>
+<tr class="memdesc:a627256044386af544c73c8014c173267"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the first alive player, excluding the gorilla  <a href="#a627256044386af544c73c8014c173267">More...</a><br /></td></tr>
 <tr class="separator:a627256044386af544c73c8014c173267"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2df915d726f196e9ca423be29c030f37"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a2df915d726f196e9ca423be29c030f37">playersAlive</a> ()</td></tr>
 <tr class="memdesc:a2df915d726f196e9ca423be29c030f37"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of players in players that are not null and have health above zero  <a href="#a2df915d726f196e9ca423be29c030f37">More...</a><br /></td></tr>
@@ -111,9 +111,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afde59e90b0d45a759a820866aced4484"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#afde59e90b0d45a759a820866aced4484">countItems</a> ()</td></tr>
 <tr class="memdesc:afde59e90b0d45a759a820866aced4484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Counts all items in items which are not null  <a href="#afde59e90b0d45a759a820866aced4484">More...</a><br /></td></tr>
 <tr class="separator:afde59e90b0d45a759a820866aced4484"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f739bcb0908909238e95db2937d2d57"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#a5f739bcb0908909238e95db2937d2d57">expShare</a> (string excPlayer, int totalExp)</td></tr>
-<tr class="memdesc:a5f739bcb0908909238e95db2937d2d57"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - Give half exp to all but one player (the player that won the fight)  <a href="#a5f739bcb0908909238e95db2937d2d57">More...</a><br /></td></tr>
-<tr class="separator:a5f739bcb0908909238e95db2937d2d57"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae9aa93d5f8348f4ba407c1a40bea3f88"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#ae9aa93d5f8348f4ba407c1a40bea3f88">giveExpToAll</a> (int exp, string excPlayer=&quot;&quot;)</td></tr>
+<tr class="memdesc:ae9aa93d5f8348f4ba407c1a40bea3f88"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - Give half exp to all but one player (the player that won the fight)  <a href="#ae9aa93d5f8348f4ba407c1a40bea3f88">More...</a><br /></td></tr>
+<tr class="separator:ae9aa93d5f8348f4ba407c1a40bea3f88"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad7aea7271a392273234c062b420a149d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_data_manager.html#ad7aea7271a392273234c062b420a149d">Save</a> ()</td></tr>
 <tr class="memdesc:ad7aea7271a392273234c062b420a149d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Saves data necessary to restore game state to a <a class="el" href="class_save_data.html" title="Fully serializable class with variables for the data required to save and restore game states...">SaveData</a> instance and exports this to a file with a binary formatter. [EXTENSION] - Save the taken player if in Biology  <a href="#ad7aea7271a392273234c062b420a149d">More...</a><br /></td></tr>
 <tr class="separator:ad7aea7271a392273234c062b420a149d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -342,51 +342,6 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 
 </div>
 </div>
-<a id="a5f739bcb0908909238e95db2937d2d57"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a5f739bcb0908909238e95db2937d2d57">&#9670;&nbsp;</a></span>expShare()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void DataManager.expShare </td>
-          <td>(</td>
-          <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>excPlayer</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>totalExp</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>[EXTENSION] - Give half exp to all but one player (the player that won the fight) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">excPlayer</td><td>The player not to give the half exp to</td></tr>
-    <tr><td class="paramname">totalExp</td><td>The total exp received (to be halfed)</td></tr>
-  </table>
-  </dd>
-</dl>
-
-</div>
-</div>
 <a id="a627256044386af544c73c8014c173267"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a627256044386af544c73c8014c173267">&#9670;&nbsp;</a></span>getAlivePlayer()</h2>
 
@@ -410,7 +365,7 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets the first alive player </p>
+<p>Gets the first alive player, excluding the gorilla </p>
 <dl class="section return"><dt>Returns</dt><dd>A player who is alive</dd></dl>
 
 </div>
@@ -478,6 +433,51 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 
 </div>
 </div>
+<a id="ae9aa93d5f8348f4ba407c1a40bea3f88"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae9aa93d5f8348f4ba407c1a40bea3f88">&#9670;&nbsp;</a></span>giveExpToAll()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void DataManager.giveExpToAll </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>exp</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>excPlayer</em> = <code>&quot;&quot;</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[EXTENSION] - Give half exp to all but one player (the player that won the fight) </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">excPlayer</td><td>The player not to give the half exp to</td></tr>
+    <tr><td class="paramname">totalExp</td><td>The total exp received (to be halfed)</td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
 <a id="a07ea5934474d6bcb6bd897903dccb94d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a07ea5934474d6bcb6bd897903dccb94d">&#9670;&nbsp;</a></span>ItemToSerializable()</h2>
 
@@ -537,6 +537,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 </div><div class="memdoc">
 
 <p>Loads data to restore game state, using a serialized binary formatted instance of <a class="el" href="class_save_data.html" title="Fully serializable class with variables for the data required to save and restore game states...">SaveData</a> stored in user's AppData. [EXTENSION] - Load in the taken player if in Biology </p>
+<ul>
+<li>Load the quest manager </li>
+</ul>
 
 </div>
 </div>
@@ -662,6 +665,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>money</b></td></tr>
 </div><div class="memdoc">
 
 <p>Saves data necessary to restore game state to a <a class="el" href="class_save_data.html" title="Fully serializable class with variables for the data required to save and restore game states...">SaveData</a> instance and exports this to a file with a binary formatter. [EXTENSION] - Save the taken player if in Biology </p>
+<ul>
+<li>Save QManagerObj.manager </li>
+</ul>
 
 </div>
 </div>

@@ -9,27 +9,29 @@
 <area shape="rect" id="node9" href="$class_car_spawner.html" title="A car spawner to spawn cars when triggered by a controller and give the correct variable to the car ..." alt="" coords="1087,453,1179,589"/>
 <area shape="rect" id="node10" href="$class_container_data.html" title="An attribute to store information for a container in the item menu " alt="" coords="1204,461,1308,582"/>
 <area shape="rect" id="node11" href="$class_dialogue_script.html" title="Script to show dialogue, as well as step through multiple lines and close afterwards ..." alt="" coords="1332,380,1465,663"/>
-<area shape="rect" id="node12" href="$class_end_script.html" title="{EndScript\n||+ End()\l}" alt="" coords="1490,483,1569,560"/>
-<area shape="rect" id="node13" href="$class_exploration_menu_script.html" title="A script to manage the exploration menu that the user can call up at anytime " alt="" coords="1593,424,1746,619"/>
-<area shape="rect" id="node14" href="$class_global_functions.html" title="Provides functions and variables to be accessed by any game object to allow data to be passed between..." alt="" coords="1770,343,1886,699"/>
-<area shape="rect" id="node15" href="$class_healing_station.html" title="A script describing a healing station, where all player&#39;s health and magic are restored ..." alt="" coords="1910,439,2047,604"/>
-<area shape="rect" id="node16" href="$class_items_menu_script.html" title="Controls all initialisation of menu and updates arrays when an item is moved " alt="" coords="2071,424,2198,619"/>
-<area shape="rect" id="node17" href="$class_level_manager.html" title="A script used to check and handle when a level is beat by defeating the final boss ..." alt="" coords="2223,446,2377,597"/>
-<area shape="rect" id="node18" href="$class_main_battle.html" title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a..." alt="" coords="2401,131,2569,912"/>
-<area shape="rect" id="node19" href="$class_menu_script.html" title="Script to handle the main menu " alt="" coords="2593,402,2697,641"/>
-<area shape="rect" id="node20" href="$class_mini_move.html" title="The movement for the minigame character, includes movement and progression control ..." alt="" coords="2721,380,2863,663"/>
-<area shape="rect" id="node21" href="$class_object_interaction.html" title="A component to add to collider relating to an object that can interact with the player by pressing th..." alt="" coords="2887,402,3025,641"/>
-<area shape="rect" id="node22" href="$class_player_data.html" title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ..." alt="" coords="3049,475,3135,567"/>
-<area shape="rect" id="node23" href="$class_player_menu.html" title="Script for controlling the menu which allows users to switch the order of their team members ..." alt="" coords="3160,461,3277,582"/>
-<area shape="rect" id="node24" href="$class_player_movement.html" title="A script to control the movement and animations of the player" alt="" coords="3302,380,3479,663"/>
-<area shape="rect" id="node25" href="$class_portal.html" title="A component to add to an object, such as when the player touches it they are teleported to a new scen..." alt="" coords="3504,453,3645,589"/>
-<area shape="rect" id="node26" href="$class_q_manager_obj.html" title="A Unity Object to house the QuestManager for easy access from other scripts " alt="" coords="3670,483,3773,560"/>
-<area shape="rect" id="node27" href="$class_quest_instances.html" title="A class storing all the pre&#45;defined quests that the user can choose from " alt="" coords="3797,446,3910,597"/>
-<area shape="rect" id="node28" href="$class_random_test.html" title="{RandomTest\n||&#45; Start()\l&#45; Update()\l}" alt="" coords="3934,475,4029,567"/>
-<area shape="rect" id="node29" href="$class_scene_changer.html" title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a..." alt="" coords="4053,395,4184,648"/>
-<area shape="rect" id="node30" href="$class_sound_manager.html" title="A script to manage all background music and sound effects in the game " alt="" coords="4208,431,4317,611"/>
-<area shape="rect" id="node31" href="$class_stats_script.html" title="A script used to manage and update all of the stat displays in the battle scene " alt="" coords="4342,431,4466,611"/>
-<area shape="rect" id="node32" href="$class_switch_players_script.html" title="Script to handle the menu allowing users to switch players in and out of battle " alt="" coords="4491,461,4629,582"/>
-<area shape="rect" id="node33" href="$class_vendor.html" title="To be attatched to the Dialogue component of characters if they are to sell items ..." alt="" coords="4654,402,4821,641"/>
-<area shape="rect" id="node34" href="$class_world_map_script.html" title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately" alt="" coords="4845,475,4965,567"/>
+<area shape="rect" id="node12" href="$class_display_chosen.html" title="{DisplayChosen\n|+ displayText\l+ quest1\l+ quest2\l+ quest3\l|+ Quest1()\l+ Quest2()\l+ Quest3()\l&#45; Start()\l}" alt="" coords="1489,439,1599,604"/>
+<area shape="rect" id="node13" href="$class_end_script.html" title="{EndScript\n||+ End()\l}" alt="" coords="1623,483,1702,560"/>
+<area shape="rect" id="node14" href="$class_exploration_menu_script.html" title="A script to manage the exploration menu that the user can call up at anytime " alt="" coords="1726,417,1879,626"/>
+<area shape="rect" id="node15" href="$class_global_functions.html" title="Provides functions and variables to be accessed by any game object to allow data to be passed between..." alt="" coords="1903,343,2019,699"/>
+<area shape="rect" id="node16" href="$class_healing_station.html" title="A script describing a healing station, where all player&#39;s health and magic are restored ..." alt="" coords="2043,439,2181,604"/>
+<area shape="rect" id="node17" href="$class_items_menu_script.html" title="Controls all initialisation of menu and updates arrays when an item is moved " alt="" coords="2205,424,2331,619"/>
+<area shape="rect" id="node18" href="$class_level_manager.html" title="A script used to check and handle when a level is beat by defeating the final boss ..." alt="" coords="2356,439,2511,604"/>
+<area shape="rect" id="node19" href="$class_main_battle.html" title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a..." alt="" coords="2535,131,2703,912"/>
+<area shape="rect" id="node20" href="$class_menu_script.html" title="Script to handle the main menu " alt="" coords="2727,402,2831,641"/>
+<area shape="rect" id="node21" href="$class_mini_move.html" title="The movement for the minigame character, includes movement and progression control ..." alt="" coords="2855,380,2996,663"/>
+<area shape="rect" id="node22" href="$class_object_interaction.html" title="A component to add to collider relating to an object that can interact with the player by pressing th..." alt="" coords="3021,402,3158,641"/>
+<area shape="rect" id="node23" href="$class_player_data.html" title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ..." alt="" coords="3182,475,3269,567"/>
+<area shape="rect" id="node24" href="$class_player_menu.html" title="Script for controlling the menu which allows users to switch the order of their team members ..." alt="" coords="3293,461,3411,582"/>
+<area shape="rect" id="node25" href="$class_player_movement.html" title="A script to control the movement and animations of the player" alt="" coords="3435,380,3613,663"/>
+<area shape="rect" id="node26" href="$class_portal.html" title="A component to add to an object, such as when the player touches it they are teleported to a new scen..." alt="" coords="3637,453,3779,589"/>
+<area shape="rect" id="node27" href="$class_q_manager_obj.html" title="A Unity Object to house the QuestManager for easy access from other scripts " alt="" coords="3803,483,3906,560"/>
+<area shape="rect" id="node28" href="$class_quest_instances.html" title="A class storing all the pre&#45;defined quests that the user can choose from " alt="" coords="3930,483,4043,560"/>
+<area shape="rect" id="node29" href="$class_quest_selection_script.html" title="{QuestSelectionScript\n|+ title\l+ main\l+ side\l+ cond\l+ selectButton\l&#45; currentQuest\l&#45; chosen\l&#45; player\l|+ showDesc()\l+ selectQuest()\l+ StartLevel()\l&#45; Start()\l}" alt="" coords="4067,409,4213,633"/>
+<area shape="rect" id="node30" href="$class_random_test.html" title="{RandomTest\n||&#45; Start()\l&#45; Update()\l}" alt="" coords="4237,475,4331,567"/>
+<area shape="rect" id="node31" href="$class_scene_changer.html" title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a..." alt="" coords="4356,395,4487,648"/>
+<area shape="rect" id="node32" href="$class_sound_manager.html" title="A script to manage all background music and sound effects in the game " alt="" coords="4511,431,4620,611"/>
+<area shape="rect" id="node33" href="$class_stats_script.html" title="A script used to manage and update all of the stat displays in the battle scene " alt="" coords="4645,431,4769,611"/>
+<area shape="rect" id="node34" href="$class_switch_players_script.html" title="Script to handle the menu allowing users to switch players in and out of battle " alt="" coords="4793,461,4932,582"/>
+<area shape="rect" id="node35" href="$class_vendor.html" title="To be attatched to the Dialogue component of characters if they are to sell items ..." alt="" coords="4957,402,5123,641"/>
+<area shape="rect" id="node36" href="$class_world_map_script.html" title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately" alt="" coords="5148,475,5268,567"/>
 </map>

@@ -195,11 +195,11 @@ public class DataManager {
 	/// </summary>
 	/// <param name="excPlayer">The player not to give the half exp to</param>
 	/// <param name="totalExp">The total exp received (to be halfed)</param>
-	public void expShare(string excPlayer, int totalExp) {
+	public void giveExpToAll(int exp, string excPlayer = "") {
 		foreach (Player player in players) {
 			if (player != null) {
 				if (player.Name != excPlayer) {
-					player.gainExp (totalExp / 2);
+					player.gainExp (exp);
 				}
 			}
 		}
@@ -210,6 +210,7 @@ public class DataManager {
     /// <summary>
     /// Saves data necessary to restore game state to a <see cref="SaveData"/> instance and exports this to a file with a binary formatter.
 	/// [EXTENSION] - Save the taken player if in Biology  
+	/// 			- Save QManagerObj.manager
     /// </summary>
     public void Save()
     {
@@ -253,6 +254,9 @@ public class DataManager {
         // Save bjects active from GlobalFunctions.
         savedData.serializedObjectsActive = ObjectsActiveToSerializable(GlobalFunctions.instance.objectsActive);
 
+		// Save quest manager
+		savedData.questManager = QManagerObj.manager;
+
         // Save current level.
         savedData.currentLevel = GlobalFunctions.instance.currentLevel;
 
@@ -267,6 +271,7 @@ public class DataManager {
     /// <summary>
     /// Loads data to restore game state, using a serialized binary formatted instance of <see cref="SaveData"/> stored in user's AppData.
 	/// [EXTENSION] - Load in the taken player if in Biology
+	/// 			- Load the quest manager
     /// </summary>
     public void Load()
     {
@@ -299,6 +304,9 @@ public class DataManager {
 
             // Restore objects active.
             GlobalFunctions.instance.objectsActive = SerializableToObjectsActive(savedGame.serializedObjectsActive);
+
+			// Restore quest manager
+			QManagerObj.manager = savedGame.questManager;
 
             // Restore current level.
             GlobalFunctions.instance.currentLevel = savedGame.currentLevel;

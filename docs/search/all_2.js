@@ -17,6 +17,7 @@ var searchData=
   ['charactermove',['CharacterMove',['../class_character_move.html',1,'']]],
   ['checkifplayerlost',['checkIfPlayerLost',['../class_main_battle.html#afa467f0994839837c4e5a020dae5e121',1,'MainBattle']]],
   ['checkifplayerwon',['checkIfPlayerWon',['../class_main_battle.html#ac6e002d717e6e6ade576984457565e67',1,'MainBattle']]],
+  ['checkquestcompleted',['checkQuestCompleted',['../class_quest.html#ad14e09a45a8a5a0538c115c7075c18bb',1,'Quest']]],
   ['chosenquests',['chosenQuests',['../class_quest_manager.html#ad3461123bea7d083ba7423f72b09c534',1,'QuestManager']]],
   ['cond',['cond',['../class_quest.html#a4f7f6a6dd6df6c493003b53b21c22c31',1,'Quest']]],
   ['conditions',['conditions',['../class_quest_manager.html#ae74692c230f97484e8e7c656a4ed1526',1,'QuestManager']]],

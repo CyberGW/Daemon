@@ -119,7 +119,9 @@ public class LevelManager : MonoBehaviour {
 		if (GlobalFunctions.instance.currentLevel == 8) {
 			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer ();
 		}
+		finishQuest ();
 		GlobalFunctions.instance.currentLevel += 1;
+		QManagerObj.manager.updateCurrentQuest (GlobalFunctions.instance.levelOrder [GlobalFunctions.instance.currentLevel]);
 		Debug.Log ("Beat the level!");
 		GameObject.FindObjectOfType<PlayerMovement> ().setCanMove (false);
 		while (!Input.GetKeyDown (KeyCode.Space)) { 
@@ -130,6 +132,16 @@ public class LevelManager : MonoBehaviour {
             SceneChanger.instance.loadLevel("EndScene", worldMapExitPosition);
         else
             SceneChanger.instance.loadLevel ("WorldMap", worldMapExitPosition);
+	}
+
+	private void finishQuest () {
+		Quest currentQuest = QManagerObj.manager.CurrentQuest;
+		if (currentQuest != null) {
+			if (currentQuest.checkQuestCompleted () == questStatues.completed) {
+				PlayerData.instance.data.giveExpToAll (currentQuest.exp);
+				PlayerData.instance.data.Money += currentQuest.money;
+			}
+		}
 	}
 
 }

@@ -19,7 +19,28 @@ public class ExplorationMenuScript : MonoBehaviour {
 		//menuBox = gameObject.transform.Find ("MenuScript").gameObject;
 		SceneChanger.instance.menuOpen = true;
 		//setInactive ();
+		displayQuest(GameObject.Find("Quest1/Padding"), QManagerObj.manager.firstQuest);
+		displayQuest(GameObject.Find("Quest2/Padding"), QManagerObj.manager.secondQuest);
 	}
+
+	private void displayQuest (GameObject panel, Quest quest) {
+		panel.transform.Find ("Title").GetComponent<Text> ().text = "Degree: " + quest.title;
+		panel.transform.Find ("Main").GetComponent<Text> ().text = "Main: " + quest.Main.Desc;
+		panel.transform.Find ("Side").GetComponent<Text> ().text = "Side: " + quest.Side.Desc;
+		panel.transform.Find ("Cond").GetComponent<Text> ().text = "Cond: " + quest.Cond.Desc;
+		string status;
+		if (QManagerObj.manager.CurrentQuest == quest) {
+			status = "Ongoing";
+		} else if (quest.Completed == questStatues.completed) {
+			status = "Completed";
+		} else if (quest.Completed == questStatues.failed) {
+			status = "Failed";
+		} else {
+			status = "Not started";
+		}
+		panel.transform.Find ("Status").GetComponent<Text> ().text = "Status: " + status;
+	}
+
 
 	/// <summary>
 	/// Hide menu and renable player movement

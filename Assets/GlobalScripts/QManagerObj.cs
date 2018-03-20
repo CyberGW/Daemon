@@ -19,6 +19,7 @@ public class QManagerObj : MonoBehaviour {
 /// <summary>
 /// A class to manage the tracking and completion of quests
 /// </summary>
+[System.Serializable]
 public class QuestManager {
 
 	/// <summary>
@@ -52,6 +53,24 @@ public class QuestManager {
 		this.chosenQuests = new Quest[2];
 	}
 
+	public Quest CurrentQuest {
+		get {
+			return this.currentQuest;
+		}
+	}
+
+	public Quest firstQuest {
+		get {
+			return this.chosenQuests [0];
+		}
+	}
+
+	public Quest secondQuest {
+		get {
+			return this.chosenQuests [1];
+		}
+	}
+
 	/// <summary>
 	/// Set current quest, set all dictionary objects to their default value and start timer if an inTimeLimit quest
 	/// </summary>
@@ -67,10 +86,16 @@ public class QuestManager {
 			if (def.Type == questTypes.inTimeLimit) {
 				finishTime = (int) Time.time + int.Parse (def.Data);
 			}
+			Debug.Log (conditions [def]);
 		}
 
 	}
 
+	/// <summary>
+	/// Determines whether a quest has a negative condition or not, meaning logging a variable means the quest has failed rather than passed
+	/// </summary>
+	/// <returns><c>true</c>, if negative condition., <c>false</c> otherwise.</returns>
+	/// <param name="type">Type.</param>
 	private bool isNegativeQuestCond(questTypes type) {
 		return negativeQuestConds.Contains (type);
 	}
@@ -81,12 +106,29 @@ public class QuestManager {
 	/// <returns><c>true</c>, if default value is true, <c>false</c> otherwise.</returns>
 	/// <param name="type">Type.</param>
 	private bool questDefVal(questTypes type) {
-		return !isNegativeQuestCond (type);
+		return isNegativeQuestCond (type);
 	}
 
+	/// <summary>
+	/// Adds a new quest to chosen quests
+	/// </summary>
+	/// <param name="quest">The quest to add</param>
 	public void addQuest (Quest quest) {
 		chosenQuests [noOfQuests] = quest;
 		noOfQuests++;
+	}
+
+	/// <summary>
+	/// Updates which quest is currently being undertaken
+	/// </summary>
+	/// <param name="level">The level that the user is now on</param>
+	public void updateCurrentQuest (string level) {
+		foreach (Quest quest in chosenQuests) {
+			if (quest.location == level) {
+				startQuest (quest);
+				return;
+			}
+		}
 	}
 
 	/// <summary>
@@ -130,7 +172,7 @@ public class QuestManager {
 				conditions [def] = Time.time <= finishTime;
 			}
 		}
-		if (currentQuest.questCompleted ()) {
+		if (currentQuest.checkQuestCompleted () == questStatues.completed) {
 			Debug.Log ("Quest completed!");
 			PlayerData.instance.data.Money += currentQuest.money;
 			foreach (Player player in PlayerData.instance.data.Players) {

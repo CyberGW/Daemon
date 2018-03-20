@@ -6,6 +6,7 @@ var searchData=
   ['characterfainted',['characterFainted',['../class_battle_manager.html#aca54bf85b4945de9df1dc1af433bf480',1,'BattleManager']]],
   ['checkifplayerlost',['checkIfPlayerLost',['../class_main_battle.html#afa467f0994839837c4e5a020dae5e121',1,'MainBattle']]],
   ['checkifplayerwon',['checkIfPlayerWon',['../class_main_battle.html#ac6e002d717e6e6ade576984457565e67',1,'MainBattle']]],
+  ['checkquestcompleted',['checkQuestCompleted',['../class_quest.html#ad14e09a45a8a5a0538c115c7075c18bb',1,'Quest']]],
   ['countitems',['countItems',['../class_data_manager.html#afde59e90b0d45a759a820866aced4484',1,'DataManager']]],
   ['createbattle',['createBattle',['../class_battle_descriptor.html#a24e75d2f2abdde051562b29c283f0940',1,'BattleDescriptor.createBattle()'],['../class_global_functions.html#a6b8c9ece8de32a57718d90c355414d19',1,'GlobalFunctions.createBattle()']]],
   ['createitem',['createItem',['../class_global_functions.html#a40d04cb0a84377b72d7eb5c20d00d3b1',1,'GlobalFunctions']]],

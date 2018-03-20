@@ -14,6 +14,7 @@ public class SaveData
     public PlayerSaveData[] serializedPlayers = new PlayerSaveData[PlayerData.instance.data.Players.Length];
     public ItemSaveData[] serializedItems = new ItemSaveData[PlayerData.instance.data.Items.Length];
     public ObjectsActiveData serializedObjectsActive = new ObjectsActiveData();
+	public QuestManager questManager;
     public string currentSceneName;
     public int currentLevel;
 	/// <summary> [EXTENSION] - Save the player currently taken for the Biology level </summary>
@@ -96,4 +97,5 @@ public class SaveData
         public int magic;
         public float special;
     }
+
 }
