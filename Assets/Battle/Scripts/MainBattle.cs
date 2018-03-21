@@ -304,6 +304,10 @@ public class MainBattle : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Sets all buttons interactivity state
+	/// </summary>
+	/// <param name="val">Enable buttons if set to <c>true</c>, <c>false</c> otherwise.</param>
 	private void setButtonsInteractable(bool val) {
 		attackButton.interactable = val;
 		playerButton.interactable = val;

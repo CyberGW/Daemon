@@ -3,6 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Script to handle the quest selection menu
+/// </summary>
 public class QuestSelectionScript : MonoBehaviour {
 
 	public Text title;
@@ -10,7 +13,9 @@ public class QuestSelectionScript : MonoBehaviour {
 	public Text side;
 	public Text cond;
 	public Button selectButton;
+	// The quest that is currently selected
 	private string currentQuest = "";
+	// The number of quests that have been selected so far
 	private int chosen = 0;
 
 	private GameObject player;
@@ -22,6 +27,10 @@ public class QuestSelectionScript : MonoBehaviour {
 		showDesc ("CS"); //initally have CS selected
 	}
 
+	/// <summary>
+	/// Shows the description of a particular quest
+	/// </summary>
+	/// <param name="key">The key for the particular quest, as stored in <see cref="QuestInstances.defs"/> </param>
 	public void showDesc (string key) {
 		if (currentQuest == "") {
 			selectButton.interactable = true;
@@ -34,6 +43,10 @@ public class QuestSelectionScript : MonoBehaviour {
 		currentQuest = key;
 	}
 
+	/// <summary>
+	/// When select button is pressed, add quest to <see cref="QManagerObj"/>, stop user from selecting the same quest again,
+	/// and if second quest selected, start the game 
+	/// </summary>
 	public void selectQuest () {
 		QManagerObj.manager.addQuest (QuestInstances.defs [currentQuest]);
 		GameObject.Find(currentQuest).GetComponent<Button>().interactable = false;
@@ -45,6 +58,9 @@ public class QuestSelectionScript : MonoBehaviour {
 		}
 	}
 
+	/// <summary>
+	/// Starts the game, by loading in all default values before loading the CS-Jail scene
+	/// </summary>
 	public void StartLevel(){
 
 		//Setup global data to initial values

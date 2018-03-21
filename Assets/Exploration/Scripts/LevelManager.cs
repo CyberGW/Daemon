@@ -98,18 +98,16 @@ public class LevelManager : MonoBehaviour {
 		string key = SceneManager.GetActiveScene ().name + bossObjectName;
 		if (objectsActive.ContainsKey(key)) {
 			if (!GlobalFunctions.instance.objectsActive [key]) {
-				StartCoroutine (WaitThenLoad ());
+				StartCoroutine (EndLevel ());
 			}
 		}
 	}
     //added "addplayer" to fix bugs present from assessment 2 in assessment 3
 	/// <summary>
 	/// Function called by <see cref="Start"/> once boss has been beaten
-	/// Applies all functions along with waiting 5 seconds for user to read dialogue about new player
 	/// [EXTENSION] - Swap gorilla with the taken player if just finished Biology
 	/// </summary>
-	/// <returns>The then load.</returns>
-	private IEnumerator WaitThenLoad() {
+	private IEnumerator EndLevel() {
         if(addPlayer)
 		PlayerData.instance.data.addPlayer (newPlayer);
 		GameObject dialogueBox = GameObject.Find ("Dialogue Manager").transform.Find ("DialogueBox").gameObject;
@@ -119,7 +117,7 @@ public class LevelManager : MonoBehaviour {
 		if (GlobalFunctions.instance.currentLevel == 8) {
 			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer ();
 		}
-		finishQuest ();
+		QManagerObj.manager.finishQuest ();
 		GlobalFunctions.instance.currentLevel += 1;
 		QManagerObj.manager.updateCurrentQuest (GlobalFunctions.instance.levelOrder [GlobalFunctions.instance.currentLevel]);
 		Debug.Log ("Beat the level!");
@@ -132,16 +130,6 @@ public class LevelManager : MonoBehaviour {
             SceneChanger.instance.loadLevel("EndScene", worldMapExitPosition);
         else
             SceneChanger.instance.loadLevel ("WorldMap", worldMapExitPosition);
-	}
-
-	private void finishQuest () {
-		Quest currentQuest = QManagerObj.manager.CurrentQuest;
-		if (currentQuest != null) {
-			if (currentQuest.checkQuestCompleted () == questStatues.completed) {
-				PlayerData.instance.data.giveExpToAll (currentQuest.exp);
-				PlayerData.instance.data.Money += currentQuest.money;
-			}
-		}
 	}
 
 }

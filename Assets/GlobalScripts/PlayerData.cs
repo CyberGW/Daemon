@@ -191,10 +191,10 @@ public class DataManager {
 	}
 
 	/// <summary>
-	/// [EXTENSION] - Give half exp to all but one player (the player that won the fight)
+	/// [EXTENSION] - Give exp to all players, excluding one by passing their name
 	/// </summary>
-	/// <param name="excPlayer">The player not to give the half exp to</param>
-	/// <param name="totalExp">The total exp received (to be halfed)</param>
+	/// <param name="excPlayer">The player not to give exp to</param>
+	/// <param name="totalExp">The exp to give</param>
 	public void giveExpToAll(int exp, string excPlayer = "") {
 		foreach (Player player in players) {
 			if (player != null) {

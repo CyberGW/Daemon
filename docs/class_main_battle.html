@@ -152,8 +152,8 @@ If they have, exp is given and shown on screen, before saving player data, addin
 <tr class="memitem:afa467f0994839837c4e5a020dae5e121"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#afa467f0994839837c4e5a020dae5e121">checkIfPlayerLost</a> ()</td></tr>
 <tr class="memdesc:afa467f0994839837c4e5a020dae5e121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player lost. If so and no player's left return to main menu, reactivating the player so the menu script can find it. If so and player's left, open switch player menu. Otherwise pass. [EXTENSION] - Log if a player has died  <a href="#afa467f0994839837c4e5a020dae5e121">More...</a><br /></td></tr>
 <tr class="separator:afa467f0994839837c4e5a020dae5e121"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae6f2f777af563a0d967a7e2586e42220"><td class="memItemLeft" align="right" valign="top"><a id="ae6f2f777af563a0d967a7e2586e42220"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>setButtonsInteractable</b> (bool val)</td></tr>
+<tr class="memitem:ae6f2f777af563a0d967a7e2586e42220"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#ae6f2f777af563a0d967a7e2586e42220">setButtonsInteractable</a> (bool val)</td></tr>
+<tr class="memdesc:ae6f2f777af563a0d967a7e2586e42220"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets all buttons interactivity state  <a href="#ae6f2f777af563a0d967a7e2586e42220">More...</a><br /></td></tr>
 <tr class="separator:ae6f2f777af563a0d967a7e2586e42220"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeafd9a98996791467186ee14286706cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#aeafd9a98996791467186ee14286706cc">prepareTurn</a> ()</td></tr>
 <tr class="memdesc:aeafd9a98996791467186ee14286706cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called by any of <a class="el" href="class_main_battle.html#a7e1ab667b7ab20e3d76d49e26fbd58d2" title="Setup a standard attack move for the player ">standardAttack</a>, <a class="el" href="class_main_battle.html#af07e8602e4c524a4803ab5f20aff30ad" title="Setup the first special move for the player [EXTENSION] - Log that a special move has been used ...">special1</a> or <a class="el" href="class_main_battle.html#ae469cabaeab438d23b8306191ce18461" title="Setup the second special move for the player [EXTENSION] - Log that a special move has been used ...">special2</a> Uses <a class="el" href="class_battle_manager.html#a6bf113085b2ee7a71308934ba769b1ce" title="Decides upon whether to pick a special or standard attack move for the enemy Can be forced for testin...">BattleManager.enemyMove</a> to decide on the enemy's move, and hides attack panel and makes attack button unclickable [EXTENSION] - If Gorilla, randomly swap to an attack that damages a team member 25% of the time  <a href="#aeafd9a98996791467186ee14286706cc">More...</a><br /></td></tr>
@@ -480,6 +480,40 @@ Re-enables attack button afterwards </p>
 
 <p>If <a class="el" href="class_main_battle.html#a7c8675673979fe7b0f2fcadc3b2fb3db" title="Run away from battle if BattleManager.ranAway returns true. Otherwise display appropriate text and ma...">ranAway</a> return true, then display message, disable attack button and after 2 seconds call <a class="el" href="class_global_functions.html#ac11baaba4f5bd90098e2c9f9dff5d35f" title="Ends the battle, loading the previousScene, resuming previousBGM and setting the player object to act...">GlobalFunctions.endBattle</a> </p>
 <dl class="section return"><dt>Returns</dt><dd>The away.</dd></dl>
+
+</div>
+</div>
+<a id="ae6f2f777af563a0d967a7e2586e42220"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae6f2f777af563a0d967a7e2586e42220">&#9670;&nbsp;</a></span>setButtonsInteractable()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void MainBattle.setButtonsInteractable </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>val</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Sets all buttons interactivity state </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">val</td><td>Enable buttons if set to <code>true</code>, <code>false</code> otherwise.</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

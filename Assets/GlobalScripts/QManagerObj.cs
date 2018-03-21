@@ -12,7 +12,7 @@ public class QManagerObj : MonoBehaviour {
 	void Start() {
 		DontDestroyOnLoad (gameObject);
 		manager = new QuestManager ();
-	}		
+	}
 
 }
 
@@ -29,7 +29,7 @@ public class QuestManager {
 	private int noOfQuests = 0;
 	private Quest currentQuest = null;
 
-	//The time the quest should be finished by to pass an inTimeLimit quest
+	///<summary> The time the quest should be finished by to pass an inTimeLimit quest </summary>
 	private int finishTime;
 
 	/// <summary>
@@ -165,18 +165,18 @@ public class QuestManager {
 	/// <summary>
 	/// Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully
 	/// </summary>
-	private void finishQuest() {
-		var buffer = new List<QuestDef> (conditions.Keys);
-		foreach (QuestDef def in buffer) {
-			if (def.Type == questTypes.inTimeLimit) {
-				conditions [def] = Time.time <= finishTime;
+	public void finishQuest() {
+		if (currentQuest != null) {
+			var buffer = new List<QuestDef> (conditions.Keys);
+			foreach (QuestDef def in buffer) {
+				if (def.Type == questTypes.inTimeLimit) {
+					conditions [def] = Time.time <= finishTime;
+				}
 			}
-		}
-		if (currentQuest.checkQuestCompleted () == questStatues.completed) {
-			Debug.Log ("Quest completed!");
-			PlayerData.instance.data.Money += currentQuest.money;
-			foreach (Player player in PlayerData.instance.data.Players) {
-				player.gainExp (currentQuest.exp);
+			if (currentQuest.checkQuestCompleted () == questStatues.completed) {
+				Debug.Log ("Quest completed!");
+				PlayerData.instance.data.Money += currentQuest.money;
+				PlayerData.instance.data.giveExpToAll (currentQuest.exp);
 			}
 			currentQuest = null;
 		}

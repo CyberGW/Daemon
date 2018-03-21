@@ -2,6 +2,7 @@ var searchData=
 [
   ['end',['End',['../class_end_script.html#aa5e7f6afb8447f0e70764439d7f94d64',1,'EndScript']]],
   ['endbattle',['endBattle',['../class_global_functions.html#ac11baaba4f5bd90098e2c9f9dff5d35f',1,'GlobalFunctions']]],
+  ['endlevel',['EndLevel',['../class_level_manager.html#aa92138a6fa22d5e923605b743bba75f5',1,'LevelManager']]],
   ['endofdialogue',['endOfDialogue',['../class_object_interaction.html#a03c3548d6370788595dd5ca6c4b859a1',1,'ObjectInteraction']]],
   ['endscript',['EndScript',['../class_end_script.html',1,'']]],
   ['enemy',['Enemy',['../class_enemy.html',1,'Enemy'],['../class_global_functions.html#aaad139a5c289660b499dd223cb031c2a',1,'GlobalFunctions.enemy()']]],

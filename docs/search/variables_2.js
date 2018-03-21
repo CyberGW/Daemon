@@ -9,5 +9,6 @@ var searchData=
   ['conditions',['conditions',['../class_quest_manager.html#ae74692c230f97484e8e7c656a4ed1526',1,'QuestManager']]],
   ['costs',['costs',['../class_vendor.html#a084391da4ef08681606d4796b78c1f55',1,'Vendor']]],
   ['createbattle',['createBattle',['../class_object_interaction.html#a8f2c5f5ebae5954a40361c1afcc1beec',1,'ObjectInteraction']]],
-  ['currentlevel',['currentLevel',['../class_global_functions.html#adc1d068e5df57486aedf7b29213ad606',1,'GlobalFunctions']]]
+  ['currentlevel',['currentLevel',['../class_global_functions.html#adc1d068e5df57486aedf7b29213ad606',1,'GlobalFunctions']]],
+  ['currentquest',['currentQuest',['../class_quest_manager.html#aac33432764991e3bd77dede74b166092',1,'QuestManager']]]
 ];

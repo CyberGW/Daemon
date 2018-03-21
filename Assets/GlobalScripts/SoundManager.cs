@@ -58,6 +58,10 @@ public class SoundManager : MonoBehaviour {
 		SFXSource.mute = !val;
 	}
 
+	/// <summary>
+	/// Determines whether sound is currently on
+	/// </summary>
+	/// <returns><c>true</c>, if sound is on <c>false</c> otherwise.</returns>
     public bool isSoundOn()
     {
         return !BGMSource.mute;

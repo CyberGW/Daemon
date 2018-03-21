@@ -24,6 +24,7 @@ public class QuestDef {
 	/// you must defeat for the defeatEnemy type)
 	/// </summary>
 	private KeyValuePair<questTypes, string> pair;
+	/// <summary> The description of the quest aspect, to display to the user </summary>
 	private string desc;
 
 	public QuestDef(string desc, questTypes type, string data = "" ) {

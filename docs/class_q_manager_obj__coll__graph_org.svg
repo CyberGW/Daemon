@@ -48,10 +48,10 @@
 <text text-anchor="start" x="170.5" y="-178.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ addQuest()</text>
 <text text-anchor="start" x="170.5" y="-167.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ updateCurrentQuest()</text>
 <text text-anchor="start" x="170.5" y="-156.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ logQuestVariable()</text>
-<text text-anchor="start" x="170.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; startQuest()</text>
-<text text-anchor="start" x="170.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; isNegativeQuestCond()</text>
-<text text-anchor="start" x="170.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; questDefVal()</text>
-<text text-anchor="start" x="170.5" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; finishQuest()</text>
+<text text-anchor="start" x="170.5" y="-145.5" font-family="Helvetica,sans-Serif" font-size="10.00">+ finishQuest()</text>
+<text text-anchor="start" x="170.5" y="-134.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; startQuest()</text>
+<text text-anchor="start" x="170.5" y="-123.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; isNegativeQuestCond()</text>
+<text text-anchor="start" x="170.5" y="-112.5" font-family="Helvetica,sans-Serif" font-size="10.00">&#45; questDefVal()</text>
 </a>
 </g>
 </g>

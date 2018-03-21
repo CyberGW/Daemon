@@ -70,29 +70,30 @@ $(function() {
 <div class="title">QuestSelectionScript Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Script to handle the quest selection menu  
+ <a href="class_quest_selection_script.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for QuestSelectionScript:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_quest_selection_script__inherit__graph.svg" width="156" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_quest_selection_script__inherit__graph.svg" width="156" height="360"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <div class="dynheader">
 Collaboration diagram for QuestSelectionScript:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_quest_selection_script__coll__graph.svg" width="592" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_quest_selection_script__coll__graph.svg" width="592" height="316"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae7ef7caa4ee1b96df6e0137e01adfbce"><td class="memItemLeft" align="right" valign="top"><a id="ae7ef7caa4ee1b96df6e0137e01adfbce"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>showDesc</b> (string key)</td></tr>
+<tr class="memitem:ae7ef7caa4ee1b96df6e0137e01adfbce"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_selection_script.html#ae7ef7caa4ee1b96df6e0137e01adfbce">showDesc</a> (string key)</td></tr>
+<tr class="memdesc:ae7ef7caa4ee1b96df6e0137e01adfbce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Shows the description of a particular quest  <a href="#ae7ef7caa4ee1b96df6e0137e01adfbce">More...</a><br /></td></tr>
 <tr class="separator:ae7ef7caa4ee1b96df6e0137e01adfbce"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad79ca47ef1f1cab069a5327ffa63cae8"><td class="memItemLeft" align="right" valign="top"><a id="ad79ca47ef1f1cab069a5327ffa63cae8"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>selectQuest</b> ()</td></tr>
+<tr class="memitem:ad79ca47ef1f1cab069a5327ffa63cae8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_selection_script.html#ad79ca47ef1f1cab069a5327ffa63cae8">selectQuest</a> ()</td></tr>
+<tr class="memdesc:ad79ca47ef1f1cab069a5327ffa63cae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">When select button is pressed, add quest to <a class="el" href="class_q_manager_obj.html" title="A Unity Object to house the QuestManager for easy access from other scripts ">QManagerObj</a>, stop user from selecting the same quest again, and if second quest selected, start the game  <a href="#ad79ca47ef1f1cab069a5327ffa63cae8">More...</a><br /></td></tr>
 <tr class="separator:ad79ca47ef1f1cab069a5327ffa63cae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af1074bca8567872844669ef1df510c9c"><td class="memItemLeft" align="right" valign="top"><a id="af1074bca8567872844669ef1df510c9c"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>StartLevel</b> ()</td></tr>
+<tr class="memitem:af1074bca8567872844669ef1df510c9c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_selection_script.html#af1074bca8567872844669ef1df510c9c">StartLevel</a> ()</td></tr>
+<tr class="memdesc:af1074bca8567872844669ef1df510c9c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts the game, by loading in all default values before loading the CS-Jail scene  <a href="#af1074bca8567872844669ef1df510c9c">More...</a><br /></td></tr>
 <tr class="separator:af1074bca8567872844669ef1df510c9c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
@@ -131,6 +132,97 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>chosen</b> = 0</td></t
 GameObject&#160;</td><td class="memItemRight" valign="bottom"><b>player</b></td></tr>
 <tr class="separator:a2e3658464a17874898f252c83ccc1725"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Script to handle the quest selection menu </p>
+</div><h2 class="groupheader">Member Function Documentation</h2>
+<a id="ad79ca47ef1f1cab069a5327ffa63cae8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad79ca47ef1f1cab069a5327ffa63cae8">&#9670;&nbsp;</a></span>selectQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestSelectionScript.selectQuest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>When select button is pressed, add quest to <a class="el" href="class_q_manager_obj.html" title="A Unity Object to house the QuestManager for easy access from other scripts ">QManagerObj</a>, stop user from selecting the same quest again, and if second quest selected, start the game </p>
+
+</div>
+</div>
+<a id="ae7ef7caa4ee1b96df6e0137e01adfbce"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae7ef7caa4ee1b96df6e0137e01adfbce">&#9670;&nbsp;</a></span>showDesc()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestSelectionScript.showDesc </td>
+          <td>(</td>
+          <td class="paramtype">string&#160;</td>
+          <td class="paramname"><em>key</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Shows the description of a particular quest </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">key</td><td>The key for the particular quest, as stored in <a class="el" href="class_quest_instances.html#a5be3671e76cccd6ab6421d0db1fd6c7d" title="A dictionary storing all quests, with keys being the level codes they take place in (e...">QuestInstances.defs</a> </td></tr>
+  </table>
+  </dd>
+</dl>
+
+</div>
+</div>
+<a id="af1074bca8567872844669ef1df510c9c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1074bca8567872844669ef1df510c9c">&#9670;&nbsp;</a></span>StartLevel()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void QuestSelectionScript.StartLevel </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts the game, by loading in all default values before loading the CS-Jail scene </p>
+
+</div>
+</div>
 <hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/Menus/QuestMenu/QuestSelectionScript.cs</li>
 </ul>

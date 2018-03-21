@@ -28,5 +28,6 @@ var searchData=
   ['createitem',['createItem',['../class_global_functions.html#a40d04cb0a84377b72d7eb5c20d00d3b1',1,'GlobalFunctions']]],
   ['createitemcell',['createItemCell',['../class_items_menu_script.html#adb4222c92bf3e917aa7beedfec3b9b6d',1,'ItemsMenuScript']]],
   ['createspecialmove',['createSpecialMove',['../class_battle_descriptor.html#af5bebd0ec5a8d72f1fa691434c6ad444',1,'BattleDescriptor']]],
-  ['currentlevel',['currentLevel',['../class_global_functions.html#adc1d068e5df57486aedf7b29213ad606',1,'GlobalFunctions']]]
+  ['currentlevel',['currentLevel',['../class_global_functions.html#adc1d068e5df57486aedf7b29213ad606',1,'GlobalFunctions']]],
+  ['currentquest',['currentQuest',['../class_quest_manager.html#aac33432764991e3bd77dede74b166092',1,'QuestManager']]]
 ];

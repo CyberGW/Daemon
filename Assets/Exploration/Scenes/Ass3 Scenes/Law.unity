@@ -1146,7 +1146,7 @@ MonoBehaviour:
   battleMoney: 35
   battleItem: 0
   canRunAway: 0
-  name: THE FUTURE PRIMINISTER
+  name: The Future Priminister
   sprite: {fileID: 2800000, guid: e50c1fa1d68e9604aa3287172bdfecfb, type: 3}
   level: 13
   health: 100
