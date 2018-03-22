@@ -93,4 +93,11 @@ public class Player : Character {
 		expToNextLevel = level * 200;
 	}
 
+	/// <summary>
+	/// Clone this instance.
+	/// </summary>
+	public Player Clone() {
+		return new Player (name, level, health, attack, defence, maximumMagic, magic, luck, speed, exp, item, special1, special2, image);
+	}
+
 }

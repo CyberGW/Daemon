@@ -1,8 +1,8 @@
 <map id="Character" name="Character">
-<area shape="rect" id="node5" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="442,1108,557,1215"/>
-<area shape="rect" id="node7" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="268,601,357,678"/>
-<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="503,564,653,715"/>
-<area shape="rect" id="node4" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="434,1277,565,1413"/>
-<area shape="rect" id="node6" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="422,792,577,1045"/>
+<area shape="rect" id="node5" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="442,1123,557,1229"/>
+<area shape="rect" id="node7" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="268,608,357,685"/>
+<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="503,564,653,729"/>
+<area shape="rect" id="node4" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="434,1292,565,1428"/>
+<area shape="rect" id="node6" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="422,807,577,1060"/>
 <area shape="rect" id="node10" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="628,314,731,421"/>
 </map>

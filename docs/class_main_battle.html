@@ -76,12 +76,14 @@ $(function() {
 <div class="dynheader">
 Inheritance diagram for MainBattle:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_main_battle__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_main_battle__inherit__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <div class="dynheader">
 Collaboration diagram for MainBattle:</div>
 <div class="dyncontent">
-<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_main_battle__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="class_main_battle__coll__graph.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+</div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -149,6 +151,12 @@ If they have, exp is given and shown on screen, before saving player data, addin
 <tr class="memitem:a955f305966c8000cd511bc64ebbce315"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#a955f305966c8000cd511bc64ebbce315">updateExpHelper</a> (int gainedExp, bool levelledUp)</td></tr>
 <tr class="memdesc:a955f305966c8000cd511bc64ebbce315"><td class="mdescLeft">&#160;</td><td class="mdescRight">A helper function for <a class="el" href="class_main_battle.html#aafecb33944f3ff97ba34e0ef6ae304a4" title="Updates the saved and displayed exp ">updateExp</a> that performs an exp increase within a single level interval. Updates text display if player levels up  <a href="#a955f305966c8000cd511bc64ebbce315">More...</a><br /></td></tr>
 <tr class="separator:a955f305966c8000cd511bc64ebbce315"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa11c34b45a8ac88fa9c5b474f944a715"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#aa11c34b45a8ac88fa9c5b474f944a715">createOriginalCopy</a> (<a class="el" href="class_player.html">Player</a>[] players)</td></tr>
+<tr class="memdesc:aa11c34b45a8ac88fa9c5b474f944a715"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a deep copy of the original player array  <a href="#aa11c34b45a8ac88fa9c5b474f944a715">More...</a><br /></td></tr>
+<tr class="separator:aa11c34b45a8ac88fa9c5b474f944a715"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3e2177d2429cb90a254671fd7813347b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_player.html">Player</a> []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#a3e2177d2429cb90a254671fd7813347b">restoreOriginalStats</a> (<a class="el" href="class_player.html">Player</a>[] newCopy)</td></tr>
+<tr class="memdesc:a3e2177d2429cb90a254671fd7813347b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Restores all players to their original stats, except from the changes in health and magic  <a href="#a3e2177d2429cb90a254671fd7813347b">More...</a><br /></td></tr>
+<tr class="separator:a3e2177d2429cb90a254671fd7813347b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afa467f0994839837c4e5a020dae5e121"><td class="memItemLeft" align="right" valign="top">IEnumerator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#afa467f0994839837c4e5a020dae5e121">checkIfPlayerLost</a> ()</td></tr>
 <tr class="memdesc:afa467f0994839837c4e5a020dae5e121"><td class="mdescLeft">&#160;</td><td class="mdescRight">Checks if player lost. If so and no player's left return to main menu, reactivating the player so the menu script can find it. If so and player's left, open switch player menu. Otherwise pass. [EXTENSION] - Log if a player has died  <a href="#afa467f0994839837c4e5a020dae5e121">More...</a><br /></td></tr>
 <tr class="separator:afa467f0994839837c4e5a020dae5e121"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -191,6 +199,9 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>moneyReward</b></td></
 <tr class="memitem:a3d007dab098a0a211bc2cd5e4feefb5f"><td class="memItemLeft" align="right" valign="top"><a id="a3d007dab098a0a211bc2cd5e4feefb5f"></a>
 <a class="el" href="class_item.html">Item</a>&#160;</td><td class="memItemRight" valign="bottom"><b>itemReward</b></td></tr>
 <tr class="separator:a3d007dab098a0a211bc2cd5e4feefb5f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7d82d458eaa719df2acf3e6882968cf1"><td class="memItemLeft" align="right" valign="top"><a id="a7d82d458eaa719df2acf3e6882968cf1"></a>
+<a class="el" href="class_player.html">Player</a> []&#160;</td><td class="memItemRight" valign="bottom"><b>originalCopy</b></td></tr>
+<tr class="separator:a7d82d458eaa719df2acf3e6882968cf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a4d056a1d95a8e6a821de0845ccdfef"><td class="memItemLeft" align="right" valign="top"><a id="a6a4d056a1d95a8e6a821de0845ccdfef"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
 <tr class="separator:a6a4d056a1d95a8e6a821de0845ccdfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -305,6 +316,41 @@ AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>victory</b></td>
 <p>Checks if the player has won<br />
 If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle [EXTENSION] - Log the enemy defeated, call PlayerData.expShare </p>
 <dl class="section return"><dt>Returns</dt><dd>Coroutine function to update exp bar</dd></dl>
+
+</div>
+</div>
+<a id="aa11c34b45a8ac88fa9c5b474f944a715"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa11c34b45a8ac88fa9c5b474f944a715">&#9670;&nbsp;</a></span>createOriginalCopy()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player.html">Player</a> [] MainBattle.createOriginalCopy </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a> []&#160;</td>
+          <td class="paramname"><em>players</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Creates a deep copy of the original player array </p>
+<dl class="section return"><dt>Returns</dt><dd>The deep copy</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">players</td><td>The array of players to be copied</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -452,6 +498,41 @@ Re-enables attack button afterwards </p>
 </div><div class="memdoc">
 
 <p>Run away from battle if <a class="el" href="class_battle_manager.html#a802a257580e9cc0bdb17c90e5fd11355" title="Generate whether the player has run away or not, dependent upon speed stats and random element ...">BattleManager.ranAway</a> returns true. Otherwise display appropriate text and make sure run cannot be selected again that move </p>
+
+</div>
+</div>
+<a id="a3e2177d2429cb90a254671fd7813347b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3e2177d2429cb90a254671fd7813347b">&#9670;&nbsp;</a></span>restoreOriginalStats()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="class_player.html">Player</a> [] MainBattle.restoreOriginalStats </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_player.html">Player</a> []&#160;</td>
+          <td class="paramname"><em>newCopy</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Restores all players to their original stats, except from the changes in health and magic </p>
+<dl class="section return"><dt>Returns</dt><dd>The array of players with all stat changes reverted</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newCopy</td><td>The new copy of the player array, with stat changes</td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>

@@ -1,9 +1,9 @@
 <map id="LowerDefence" name="LowerDefence">
 <area shape="rect" id="node2" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="190,160,321,296"/>
 <area shape="rect" id="node5" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="579,451,705,689"/>
-<area shape="rect" id="node3" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="369,1296,483,1403"/>
-<area shape="rect" id="node8" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="631,980,786,1233"/>
+<area shape="rect" id="node3" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="369,1311,483,1417"/>
+<area shape="rect" id="node8" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="631,995,786,1248"/>
 <area shape="rect" id="node12" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="469,320,572,427"/>
-<area shape="rect" id="node9" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="916,789,1005,866"/>
-<area shape="rect" id="node11" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="677,752,826,903"/>
+<area shape="rect" id="node9" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="916,796,1005,873"/>
+<area shape="rect" id="node11" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="677,752,826,917"/>
 </map>

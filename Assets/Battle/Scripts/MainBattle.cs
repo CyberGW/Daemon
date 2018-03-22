@@ -25,6 +25,7 @@ public class MainBattle : MonoBehaviour {
 	private Enemy enemy;
 	private int moneyReward;
 	private Item itemReward;
+	private Player[] originalCopy;
 	//Local Variables
 	private string text;
 	public bool playerDied;
@@ -79,6 +80,8 @@ public class MainBattle : MonoBehaviour {
 		enemyObject = GlobalFunctions.instance.getEnemy ();
 		moneyReward = GlobalFunctions.instance.getMoney ();
 		itemReward = GlobalFunctions.instance.getItem ();
+
+		originalCopy = createOriginalCopy (playerArray);
 		manager = new BattleManager (playerArray[0], enemyObject, moneyReward);
 		player = manager.Player;
 		enemy = manager.Enemy;
@@ -214,13 +217,17 @@ public class MainBattle : MonoBehaviour {
 		if (manager.battleWon()) {
 			SoundManager.instance.playBGM(victory);
 			enemySprite.gameObject.SetActive (false);
+			playerArray = restoreOriginalStats(playerArray);
+			//Reassign player to restored copy before giving exp
+			player = playerArray [0];
 			//Wait a frame before changing button states
 			yield return null;
 			setButtonsInteractable (false);
 			yield return StartCoroutine (updateExp(enemy.ExpGiven));
+			Debug.Log (player.Level);
 			playerArray [0] = player;
-			PlayerData.instance.data.giveExpToAll (enemy.ExpGiven / 2, player.Name);
 			PlayerData.instance.data.Players = playerArray;
+			PlayerData.instance.data.giveExpToAll (enemy.ExpGiven / 2, player.Name);
 			PlayerData.instance.data.Money += manager.money;
 			if (itemReward != null) {
 				PlayerData.instance.data.addItem (itemReward);
@@ -277,6 +284,38 @@ public class MainBattle : MonoBehaviour {
 			SoundManager.instance.playSFX ("interact");
 		}
 		yield return new WaitForSeconds (1.5f);
+	}
+
+	/// <summary>
+	/// Creates a deep copy of the original player array
+	/// </summary>
+	/// <returns>The deep copy</returns>
+	/// <param name="players">The array of players to be copied</param>
+	private Player[] createOriginalCopy (Player[] players) {
+		Player[] copy = new Player[6];
+		for (int i = 0; i < copy.Length; i++) {
+			if (players [i] == null) {
+				copy [i] = null;
+			} else {
+				copy [i] = players [i].Clone ();
+			}
+		}
+		return copy;
+	}
+
+	/// <summary>
+	/// Restores all players to their original stats, except from the changes in health and magic
+	/// </summary>
+	/// <returns>The array of players with all stat changes reverted</returns>
+	/// <param name="newCopy">The new copy of the player array, with stat changes</param>
+	private Player[] restoreOriginalStats (Player[] newCopy) {
+		for (int i = 0; i < newCopy.Length; i++) {
+			if (originalCopy [i] != null) {
+				originalCopy [i].Health = newCopy [i].Health;
+				originalCopy [i].Magic = newCopy [i].Magic;
+			}
+		}
+		return originalCopy;
 	}
 
 	/// <summary>

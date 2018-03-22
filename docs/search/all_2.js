@@ -19,6 +19,7 @@ var searchData=
   ['checkifplayerwon',['checkIfPlayerWon',['../class_main_battle.html#ac6e002d717e6e6ade576984457565e67',1,'MainBattle']]],
   ['checkquestcompleted',['checkQuestCompleted',['../class_quest.html#ad14e09a45a8a5a0538c115c7075c18bb',1,'Quest']]],
   ['chosenquests',['chosenQuests',['../class_quest_manager.html#ad3461123bea7d083ba7423f72b09c534',1,'QuestManager']]],
+  ['clone',['Clone',['../class_player.html#ad7969280b0996eee66c18d9585d2003f',1,'Player']]],
   ['cond',['cond',['../class_quest.html#a4f7f6a6dd6df6c493003b53b21c22c31',1,'Quest']]],
   ['conditions',['conditions',['../class_quest_manager.html#ae74692c230f97484e8e7c656a4ed1526',1,'QuestManager']]],
   ['containerdata',['ContainerData',['../class_container_data.html',1,'']]],
@@ -27,6 +28,7 @@ var searchData=
   ['createbattle',['createBattle',['../class_object_interaction.html#a8f2c5f5ebae5954a40361c1afcc1beec',1,'ObjectInteraction.createBattle()'],['../class_battle_descriptor.html#a24e75d2f2abdde051562b29c283f0940',1,'BattleDescriptor.createBattle()'],['../class_global_functions.html#a6b8c9ece8de32a57718d90c355414d19',1,'GlobalFunctions.createBattle()']]],
   ['createitem',['createItem',['../class_global_functions.html#a40d04cb0a84377b72d7eb5c20d00d3b1',1,'GlobalFunctions']]],
   ['createitemcell',['createItemCell',['../class_items_menu_script.html#adb4222c92bf3e917aa7beedfec3b9b6d',1,'ItemsMenuScript']]],
+  ['createoriginalcopy',['createOriginalCopy',['../class_main_battle.html#aa11c34b45a8ac88fa9c5b474f944a715',1,'MainBattle']]],
   ['createspecialmove',['createSpecialMove',['../class_battle_descriptor.html#af5bebd0ec5a8d72f1fa691434c6ad444',1,'BattleDescriptor']]],
   ['currentlevel',['currentLevel',['../class_global_functions.html#adc1d068e5df57486aedf7b29213ad606',1,'GlobalFunctions']]],
   ['currentquest',['currentQuest',['../class_quest_manager.html#aac33432764991e3bd77dede74b166092',1,'QuestManager']]]

@@ -1,9 +1,9 @@
 <map id="DataManager" name="DataManager">
 <area shape="rect" id="node2" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="5,160,108,267"/>
-<area shape="rect" id="node5" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="225,344,374,495"/>
-<area shape="rect" id="node6" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="500,1564,627,1803"/>
-<area shape="rect" id="node7" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="629,1351,759,1487"/>
-<area shape="rect" id="node8" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="441,1181,555,1288"/>
-<area shape="rect" id="node9" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="377,660,531,913"/>
-<area shape="rect" id="node10" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="312,1852,401,1929"/>
+<area shape="rect" id="node5" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="225,344,374,509"/>
+<area shape="rect" id="node6" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="500,1579,627,1817"/>
+<area shape="rect" id="node7" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="629,1365,759,1501"/>
+<area shape="rect" id="node8" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="441,1196,555,1303"/>
+<area shape="rect" id="node9" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="377,675,531,928"/>
+<area shape="rect" id="node10" href="$class_enemy.html" title="Defines an AI controller enemy to fight in battle scenes" alt="" coords="312,1867,401,1944"/>
 </map>

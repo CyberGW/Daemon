@@ -2,7 +2,7 @@
 <area shape="rect" id="node7" href="$class_battle_manager.html" title="Holds current Player and Enemy objects in battle and provides functions for MainBattle and other obje..." alt="" coords="213,300,368,553"/>
 <area shape="rect" id="node2" href="$class_character.html" title="Base abstract class for Enemy and Player to inherit from. Defines all shared variables, their constructor and their setters and getters " alt="" coords="414,1101,541,1340"/>
 <area shape="rect" id="node6" href="$class_character_move.html" title="Astract base class for character moves " alt="" coords="457,719,572,825"/>
-<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="263,1389,412,1540"/>
+<area shape="rect" id="node9" href="$class_player.html" title="Defines a playable character for use in battle scenes" alt="" coords="263,1389,412,1555"/>
 <area shape="rect" id="node5" href="$class_special_move.html" title="Special move abstract base class that expands upon CharacterMove, adding magic properties ..." alt="" coords="704,888,835,1024"/>
 <area shape="rect" id="node10" href="$class_item.html" title="Abstract class for items that can be equipped to a player, increasing some of their stats ..." alt="" coords="778,583,881,689"/>
 </map>
