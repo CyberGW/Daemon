@@ -172,7 +172,7 @@ public class PlayerMovement : MonoBehaviour {
 		Vector2 newPosition = player.transform.position;
 		if (Vector2.Distance (newPosition, previousPosition) > 5) {
 			previousPosition = newPosition;
-			if (Random.value < 0.025) {
+			if (Random.value < 0.025) { 
 				try {
 					BattleDescriptor battle = GameObject.Find ("RandomEncounter").GetComponent<BattleDescriptor> ();
 					battle.createBattle ();
@@ -199,7 +199,7 @@ public class PlayerMovement : MonoBehaviour {
 	/// When the user isn't moving, set the appropriate idle animation based upon <see cref="lastMove"/> 
 	/// </summary>
 	private void setIdle () {
-		if (lastMove != "Idle") {
+		if (lastMove != "Idle" && anim.gameObject.activeSelf) {
 			anim.SetTrigger ("Idle" + lastMove);
 			lastMove = "Idle";
 		}

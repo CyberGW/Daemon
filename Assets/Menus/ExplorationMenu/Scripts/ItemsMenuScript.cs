@@ -28,9 +28,6 @@ public class ItemsMenuScript : MonoBehaviour {
 		data = PlayerData.instance.data;
 		items = data.Items;
 		players = data.Players;
-		GameObject container;
-		GameObject stats;
-		Texture2D image;
 		//Find all cells
 		for (int i = 0; i < 6; i++) {
 			//Find and store the item and player container
@@ -45,18 +42,8 @@ public class ItemsMenuScript : MonoBehaviour {
 			if (players [i] == null) {
 				Destroy (playerContainers [i]);
 			} else {
-				container = playerContainers [i].transform.Find ("Container").gameObject;
-				image = players [i].Image;
-				container.transform.Find("Image").GetComponent<Image>().sprite = 
-					Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
-				container.transform.Find ("Name").GetComponent<Text> ().text = players [i].Name;
-				stats = container.transform.Find ("Stats").gameObject;
-				stats.transform.Find ("Attack").GetComponent<Text> ().text = "Attack: " + players [i].Attack.ToString ();
-				stats.transform.Find ("Defence").GetComponent<Text> ().text = "Defence: " + players [i].Defence.ToString ();
-				stats.transform.Find ("Magic").GetComponent<Text> ().text = "Magic: " + players [i].Magic.ToString () + " / "
-					+ players[i].MaximumMagic.ToString();
-				stats.transform.Find ("Luck").GetComponent<Text> ().text = "Luck: " + players [i].Luck.ToString ();
-				stats.transform.Find ("Speed").GetComponent<Text> ().text = "Speed: " + players [i].Speed.ToString ();
+				
+				updatePlayerStats (i);
 				if (players [i].Item != null) {
 					DragAndDropCell itemCell = playerContainers [i].transform.Find ("Container/Stats/Item").GetComponent<DragAndDropCell> ();
 					createItemCell (itemCell, players [i].Item);
@@ -66,6 +53,34 @@ public class ItemsMenuScript : MonoBehaviour {
 				}
 			}
 		}
+	}
+
+	/// <summary>
+	/// Prints the stats of a player onto the screen
+	/// [EXTENSION] - Code has been separated into a new function, so it can be called to update the stats
+	/// when an item has been moved
+	/// </summary>
+	/// <param name="i">The index of the player whose stats need updating</param>
+	private void updatePlayerStats(int i) {
+		GameObject container;
+		GameObject stats;
+		Texture2D image;
+		Player player = players [i];
+
+		container = playerContainers [i].transform.Find ("Container").gameObject;
+		image = players [i].Image;
+		container.transform.Find("Image").GetComponent<Image>().sprite = 
+			Sprite.Create (image, new Rect (0.0f, 0.0f, image.width, image.height), new Vector2 (0.5f, 0.5f));
+		container.transform.Find ("Name").GetComponent<Text> ().text = players [i].Name;
+		stats = container.transform.Find ("Stats").gameObject;
+
+		stats.transform.Find ("Attack").GetComponent<Text> ().text = "Attack: " + player.Attack.ToString ();
+		Debug.Log (player.Attack);
+		stats.transform.Find ("Defence").GetComponent<Text> ().text = "Defence: " + player.Defence.ToString ();
+		stats.transform.Find ("Magic").GetComponent<Text> ().text = "Magic: " + player.Magic.ToString () + " / "
+			+ player.MaximumMagic.ToString();
+		stats.transform.Find ("Luck").GetComponent<Text> ().text = "Luck: " + player.Luck.ToString ();
+		stats.transform.Find ("Speed").GetComponent<Text> ().text = "Speed: " + player.Speed.ToString ();
 	}
 
 	/// <summary>
@@ -82,6 +97,7 @@ public class ItemsMenuScript : MonoBehaviour {
 
 	/// <summary>
 	/// On the event an item is placed, swap the values in the appropiate arrays
+	/// [EXTENSION] - Call <see cref="updatePlayerStats"/> whenever moved from or moved to a player 
 	/// </summary>
 	/// <param name="desc">The description of the event, containing source and destination cells as well
 	/// as item details</param>
@@ -99,6 +115,7 @@ public class ItemsMenuScript : MonoBehaviour {
 				temp = players [source.Index].Item;
 				players [source.Index].Item = items [dest.Index];
 				items [dest.Index] = temp;
+				updatePlayerStats (source.Index);
 			}
 		} else if (dest.type == "Delete") //  THIS ELSE IF ADDED ASSESSMENT 3
 		{
@@ -120,9 +137,11 @@ public class ItemsMenuScript : MonoBehaviour {
 				temp = players [source.Index].Item;
 				players [source.Index].Item = players [dest.Index].Item;
 				players [dest.Index].Item = temp;
+				updatePlayerStats (source.Index);
 			}
+			updatePlayerStats (dest.Index);
 		}
-	    for (var i =0; i <= 5; i++)
+	    for (var i = 0; i <= 5; i++)
 	    {
 	        Debug.Log(PlayerData.instance.data.Items[i]);
         }

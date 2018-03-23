@@ -40,8 +40,6 @@ public class MainBattle : MonoBehaviour {
 	private GameObject attacksPanel;
 	private GameObject playerStats;
 	private GameObject enemyStats;
-	//private IDictionary<Character, StatsScript> healthBar;
-	//private IDictionary<Character, StatsScript> magicBar;
 	private StatsScript playerHealthBar;
 	private StatsScript playerMagicBar;
 	private StatsScript enemyHealthBar;
@@ -244,6 +242,7 @@ public class MainBattle : MonoBehaviour {
 	/// <returns>Coroutine function to update exp bar</returns>
 	/// <param name="totalExp">The total exp the player has gained</param>
 	private IEnumerator updateExp(int totalExp) {
+		Debug.Log (player.Name);
 		Debug.Log ("totalExp: " + totalExp);
 		yield return new WaitForSeconds (1f);
 		int gainedExp;
@@ -387,6 +386,7 @@ public class MainBattle : MonoBehaviour {
 	/// <summary>
 	/// Switchs the players.
 	/// [EXTENSION] - Log the new player that is being switched in
+	/// 			- Also changed order of <see cref="originalCopy"/> to match 
 	/// </summary>
 	/// <param name="playerIndex">Index of new player in <see cref="DataManager.players"/> array </param>
 	public void switchPlayers(int playerIndex) {
@@ -394,6 +394,9 @@ public class MainBattle : MonoBehaviour {
 		QManagerObj.manager.logQuestVariable (questTypes.onlyOneCharacter, newPlayer.Name);
 		playerMove = new SwitchPlayers (manager, player, newPlayer);
 		PlayerData.instance.data.swapPlayers (0, playerIndex);
+		Player temp = originalCopy [0];
+		originalCopy [0] = originalCopy [playerIndex];
+		originalCopy [playerIndex] = temp;
 		playerSprite.sprite = Sprite.Create (newPlayer.Image, new Rect (0.0f, 0.0f, newPlayer.Image.width, newPlayer.Image.height),
 			new Vector2 (0.5f, 0.5f));
 
@@ -405,9 +408,11 @@ public class MainBattle : MonoBehaviour {
 	/// </summary>
 	public void updateToNewPlayer() {
 		this.player = manager.Player;
+		Debug.Log (player.Name);
 		//Update references
 		playerHealthBar.setUpDisplay(player.Health, 100);
 		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
+		Debug.Log (player.ExpToNextLevel);
 		expBar.setUpDisplay (player.Exp, player.ExpToNextLevel);
 		
 	}
@@ -422,7 +427,12 @@ public class MainBattle : MonoBehaviour {
 		if (!playerDied) {
 			if (player.Name == "Gorilla") {
 				if (Random.value <= 0.25) {
-					playerMove = new StandardAttack (manager, player, PlayerData.instance.data.getAlivePlayer());
+					Player alivePlayer = PlayerData.instance.data.getAlivePlayer ();
+					if (alivePlayer == null) {
+						playerMove = new StandardAttack (manager, player, player);
+					} else {
+						playerMove = new StandardAttack (manager, player, alivePlayer);
+					}
 					gorillaMove = true;
 				}
 			}

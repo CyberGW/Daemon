@@ -13,24 +13,24 @@
 <area shape="rect" id="node13" href="$class_exploration_menu_script.html" title="A script to manage the exploration menu that the user can call up at anytime " alt="" coords="1593,439,1746,648"/>
 <area shape="rect" id="node14" href="$class_global_functions.html" title="Provides functions and variables to be accessed by any game object to allow data to be passed between..." alt="" coords="1770,365,1886,721"/>
 <area shape="rect" id="node15" href="$class_healing_station.html" title="A script describing a healing station, where all player&#39;s health and magic are restored ..." alt="" coords="1910,461,2047,626"/>
-<area shape="rect" id="node16" href="$class_items_menu_script.html" title="Controls all initialisation of menu and updates arrays when an item is moved " alt="" coords="2071,446,2198,641"/>
-<area shape="rect" id="node17" href="$class_level_manager.html" title="A script used to check and handle when a level is beat by defeating the final boss ..." alt="" coords="2223,468,2377,619"/>
-<area shape="rect" id="node18" href="$class_main_battle.html" title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a..." alt="" coords="2401,131,2569,956"/>
-<area shape="rect" id="node19" href="$class_menu_script.html" title="Script to handle the main menu " alt="" coords="2593,424,2697,663"/>
-<area shape="rect" id="node20" href="$class_mini_move.html" title="The movement for the minigame character, includes movement and progression control ..." alt="" coords="2721,402,2863,685"/>
-<area shape="rect" id="node21" href="$class_object_interaction.html" title="A component to add to collider relating to an object that can interact with the player by pressing th..." alt="" coords="2887,424,3025,663"/>
-<area shape="rect" id="node22" href="$class_player_data.html" title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ..." alt="" coords="3049,497,3135,589"/>
-<area shape="rect" id="node23" href="$class_player_menu.html" title="Script for controlling the menu which allows users to switch the order of their team members ..." alt="" coords="3160,483,3277,604"/>
-<area shape="rect" id="node24" href="$class_player_movement.html" title="A script to control the movement and animations of the player" alt="" coords="3302,402,3479,685"/>
-<area shape="rect" id="node25" href="$class_portal.html" title="A component to add to an object, such as when the player touches it they are teleported to a new scen..." alt="" coords="3504,475,3645,611"/>
-<area shape="rect" id="node26" href="$class_q_manager_obj.html" title="A Unity Object to house the QuestManager for easy access from other scripts " alt="" coords="3670,505,3773,582"/>
-<area shape="rect" id="node27" href="$class_quest_instances.html" title="A class storing all the pre&#45;defined quests that the user can choose from " alt="" coords="3797,505,3910,582"/>
-<area shape="rect" id="node28" href="$class_quest_selection_script.html" title="Script to handle the quest selection menu " alt="" coords="3934,431,4079,655"/>
-<area shape="rect" id="node29" href="$class_random_test.html" title="{RandomTest\n||&#45; Start()\l&#45; Update()\l}" alt="" coords="4103,497,4198,589"/>
-<area shape="rect" id="node30" href="$class_scene_changer.html" title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a..." alt="" coords="4223,417,4353,670"/>
-<area shape="rect" id="node31" href="$class_sound_manager.html" title="A script to manage all background music and sound effects in the game " alt="" coords="4377,453,4487,633"/>
-<area shape="rect" id="node32" href="$class_stats_script.html" title="A script used to manage and update all of the stat displays in the battle scene " alt="" coords="4511,453,4635,633"/>
-<area shape="rect" id="node33" href="$class_switch_players_script.html" title="Script to handle the menu allowing users to switch players in and out of battle " alt="" coords="4660,483,4799,604"/>
-<area shape="rect" id="node34" href="$class_vendor.html" title="To be attatched to the Dialogue component of characters if they are to sell items ..." alt="" coords="4823,424,4990,663"/>
-<area shape="rect" id="node35" href="$class_world_map_script.html" title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately" alt="" coords="5015,497,5135,589"/>
+<area shape="rect" id="node16" href="$class_items_menu_script.html" title="Controls all initialisation of menu and updates arrays when an item is moved " alt="" coords="2071,439,2217,648"/>
+<area shape="rect" id="node17" href="$class_level_manager.html" title="A script used to check and handle when a level is beat by defeating the final boss ..." alt="" coords="2241,468,2396,619"/>
+<area shape="rect" id="node18" href="$class_main_battle.html" title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a..." alt="" coords="2420,131,2588,956"/>
+<area shape="rect" id="node19" href="$class_menu_script.html" title="Script to handle the main menu " alt="" coords="2612,424,2716,663"/>
+<area shape="rect" id="node20" href="$class_mini_move.html" title="The movement for the minigame character, includes movement and progression control ..." alt="" coords="2740,402,2881,685"/>
+<area shape="rect" id="node21" href="$class_object_interaction.html" title="A component to add to collider relating to an object that can interact with the player by pressing th..." alt="" coords="2906,424,3043,663"/>
+<area shape="rect" id="node22" href="$class_player_data.html" title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ..." alt="" coords="3067,497,3154,589"/>
+<area shape="rect" id="node23" href="$class_player_menu.html" title="Script for controlling the menu which allows users to switch the order of their team members ..." alt="" coords="3179,483,3296,604"/>
+<area shape="rect" id="node24" href="$class_player_movement.html" title="A script to control the movement and animations of the player" alt="" coords="3321,402,3498,685"/>
+<area shape="rect" id="node25" href="$class_portal.html" title="A component to add to an object, such as when the player touches it they are teleported to a new scen..." alt="" coords="3523,475,3664,611"/>
+<area shape="rect" id="node26" href="$class_q_manager_obj.html" title="A Unity Object to house the QuestManager for easy access from other scripts " alt="" coords="3689,505,3791,582"/>
+<area shape="rect" id="node27" href="$class_quest_instances.html" title="A class storing all the pre&#45;defined quests that the user can choose from " alt="" coords="3815,505,3929,582"/>
+<area shape="rect" id="node28" href="$class_quest_selection_script.html" title="Script to handle the quest selection menu " alt="" coords="3953,431,4098,655"/>
+<area shape="rect" id="node29" href="$class_random_test.html" title="{RandomTest\n||&#45; Start()\l&#45; Update()\l}" alt="" coords="4122,497,4217,589"/>
+<area shape="rect" id="node30" href="$class_scene_changer.html" title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a..." alt="" coords="4241,417,4372,670"/>
+<area shape="rect" id="node31" href="$class_sound_manager.html" title="A script to manage all background music and sound effects in the game " alt="" coords="4396,453,4505,633"/>
+<area shape="rect" id="node32" href="$class_stats_script.html" title="A script used to manage and update all of the stat displays in the battle scene " alt="" coords="4530,453,4654,633"/>
+<area shape="rect" id="node33" href="$class_switch_players_script.html" title="Script to handle the menu allowing users to switch players in and out of battle " alt="" coords="4679,483,4817,604"/>
+<area shape="rect" id="node34" href="$class_vendor.html" title="To be attatched to the Dialogue component of characters if they are to sell items ..." alt="" coords="4842,424,5009,663"/>
+<area shape="rect" id="node35" href="$class_world_map_script.html" title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately" alt="" coords="5033,497,5153,589"/>
 </map>
