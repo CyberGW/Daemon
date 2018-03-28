@@ -73,7 +73,7 @@ public class CarController : MonoBehaviour
     /// </summary>
     public void OnGUI()
     {
-        Rect bounds = new Rect(40,40,140,140);
+        Rect bounds = new Rect(40,45,140,140);
         GUI.Label(bounds, "Level: " + (level+1) + " /3");
     }
     /// <summary>

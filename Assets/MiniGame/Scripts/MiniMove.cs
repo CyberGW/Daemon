@@ -64,7 +64,7 @@ public class MiniMove : MonoBehaviour {
     public void OnGUI()
     {
         //draw on the GUI how many lives the player has
-        Rect bounds = new Rect(240, 40, 340, 140);
+        Rect bounds = new Rect(150, 45, 340, 140);
         GUI.Label(bounds, "Lives: " + lives + " /3");
     }
 

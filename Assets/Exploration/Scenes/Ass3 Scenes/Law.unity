@@ -287,7 +287,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
@@ -330,12 +330,12 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: I don't know why but people might sound a bit different from now on
+      value: I wish it could just go back to normal...
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: oh geez, people seem to be getting real crazy around here
+      value: Oh geez, people seem to be getting real crazy around here
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -345,7 +345,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: treasure
-      value: 6
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
@@ -601,7 +601,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: Who just leaves all these books lying around here
+      value: Who just leaves all these books lying around here?
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
@@ -844,7 +844,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: man, I could be at the gym right now
+      value: man, I could be at the gym right now...
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
@@ -969,7 +969,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: Why did I bother
+      value: Go away I'm trying to keep up with the lecture!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
@@ -1031,7 +1031,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: I'm not paranoid but you won't stop me becoming priminister
+      value: I'm not paranoid but you won't stop me becoming prime minister
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -1041,7 +1041,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: 'You seem to be getting terribly popular, with all your friends '
+      value: You seem to be getting terribly popular, with all your friends
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -1146,8 +1146,8 @@ MonoBehaviour:
   battleMoney: 35
   battleItem: 0
   canRunAway: 0
-  name: The Future Priminister
-  sprite: {fileID: 2800000, guid: e50c1fa1d68e9604aa3287172bdfecfb, type: 3}
+  name: Ambitious Law postgraduate
+  sprite: {fileID: 2800000, guid: b719094e8d564a74d9c4d09098f3cb3a, type: 3}
   level: 13
   health: 100
   attack: 20
@@ -1156,11 +1156,11 @@ MonoBehaviour:
   luck: 1
   speed: 30
   special1: 2
-  special1Text: 'Interjection '
+  special1Text: interjected the speech of
   special1Magic: 1
   special1Value: 0.2
   special2: 0
-  special2Text: Your plan is flawed
+  special2Text: revealed the flaws in the plan of
   special2Magic: 3
   special2Value: 30
 --- !u!1001 &1824465231
@@ -1211,7 +1211,7 @@ Prefab:
         type: 2}
       propertyPath: sprite
       value: 
-      objectReference: {fileID: 2800000, guid: 794630ca5ec10c34dabd248b00a4f870, type: 3}
+      objectReference: {fileID: 2800000, guid: dbed8231aa5b3d4429de2ff1517f68f2, type: 3}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: level
@@ -1250,7 +1250,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special1Text
-      value: I know the law
+      value: boasted about their knoledge to
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -1260,7 +1260,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special2Text
-      value: citizens arrest
+      value: arrested
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}

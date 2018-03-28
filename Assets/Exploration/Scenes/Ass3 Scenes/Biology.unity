@@ -113,6 +113,52 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &117364661
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -11.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1969040398545108, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+      propertyPath: m_Name
+      value: HealingStation (2)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &173730271
 GameObject:
   m_ObjectHideFlags: 0
@@ -195,11 +241,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 22.058401
+      value: 21.22
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 3.399313
+      value: 3.18
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -223,7 +269,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
@@ -302,11 +348,11 @@ MonoBehaviour:
   luck: 5
   speed: 10
   special1: 4
-  special1Text: Spore cloud
+  special1Text: shroweded themselves in a spore cloud to defend against
   special1Magic: 4
   special1Value: 0.5
   special2: 3
-  special2Text: I am SPORETICUS!
+  special2Text: yelled "I am SPORETICUS!" at
   special2Magic: 4
   special2Value: 0.3
 --- !u!1001 &425013059
@@ -346,7 +392,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
@@ -408,7 +454,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: I wouldn't go near them dude, they might be alive and stuff
+      value: I wouldn't go near them dude, they might be alive...
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -859,11 +905,11 @@ MonoBehaviour:
   luck: 10
   speed: 10
   special1: 1
-  special1Text: Enticed in
+  special1Text: enticed in
   special1Magic: 2
   special1Value: 0.2
   special2: 0
-  special2Text: Closed shut around
+  special2Text: snapped shut around
   special2Magic: 3
   special2Value: 20
 --- !u!1001 &1414132141
@@ -1132,12 +1178,12 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special1Text
-      value: Fungal Infection over
+      value: gave a fungal infection to
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special2Text
-      value: 'Ran at '
+      value: 'ran at '
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e53c9bf3ee6cdb4c9186451d197c985, type: 2}
@@ -1183,13 +1229,13 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
-      value: Character (6)
+      value: Shop Character
       objectReference: {fileID: 0}
     - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 794630ca5ec10c34dabd248b00a4f870,
+      objectReference: {fileID: 21300000, guid: bd8ccc81de7b08548b75764fa47ffead,
         type: 3}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -1277,50 +1323,4 @@ Prefab:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}
-  m_IsPrefabParent: 0
---- !u!1001 &2103063615
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 47.443237
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -15.273657
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_RootOrder
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 1969040398545108, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
-      propertyPath: m_Name
-      value: HealingStation (1)
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
   m_IsPrefabParent: 0

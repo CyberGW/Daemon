@@ -150,7 +150,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4558371723145792, guid: e588cd2e011118248b16dd4187506e1c, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 23705658325918224, guid: e588cd2e011118248b16dd4187506e1c,
         type: 2}
@@ -399,7 +399,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4908452959411584, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6fca40b0222e5b343b10fa93841d8d25, type: 2}
@@ -532,7 +532,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &497102368
 Prefab:
@@ -548,11 +548,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -13.303325
+      value: -15.6
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 5.022822
+      value: 3.97
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -576,7 +576,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
@@ -585,7 +585,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: 'they make a sound everytime and I''m sure my flat mates '
+      value: 'They make a sound everytime and I''m sure my flat mates '
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -595,7 +595,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: 'oh boy I sure do like pushing these keys '
+      value: 'Oh boy I sure do like pushing these keys '
       objectReference: {fileID: 0}
     - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -648,7 +648,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
@@ -663,7 +663,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: Your mother effing destuction
+      value: You better Bach off or I'll be Chopin you up!
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -680,7 +680,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: sup sup homey, I'm here to play a little song called..
+      value: Gather round, I'm here to play a little song...
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -709,7 +709,7 @@ MonoBehaviour:
   battleMoney: 66
   battleItem: 0
   canRunAway: 1
-  name: Ripedy Rapidy Roo
+  name: Music student
   sprite: {fileID: 2800000, guid: 0f68722fa6b3ebb4093e4c8d9a5969f7, type: 3}
   level: 14
   health: 166
@@ -719,11 +719,11 @@ MonoBehaviour:
   luck: 10
   speed: 25
   special1: 0
-  special1Text: Spitting fire (quite litteraly)
+  special1Text: plays painfully high notes at
   special1Magic: 15
   special1Value: 50
   special2: 3
-  special2Text: Beat Drop
+  special2Text: improvises a tune for
   special2Magic: 5
   special2Value: 0.5
 --- !u!1001 &714223160
@@ -828,11 +828,11 @@ MonoBehaviour:
   luck: 10
   speed: 10
   special1: 1
-  special1Text: Enticed in
+  special1Text: enticed in
   special1Magic: 2
   special1Value: 0.2
   special2: 0
-  special2Text: Closed shut around
+  special2Text: closed shut around
   special2Magic: 3
   special2Value: 20
 --- !u!1001 &1084714744
@@ -887,7 +887,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.size
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1028,7 +1028,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
@@ -1047,17 +1047,17 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: good thing I'm not like my brother to the east of here
+      value: Good thing I'm not like my counter part to the east of here
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: Hey , watch were you're putting your filthy mits
+      value: Hey, watch were you're putting your filthy mits!
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[2]
-      value: he'd have taken your arm off by now
+      value: He'd have taken your arm off by now!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}

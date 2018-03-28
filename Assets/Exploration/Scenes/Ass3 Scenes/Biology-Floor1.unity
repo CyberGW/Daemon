@@ -231,7 +231,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: You recieved an Goldenarmour
+      value: You recieved an Golden Armour
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
@@ -249,7 +249,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 1.99
+      value: 1.77
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.z
@@ -327,7 +327,7 @@ MonoBehaviour:
   battleMoney: 10
   battleItem: 0
   canRunAway: 0
-  name: Resurected Dinasuar
+  name: Resurected Dinosaur
   sprite: {fileID: 2800000, guid: 8d03301ca5f90364799053e80e9c6bb9, type: 3}
   level: 19
   health: 100
@@ -337,11 +337,11 @@ MonoBehaviour:
   luck: 15
   speed: 30
   special1: 3
-  special1Text: DNA Slice
-  special1Magic: 1
+  special1Text: roared at
+  special1Magic: 3
   special1Value: 0.2
   special2: 0
-  special2Text: DNA Splurged over
+  special2Text: chomped on
   special2Magic: 23
   special2Value: 80
 --- !u!1001 &173203695
@@ -612,7 +612,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special1Text
-      value: Fungal Infection over
+      value: gave a fungal infection to
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -627,7 +627,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special2Text
-      value: 'Ran at '
+      value: ran at
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -843,12 +843,12 @@ MonoBehaviour:
   luck: 60
   speed: 60
   special1: 3
-  special1Text: Power level over 9000
-  special1Magic: 23
+  special1Text: reached a power level of over 9000 against
+  special1Magic: 20
   special1Value: 0.3
   special2: 0
-  special2Text: Sonic Punched
-  special2Magic: 7
+  special2Text: unleashed energy at
+  special2Magic: 10
   special2Value: 80
 --- !u!1 &1995453271
 GameObject:
@@ -969,22 +969,22 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: hey, look what I found
+      value: Hey, look what I found
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: hey listen, look what I found
+      value: Hey listen, look what I found
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[2]
-      value: hey over here, look what I found
+      value: Hey over here, look what I found
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[3]
-      value: it's an annoyed person...
+      value: It's an annoyed person...
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -1046,7 +1046,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.size
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_LocalPosition.x
@@ -1089,7 +1089,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: I could probably hunker here for a while ...
+      value: I could probably hunker here for a while...
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -1176,7 +1176,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[2]
-      value: But you did I'm so grateful,Here take this, I have no use for it
+      value: But you did I'm so grateful, here take this, I have no use for it
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -1186,7 +1186,7 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: You found me!
+      value: Rock on! You found me!
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}

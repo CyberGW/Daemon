@@ -830,17 +830,17 @@ Prefab:
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[1]
-      value: How did you breach into my domain
+      value: How did you breach into my domain?!
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[2]
-      value: Now you must face the music
+      value: Now you must face the music!
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
       propertyPath: dialogue.Array.data[0]
-      value: hmmm hmmmm hmmmm hm..... whaaa
+      value: hmmm hmmmm hmmmm hm..... whaaaat?
       objectReference: {fileID: 0}
     - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
         type: 2}
@@ -879,11 +879,11 @@ MonoBehaviour:
   luck: 25
   speed: 45
   special1: 2
-  special1Text: 'Metrenooooome '
+  special1Text: diminuendoed
   special1Magic: 5
   special1Value: 0.3
   special2: 0
-  special2Text: E sharp
+  special2Text: played tritones at
   special2Magic: 100
   special2Value: 20
 --- !u!1001 &2117996504
