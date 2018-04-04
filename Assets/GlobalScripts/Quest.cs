@@ -108,19 +108,9 @@ public class Quest {
 		get {
 			return this.completed;
 		}
-	}
-
-	/// <summary>
-	/// Determines if the quest has been completed or not
-	/// </summary>
-	/// <returns><c>true</c>, if the dictionary values for all 3 parts of the quest return true, <c>false</c> otherwise.</returns>
-	public questStatues checkQuestCompleted() {
-		if (QManagerObj.manager.conditions [main] && QManagerObj.manager.conditions [side] && QManagerObj.manager.conditions [cond]) {
-			completed = questStatues.completed;
-		} else {
-			completed = questStatues.failed;
+		set {
+			this.completed = value;
 		}
-		return completed;
-	}	
+	}
 
 }

@@ -164,8 +164,10 @@ public class QuestManager {
 
 	/// <summary>
 	/// Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully
+	/// <returns><c>true</c> if quest was compeleted, <c>false</c> otherwise</returns>
 	/// </summary>
-	public void finishQuest() {
+	public bool finishQuest() {
+		bool completed = false;
 		if (currentQuest != null) {
 			var buffer = new List<QuestDef> (conditions.Keys);
 			foreach (QuestDef def in buffer) {
@@ -173,13 +175,30 @@ public class QuestManager {
 					conditions [def] = Time.time <= finishTime;
 				}
 			}
-			if (currentQuest.checkQuestCompleted () == questStatues.completed) {
+			if (checkQuestCompleted (currentQuest) == questStatues.completed) {
 				Debug.Log ("Quest completed!");
 				PlayerData.instance.data.Money += currentQuest.money;
 				PlayerData.instance.data.giveExpToAll (currentQuest.exp);
+				completed = true;
 			}
 			currentQuest = null;
 		}
+		return completed;
 	}
+
+
+
+	/// <summary>
+	/// Determines if the quest has been completed or not
+	/// </summary>
+	/// <returns><c>true</c>, if the dictionary values for all 3 parts of the quest return true, <c>false</c> otherwise.</returns>
+	public questStatues checkQuestCompleted(Quest quest) {
+		if (conditions [quest.Main] && conditions [quest.Side] && conditions [quest.Cond]) {
+			quest.Completed = questStatues.completed;
+		} else {
+			quest.Completed = questStatues.failed;
+		}
+		return quest.Completed;
+	}	
 
 }

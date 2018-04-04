@@ -108,28 +108,65 @@ public class LevelManager : MonoBehaviour {
 	/// [EXTENSION] - Swap gorilla with the taken player if just finished Biology
 	/// </summary>
 	private IEnumerator EndLevel() {
-        if(addPlayer)
-		PlayerData.instance.data.addPlayer (newPlayer);
-		GameObject dialogueBox = GameObject.Find ("Dialogue Manager").transform.Find ("DialogueBox").gameObject;
-		dialogueBox.SetActive (true);
-		Text dialogueText = dialogueBox.transform.Find("DialogueText").GetComponent<Text> ();
-		dialogueText.text = desc;
+		if (addPlayer) {
+			PlayerData.instance.data.addPlayer (newPlayer);
+		}
+
 		if (GlobalFunctions.instance.currentLevel == 8) {
 			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer ();
 		}
-		QManagerObj.manager.finishQuest ();
+
+		bool questFinished = QManagerObj.manager.CurrentQuest != null;
+		int exp = 0;
+		int money = 0;
+		if (questFinished) {
+			exp = QManagerObj.manager.CurrentQuest.exp;
+			money = QManagerObj.manager.CurrentQuest.money;
+		}
+		bool completed = QManagerObj.manager.finishQuest ();
+		yield return finishLevelText (questFinished, completed, exp, money);
+
 		GlobalFunctions.instance.currentLevel += 1;
 		QManagerObj.manager.updateCurrentQuest (GlobalFunctions.instance.levelOrder [GlobalFunctions.instance.currentLevel]);
-		Debug.Log ("Beat the level!");
-		GameObject.FindObjectOfType<PlayerMovement> ().setCanMove (false);
-		while (!Input.GetKeyDown (KeyCode.Space)) { 
-			yield return null;
-		}
-		dialogueBox.SetActive (false);
         if(GlobalFunctions.instance.currentLevel== GlobalFunctions.instance.lastLevel)
             SceneChanger.instance.loadLevel("EndScene", worldMapExitPosition);
         else
             SceneChanger.instance.loadLevel ("WorldMap", worldMapExitPosition);
+	}
+
+	/// <summary>
+	/// Display text upon finishing a level, including quest completion status
+	/// </summary>
+	/// <param name="finished">True if a quest was just finished, false otherwise</param>
+	/// <param name="completed">True if quest was completed, false if failed</param>
+	/// <param name="exp">Exp reward from the quest</param>
+	/// <param name="money">Money reward from the quest</param>
+	private IEnumerator finishLevelText (bool finished, bool completed, int exp, int money) {
+		GameObject dialogueBox = GameObject.Find ("Dialogue Manager").transform.Find ("DialogueBox").gameObject;
+		dialogueBox.SetActive (true);
+		Text dialogueText = dialogueBox.transform.Find ("DialogueText").GetComponent<Text> ();
+		dialogueText.text = desc;
+		GameObject.FindObjectOfType<PlayerMovement> ().setCanMove (false);
+		yield return waitForSpace ();
+		if (finished) {
+			if (completed) {
+				dialogueText.text = "You completed your degree! You got " + exp + " exp and " + money + " money!";
+			} else {
+				dialogueText.text = "You failed your degree! Good job this is a game, ey?";
+			}
+			yield return waitForSpace ();
+		}
+		dialogueBox.SetActive (false);
+	}
+
+	/// <summary>
+	/// Waits for the space bar to be pressed
+	/// </summary>
+	private IEnumerator waitForSpace() {
+		while (!Input.GetKeyDown (KeyCode.Space)) { 
+			yield return null;
+		}
+		yield return null; //wait once more to reset input reading
 	}
 
 }
