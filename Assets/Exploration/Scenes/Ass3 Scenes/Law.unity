@@ -1146,7 +1146,7 @@ MonoBehaviour:
   battleMoney: 35
   battleItem: 0
   canRunAway: 0
-  name: Ambitious Law postgraduate
+  name: Ambitious Law Postgraduate
   sprite: {fileID: 2800000, guid: b719094e8d564a74d9c4d09098f3cb3a, type: 3}
   level: 13
   health: 100
@@ -1205,7 +1205,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: name
-      value: Crazed Law student
+      value: Crazed Law Student
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}

@@ -125,3 +125,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Menus/QuestMenu/QuestSelection.unity
     guid: 4322cdf71e515a349bce4dc0f1bbe7cf
+  - enabled: 1
+    path: Assets/Exploration/Scenes/Ass3 Scenes/HesHall-End.unity
+    guid: 60cdc228b4651b248b1bf9795ba7e08a

@@ -255,8 +255,8 @@ MonoBehaviour:
   special1Value: 15
   special2: 0
   special2Text: fired electrons at
-  special2Magic: 18
-  special2Value: 3
+  special2Magic: 3
+  special2Value: 18
 --- !u!1001 &206625524
 Prefab:
   m_ObjectHideFlags: 0
@@ -528,7 +528,7 @@ MonoBehaviour:
   maximumMagic: 20
   luck: 1
   speed: 1
-  special1: 0
+  special1: 4
   special1Text: used harden to bulk up against
   special1Magic: 4
   special1Value: 0.3
