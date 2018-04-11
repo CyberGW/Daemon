@@ -203,8 +203,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>moneyReward</b></td></
 <tr class="memitem:a6a4d056a1d95a8e6a821de0845ccdfef"><td class="memItemLeft" align="right" valign="top"><a id="a6a4d056a1d95a8e6a821de0845ccdfef"></a>
 string&#160;</td><td class="memItemRight" valign="bottom"><b>text</b></td></tr>
 <tr class="separator:a6a4d056a1d95a8e6a821de0845ccdfef"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa72381ff53b4303d699318eb5ba3957b"><td class="memItemLeft" align="right" valign="top"><a id="aa72381ff53b4303d699318eb5ba3957b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><b>gorillaMove</b></td></tr>
+<tr class="memitem:aa72381ff53b4303d699318eb5ba3957b"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_main_battle.html#aa72381ff53b4303d699318eb5ba3957b">gorillaMove</a></td></tr>
+<tr class="memdesc:aa72381ff53b4303d699318eb5ba3957b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Variable to determine if a gorilla is doing a team-damaging move, to play sound effect and update bars appropriately  <a href="#aa72381ff53b4303d699318eb5ba3957b">More...</a><br /></td></tr>
 <tr class="separator:aa72381ff53b4303d699318eb5ba3957b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4254db4bdfa7b215ef9ca1cb2e3ea4b8"><td class="memItemLeft" align="right" valign="top"><a id="a4254db4bdfa7b215ef9ca1cb2e3ea4b8"></a>
 <a class="el" href="class_enemy.html">Enemy</a>&#160;</td><td class="memItemRight" valign="bottom"><b>enemyObject</b></td></tr>
@@ -313,6 +313,9 @@ AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>victory</b></td>
 
 <p>Checks if the player has won<br />
 If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle [EXTENSION] - Log the enemy defeated, call PlayerData.expShare </p>
+<ul>
+<li>Give half exp to all other players </li>
+</ul>
 <dl class="section return"><dt>Returns</dt><dd>Coroutine function to update exp bar</dd></dl>
 
 </div>
@@ -730,7 +733,7 @@ Re-enables attack button afterwards </p>
 
 <p>Switchs the players. [EXTENSION] - Log the new player that is being switched in </p>
 <ul>
-<li>Also changed order of originalCopy to match </li>
+<li>Also changed order of elements in originalCopy to match </li>
 </ul>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -877,6 +880,30 @@ Re-enables attack button afterwards </p>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
+<a id="aa72381ff53b4303d699318eb5ba3957b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa72381ff53b4303d699318eb5ba3957b">&#9670;&nbsp;</a></span>gorillaMove</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool MainBattle.gorillaMove</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Variable to determine if a gorilla is doing a team-damaging move, to play sound effect and update bars appropriately </p>
+
+</div>
+</div>
 <a id="ad0f29314d670af9f7f0d9c6bdc88cd62"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ad0f29314d670af9f7f0d9c6bdc88cd62">&#9670;&nbsp;</a></span>player</h2>
 

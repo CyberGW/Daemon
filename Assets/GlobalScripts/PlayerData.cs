@@ -102,7 +102,7 @@ public class DataManager {
 				return i;
 			}
 		}
-		return -1;
+		return -1; //if player is not present
 	}
 
 	/// <summary>
@@ -168,9 +168,9 @@ public class DataManager {
 	/// <param name="item">The item to add</param>
 	public void addItem(Item item) {
 		for (int i = 0; i < items.Length; i++) {
-			if (items [i] == null) {
-				items [i] = item;
-				QManagerObj.manager.logQuestVariable (questTypes.gainItem, item.Name);
+			if (items [i] == null) { //find first free slot
+				items [i] = item; //give item
+				QManagerObj.manager.logQuestVariable (questTypes.gainItem, item.Name); //log that the player has gained this item
 				break;
 			}
 		}
@@ -197,9 +197,9 @@ public class DataManager {
 	/// <param name="totalExp">The exp to give</param>
 	public void giveExpToAll(int exp, string excPlayer = "") {
 		foreach (Player player in players) {
-			if (player != null) {
-				if (player.Name != excPlayer) {
-					player.gainExp (exp);
+			if (player != null) { //if player object has been initialised
+				if (player.Name != excPlayer) { //and if not the excluded player
+					player.gainExp (exp); //give the exp
 				}
 			}
 		}
@@ -227,8 +227,10 @@ public class DataManager {
 
 		//if on Biology
 		if (GlobalFunctions.instance.currentLevel == 8) {
+			//save the taken player object
 			savedData.biologyPlayer = PlayerToSerializable (GlobalFunctions.instance.takenPlayer);
 		} else {
+			//otherwise, set to null
 			savedData.biologyPlayer = null;
 		}
 
@@ -293,6 +295,7 @@ public class DataManager {
 
 			//if on biology
 			if (savedGame.currentLevel == 8) {
+				//load in the details of the taken player
 				GlobalFunctions.instance.takenPlayer = SerializableToPLayer(savedGame.biologyPlayer);
 			}
 

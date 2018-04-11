@@ -1,6 +1,7 @@
 var searchData=
 [
-  ['main',['main',['../class_quest.html#ab212e8753c273c4619f99e5fc28928a5',1,'Quest']]],
-  ['money',['money',['../class_global_functions.html#a99a86396298d0e84bb8b0ae01d6dcb75',1,'GlobalFunctions']]],
-  ['moveplayer',['movePlayer',['../class_scene_changer.html#a3b204c06327370f2f5289b5a97b73b23',1,'SceneChanger']]]
+  ['lastlevel',['lastLevel',['../class_global_functions.html#ac4c3d55c0a8f2c82af84371f3a5e2857',1,'GlobalFunctions']]],
+  ['lastmove',['lastMove',['../class_player_movement.html#a104804e5652ab61055c2070e400ad7f2',1,'PlayerMovement']]],
+  ['level',['level',['../class_car_controller.html#a124e0a65a96036e978818fa9bb211e56',1,'CarController']]],
+  ['lives',['lives',['../class_mini_move.html#a336c768772e7b89cbfc79e6d2385a379',1,'MiniMove']]]
 ];

@@ -29,6 +29,9 @@ public class MainBattle : MonoBehaviour {
 	//Local Variables
 	private string text;
 	public bool playerDied;
+	/// <summary>
+	/// Variable to determine if a gorilla is doing a team-damaging move, to play sound effect and update bars appropriately
+	/// </summary>
 	private bool gorillaMove;
 	//Test Enemy
 	private Enemy enemyObject;
@@ -209,6 +212,7 @@ public class MainBattle : MonoBehaviour {
 	/// Checks if the player has won\n
 	/// If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle
 	/// [EXTENSION] - Log the enemy defeated, call <see cref="PlayerData.expShare"/> 
+	/// 			- Give half exp to all other players
 	/// </summary>
 	/// <returns>Coroutine function to update exp bar</returns>
 	private IEnumerator checkIfPlayerWon() {
@@ -225,14 +229,14 @@ public class MainBattle : MonoBehaviour {
 			Debug.Log (player.Level);
 			playerArray [0] = player;
 			PlayerData.instance.data.Players = playerArray;
-			PlayerData.instance.data.giveExpToAll (enemy.ExpGiven / 2, player.Name);
+			PlayerData.instance.data.giveExpToAll (enemy.ExpGiven / 2, player.Name); //give half exp to all other players
 			PlayerData.instance.data.Money += manager.money;
 			if (itemReward != null) {
 				PlayerData.instance.data.addItem (itemReward);
 			}
 			Debug.Log ("Money: " + PlayerData.instance.data.Money);
 			GlobalFunctions.instance.endBattle ();
-			QManagerObj.manager.logQuestVariable (questTypes.defeatEnemy, enemy.Name);
+			QManagerObj.manager.logQuestVariable (questTypes.defeatEnemy, enemy.Name); //log that the enemy has been defeated
 		}
 	}
 
@@ -323,21 +327,21 @@ public class MainBattle : MonoBehaviour {
 	/// [EXTENSION] - Log if a player has died
 	/// </summary>
 	private IEnumerator checkIfPlayerLost() {
-		if (manager.playerFainted()) {
+		if (manager.playerFainted()) { //if a player has fainted
 			yield return null;
-			setButtonsInteractable (false);
-			if (PlayerData.instance.data.playersAlive() == 0) {
+			setButtonsInteractable (false); //stop player from using buttons
+			if (PlayerData.instance.data.playersAlive() == 0) { //if no more players left, so game over
 				textBox.text = "All players have fainted! Game Over.";
 				yield return new WaitForSeconds (2);
 				GlobalFunctions.instance.player.SetActive (true); //Make player active so it can be found again in main menu
 				SoundManager.instance.playBGM(GlobalFunctions.instance.previousBGM);
 				SceneChanger.instance.loadLevel ("mainmenu1");
-			} else {
+			} else { //if other players alive
 				playerDied = true;
 				textBox.text = player.Name + " fainted!";
 				yield return new WaitForSeconds (3);
 				SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
-				QManagerObj.manager.logQuestVariable (questTypes.noFainting, "");
+				QManagerObj.manager.logQuestVariable (questTypes.noFainting, ""); //log that a player has fainted
 			}
 		}
 	}
@@ -366,7 +370,7 @@ public class MainBattle : MonoBehaviour {
 	/// [EXTENSION] - Log that a special move has been used
 	/// </summary>
 	public void special1() {
-		QManagerObj.manager.logQuestVariable (questTypes.noSpecialMoves);
+		QManagerObj.manager.logQuestVariable (questTypes.noSpecialMoves); //log special move use
 		player.Special1.setUp (manager, player, enemy);
 		playerMove = player.Special1;
 		prepareTurn ();
@@ -377,7 +381,7 @@ public class MainBattle : MonoBehaviour {
 	/// [EXTENSION] - Log that a special move has been used
 	/// </summary>
 	public void special2() {
-		QManagerObj.manager.logQuestVariable (questTypes.noSpecialMoves);
+		QManagerObj.manager.logQuestVariable (questTypes.noSpecialMoves); //log the special move use
 		player.Special2.setUp (manager, player, enemy);
 		playerMove = player.Special2;
 		prepareTurn ();
@@ -386,17 +390,19 @@ public class MainBattle : MonoBehaviour {
 	/// <summary>
 	/// Switchs the players.
 	/// [EXTENSION] - Log the new player that is being switched in
-	/// 			- Also changed order of <see cref="originalCopy"/> to match 
+	/// 			- Also changed order of elements in <see cref="originalCopy"/> to match 
 	/// </summary>
 	/// <param name="playerIndex">Index of new player in <see cref="DataManager.players"/> array </param>
 	public void switchPlayers(int playerIndex) {
 		Player newPlayer = PlayerData.instance.data.Players [playerIndex];
-		QManagerObj.manager.logQuestVariable (questTypes.onlyOneCharacter, newPlayer.Name);
-		playerMove = new SwitchPlayers (manager, player, newPlayer);
-		PlayerData.instance.data.swapPlayers (0, playerIndex);
+		QManagerObj.manager.logQuestVariable (questTypes.onlyOneCharacter, newPlayer.Name); //log that more than one player has been used
+		playerMove = new SwitchPlayers (manager, player, newPlayer); //setup playermove
+		PlayerData.instance.data.swapPlayers (0, playerIndex); //switch the players
+		//update originalCopy to match
 		Player temp = originalCopy [0];
 		originalCopy [0] = originalCopy [playerIndex];
 		originalCopy [playerIndex] = temp;
+		//update sprite shown
 		playerSprite.sprite = Sprite.Create (newPlayer.Image, new Rect (0.0f, 0.0f, newPlayer.Image.width, newPlayer.Image.height),
 			new Vector2 (0.5f, 0.5f));
 
@@ -426,14 +432,14 @@ public class MainBattle : MonoBehaviour {
 	private void prepareTurn() {
 		if (!playerDied) {
 			if (player.Name == "Gorilla") {
-				if (Random.value <= 0.25) {
-					Player alivePlayer = PlayerData.instance.data.getAlivePlayer ();
-					if (alivePlayer == null) {
-						playerMove = new StandardAttack (manager, player, player);
-					} else {
-						playerMove = new StandardAttack (manager, player, alivePlayer);
+				if (Random.value <= 0.25) { //on a 25% chance
+					Player alivePlayer = PlayerData.instance.data.getAlivePlayer (); //get an alive player
+					if (alivePlayer == null) { //if there is no other player alive
+						playerMove = new StandardAttack (manager, player, player); //gorilla attacks themself
+					} else { //if there is at least one other player alive
+						playerMove = new StandardAttack (manager, player, alivePlayer); //attack that player
 					}
-					gorillaMove = true;
+					gorillaMove = true; //signal that a gorilla move is occuring so sound effect can be played
 				}
 			}
 			moveChosen = true;

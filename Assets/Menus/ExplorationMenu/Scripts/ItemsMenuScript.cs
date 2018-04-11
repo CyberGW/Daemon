@@ -115,7 +115,7 @@ public class ItemsMenuScript : MonoBehaviour {
 				temp = players [source.Index].Item;
 				players [source.Index].Item = items [dest.Index];
 				items [dest.Index] = temp;
-				updatePlayerStats (source.Index);
+				updatePlayerStats (source.Index); //update the stats of the player that has just received a new item
 			}
 		} else if (dest.type == "Delete") //  THIS ELSE IF ADDED ASSESSMENT 3
 		{
@@ -137,7 +137,7 @@ public class ItemsMenuScript : MonoBehaviour {
 				temp = players [source.Index].Item;
 				players [source.Index].Item = players [dest.Index].Item;
 				players [dest.Index].Item = temp;
-				updatePlayerStats (source.Index);
+				updatePlayerStats (source.Index); //update the stats of the player who has just changed items
 			}
 			updatePlayerStats (dest.Index);
 		}

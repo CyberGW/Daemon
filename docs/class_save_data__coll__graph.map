@@ -1,11 +1,11 @@
 <map id="SaveData" name="SaveData">
-<area shape="rect" id="node2" href="$class_save_data_1_1_vector_data.html" title="A serialzable class to represent 2D vector information. " alt="" coords="137,519,283,596"/>
-<area shape="rect" id="node18" href="$class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. " alt="" coords="341,388,551,465"/>
-<area shape="rect" id="node4" href="$class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. " alt="" coords="1740,686,1928,763"/>
-<area shape="rect" id="node9" href="$class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. " alt="" coords="5,388,167,465"/>
-<area shape="rect" id="node13" href="$class_quest.html" title="A class to store a whole quest, being a sequence of 3 QuestDefs Also stores a name of the quest..." alt="" coords="1259,359,1433,495"/>
-<area shape="rect" id="node14" href="$class_quest_def.html" title="Class defining one quest condition (part of a sequence of 3 in Quest) " alt="" coords="1477,160,1573,267"/>
-<area shape="rect" id="node17" href="$class_save_data_1_1_player_save_data.html" title="A serialzable class to represent a Player. " alt="" coords="461,686,634,763"/>
-<area shape="rect" id="node10" href="$class_quest_manager.html" title="A class to manage the tracking and completion of quests " alt="" coords="1075,620,1238,829"/>
-<area shape="rect" id="node19" href="$class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. " alt="" coords="575,388,725,465"/>
+<area shape="rect" id="node2" href="$class_save_data_1_1_vector_data.html" title="A serialzable class to represent 2D vector information. " alt="" coords="137,515,283,592"/>
+<area shape="rect" id="node18" href="$class_save_data_1_1_special_move_save_data.html" title="A serializable class to represent a SpecialMove. " alt="" coords="341,386,551,463"/>
+<area shape="rect" id="node4" href="$class_save_data_1_1_objects_active_data.html" title="A serializable class to represent string,bool dictonaries. " alt="" coords="1661,689,1849,767"/>
+<area shape="rect" id="node9" href="$class_save_data_1_1_item_save_data.html" title="A serializable class to represent an Item. " alt="" coords="5,386,167,463"/>
+<area shape="rect" id="node13" href="$class_quest.html" title="A class to store a whole quest, being a sequence of 3 QuestDefs Also stores a name of the quest..." alt="" coords="1258,364,1354,485"/>
+<area shape="rect" id="node14" href="$class_quest_def.html" title="Class defining one quest condition (part of a sequence of 3 in Quest) " alt="" coords="1429,160,1525,267"/>
+<area shape="rect" id="node17" href="$class_save_data_1_1_player_save_data.html" title="A serialzable class to represent a Player. " alt="" coords="461,689,634,767"/>
+<area shape="rect" id="node10" href="$class_quest_manager.html" title="A class to manage the tracking and completion of quests " alt="" coords="1069,616,1244,840"/>
+<area shape="rect" id="node19" href="$class_save_data_1_1_texture_data.html" title="A serializable class for holding textures. " alt="" coords="575,386,725,463"/>
 </map>

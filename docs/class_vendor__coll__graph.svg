@@ -460,7 +460,8 @@ var sectionId = 'dynsection-1';
 <g id="edge33" class="edge"><title>Node15&#45;&gt;Node4</title>
 <path fill="none" stroke="#404040" d="M798.22,-1340.34C797.096,-1264.2 791.478,-1045.33 763.5,-866 730.633,-655.33 685.957,-610.079 649.5,-400 643.608,-366.047 639.302,-328.2 636.295,-295.813"/>
 <polygon fill="none" stroke="#404040" points="636.28,-295.639 631.759,-290.021 635.205,-283.688 639.726,-289.305 636.28,-295.639"/>
-<text text-anchor="middle" x="785" y="-743.5" font-family="Helvetica,sans-Serif" font-size="10.00"> +canRunAway</text>
+<text text-anchor="middle" x="783.5" y="-749" font-family="Helvetica,sans-Serif" font-size="10.00"> +autoSave</text>
+<text text-anchor="middle" x="783.5" y="-738" font-family="Helvetica,sans-Serif" font-size="10.00">+canRunAway</text>
 </g>
 <!-- Node15&#45;&gt;Node14 -->
 <g id="edge21" class="edge"><title>Node15&#45;&gt;Node14</title>

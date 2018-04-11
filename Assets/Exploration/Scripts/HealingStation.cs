@@ -36,16 +36,17 @@ public class HealingStation : MonoBehaviour {
 	/// </summary>
 	/// <param name="other">The object this has collided with, triggering functionality when it's the player</param>
 	void OnTriggerStay2D(Collider2D other) {
+		//if collided with player, player wasn't already on space, no dialogue screen is active and the menu isn't open
 		if (other.gameObject.name == "Player" && !inRange && !dManager.dialogueActive && !SceneChanger.instance.menuOpen) {
-			inRange = true;
+			inRange = true; //set inRange to true so won't be triggered again without first stepping off space
 			SoundManager.instance.playSFX ("interact");
 			if (dManager == null) {
-				dManager = FindObjectOfType<DialogueScript> ();
+				dManager = FindObjectOfType<DialogueScript> (); //locate dialoguescript if needed
 			}
-			dManager.showDialogue (text);
-			movementScript.setCanMove (false);
-			healPlayers ();
-			QManagerObj.manager.logQuestVariable (questTypes.noHealingStations);
+			dManager.showDialogue (text); //display text
+			movementScript.setCanMove (false); //stop player moving when text is shown
+			healPlayers (); //heal the players
+			QManagerObj.manager.logQuestVariable (questTypes.noHealingStations); //log healing station has been used
 		}
 	}
 

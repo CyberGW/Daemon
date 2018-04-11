@@ -23,6 +23,8 @@ public class MenuScript : MonoBehaviour {
 	public Button startText;
 	GameObject player;
 	private Text audioText;
+	/// <summary> [EXTENSION] - Reference to the autosave text button</summary>
+	private Text autosaveText;
 	/// <summary>
 	/// Reference for current sound situation
 	/// </summary>
@@ -36,6 +38,7 @@ public class MenuScript : MonoBehaviour {
 		startText = startText.GetComponent<Button> ();
 		exitText = exitText.GetComponent<Button> ();
 		audioText = GameObject.Find ("Audio").GetComponent<Text> ();
+		autosaveText = GameObject.Find ("Autosave").GetComponent<Text> ();
 		quitMenu.enabled = false;
 		player = GameObject.Find ("Player");
 		player.SetActive (false);
@@ -99,6 +102,22 @@ public class MenuScript : MonoBehaviour {
 			soundOn = true;
 			audioText.text = "Sound: On";
 		}
+	}
+
+	/// <summary>
+	/// [EXTENSION] - Function to handle turning autosave on and off
+	/// </summary>
+	public void autosave() {
+		if (GlobalFunctions.instance.autoSave) { //if autosave currently on
+			//set it off and update text
+			GlobalFunctions.instance.autoSave = false;
+			autosaveText.text = "Autosave: Off";
+		} else { //otherwise if currently off
+			//set it on and update text
+			GlobalFunctions.instance.autoSave = true;
+			autosaveText.text = "Autosave: On";
+		}
+		Debug.Log (GlobalFunctions.instance.autoSave);
 	}
 			
 }

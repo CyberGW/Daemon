@@ -40,6 +40,8 @@ public class GlobalFunctions : MonoBehaviour
     public int lastLevel = 10;
 	/// <summary> [EXTENSION]  - The player not in party during the Biology section of the game </summary>
 	public Player takenPlayer = null;
+	[System.NonSerialized]
+	public bool autoSave = true;
 
     //ADDED 7 More items for assesment 3 
     /// <summary>
@@ -73,6 +75,7 @@ public class GlobalFunctions : MonoBehaviour
 	/// [EXTENSION] - Load the menu canvas
 	/// </summary>
 	public void loadMenu() {
+		//load and ensure the gameobject is named "MenuCanvas" so scripts can locate it
 		Instantiate(Resources.Load ("MenuCanvas", typeof(GameObject)) as GameObject).name = "MenuCanvas";
 	}
 

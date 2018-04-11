@@ -94,9 +94,13 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae1c17f8a1db34fdbc9bf2e297033b12e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#ae1c17f8a1db34fdbc9bf2e297033b12e">logQuestVariable</a> (questTypes type, string data=&quot;&quot;)</td></tr>
 <tr class="memdesc:ae1c17f8a1db34fdbc9bf2e297033b12e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Logs a quest condition  <a href="#ae1c17f8a1db34fdbc9bf2e297033b12e">More...</a><br /></td></tr>
 <tr class="separator:ae1c17f8a1db34fdbc9bf2e297033b12e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa733878f5ed998c281a97595f1fc0207"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#aa733878f5ed998c281a97595f1fc0207">finishQuest</a> ()</td></tr>
-<tr class="memdesc:aa733878f5ed998c281a97595f1fc0207"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully  <a href="#aa733878f5ed998c281a97595f1fc0207">More...</a><br /></td></tr>
-<tr class="separator:aa733878f5ed998c281a97595f1fc0207"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aedf49cf2a0bb26191ff58196213e60f7"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#aedf49cf2a0bb26191ff58196213e60f7">finishQuest</a> ()</td></tr>
+<tr class="memdesc:aedf49cf2a0bb26191ff58196213e60f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> if quest was compeleted, <code>false</code> otherwise</dd></dl>
+ <a href="#aedf49cf2a0bb26191ff58196213e60f7">More...</a><br /></td></tr>
+<tr class="separator:aedf49cf2a0bb26191ff58196213e60f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a66b633c9f1cebc7e12f1de85b06f1423"><td class="memItemLeft" align="right" valign="top">questStatues&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest_manager.html#a66b633c9f1cebc7e12f1de85b06f1423">checkQuestCompleted</a> (<a class="el" href="class_quest.html">Quest</a> quest)</td></tr>
+<tr class="memdesc:a66b633c9f1cebc7e12f1de85b06f1423"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the quest has been completed or not  <a href="#a66b633c9f1cebc7e12f1de85b06f1423">More...</a><br /></td></tr>
+<tr class="separator:a66b633c9f1cebc7e12f1de85b06f1423"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -217,8 +221,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>finishTime</b></td></t
 
 </div>
 </div>
-<a id="aa733878f5ed998c281a97595f1fc0207"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa733878f5ed998c281a97595f1fc0207">&#9670;&nbsp;</a></span>finishQuest()</h2>
+<a id="a66b633c9f1cebc7e12f1de85b06f1423"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a66b633c9f1cebc7e12f1de85b06f1423">&#9670;&nbsp;</a></span>checkQuestCompleted()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -227,7 +231,36 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>finishTime</b></td></t
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void QuestManager.finishQuest </td>
+          <td class="memname">questStatues QuestManager.checkQuestCompleted </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="class_quest.html">Quest</a>&#160;</td>
+          <td class="paramname"><em>quest</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Determines if the quest has been completed or not </p>
+<dl class="section return"><dt>Returns</dt><dd><code>true</code>, if the dictionary values for all 3 parts of the quest return true, <code>false</code> otherwise.</dd></dl>
+
+</div>
+</div>
+<a id="aedf49cf2a0bb26191ff58196213e60f7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aedf49cf2a0bb26191ff58196213e60f7">&#9670;&nbsp;</a></span>finishQuest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool QuestManager.finishQuest </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -240,7 +273,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>finishTime</b></td></t
 </table>
 </div><div class="memdoc">
 
-<p>Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully </p>
+<p>Updates the time limit condition if necessary before applying money and exp rewards if quest was completed successfully </p><dl class="section return"><dt>Returns</dt><dd><code>true</code> if quest was compeleted, <code>false</code> otherwise</dd></dl>
+</p>
 
 </div>
 </div>

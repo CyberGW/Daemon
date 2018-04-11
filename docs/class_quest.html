@@ -76,7 +76,7 @@ $(function() {
 <div class="dynheader">
 Collaboration diagram for Quest:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="class_quest__coll__graph.svg" width="503" height="500"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><iframe scrolling="no" frameborder="0" src="class_quest__coll__graph.svg" width="504" height="486"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -84,9 +84,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0d6f908aa66463aaac7671d15503fe71"><td class="memItemLeft" align="right" valign="top"><a id="a0d6f908aa66463aaac7671d15503fe71"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><b>Quest</b> (string title, string location, <a class="el" href="class_quest_def.html">QuestDef</a> <a class="el" href="class_quest.html#ab212e8753c273c4619f99e5fc28928a5">main</a>, <a class="el" href="class_quest_def.html">QuestDef</a> <a class="el" href="class_quest.html#a93c9dee5badbc8fb822db49d5fe4f64c">side</a>, <a class="el" href="class_quest_def.html">QuestDef</a> <a class="el" href="class_quest.html#a4f7f6a6dd6df6c493003b53b21c22c31">cond</a>, int moneyReward, int expReward)</td></tr>
 <tr class="separator:a0d6f908aa66463aaac7671d15503fe71"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad14e09a45a8a5a0538c115c7075c18bb"><td class="memItemLeft" align="right" valign="top">questStatues&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_quest.html#ad14e09a45a8a5a0538c115c7075c18bb">checkQuestCompleted</a> ()</td></tr>
-<tr class="memdesc:ad14e09a45a8a5a0538c115c7075c18bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines if the quest has been completed or not  <a href="#ad14e09a45a8a5a0538c115c7075c18bb">More...</a><br /></td></tr>
-<tr class="separator:ad14e09a45a8a5a0538c115c7075c18bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -115,7 +112,7 @@ Properties</h2></td></tr>
 <a class="el" href="class_quest_def.html">QuestDef</a>&#160;</td><td class="memItemRight" valign="bottom"><b>Cond</b><code> [get]</code></td></tr>
 <tr class="separator:a0a353ef4a1f37c111b36326948657180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2cdbec28d09a45500e45fd7a3cffd82b"><td class="memItemLeft" align="right" valign="top"><a id="a2cdbec28d09a45500e45fd7a3cffd82b"></a>
-questStatues&#160;</td><td class="memItemRight" valign="bottom"><b>Completed</b><code> [get]</code></td></tr>
+questStatues&#160;</td><td class="memItemRight" valign="bottom"><b>Completed</b><code> [get, set]</code></td></tr>
 <tr class="separator:a2cdbec28d09a45500e45fd7a3cffd82b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -138,36 +135,7 @@ questStatues&#160;</td><td class="memItemRight" valign="bottom"><b>completed</b>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class to store a whole quest, being a sequence of 3 QuestDefs Also stores a name of the quest, the location at which it's active along with the rewards for completing the quest (being an amount of money and amount of exp) </p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a id="ad14e09a45a8a5a0538c115c7075c18bb"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad14e09a45a8a5a0538c115c7075c18bb">&#9670;&nbsp;</a></span>checkQuestCompleted()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">questStatues Quest.checkQuestCompleted </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Determines if the quest has been completed or not </p>
-<dl class="section return"><dt>Returns</dt><dd><code>true</code>, if the dictionary values for all 3 parts of the quest return true, <code>false</code> otherwise.</dd></dl>
-
-</div>
-</div>
-<hr/>The documentation for this class was generated from the following file:<ul>
+</div><hr/>The documentation for this class was generated from the following file:<ul>
 <li>Assets/GlobalScripts/Quest.cs</li>
 </ul>
 </div><!-- contents -->

@@ -108,13 +108,6 @@ public class LevelManager : MonoBehaviour {
 	/// [EXTENSION] - Swap gorilla with the taken player if just finished Biology
 	/// </summary>
 	private IEnumerator EndLevel() {
-		if (addPlayer) {
-			PlayerData.instance.data.addPlayer (newPlayer);
-		}
-
-		if (GlobalFunctions.instance.currentLevel == 8) {
-			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer ();
-		}
 
 		bool questFinished = QManagerObj.manager.CurrentQuest != null;
 		int exp = 0;
@@ -126,6 +119,13 @@ public class LevelManager : MonoBehaviour {
 		bool completed = QManagerObj.manager.finishQuest ();
 		yield return finishLevelText (questFinished, completed, exp, money);
 
+		if (addPlayer) {
+			PlayerData.instance.data.addPlayer (newPlayer);
+		}
+		if (GlobalFunctions.instance.currentLevel == 8) { //if on biology level
+			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer (); //restore original player
+		}
+
 		GlobalFunctions.instance.currentLevel += 1;
 		QManagerObj.manager.updateCurrentQuest (GlobalFunctions.instance.levelOrder [GlobalFunctions.instance.currentLevel]);
         if(GlobalFunctions.instance.currentLevel== GlobalFunctions.instance.lastLevel)
@@ -135,7 +135,8 @@ public class LevelManager : MonoBehaviour {
 	}
 
 	/// <summary>
-	/// Display text upon finishing a level, including quest completion status
+	/// Display text upon finishing a level, including quest completion status.
+	/// Also, displays text after Biology having broken the Gorilla curse
 	/// </summary>
 	/// <param name="finished">True if a quest was just finished, false otherwise</param>
 	/// <param name="completed">True if quest was completed, false if failed</param>
@@ -148,6 +149,10 @@ public class LevelManager : MonoBehaviour {
 		dialogueText.text = desc;
 		GameObject.FindObjectOfType<PlayerMovement> ().setCanMove (false);
 		yield return waitForSpace ();
+		if (GlobalFunctions.instance.currentLevel == 8) {
+			dialogueText.text = "You broke the curse, and " + GlobalFunctions.instance.takenPlayer.Name + " is no longer a Gorilla!";
+			yield return waitForSpace ();
+		}
 		if (finished) {
 			if (completed) {
 				dialogueText.text = "You completed your degree! You got " + exp + " exp and " + money + " money!";

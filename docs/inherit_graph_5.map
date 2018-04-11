@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" href="$class_mono_behaviour.html" title="MonoBehaviour" alt="" coords="5,841,116,868"/>
 <area shape="rect" id="node2" href="$class_battle_buttons.html" title="Script to handle the function of the Attack Button in the Battle Scene" alt="" coords="190,5,291,32"/>
 <area shape="rect" id="node3" href="$class_battle_descriptor.html" title="A component that be added to an object to describe the parameters of a battle from within the Unity E..." alt="" coords="183,56,298,83"/>
-<area shape="rect" id="node4" href="$class_biology_script.html" title="BiologyScript" alt="" coords="191,107,290,133"/>
+<area shape="rect" id="node4" href="$class_biology_script.html" title="[EXTENSION] &#45; A script to handle taking a player and turning them into a Gorilla for the Biology leve..." alt="" coords="191,107,290,133"/>
 <area shape="rect" id="node5" href="$class_camera_controller.html" title="Script to move the camera around so that it follows the player" alt="" coords="179,157,302,184"/>
 <area shape="rect" id="node6" href="$class_canvas_script.html" title="Added to a canvas holding the dialogue elements to ensure it&#39;s not destroyed when a new scene is crea..." alt="" coords="191,208,290,235"/>
 <area shape="rect" id="node7" href="$class_car_controller.html" title="A controller to controll the sataus of the minigame and most of its components " alt="" coords="192,259,289,285"/>
@@ -10,7 +10,7 @@
 <area shape="rect" id="node9" href="$class_car_spawner.html" title="A car spawner to spawn cars when triggered by a controller and give the correct variable to the car ..." alt="" coords="195,360,287,387"/>
 <area shape="rect" id="node10" href="$class_container_data.html" title="An attribute to store information for a container in the item menu " alt="" coords="189,411,293,437"/>
 <area shape="rect" id="node11" href="$class_dialogue_script.html" title="Script to show dialogue, as well as step through multiple lines and close afterwards ..." alt="" coords="187,461,294,488"/>
-<area shape="rect" id="node12" href="$class_end_script.html" title="EndScript" alt="" coords="201,512,280,539"/>
+<area shape="rect" id="node12" href="$class_end_script.html" title="Script to manage the end credits screen " alt="" coords="201,512,280,539"/>
 <area shape="rect" id="node13" href="$class_exploration_menu_script.html" title="A script to manage the exploration menu that the user can call up at anytime " alt="" coords="164,563,317,589"/>
 <area shape="rect" id="node14" href="$class_global_functions.html" title="Provides functions and variables to be accessed by any game object to allow data to be passed between..." alt="" coords="183,613,299,640"/>
 <area shape="rect" id="node15" href="$class_healing_station.html" title="A script describing a healing station, where all player&#39;s health and magic are restored ..." alt="" coords="187,664,294,691"/>

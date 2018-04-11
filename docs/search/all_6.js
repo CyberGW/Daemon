@@ -6,5 +6,6 @@ var searchData=
   ['getplayerindex',['getPlayerIndex',['../class_data_manager.html#a25c32613c435a867a361c6016b7291cd',1,'DataManager']]],
   ['giveexptoall',['giveExpToAll',['../class_data_manager.html#ae9aa93d5f8348f4ba407c1a40bea3f88',1,'DataManager']]],
   ['globalfunctions',['GlobalFunctions',['../class_global_functions.html',1,'']]],
-  ['goldenarmour',['GoldenArmour',['../class_golden_armour.html',1,'']]]
+  ['goldenarmour',['GoldenArmour',['../class_golden_armour.html',1,'']]],
+  ['gorillamove',['gorillaMove',['../class_main_battle.html#aa72381ff53b4303d699318eb5ba3957b',1,'MainBattle']]]
 ];

@@ -9,7 +9,8 @@ public class WorldMapScript : MonoBehaviour {
 
 	/// <summary>
 	/// When World Map is loaded, set all beaten levels to red and stop them acting as portals and set the next level to green.
-	/// The future levels are then defaultly uncoloured
+	/// The future levels are then defaultly uncoloured.
+	/// [EXTENSION] - Autosave whenever the user goes to the WorldMap
 	/// </summary>
 	void Start () {
 		string[] levelOrder = GlobalFunctions.instance.levelOrder;
@@ -22,6 +23,9 @@ public class WorldMapScript : MonoBehaviour {
 			} else { //if future level
 				renderBuilding (levelOrder [i], Color.grey, true);
 			}			
+		}
+		if (GlobalFunctions.instance.autoSave) { //if autosave is turned on
+			PlayerData.instance.data.Save (); //save the game
 		}
 	}
 

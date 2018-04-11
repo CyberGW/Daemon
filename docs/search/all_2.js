@@ -17,7 +17,7 @@ var searchData=
   ['charactermove',['CharacterMove',['../class_character_move.html',1,'']]],
   ['checkifplayerlost',['checkIfPlayerLost',['../class_main_battle.html#afa467f0994839837c4e5a020dae5e121',1,'MainBattle']]],
   ['checkifplayerwon',['checkIfPlayerWon',['../class_main_battle.html#ac6e002d717e6e6ade576984457565e67',1,'MainBattle']]],
-  ['checkquestcompleted',['checkQuestCompleted',['../class_quest.html#ad14e09a45a8a5a0538c115c7075c18bb',1,'Quest']]],
+  ['checkquestcompleted',['checkQuestCompleted',['../class_quest_manager.html#a66b633c9f1cebc7e12f1de85b06f1423',1,'QuestManager']]],
   ['chosenquests',['chosenQuests',['../class_quest_manager.html#ad3461123bea7d083ba7423f72b09c534',1,'QuestManager']]],
   ['clone',['Clone',['../class_player.html#ad7969280b0996eee66c18d9585d2003f',1,'Player']]],
   ['cond',['cond',['../class_quest.html#a4f7f6a6dd6df6c493003b53b21c22c31',1,'Quest']]],
@@ -30,6 +30,7 @@ var searchData=
   ['createitemcell',['createItemCell',['../class_items_menu_script.html#adb4222c92bf3e917aa7beedfec3b9b6d',1,'ItemsMenuScript']]],
   ['createoriginalcopy',['createOriginalCopy',['../class_main_battle.html#aa11c34b45a8ac88fa9c5b474f944a715',1,'MainBattle']]],
   ['createspecialmove',['createSpecialMove',['../class_battle_descriptor.html#af5bebd0ec5a8d72f1fa691434c6ad444',1,'BattleDescriptor']]],
+  ['creditscroller',['creditScroller',['../class_end_script.html#a1f4600fba6409997b271e14b3cde0993',1,'EndScript']]],
   ['currentlevel',['currentLevel',['../class_global_functions.html#adc1d068e5df57486aedf7b29213ad606',1,'GlobalFunctions']]],
   ['currentquest',['currentQuest',['../class_quest_manager.html#aac33432764991e3bd77dede74b166092',1,'QuestManager']]]
 ];
