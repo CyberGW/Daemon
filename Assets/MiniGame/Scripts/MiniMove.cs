@@ -57,9 +57,18 @@ public class MiniMove : MonoBehaviour {
         }
         //when at the top go to the next level
         if (transform.position.y > 0)
-            levleup();
+            levelUp();
 
     }
+
+	/// <summary>
+	/// [EXTENSION] - Public function to set <see cref="canMove"/> so that the player's movement can be disabled once the game has been won
+	/// and the scene is in process of transitioning 
+	/// </summary>
+	/// <param name="val">The value to set canMove to</param>
+	public void setCanMove (bool val) {
+		canMove = val;
+	}
 
     public void OnGUI()
     {
@@ -126,11 +135,16 @@ public class MiniMove : MonoBehaviour {
         }
     }
 
+	/// <summary>
+	/// [EXTENSION] - Added sound effect when player hits car
+	/// </summary>
+	/// <param name="collision">Collision.</param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
       //reduce lives by 1 and if less than or equal to zero restart the minigame
         if (collision.tag=="Car")
         {
+			SoundManager.instance.playSFX ("horn");
             lives -= 1;
             if (lives<=0)
             {
@@ -143,12 +157,12 @@ public class MiniMove : MonoBehaviour {
         }
     }
     /// <summary>
-    /// go to the next level involves telling the Carcontroller and going back to the start location
+    /// Reset player location and call <see cref="CarController.levelUp"/> 
     /// </summary>
-    private void levleup()
+    private void levelUp()
     {
         transform.position = new Vector2(xstart, ystart);
-        controller.GetComponent<CarController>().ChangeSpeed(1.1f);
+		controller.GetComponent<CarController> ().levelUp ();
     }
 }
 

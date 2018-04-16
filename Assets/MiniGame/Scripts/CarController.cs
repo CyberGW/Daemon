@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 
 /// <summary>
 /// A controller to controll the sataus of the minigame and most of its components
+/// [EXTENSIONS] - New function added to manage the change of a level
+/// [CHANGES] - Level handling code removed from <see cref="ChangeSpeed"/> and placed in <see cref="levelUp"/>  
 /// </summary>
 public class CarController : MonoBehaviour
 {
@@ -22,11 +24,21 @@ public class CarController : MonoBehaviour
     private SceneChanger sceneChanger;
     /// <summary>Sound effect to play when transitioning</summary>
     private AudioClip SFX;
+	/// <summary>
+	/// [EXTENSION] - Array to track if each car spawner has spawned during the current cycle, to stop duplicates
+	/// </summary>
+	private bool[] spawnedThisCycle;
 
     // Use this for initialization
+	/// <summary>
+	/// [EXTENSION] - Start minigame music
+	/// </summary>
     void Start()
     {
         sceneChanger = GameObject.Find("SceneChanger").GetComponent<SceneChanger>();
+		spawnedThisCycle = new bool[6];
+		//play minigame music
+		SoundManager.instance.playBGM(Resources.Load("Audio/minigame", typeof(AudioClip)) as AudioClip);
     }
 
     // Update is called once per frame
@@ -39,35 +51,61 @@ public class CarController : MonoBehaviour
             level += 1;
         }
         //summon cars in a "nice" patten can increase spd to make cars summon faster
-        if (Mathf.Round(tick)/spd == Mathf.Round(10/spd))
+		if ((10 - tick) <= 1)
         {
-            Spawners[0].GetComponent<CarSpawner>().Trigger(0);
+			if (!spawnedThisCycle [0]) {
+				Spawners [0].GetComponent<CarSpawner> ().Trigger (0);
+				spawnedThisCycle [0] = true;
+			}
         }
-        if (Mathf.Round(tick)/spd == Mathf.Round(30 /spd))
+		if ((30 - tick) <= 1)
         {
-            Spawners[1].GetComponent<CarSpawner>().Trigger(1);
+			if (!spawnedThisCycle [1]) {
+				Spawners [1].GetComponent<CarSpawner> ().Trigger (1);
+				spawnedThisCycle [1] = true;
+			}
         }
-        if (Mathf.Round(tick)/spd == Mathf.Round(50 /spd))
+		if ((50 - tick) <= 1)
         {
-            Spawners[2].GetComponent<CarSpawner>().Trigger(1);
-            Spawners[5].GetComponent<CarSpawner>().Trigger(0);
+			if (!spawnedThisCycle [2]) {
+				Spawners [2].GetComponent<CarSpawner> ().Trigger (1);
+				spawnedThisCycle [2] = true;
+			}
+			if (!spawnedThisCycle [5]) {
+				Spawners [5].GetComponent<CarSpawner> ().Trigger (0);
+				spawnedThisCycle [5] = true;
+			}
         }
-        if (Mathf.Round(tick)/spd == Mathf.Round(70 /spd))
+		if ((70 - tick) <= 1)
         {
-            Spawners[3].GetComponent<CarSpawner>().Trigger(2);
+			if (!spawnedThisCycle [3]) {
+				Spawners [3].GetComponent<CarSpawner> ().Trigger (2);
+				spawnedThisCycle [3] = true;
+			}
         }
-        if (Mathf.Round(tick)/spd == Mathf.Round(90 /spd))
+		if ((90 - tick) <= 1)
         {
-            Spawners[4].GetComponent<CarSpawner>().Trigger(2);
+			if (!spawnedThisCycle [4]) {
+				Spawners [4].GetComponent<CarSpawner> ().Trigger (2);
+				spawnedThisCycle [4] = true;
+			}
         }
         //reset tick when a cycle is done
         tick += spd;
         if (tick > 100)
         {
             tick = 0;
+			resetSpawnedThisCycle ();
         }
 
     }
+
+	private void resetSpawnedThisCycle() {
+		for (int i = 0; i < spawnedThisCycle.Length; i++) {
+			spawnedThisCycle[i] = false;
+		}
+	}
+
     /// <summary>
     /// Draw the current level on the screen
     /// </summary>
@@ -76,33 +114,41 @@ public class CarController : MonoBehaviour
         Rect bounds = new Rect(40,45,140,140);
         GUI.Label(bounds, "Level: " + (level+1) + " /3");
     }
+
+	/// <summary>
+	/// [EXTENSION] - New function taking code from <see cref="ChangeSpeed"/> to separate functionality when a level is beat and to increase the car's speed
+	/// 			- Change music back to main
+	/// </summary>
+	public void levelUp() {
+		if (level == 2) { //if the final level has just been beat
+			//load world map
+			SoundManager.instance.playSFX ("transition");
+			GameObject.FindObjectOfType<MiniMove> ().setCanMove(false);
+			SoundManager.instance.playBGM(Resources.Load("Audio/bgm", typeof(AudioClip)) as AudioClip);
+			if (SceneManager.GetActiveScene ().name == "MiniGame") {
+				sceneChanger.loadLevel ("WorldMap", new Vector2 (-27, -42));
+			} else {
+				sceneChanger.loadLevel ("WorldMap", new Vector2 (23, -45));
+			}
+		} else {
+			//otherwise increase level, car speed and call ChangeSpeed to change car spawn rate
+			level += 1;
+			spd += 0.5f;
+			ChangeSpeed (1.1f);
+		}
+	}
+
     /// <summary>
-    /// Called when the player finishes a level, it increments the level by 1 and 
-    /// checks to see if the player has finished all 3 levels if this is the case
-    /// it loads back into the world map at the correct position
-    /// additionaly it tells all the spawners to increase the car speeds by an amount
+    /// [CHANGE] - Code that changes the level the player is on separated into new function.
+	/// Now only changes the car spawn rate
     /// </summary>
     /// <param name="amount">the amount of which to increase the car speeds</param>
-    public void ChangeSpeed(float amount)
-    {
-        level += 1;
-        spd += 0.5f;
-        for (int i = 0; i < Spawners.Length; i++)
-        {
+    public void ChangeSpeed(float amount) {        
+        for (int i = 0; i < Spawners.Length; i++) {
             Spawners[i].GetComponent<CarSpawner>().Harder(amount);
-        }
-
-        if (level>=3)
-        {
-            SoundManager.instance.playSFX("transition");
-            if(SceneManager.GetActiveScene().name=="MiniGame")
-                sceneChanger.loadLevel("WorldMap", new Vector2(-27,-42));
-            else
-                sceneChanger.loadLevel("WorldMap", new Vector2(23, -45));
-
-        }
-
+        }  
     }
+
     /// <summary>
     /// When the player runs out of lives this is called
     /// It resets level back to 0 and sets all the car speeds back to what they were origionally

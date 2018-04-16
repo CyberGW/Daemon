@@ -27,7 +27,7 @@ public class CarSpawner : MonoBehaviour {
     /// <summary>
     /// Set the diffucilty by multiplying the speeds by amount
     /// </summary>
-    /// <param name="amount">the multipleier of which to increase the speeds</param>
+    /// <param name="amount">the multiplier of which to increase the speeds</param>
     public void Harder(float amount)
     {
         for (int i=0;i<carSpeeds.Length;i++)

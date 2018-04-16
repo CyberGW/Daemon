@@ -29,6 +29,7 @@ public class SoundManager : MonoBehaviour {
 		soundEffects.Add ("transition", Resources.Load ("Audio/transition", typeof(AudioClip)) as AudioClip);
 		soundEffects.Add ("interact", Resources.Load ("Audio/interact", typeof(AudioClip)) as AudioClip);
 		soundEffects.Add ("gorilla", Resources.Load ("Audio/gorilla", typeof(AudioClip)) as AudioClip);
+		soundEffects.Add ("horn", Resources.Load ("Audio/horn", typeof(AudioClip)) as AudioClip);
 	}
 
 	/// <summary>
