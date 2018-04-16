@@ -192,12 +192,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 0
+  battleMoney: 20
   battleItem: 0
   canRunAway: 0
   name: Geek
   sprite: {fileID: 2800000, guid: 0f68722fa6b3ebb4093e4c8d9a5969f7, type: 3}
-  level: 20
+  level: 23
   health: 100
   attack: 20
   defence: 25
@@ -665,12 +665,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 50
+  battleMoney: 20
   battleItem: 0
   canRunAway: 0
   name: Student
   sprite: {fileID: 2800000, guid: 20634dfe19f03ff4bb590dfe09b31ca8, type: 3}
-  level: 15
+  level: 20
   health: 100
   attack: 32
   defence: 20
@@ -871,32 +871,32 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: attack
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: defence
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: maximumMagic
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: luck
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: speed
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: level
-      value: 10
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -1235,12 +1235,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 0
+  battleMoney: 20
   battleItem: 0
   canRunAway: 0
   name: Librarian
   sprite: {fileID: 2800000, guid: f8d4123b9fd9f8544966c9fdffb1a4d4, type: 3}
-  level: 15
+  level: 20
   health: 100
   attack: 25
   defence: 20

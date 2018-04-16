@@ -324,26 +324,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 10
+  battleMoney: 20
   battleItem: 0
   canRunAway: 0
   name: Resurrected Dinosaur
   sprite: {fileID: 2800000, guid: 8d03301ca5f90364799053e80e9c6bb9, type: 3}
-  level: 19
+  level: 42
   health: 100
-  attack: 20
-  defence: 60
-  maximumMagic: 100
-  luck: 15
+  attack: 30
+  defence: 20
+  maximumMagic: 50
+  luck: 5
   speed: 30
   special1: 3
   special1Text: roared at
-  special1Magic: 3
+  special1Magic: 2
   special1Value: 0.2
   special2: 0
   special2Text: chomped on
-  special2Magic: 23
-  special2Value: 80
+  special2Magic: 10
+  special2Value: 50
 --- !u!1001 &173203695
 Prefab:
   m_ObjectHideFlags: 0
@@ -582,7 +582,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: level
-      value: 10
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -592,7 +592,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: defence
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -602,12 +602,12 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: luck
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: speed
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -622,7 +622,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special1Value
-      value: 55
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -637,7 +637,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special2Value
-      value: 55
+      value: 22
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e53c9bf3ee6cdb4c9186451d197c985, type: 2}
@@ -830,18 +830,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 0
+  battleMoney: 100
   battleItem: 0
   canRunAway: 0
   name: Sayan Goose
   sprite: {fileID: 2800000, guid: 4e65bcdbaad86284aa6e654a3459b7f4, type: 3}
-  level: 20
-  health: 240
+  level: 45
+  health: 100
   attack: 40
-  defence: 4
-  maximumMagic: 60
+  defence: 30
+  maximumMagic: 50
   luck: 60
-  speed: 60
+  speed: 40
   special1: 3
   special1Text: reached a power level of over 9000 against
   special1Magic: 20
@@ -849,7 +849,7 @@ MonoBehaviour:
   special2: 0
   special2Text: unleashed energy at
   special2Magic: 10
-  special2Value: 80
+  special2Value: 50
 --- !u!1 &1995453271
 GameObject:
   m_ObjectHideFlags: 0

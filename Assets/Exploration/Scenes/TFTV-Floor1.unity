@@ -540,7 +540,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 50
+  battleMoney: 20
   battleItem: 0
   canRunAway: 0
   name: TFTV Student

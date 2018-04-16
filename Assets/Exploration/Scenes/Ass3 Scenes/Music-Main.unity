@@ -265,17 +265,17 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: level
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: attack
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: defence
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -285,12 +285,12 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: luck
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: speed
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -866,14 +866,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 25
+  battleMoney: 100
   battleItem: 3
   canRunAway: 0
   name: Melody Madness Mandy
   sprite: {fileID: 2800000, guid: b719094e8d564a74d9c4d09098f3cb3a, type: 3}
-  level: 15
+  level: 40
   health: 100
-  attack: 60
+  attack: 50
   defence: 30
   maximumMagic: 30
   luck: 25
@@ -884,7 +884,7 @@ MonoBehaviour:
   special1Value: 0.3
   special2: 0
   special2Text: played tritones at
-  special2Magic: 100
+  special2Magic: 10
   special2Value: 20
 --- !u!1001 &2117996504
 Prefab:

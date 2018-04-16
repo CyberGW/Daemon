@@ -636,7 +636,7 @@ MonoBehaviour:
   canRunAway: 0
   name: Evil Site Staff
   sprite: {fileID: 2800000, guid: a30ee70bf21da8143a10d57deeab75e0, type: 3}
-  level: 12
+  level: 15
   health: 100
   attack: 30
   defence: 7

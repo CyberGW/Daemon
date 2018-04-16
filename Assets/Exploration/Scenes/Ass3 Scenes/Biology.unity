@@ -335,20 +335,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f2ada571bbfb0448a34a040c72af284, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  battleMoney: 30
+  battleMoney: 20
   battleItem: 0
   canRunAway: 0
   name: Sporeticus
   sprite: {fileID: 2800000, guid: f8d4123b9fd9f8544966c9fdffb1a4d4, type: 3}
-  level: 15
-  health: 125
+  level: 41
+  health: 100
   attack: 20
   defence: 30
   maximumMagic: 20
   luck: 5
   speed: 10
   special1: 4
-  special1Text: shroweded themselves in a spore cloud to defend against
+  special1Text: shrouded themselves in a spore cloud to defend against
   special1Magic: 4
   special1Value: 0.5
   special2: 3
@@ -684,7 +684,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &781617244
 Prefab:
@@ -982,7 +982,7 @@ MonoBehaviour:
   canRunAway: 1
   name: Mimic
   sprite: {fileID: 2800000, guid: acc45ea96de9ba9438b0a432a52cca5c, type: 3}
-  level: 17
+  level: 40
   health: 100
   attack: 40
   defence: 10
@@ -1213,7 +1213,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: level
-      value: 10
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -1223,7 +1223,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: defence
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -1233,12 +1233,12 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: luck
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: speed
-      value: 20
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -1248,7 +1248,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special1Value
-      value: 55
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -1258,7 +1258,7 @@ Prefab:
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
       propertyPath: special2Value
-      value: 55
+      value: 22
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
