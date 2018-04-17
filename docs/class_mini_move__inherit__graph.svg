@@ -33,7 +33,7 @@
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
-<g id="a_node2"><a xlink:href="class_mono_behaviour.html" target="_top" xlink:title="{MonoBehaviour\n||}">
+<g id="a_node2"><a xlink:href="class_mono_behaviour.html" target="_top" target="_top" xlink:title="{MonoBehaviour\n||}">
 <polygon fill="none" stroke="black" points="11.5,-248.5 11.5,-305.5 94.5,-305.5 94.5,-248.5 11.5,-248.5"/>
 <text text-anchor="middle" x="53" y="-293.5" font-family="Helvetica,sans-Serif" font-size="10.00">MonoBehaviour</text>
 <polyline fill="none" stroke="black" points="11.5,-286.5 94.5,-286.5 "/>

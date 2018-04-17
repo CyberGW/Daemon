@@ -10,7 +10,7 @@
 <title>Graphical Class Hierarchy</title>
 <!-- Node0 -->
 <g id="node1" class="node"><title>Node0</title>
-<g id="a_node1"><a xlink:href="class_mono_behaviour.html" target="_top" xlink:title="MonoBehaviour">
+<g id="a_node1"><a xlink:href="class_mono_behaviour.html" target="_top" target="_top" xlink:title="MonoBehaviour">
 <polygon fill="none" stroke="black" points="0,-627.5 0,-646.5 83,-646.5 83,-627.5 0,-627.5"/>
 <text text-anchor="middle" x="41.5" y="-634.5" font-family="Helvetica,sans-Serif" font-size="10.00">MonoBehaviour</text>
 </a>
@@ -18,7 +18,7 @@
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
-<g id="a_node2"><a xlink:href="class_battle_buttons.html" target="_top" xlink:title="Script to handle the function of the Attack Button in the Battle Scene">
+<g id="a_node2"><a xlink:href="class_battle_buttons.html" target="_top" target="_top" xlink:title="Script to handle the function of the Attack Button in the Battle Scene">
 <polygon fill="none" stroke="black" points="138.5,-1254.5 138.5,-1273.5 214.5,-1273.5 214.5,-1254.5 138.5,-1254.5"/>
 <text text-anchor="middle" x="176.5" y="-1261.5" font-family="Helvetica,sans-Serif" font-size="10.00">BattleButtons</text>
 </a>
@@ -31,7 +31,7 @@
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<g id="a_node3"><a xlink:href="class_battle_descriptor.html" target="_top" xlink:title="A component that be added to an object to describe the parameters of a battle from within the Unity E...">
+<g id="a_node3"><a xlink:href="class_battle_descriptor.html" target="_top" target="_top" xlink:title="A component that be added to an object to describe the parameters of a battle from within the Unity E...">
 <polygon fill="none" stroke="black" points="133.5,-1216.5 133.5,-1235.5 219.5,-1235.5 219.5,-1216.5 133.5,-1216.5"/>
 <text text-anchor="middle" x="176.5" y="-1223.5" font-family="Helvetica,sans-Serif" font-size="10.00">BattleDescriptor</text>
 </a>
@@ -44,7 +44,7 @@
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
-<g id="a_node4"><a xlink:href="class_biology_script.html" target="_top" xlink:title="[EXTENSION] &#45; A script to handle taking a player and turning them into a Gorilla for the Biology leve...">
+<g id="a_node4"><a xlink:href="class_biology_script.html" target="_top" target="_top" xlink:title="[EXTENSION] &#45; A script to handle taking a player and turning them into a Gorilla for the Biology leve...">
 <polygon fill="none" stroke="black" points="139.5,-1178.5 139.5,-1197.5 213.5,-1197.5 213.5,-1178.5 139.5,-1178.5"/>
 <text text-anchor="middle" x="176.5" y="-1185.5" font-family="Helvetica,sans-Serif" font-size="10.00">BiologyScript</text>
 </a>
@@ -57,7 +57,7 @@
 </g>
 <!-- Node4 -->
 <g id="node5" class="node"><title>Node4</title>
-<g id="a_node5"><a xlink:href="class_camera_controller.html" target="_top" xlink:title="Script to move the camera around so that it follows the player">
+<g id="a_node5"><a xlink:href="class_camera_controller.html" target="_top" target="_top" xlink:title="Script to move the camera around so that it follows the player">
 <polygon fill="none" stroke="black" points="130.5,-1140.5 130.5,-1159.5 222.5,-1159.5 222.5,-1140.5 130.5,-1140.5"/>
 <text text-anchor="middle" x="176.5" y="-1147.5" font-family="Helvetica,sans-Serif" font-size="10.00">CameraController</text>
 </a>
@@ -70,7 +70,7 @@
 </g>
 <!-- Node5 -->
 <g id="node6" class="node"><title>Node5</title>
-<g id="a_node6"><a xlink:href="class_canvas_script.html" target="_top" xlink:title="Added to a canvas holding the dialogue elements to ensure it&#39;s not destroyed when a new scene is crea...">
+<g id="a_node6"><a xlink:href="class_canvas_script.html" target="_top" target="_top" xlink:title="Added to a canvas holding the dialogue elements to ensure it&#39;s not destroyed when a new scene is crea...">
 <polygon fill="none" stroke="black" points="139.5,-1102.5 139.5,-1121.5 213.5,-1121.5 213.5,-1102.5 139.5,-1102.5"/>
 <text text-anchor="middle" x="176.5" y="-1109.5" font-family="Helvetica,sans-Serif" font-size="10.00">CanvasScript</text>
 </a>
@@ -83,7 +83,7 @@
 </g>
 <!-- Node6 -->
 <g id="node7" class="node"><title>Node6</title>
-<g id="a_node7"><a xlink:href="class_car_controller.html" target="_top" xlink:title="A controller to controll the sataus of the minigame and most of its components ">
+<g id="a_node7"><a xlink:href="class_car_controller.html" target="_top" target="_top" xlink:title="A controller to controll the sataus of the minigame and most of its components ">
 <polygon fill="none" stroke="black" points="140,-1064.5 140,-1083.5 213,-1083.5 213,-1064.5 140,-1064.5"/>
 <text text-anchor="middle" x="176.5" y="-1071.5" font-family="Helvetica,sans-Serif" font-size="10.00">CarController</text>
 </a>
@@ -96,7 +96,7 @@
 </g>
 <!-- Node7 -->
 <g id="node8" class="node"><title>Node7</title>
-<g id="a_node8"><a xlink:href="class_car_script.html" target="_top" xlink:title="A script to control the cars for the minigame ">
+<g id="a_node8"><a xlink:href="class_car_script.html" target="_top" target="_top" xlink:title="A script to control the cars for the minigame ">
 <polygon fill="none" stroke="black" points="148,-1026.5 148,-1045.5 205,-1045.5 205,-1026.5 148,-1026.5"/>
 <text text-anchor="middle" x="176.5" y="-1033.5" font-family="Helvetica,sans-Serif" font-size="10.00">CarScript</text>
 </a>
@@ -109,7 +109,7 @@
 </g>
 <!-- Node8 -->
 <g id="node9" class="node"><title>Node8</title>
-<g id="a_node9"><a xlink:href="class_car_spawner.html" target="_top" xlink:title="A car spawner to spawn cars when triggered by a controller and give the correct variable to the car ...">
+<g id="a_node9"><a xlink:href="class_car_spawner.html" target="_top" target="_top" xlink:title="A car spawner to spawn cars when triggered by a controller and give the correct variable to the car ...">
 <polygon fill="none" stroke="black" points="142,-988.5 142,-1007.5 211,-1007.5 211,-988.5 142,-988.5"/>
 <text text-anchor="middle" x="176.5" y="-995.5" font-family="Helvetica,sans-Serif" font-size="10.00">CarSpawner</text>
 </a>
@@ -122,7 +122,7 @@
 </g>
 <!-- Node9 -->
 <g id="node10" class="node"><title>Node9</title>
-<g id="a_node10"><a xlink:href="class_container_data.html" target="_top" xlink:title="An attribute to store information for a container in the item menu ">
+<g id="a_node10"><a xlink:href="class_container_data.html" target="_top" target="_top" xlink:title="An attribute to store information for a container in the item menu ">
 <polygon fill="none" stroke="black" points="137.5,-950.5 137.5,-969.5 215.5,-969.5 215.5,-950.5 137.5,-950.5"/>
 <text text-anchor="middle" x="176.5" y="-957.5" font-family="Helvetica,sans-Serif" font-size="10.00">ContainerData</text>
 </a>
@@ -135,7 +135,7 @@
 </g>
 <!-- Node10 -->
 <g id="node11" class="node"><title>Node10</title>
-<g id="a_node11"><a xlink:href="class_dialogue_script.html" target="_top" xlink:title="Script to show dialogue, as well as step through multiple lines and close afterwards ...">
+<g id="a_node11"><a xlink:href="class_dialogue_script.html" target="_top" target="_top" xlink:title="Script to show dialogue, as well as step through multiple lines and close afterwards ...">
 <polygon fill="none" stroke="black" points="136.5,-912.5 136.5,-931.5 216.5,-931.5 216.5,-912.5 136.5,-912.5"/>
 <text text-anchor="middle" x="176.5" y="-919.5" font-family="Helvetica,sans-Serif" font-size="10.00">DialogueScript</text>
 </a>
@@ -148,7 +148,7 @@
 </g>
 <!-- Node11 -->
 <g id="node12" class="node"><title>Node11</title>
-<g id="a_node12"><a xlink:href="class_end_script.html" target="_top" xlink:title="Script to manage the end credits screen ">
+<g id="a_node12"><a xlink:href="class_end_script.html" target="_top" target="_top" xlink:title="Script to manage the end credits screen ">
 <polygon fill="none" stroke="black" points="147,-874.5 147,-893.5 206,-893.5 206,-874.5 147,-874.5"/>
 <text text-anchor="middle" x="176.5" y="-881.5" font-family="Helvetica,sans-Serif" font-size="10.00">EndScript</text>
 </a>
@@ -161,7 +161,7 @@
 </g>
 <!-- Node12 -->
 <g id="node13" class="node"><title>Node12</title>
-<g id="a_node13"><a xlink:href="class_exploration_menu_script.html" target="_top" xlink:title="A script to manage the exploration menu that the user can call up at anytime ">
+<g id="a_node13"><a xlink:href="class_exploration_menu_script.html" target="_top" target="_top" xlink:title="A script to manage the exploration menu that the user can call up at anytime ">
 <polygon fill="none" stroke="black" points="119,-836.5 119,-855.5 234,-855.5 234,-836.5 119,-836.5"/>
 <text text-anchor="middle" x="176.5" y="-843.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExplorationMenuScript</text>
 </a>
@@ -174,7 +174,7 @@
 </g>
 <!-- Node13 -->
 <g id="node14" class="node"><title>Node13</title>
-<g id="a_node14"><a xlink:href="class_global_functions.html" target="_top" xlink:title="Provides functions and variables to be accessed by any game object to allow data to be passed between...">
+<g id="a_node14"><a xlink:href="class_global_functions.html" target="_top" target="_top" xlink:title="Provides functions and variables to be accessed by any game object to allow data to be passed between...">
 <polygon fill="none" stroke="black" points="133,-798.5 133,-817.5 220,-817.5 220,-798.5 133,-798.5"/>
 <text text-anchor="middle" x="176.5" y="-805.5" font-family="Helvetica,sans-Serif" font-size="10.00">GlobalFunctions</text>
 </a>
@@ -187,7 +187,7 @@
 </g>
 <!-- Node14 -->
 <g id="node15" class="node"><title>Node14</title>
-<g id="a_node15"><a xlink:href="class_healing_station.html" target="_top" xlink:title="A script describing a healing station, where all player&#39;s health and magic are restored ...">
+<g id="a_node15"><a xlink:href="class_healing_station.html" target="_top" target="_top" xlink:title="A script describing a healing station, where all player&#39;s health and magic are restored ...">
 <polygon fill="none" stroke="black" points="136.5,-760.5 136.5,-779.5 216.5,-779.5 216.5,-760.5 136.5,-760.5"/>
 <text text-anchor="middle" x="176.5" y="-767.5" font-family="Helvetica,sans-Serif" font-size="10.00">HealingStation</text>
 </a>
@@ -200,7 +200,7 @@
 </g>
 <!-- Node15 -->
 <g id="node16" class="node"><title>Node15</title>
-<g id="a_node16"><a xlink:href="class_items_menu_script.html" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
+<g id="a_node16"><a xlink:href="class_items_menu_script.html" target="_top" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
 <polygon fill="none" stroke="black" points="131.5,-722.5 131.5,-741.5 221.5,-741.5 221.5,-722.5 131.5,-722.5"/>
 <text text-anchor="middle" x="176.5" y="-729.5" font-family="Helvetica,sans-Serif" font-size="10.00">ItemsMenuScript</text>
 </a>
@@ -213,7 +213,7 @@
 </g>
 <!-- Node16 -->
 <g id="node17" class="node"><title>Node16</title>
-<g id="a_node17"><a xlink:href="class_level_manager.html" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
+<g id="a_node17"><a xlink:href="class_level_manager.html" target="_top" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
 <polygon fill="none" stroke="black" points="138.5,-684.5 138.5,-703.5 214.5,-703.5 214.5,-684.5 138.5,-684.5"/>
 <text text-anchor="middle" x="176.5" y="-691.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelManager</text>
 </a>
@@ -226,7 +226,7 @@
 </g>
 <!-- Node17 -->
 <g id="node18" class="node"><title>Node17</title>
-<g id="a_node18"><a xlink:href="class_main_battle.html" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
+<g id="a_node18"><a xlink:href="class_main_battle.html" target="_top" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
 <polygon fill="none" stroke="black" points="145,-646.5 145,-665.5 208,-665.5 208,-646.5 145,-646.5"/>
 <text text-anchor="middle" x="176.5" y="-653.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainBattle</text>
 </a>
@@ -239,7 +239,7 @@
 </g>
 <!-- Node18 -->
 <g id="node19" class="node"><title>Node18</title>
-<g id="a_node19"><a xlink:href="class_menu_script.html" target="_top" xlink:title="Script to handle the main menu ">
+<g id="a_node19"><a xlink:href="class_menu_script.html" target="_top" target="_top" xlink:title="Script to handle the main menu ">
 <polygon fill="none" stroke="black" points="143.5,-608.5 143.5,-627.5 209.5,-627.5 209.5,-608.5 143.5,-608.5"/>
 <text text-anchor="middle" x="176.5" y="-615.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
 </a>
@@ -252,7 +252,7 @@
 </g>
 <!-- Node19 -->
 <g id="node20" class="node"><title>Node19</title>
-<g id="a_node20"><a xlink:href="class_mini_move.html" target="_top" xlink:title="The movement for the minigame character, includes movement and progression control ...">
+<g id="a_node20"><a xlink:href="class_mini_move.html" target="_top" target="_top" xlink:title="The movement for the minigame character, includes movement and progression control ...">
 <polygon fill="none" stroke="black" points="148,-570.5 148,-589.5 205,-589.5 205,-570.5 148,-570.5"/>
 <text text-anchor="middle" x="176.5" y="-577.5" font-family="Helvetica,sans-Serif" font-size="10.00">MiniMove</text>
 </a>
@@ -265,7 +265,7 @@
 </g>
 <!-- Node20 -->
 <g id="node21" class="node"><title>Node20</title>
-<g id="a_node21"><a xlink:href="class_object_interaction.html" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
+<g id="a_node21"><a xlink:href="class_object_interaction.html" target="_top" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
 <polygon fill="none" stroke="black" points="131.5,-532.5 131.5,-551.5 221.5,-551.5 221.5,-532.5 131.5,-532.5"/>
 <text text-anchor="middle" x="176.5" y="-539.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectInteraction</text>
 </a>
@@ -278,7 +278,7 @@
 </g>
 <!-- Node21 -->
 <g id="node22" class="node"><title>Node21</title>
-<g id="a_node22"><a xlink:href="class_player_data.html" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
+<g id="a_node22"><a xlink:href="class_player_data.html" target="_top" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
 <polygon fill="none" stroke="black" points="144,-494.5 144,-513.5 209,-513.5 209,-494.5 144,-494.5"/>
 <text text-anchor="middle" x="176.5" y="-501.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerData</text>
 </a>
@@ -291,7 +291,7 @@
 </g>
 <!-- Node22 -->
 <g id="node23" class="node"><title>Node22</title>
-<g id="a_node23"><a xlink:href="class_player_menu.html" target="_top" xlink:title="Script for controlling the menu which allows users to switch the order of their team members ...">
+<g id="a_node23"><a xlink:href="class_player_menu.html" target="_top" target="_top" xlink:title="Script for controlling the menu which allows users to switch the order of their team members ...">
 <polygon fill="none" stroke="black" points="142.5,-456.5 142.5,-475.5 210.5,-475.5 210.5,-456.5 142.5,-456.5"/>
 <text text-anchor="middle" x="176.5" y="-463.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerMenu</text>
 </a>
@@ -304,7 +304,7 @@
 </g>
 <!-- Node23 -->
 <g id="node24" class="node"><title>Node23</title>
-<g id="a_node24"><a xlink:href="class_player_movement.html" target="_top" xlink:title="A script to control the movement and animations of the player">
+<g id="a_node24"><a xlink:href="class_player_movement.html" target="_top" target="_top" xlink:title="A script to control the movement and animations of the player">
 <polygon fill="none" stroke="black" points="132,-418.5 132,-437.5 221,-437.5 221,-418.5 132,-418.5"/>
 <text text-anchor="middle" x="176.5" y="-425.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerMovement</text>
 </a>
@@ -317,7 +317,7 @@
 </g>
 <!-- Node24 -->
 <g id="node25" class="node"><title>Node24</title>
-<g id="a_node25"><a xlink:href="class_portal.html" target="_top" xlink:title="A component to add to an object, such as when the player touches it they are teleported to a new scen...">
+<g id="a_node25"><a xlink:href="class_portal.html" target="_top" target="_top" xlink:title="A component to add to an object, such as when the player touches it they are teleported to a new scen...">
 <polygon fill="none" stroke="black" points="155.5,-380.5 155.5,-399.5 197.5,-399.5 197.5,-380.5 155.5,-380.5"/>
 <text text-anchor="middle" x="176.5" y="-387.5" font-family="Helvetica,sans-Serif" font-size="10.00">Portal</text>
 </a>
@@ -330,7 +330,7 @@
 </g>
 <!-- Node25 -->
 <g id="node26" class="node"><title>Node25</title>
-<g id="a_node26"><a xlink:href="class_q_manager_obj.html" target="_top" xlink:title="A Unity Object to house the QuestManager for easy access from other scripts ">
+<g id="a_node26"><a xlink:href="class_q_manager_obj.html" target="_top" target="_top" xlink:title="A Unity Object to house the QuestManager for easy access from other scripts ">
 <polygon fill="none" stroke="black" points="138,-342.5 138,-361.5 215,-361.5 215,-342.5 138,-342.5"/>
 <text text-anchor="middle" x="176.5" y="-349.5" font-family="Helvetica,sans-Serif" font-size="10.00">QManagerObj</text>
 </a>
@@ -343,7 +343,7 @@
 </g>
 <!-- Node26 -->
 <g id="node27" class="node"><title>Node26</title>
-<g id="a_node27"><a xlink:href="class_quest_instances.html" target="_top" xlink:title="A class storing all the pre&#45;defined quests that the user can choose from ">
+<g id="a_node27"><a xlink:href="class_quest_instances.html" target="_top" target="_top" xlink:title="A class storing all the pre&#45;defined quests that the user can choose from ">
 <polygon fill="none" stroke="black" points="134,-304.5 134,-323.5 219,-323.5 219,-304.5 134,-304.5"/>
 <text text-anchor="middle" x="176.5" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">QuestInstances</text>
 </a>
@@ -356,7 +356,7 @@
 </g>
 <!-- Node27 -->
 <g id="node28" class="node"><title>Node27</title>
-<g id="a_node28"><a xlink:href="class_quest_selection_script.html" target="_top" xlink:title="Script to handle the quest selection menu ">
+<g id="a_node28"><a xlink:href="class_quest_selection_script.html" target="_top" target="_top" xlink:title="Script to handle the quest selection menu ">
 <polygon fill="none" stroke="black" points="122,-266.5 122,-285.5 231,-285.5 231,-266.5 122,-266.5"/>
 <text text-anchor="middle" x="176.5" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">QuestSelectionScript</text>
 </a>
@@ -369,7 +369,7 @@
 </g>
 <!-- Node28 -->
 <g id="node29" class="node"><title>Node28</title>
-<g id="a_node29"><a xlink:href="class_random_test.html" target="_top" xlink:title="RandomTest">
+<g id="a_node29"><a xlink:href="class_random_test.html" target="_top" target="_top" xlink:title="RandomTest">
 <polygon fill="none" stroke="black" points="141,-228.5 141,-247.5 212,-247.5 212,-228.5 141,-228.5"/>
 <text text-anchor="middle" x="176.5" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">RandomTest</text>
 </a>
@@ -382,7 +382,7 @@
 </g>
 <!-- Node29 -->
 <g id="node30" class="node"><title>Node29</title>
-<g id="a_node30"><a xlink:href="class_scene_changer.html" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
+<g id="a_node30"><a xlink:href="class_scene_changer.html" target="_top" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
 <polygon fill="none" stroke="black" points="136.5,-190.5 136.5,-209.5 216.5,-209.5 216.5,-190.5 136.5,-190.5"/>
 <text text-anchor="middle" x="176.5" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">SceneChanger</text>
 </a>
@@ -395,7 +395,7 @@
 </g>
 <!-- Node30 -->
 <g id="node31" class="node"><title>Node30</title>
-<g id="a_node31"><a xlink:href="class_sound_manager.html" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
+<g id="a_node31"><a xlink:href="class_sound_manager.html" target="_top" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
 <polygon fill="none" stroke="black" points="135.5,-152.5 135.5,-171.5 217.5,-171.5 217.5,-152.5 135.5,-152.5"/>
 <text text-anchor="middle" x="176.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
 </a>
@@ -408,7 +408,7 @@
 </g>
 <!-- Node31 -->
 <g id="node32" class="node"><title>Node31</title>
-<g id="a_node32"><a xlink:href="class_stats_script.html" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
+<g id="a_node32"><a xlink:href="class_stats_script.html" target="_top" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
 <polygon fill="none" stroke="black" points="144,-114.5 144,-133.5 209,-133.5 209,-114.5 144,-114.5"/>
 <text text-anchor="middle" x="176.5" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">StatsScript</text>
 </a>
@@ -421,7 +421,7 @@
 </g>
 <!-- Node32 -->
 <g id="node33" class="node"><title>Node32</title>
-<g id="a_node33"><a xlink:href="class_switch_players_script.html" target="_top" xlink:title="Script to handle the menu allowing users to switch players in and out of battle ">
+<g id="a_node33"><a xlink:href="class_switch_players_script.html" target="_top" target="_top" xlink:title="Script to handle the menu allowing users to switch players in and out of battle ">
 <polygon fill="none" stroke="black" points="124.5,-76.5 124.5,-95.5 228.5,-95.5 228.5,-76.5 124.5,-76.5"/>
 <text text-anchor="middle" x="176.5" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">SwitchPlayersScript</text>
 </a>
@@ -434,7 +434,7 @@
 </g>
 <!-- Node33 -->
 <g id="node34" class="node"><title>Node33</title>
-<g id="a_node34"><a xlink:href="class_vendor.html" target="_top" xlink:title="To be attatched to the Dialogue component of characters if they are to sell items ...">
+<g id="a_node34"><a xlink:href="class_vendor.html" target="_top" target="_top" xlink:title="To be attatched to the Dialogue component of characters if they are to sell items ...">
 <polygon fill="none" stroke="black" points="153,-38.5 153,-57.5 200,-57.5 200,-38.5 153,-38.5"/>
 <text text-anchor="middle" x="176.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vendor</text>
 </a>
@@ -447,7 +447,7 @@
 </g>
 <!-- Node34 -->
 <g id="node35" class="node"><title>Node34</title>
-<g id="a_node35"><a xlink:href="class_world_map_script.html" target="_top" xlink:title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately">
+<g id="a_node35"><a xlink:href="class_world_map_script.html" target="_top" target="_top" xlink:title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately">
 <polygon fill="none" stroke="black" points="133.5,-0.5 133.5,-19.5 219.5,-19.5 219.5,-0.5 133.5,-0.5"/>
 <text text-anchor="middle" x="176.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">WorldMapScript</text>
 </a>

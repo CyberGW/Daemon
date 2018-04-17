@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A controller to controll the sataus of the minigame and most of its components  
+<p>A controller to controll the sataus of the minigame and most of its components [EXTENSIONS] - New function added to manage the change of a level [CHANGES] - Level handling code removed from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> and placed in <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a>  
  <a href="class_car_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CarController:</div>
@@ -89,8 +89,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a0486c8b9ca9564a584ac0f4dc5073380"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a0486c8b9ca9564a584ac0f4dc5073380">OnGUI</a> ()</td></tr>
 <tr class="memdesc:a0486c8b9ca9564a584ac0f4dc5073380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the current level on the screen  <a href="#a0486c8b9ca9564a584ac0f4dc5073380">More...</a><br /></td></tr>
 <tr class="separator:a0486c8b9ca9564a584ac0f4dc5073380"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9800241264c2a5d3a54c74e0e79e9dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde">levelUp</a> ()</td></tr>
+<tr class="memdesc:a9800241264c2a5d3a54c74e0e79e9dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - New function taking code from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> to separate functionality when a level is beat and to increase the car's speed  <a href="#a9800241264c2a5d3a54c74e0e79e9dde">More...</a><br /></td></tr>
+<tr class="separator:a9800241264c2a5d3a54c74e0e79e9dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39678b7428a72e420085b5b352ee7d2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c">ChangeSpeed</a> (float amount)</td></tr>
-<tr class="memdesc:a39678b7428a72e420085b5b352ee7d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when the player finishes a level, it increments the level by 1 and checks to see if the player has finished all 3 levels if this is the case it loads back into the world map at the correct position additionaly it tells all the spawners to increase the car speeds by an amount  <a href="#a39678b7428a72e420085b5b352ee7d2c">More...</a><br /></td></tr>
+<tr class="memdesc:a39678b7428a72e420085b5b352ee7d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate  <a href="#a39678b7428a72e420085b5b352ee7d2c">More...</a><br /></td></tr>
 <tr class="separator:a39678b7428a72e420085b5b352ee7d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e567fdb8689f821c1c9c364eef809b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a95e567fdb8689f821c1c9c364eef809b">Restart</a> ()</td></tr>
 <tr class="memdesc:a95e567fdb8689f821c1c9c364eef809b"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the player runs out of lives this is called It resets level back to 0 and sets all the car speeds back to what they were origionally  <a href="#a95e567fdb8689f821c1c9c364eef809b">More...</a><br /></td></tr>
@@ -104,12 +107,15 @@ Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a7b4cd73ad3972b9ab93aa020aec01f21"><td class="memItemLeft" align="right" valign="top"><a id="a7b4cd73ad3972b9ab93aa020aec01f21"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>Start</b> ()</td></tr>
+<tr class="memitem:a7b4cd73ad3972b9ab93aa020aec01f21"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a7b4cd73ad3972b9ab93aa020aec01f21">Start</a> ()</td></tr>
+<tr class="memdesc:a7b4cd73ad3972b9ab93aa020aec01f21"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - Start minigame music  <a href="#a7b4cd73ad3972b9ab93aa020aec01f21">More...</a><br /></td></tr>
 <tr class="separator:a7b4cd73ad3972b9ab93aa020aec01f21"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aeb845879c15a5e6a8895eb99ff5686e1"><td class="memItemLeft" align="right" valign="top"><a id="aeb845879c15a5e6a8895eb99ff5686e1"></a>
 void&#160;</td><td class="memItemRight" valign="bottom"><b>FixedUpdate</b> ()</td></tr>
 <tr class="separator:aeb845879c15a5e6a8895eb99ff5686e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a826deafba0d5ac4b9d85bce064779b69"><td class="memItemLeft" align="right" valign="top"><a id="a826deafba0d5ac4b9d85bce064779b69"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>resetSpawnedThisCycle</b> ()</td></tr>
+<tr class="separator:a826deafba0d5ac4b9d85bce064779b69"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -128,9 +134,12 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:ac39ccf709ca97edc76f3b96456e3a65d"><td class="memItemLeft" align="right" valign="top">AudioClip&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#ac39ccf709ca97edc76f3b96456e3a65d">SFX</a></td></tr>
 <tr class="memdesc:ac39ccf709ca97edc76f3b96456e3a65d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sound effect to play when transitioning <a href="#ac39ccf709ca97edc76f3b96456e3a65d">More...</a><br /></td></tr>
 <tr class="separator:ac39ccf709ca97edc76f3b96456e3a65d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a13772cbdeafdaca089f8fc0180f035bc"><td class="memItemLeft" align="right" valign="top">bool []&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a13772cbdeafdaca089f8fc0180f035bc">spawnedThisCycle</a></td></tr>
+<tr class="memdesc:a13772cbdeafdaca089f8fc0180f035bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - Array to track if each car spawner has spawned during the current cycle, to stop duplicates  <a href="#a13772cbdeafdaca089f8fc0180f035bc">More...</a><br /></td></tr>
+<tr class="separator:a13772cbdeafdaca089f8fc0180f035bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A controller to controll the sataus of the minigame and most of its components </p>
+<div class="textblock"><p>A controller to controll the sataus of the minigame and most of its components [EXTENSIONS] - New function added to manage the change of a level [CHANGES] - Level handling code removed from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> and placed in <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a39678b7428a72e420085b5b352ee7d2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39678b7428a72e420085b5b352ee7d2c">&#9670;&nbsp;</a></span>ChangeSpeed()</h2>
@@ -156,13 +165,43 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Called when the player finishes a level, it increments the level by 1 and checks to see if the player has finished all 3 levels if this is the case it loads back into the world map at the correct position additionaly it tells all the spawners to increase the car speeds by an amount </p>
+<p>[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">amount</td><td>the amount of which to increase the car speeds</td></tr>
   </table>
   </dd>
 </dl>
+
+</div>
+</div>
+<a id="a9800241264c2a5d3a54c74e0e79e9dde"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9800241264c2a5d3a54c74e0e79e9dde">&#9670;&nbsp;</a></span>levelUp()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CarController.levelUp </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[EXTENSION] - New function taking code from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> to separate functionality when a level is beat and to increase the car's speed </p>
+<ul>
+<li>Change music back to main </li>
+</ul>
 
 </div>
 </div>
@@ -217,6 +256,33 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>When the player runs out of lives this is called It resets level back to 0 and sets all the car speeds back to what they were origionally </p>
+
+</div>
+</div>
+<a id="a7b4cd73ad3972b9ab93aa020aec01f21"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7b4cd73ad3972b9ab93aa020aec01f21">&#9670;&nbsp;</a></span>Start()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void CarController.Start </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[EXTENSION] - Start minigame music </p>
 
 </div>
 </div>
@@ -290,6 +356,30 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Sound effect to play when transitioning</p>
+
+</div>
+</div>
+<a id="a13772cbdeafdaca089f8fc0180f035bc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a13772cbdeafdaca089f8fc0180f035bc">&#9670;&nbsp;</a></span>spawnedThisCycle</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool [] CarController.spawnedThisCycle</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>[EXTENSION] - Array to track if each car spawner has spawned during the current cycle, to stop duplicates </p>
 
 </div>
 </div>

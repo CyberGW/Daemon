@@ -24,13 +24,13 @@ if (edges && edges.length) {
                 <circle id="rim" cx="0" cy="0" r="7"/>
                 <circle id="rim2" cx="0" cy="0" r="3.5"/>
                 <g id="zoomPlus">
-                        <use xlink:href="#rim" fill="#404040">
+                        <use xlink:href="#rim" target="_top" fill="#404040">
                                 <set attributeName="fill" to="#808080" begin="zoomplus.mouseover" end="zoomplus.mouseout"/>
                         </use>
                         <path d="M-4,0h8M0,-4v8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
                 </g>
                 <g id="zoomMin">
-                        <use xlink:href="#rim" fill="#404040">
+                        <use xlink:href="#rim" target="_top" fill="#404040">
                                 <set attributeName="fill" to="#808080" begin="zoomminus.mouseover" end="zoomminus.mouseout"/>
                         </use>
                         <path d="M-4,0h8" fill="none" stroke="white" stroke-width="1.5" pointer-events="none"/>
@@ -39,7 +39,7 @@ if (edges && edges.length) {
                         <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
                 </g>
                <g id="resetDef">
-                       <use xlink:href="#rim2" fill="#404040">
+                       <use xlink:href="#rim2" target="_top" fill="#404040">
                                <set attributeName="fill" to="#808080" begin="reset.mouseover" end="reset.mouseout"/>
                        </use>
                </g>
@@ -50,7 +50,7 @@ var viewWidth = 3898;
 var viewHeight = 721;
 var sectionId = 'dynsection-0';
 </script>
-<script xlink:href="svgpan.js"/>
+<script xlink:href="svgpan.js" target="_top"/>
 <svg id="graph" class="graph">
 <g id="viewport">
 <title>MonoBehaviour</title>
@@ -65,7 +65,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node1 -->
 <g id="node2" class="node"><title>Node1</title>
-<g id="a_node2"><a xlink:href="class_battle_buttons.html" target="_top" xlink:title="Script to handle the function of the Attack Button in the Battle Scene">
+<g id="a_node2"><a xlink:href="class_battle_buttons.html" target="_top" target="_top" xlink:title="Script to handle the function of the Attack Button in the Battle Scene">
 <polygon fill="none" stroke="black" points="0,-253.5 0,-365.5 144,-365.5 144,-253.5 0,-253.5"/>
 <text text-anchor="middle" x="72" y="-353.5" font-family="Helvetica,sans-Serif" font-size="10.00">BattleButtons</text>
 <polyline fill="none" stroke="black" points="0,-346.5 144,-346.5 "/>
@@ -87,7 +87,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node2 -->
 <g id="node3" class="node"><title>Node2</title>
-<g id="a_node3"><a xlink:href="class_battle_descriptor.html" target="_top" xlink:title="A component that be added to an object to describe the parameters of a battle from within the Unity E...">
+<g id="a_node3"><a xlink:href="class_battle_descriptor.html" target="_top" target="_top" xlink:title="A component that be added to an object to describe the parameters of a battle from within the Unity E...">
 <polygon fill="none" stroke="black" points="162,-171 162,-448 272,-448 272,-171 162,-171"/>
 <text text-anchor="middle" x="217" y="-436" font-family="Helvetica,sans-Serif" font-size="10.00">BattleDescriptor</text>
 <polyline fill="none" stroke="black" points="162,-429 272,-429 "/>
@@ -124,7 +124,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node3 -->
 <g id="node4" class="node"><title>Node3</title>
-<g id="a_node4"><a xlink:href="class_biology_script.html" target="_top" xlink:title="[EXTENSION] &#45; A script to handle taking a player and turning them into a Gorilla for the Biology leve...">
+<g id="a_node4"><a xlink:href="class_biology_script.html" target="_top" target="_top" xlink:title="[EXTENSION] &#45; A script to handle taking a player and turning them into a Gorilla for the Biology leve...">
 <polygon fill="none" stroke="black" points="290.5,-270 290.5,-349 379.5,-349 379.5,-270 290.5,-270"/>
 <text text-anchor="middle" x="335" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">BiologyScript</text>
 <polyline fill="none" stroke="black" points="290.5,-330 379.5,-330 "/>
@@ -143,7 +143,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node4 -->
 <g id="node5" class="node"><title>Node4</title>
-<g id="a_node5"><a xlink:href="class_camera_controller.html" target="_top" xlink:title="Script to move the camera around so that it follows the player">
+<g id="a_node5"><a xlink:href="class_camera_controller.html" target="_top" target="_top" xlink:title="Script to move the camera around so that it follows the player">
 <polygon fill="none" stroke="black" points="398,-275.5 398,-343.5 490,-343.5 490,-275.5 398,-275.5"/>
 <text text-anchor="middle" x="444" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">CameraController</text>
 <polyline fill="none" stroke="black" points="398,-324.5 490,-324.5 "/>
@@ -161,7 +161,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node5 -->
 <g id="node6" class="node"><title>Node5</title>
-<g id="a_node6"><a xlink:href="class_canvas_script.html" target="_top" xlink:title="Added to a canvas holding the dialogue elements to ensure it&#39;s not destroyed when a new scene is crea...">
+<g id="a_node6"><a xlink:href="class_canvas_script.html" target="_top" target="_top" xlink:title="Added to a canvas holding the dialogue elements to ensure it&#39;s not destroyed when a new scene is crea...">
 <polygon fill="none" stroke="black" points="508,-281 508,-338 582,-338 582,-281 508,-281"/>
 <text text-anchor="middle" x="545" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00">CanvasScript</text>
 <polyline fill="none" stroke="black" points="508,-319 582,-319 "/>
@@ -178,7 +178,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node6 -->
 <g id="node7" class="node"><title>Node6</title>
-<g id="a_node7"><a xlink:href="class_car_controller.html" target="_top" xlink:title="A controller to controll the sataus of the minigame and most of its components ">
+<g id="a_node7"><a xlink:href="class_car_controller.html" target="_top" target="_top" xlink:title="A controller to controll the sataus of the minigame and most of its components ">
 <polygon fill="none" stroke="black" points="600,-231.5 600,-387.5 692,-387.5 692,-231.5 600,-231.5"/>
 <text text-anchor="middle" x="646" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">CarController</text>
 <polyline fill="none" stroke="black" points="600,-368.5 692,-368.5 "/>
@@ -204,7 +204,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node7 -->
 <g id="node8" class="node"><title>Node7</title>
-<g id="a_node8"><a xlink:href="class_car_script.html" target="_top" xlink:title="A script to control the cars for the minigame ">
+<g id="a_node8"><a xlink:href="class_car_script.html" target="_top" target="_top" xlink:title="A script to control the cars for the minigame ">
 <polygon fill="none" stroke="black" points="710.5,-264.5 710.5,-354.5 793.5,-354.5 793.5,-264.5 710.5,-264.5"/>
 <text text-anchor="middle" x="752" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">CarScript</text>
 <polyline fill="none" stroke="black" points="710.5,-335.5 793.5,-335.5 "/>
@@ -224,7 +224,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node8 -->
 <g id="node9" class="node"><title>Node8</title>
-<g id="a_node9"><a xlink:href="class_car_spawner.html" target="_top" xlink:title="A car spawner to spawn cars when triggered by a controller and give the correct variable to the car ...">
+<g id="a_node9"><a xlink:href="class_car_spawner.html" target="_top" target="_top" xlink:title="A car spawner to spawn cars when triggered by a controller and give the correct variable to the car ...">
 <polygon fill="none" stroke="black" points="811.5,-259 811.5,-360 880.5,-360 880.5,-259 811.5,-259"/>
 <text text-anchor="middle" x="846" y="-348" font-family="Helvetica,sans-Serif" font-size="10.00">CarSpawner</text>
 <polyline fill="none" stroke="black" points="811.5,-341 880.5,-341 "/>
@@ -245,7 +245,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node9 -->
 <g id="node10" class="node"><title>Node9</title>
-<g id="a_node10"><a xlink:href="class_container_data.html" target="_top" xlink:title="An attribute to store information for a container in the item menu ">
+<g id="a_node10"><a xlink:href="class_container_data.html" target="_top" target="_top" xlink:title="An attribute to store information for a container in the item menu ">
 <polygon fill="none" stroke="black" points="899,-264.5 899,-354.5 977,-354.5 977,-264.5 899,-264.5"/>
 <text text-anchor="middle" x="938" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">ContainerData</text>
 <polyline fill="none" stroke="black" points="899,-335.5 977,-335.5 "/>
@@ -265,7 +265,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node10 -->
 <g id="node11" class="node"><title>Node10</title>
-<g id="a_node11"><a xlink:href="class_dialogue_script.html" target="_top" xlink:title="Script to show dialogue, as well as step through multiple lines and close afterwards ...">
+<g id="a_node11"><a xlink:href="class_dialogue_script.html" target="_top" target="_top" xlink:title="Script to show dialogue, as well as step through multiple lines and close afterwards ...">
 <polygon fill="none" stroke="black" points="995,-204 995,-415 1095,-415 1095,-204 995,-204"/>
 <text text-anchor="middle" x="1045" y="-403" font-family="Helvetica,sans-Serif" font-size="10.00">DialogueScript</text>
 <polyline fill="none" stroke="black" points="995,-396 1095,-396 "/>
@@ -296,7 +296,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node11 -->
 <g id="node12" class="node"><title>Node11</title>
-<g id="a_node12"><a xlink:href="class_end_script.html" target="_top" xlink:title="Script to manage the end credits screen ">
+<g id="a_node12"><a xlink:href="class_end_script.html" target="_top" target="_top" xlink:title="Script to manage the end credits screen ">
 <polygon fill="none" stroke="black" points="1113,-270 1113,-349 1199,-349 1199,-270 1113,-270"/>
 <text text-anchor="middle" x="1156" y="-337" font-family="Helvetica,sans-Serif" font-size="10.00">EndScript</text>
 <polyline fill="none" stroke="black" points="1113,-330 1199,-330 "/>
@@ -315,7 +315,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node12 -->
 <g id="node13" class="node"><title>Node12</title>
-<g id="a_node13"><a xlink:href="class_exploration_menu_script.html" target="_top" xlink:title="A script to manage the exploration menu that the user can call up at anytime ">
+<g id="a_node13"><a xlink:href="class_exploration_menu_script.html" target="_top" target="_top" xlink:title="A script to manage the exploration menu that the user can call up at anytime ">
 <polygon fill="none" stroke="black" points="1217.5,-231.5 1217.5,-387.5 1332.5,-387.5 1332.5,-231.5 1217.5,-231.5"/>
 <text text-anchor="middle" x="1275" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">ExplorationMenuScript</text>
 <polyline fill="none" stroke="black" points="1217.5,-368.5 1332.5,-368.5 "/>
@@ -341,7 +341,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node13 -->
 <g id="node14" class="node"><title>Node13</title>
-<g id="a_node14"><a xlink:href="class_global_functions.html" target="_top" xlink:title="Provides functions and variables to be accessed by any game object to allow data to be passed between...">
+<g id="a_node14"><a xlink:href="class_global_functions.html" target="_top" target="_top" xlink:title="Provides functions and variables to be accessed by any game object to allow data to be passed between...">
 <polygon fill="none" stroke="black" points="1350.5,-171 1350.5,-448 1437.5,-448 1437.5,-171 1350.5,-171"/>
 <text text-anchor="middle" x="1394" y="-436" font-family="Helvetica,sans-Serif" font-size="10.00">GlobalFunctions</text>
 <polyline fill="none" stroke="black" points="1350.5,-429 1437.5,-429 "/>
@@ -378,7 +378,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node14 -->
 <g id="node15" class="node"><title>Node14</title>
-<g id="a_node15"><a xlink:href="class_healing_station.html" target="_top" xlink:title="A script describing a healing station, where all player&#39;s health and magic are restored ...">
+<g id="a_node15"><a xlink:href="class_healing_station.html" target="_top" target="_top" xlink:title="A script describing a healing station, where all player&#39;s health and magic are restored ...">
 <polygon fill="none" stroke="black" points="1455.5,-248 1455.5,-371 1558.5,-371 1558.5,-248 1455.5,-248"/>
 <text text-anchor="middle" x="1507" y="-359" font-family="Helvetica,sans-Serif" font-size="10.00">HealingStation</text>
 <polyline fill="none" stroke="black" points="1455.5,-352 1558.5,-352 "/>
@@ -401,7 +401,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node15 -->
 <g id="node16" class="node"><title>Node15</title>
-<g id="a_node16"><a xlink:href="class_items_menu_script.html" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
+<g id="a_node16"><a xlink:href="class_items_menu_script.html" target="_top" target="_top" xlink:title="Controls all initialisation of menu and updates arrays when an item is moved ">
 <polygon fill="none" stroke="black" points="1576.5,-231.5 1576.5,-387.5 1685.5,-387.5 1685.5,-231.5 1576.5,-231.5"/>
 <text text-anchor="middle" x="1631" y="-375.5" font-family="Helvetica,sans-Serif" font-size="10.00">ItemsMenuScript</text>
 <polyline fill="none" stroke="black" points="1576.5,-368.5 1685.5,-368.5 "/>
@@ -427,7 +427,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node16 -->
 <g id="node17" class="node"><title>Node16</title>
-<g id="a_node17"><a xlink:href="class_level_manager.html" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
+<g id="a_node17"><a xlink:href="class_level_manager.html" target="_top" target="_top" xlink:title="A script used to check and handle when a level is beat by defeating the final boss ...">
 <polygon fill="none" stroke="black" points="1704,-242.5 1704,-376.5 1820,-376.5 1820,-242.5 1704,-242.5"/>
 <text text-anchor="middle" x="1762" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">LevelManager</text>
 <polyline fill="none" stroke="black" points="1704,-357.5 1820,-357.5 "/>
@@ -451,7 +451,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node17 -->
 <g id="node18" class="node"><title>Node17</title>
-<g id="a_node18"><a xlink:href="class_main_battle.html" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
+<g id="a_node18"><a xlink:href="class_main_battle.html" target="_top" target="_top" xlink:title="Script for handing a battle scene. Uses BattleManager, but handles turn order and execution as well a...">
 <polygon fill="none" stroke="black" points="1838,-0.5 1838,-618.5 1964,-618.5 1964,-0.5 1838,-0.5"/>
 <text text-anchor="middle" x="1901" y="-606.5" font-family="Helvetica,sans-Serif" font-size="10.00">MainBattle</text>
 <polyline fill="none" stroke="black" points="1838,-599.5 1964,-599.5 "/>
@@ -519,7 +519,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node18 -->
 <g id="node19" class="node"><title>Node18</title>
-<g id="a_node19"><a xlink:href="class_menu_script.html" target="_top" xlink:title="Script to handle the main menu ">
+<g id="a_node19"><a xlink:href="class_menu_script.html" target="_top" target="_top" xlink:title="Script to handle the main menu ">
 <polygon fill="none" stroke="black" points="1982,-209.5 1982,-409.5 2062,-409.5 2062,-209.5 1982,-209.5"/>
 <text text-anchor="middle" x="2022" y="-397.5" font-family="Helvetica,sans-Serif" font-size="10.00">MenuScript</text>
 <polyline fill="none" stroke="black" points="1982,-390.5 2062,-390.5 "/>
@@ -549,7 +549,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node19 -->
 <g id="node20" class="node"><title>Node19</title>
-<g id="a_node20"><a xlink:href="class_mini_move.html" target="_top" xlink:title="The movement for the minigame character, includes movement and progression control ...">
+<g id="a_node20"><a xlink:href="class_mini_move.html" target="_top" target="_top" xlink:title="The movement for the minigame character, includes movement and progression control ...">
 <polygon fill="none" stroke="black" points="2080,-204 2080,-415 2186,-415 2186,-204 2080,-204"/>
 <text text-anchor="middle" x="2133" y="-403" font-family="Helvetica,sans-Serif" font-size="10.00">MiniMove</text>
 <polyline fill="none" stroke="black" points="2080,-396 2186,-396 "/>
@@ -580,7 +580,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node20 -->
 <g id="node21" class="node"><title>Node20</title>
-<g id="a_node21"><a xlink:href="class_object_interaction.html" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
+<g id="a_node21"><a xlink:href="class_object_interaction.html" target="_top" target="_top" xlink:title="A component to add to collider relating to an object that can interact with the player by pressing th...">
 <polygon fill="none" stroke="black" points="2204.5,-220.5 2204.5,-398.5 2307.5,-398.5 2307.5,-220.5 2204.5,-220.5"/>
 <text text-anchor="middle" x="2256" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">ObjectInteraction</text>
 <polyline fill="none" stroke="black" points="2204.5,-379.5 2307.5,-379.5 "/>
@@ -608,7 +608,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node21 -->
 <g id="node22" class="node"><title>Node21</title>
-<g id="a_node22"><a xlink:href="class_player_data.html" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
+<g id="a_node22"><a xlink:href="class_player_data.html" target="_top" target="_top" xlink:title="A monobehaviour object to house an instance of DataManager so it can be called by other objects ...">
 <polygon fill="none" stroke="black" points="2325.5,-275.5 2325.5,-343.5 2390.5,-343.5 2390.5,-275.5 2325.5,-275.5"/>
 <text text-anchor="middle" x="2358" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerData</text>
 <polyline fill="none" stroke="black" points="2325.5,-324.5 2390.5,-324.5 "/>
@@ -626,7 +626,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node22 -->
 <g id="node23" class="node"><title>Node22</title>
-<g id="a_node23"><a xlink:href="class_player_menu.html" target="_top" xlink:title="Script for controlling the menu which allows users to switch the order of their team members ...">
+<g id="a_node23"><a xlink:href="class_player_menu.html" target="_top" target="_top" xlink:title="Script for controlling the menu which allows users to switch the order of their team members ...">
 <polygon fill="none" stroke="black" points="2409,-264.5 2409,-354.5 2497,-354.5 2497,-264.5 2409,-264.5"/>
 <text text-anchor="middle" x="2453" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerMenu</text>
 <polyline fill="none" stroke="black" points="2409,-335.5 2497,-335.5 "/>
@@ -646,7 +646,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node23 -->
 <g id="node24" class="node"><title>Node23</title>
-<g id="a_node24"><a xlink:href="class_player_movement.html" target="_top" xlink:title="A script to control the movement and animations of the player">
+<g id="a_node24"><a xlink:href="class_player_movement.html" target="_top" target="_top" xlink:title="A script to control the movement and animations of the player">
 <polygon fill="none" stroke="black" points="2515.5,-204 2515.5,-415 2648.5,-415 2648.5,-204 2515.5,-204"/>
 <text text-anchor="middle" x="2582" y="-403" font-family="Helvetica,sans-Serif" font-size="10.00">PlayerMovement</text>
 <polyline fill="none" stroke="black" points="2515.5,-396 2648.5,-396 "/>
@@ -677,7 +677,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node24 -->
 <g id="node25" class="node"><title>Node24</title>
-<g id="a_node25"><a xlink:href="class_portal.html" target="_top" xlink:title="A component to add to an object, such as when the player touches it they are teleported to a new scen...">
+<g id="a_node25"><a xlink:href="class_portal.html" target="_top" target="_top" xlink:title="A component to add to an object, such as when the player touches it they are teleported to a new scen...">
 <polygon fill="none" stroke="black" points="2667,-259 2667,-360 2773,-360 2773,-259 2667,-259"/>
 <text text-anchor="middle" x="2720" y="-348" font-family="Helvetica,sans-Serif" font-size="10.00">Portal</text>
 <polyline fill="none" stroke="black" points="2667,-341 2773,-341 "/>
@@ -698,7 +698,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node25 -->
 <g id="node26" class="node"><title>Node25</title>
-<g id="a_node26"><a xlink:href="class_q_manager_obj.html" target="_top" xlink:title="A Unity Object to house the QuestManager for easy access from other scripts ">
+<g id="a_node26"><a xlink:href="class_q_manager_obj.html" target="_top" target="_top" xlink:title="A Unity Object to house the QuestManager for easy access from other scripts ">
 <polygon fill="none" stroke="black" points="2791.5,-281 2791.5,-338 2868.5,-338 2868.5,-281 2791.5,-281"/>
 <text text-anchor="middle" x="2830" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00">QManagerObj</text>
 <polyline fill="none" stroke="black" points="2791.5,-319 2868.5,-319 "/>
@@ -715,7 +715,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node26 -->
 <g id="node27" class="node"><title>Node26</title>
-<g id="a_node27"><a xlink:href="class_quest_instances.html" target="_top" xlink:title="A class storing all the pre&#45;defined quests that the user can choose from ">
+<g id="a_node27"><a xlink:href="class_quest_instances.html" target="_top" target="_top" xlink:title="A class storing all the pre&#45;defined quests that the user can choose from ">
 <polygon fill="none" stroke="black" points="2886.5,-281 2886.5,-338 2971.5,-338 2971.5,-281 2886.5,-281"/>
 <text text-anchor="middle" x="2929" y="-326" font-family="Helvetica,sans-Serif" font-size="10.00">QuestInstances</text>
 <polyline fill="none" stroke="black" points="2886.5,-319 2971.5,-319 "/>
@@ -732,7 +732,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node27 -->
 <g id="node28" class="node"><title>Node27</title>
-<g id="a_node28"><a xlink:href="class_quest_selection_script.html" target="_top" xlink:title="Script to handle the quest selection menu ">
+<g id="a_node28"><a xlink:href="class_quest_selection_script.html" target="_top" target="_top" xlink:title="Script to handle the quest selection menu ">
 <polygon fill="none" stroke="black" points="2989.5,-226 2989.5,-393 3098.5,-393 3098.5,-226 2989.5,-226"/>
 <text text-anchor="middle" x="3044" y="-381" font-family="Helvetica,sans-Serif" font-size="10.00">QuestSelectionScript</text>
 <polyline fill="none" stroke="black" points="2989.5,-374 3098.5,-374 "/>
@@ -759,7 +759,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node28 -->
 <g id="node29" class="node"><title>Node28</title>
-<g id="a_node29"><a xlink:href="class_random_test.html" target="_top" xlink:title="{RandomTest\n||&#45; Start()\l&#45; Update()\l}">
+<g id="a_node29"><a xlink:href="class_random_test.html" target="_top" target="_top" xlink:title="{RandomTest\n||&#45; Start()\l&#45; Update()\l}">
 <polygon fill="none" stroke="black" points="3116.5,-275.5 3116.5,-343.5 3187.5,-343.5 3187.5,-275.5 3116.5,-275.5"/>
 <text text-anchor="middle" x="3152" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">RandomTest</text>
 <polyline fill="none" stroke="black" points="3116.5,-324.5 3187.5,-324.5 "/>
@@ -777,7 +777,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node29 -->
 <g id="node30" class="node"><title>Node29</title>
-<g id="a_node30"><a xlink:href="class_scene_changer.html" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
+<g id="a_node30"><a xlink:href="class_scene_changer.html" target="_top" target="_top" xlink:title="A set of functions to be called to change scenes smoothly whilst handling the player&#39;s location and a...">
 <polygon fill="none" stroke="black" points="3206,-215 3206,-404 3304,-404 3304,-215 3206,-215"/>
 <text text-anchor="middle" x="3255" y="-392" font-family="Helvetica,sans-Serif" font-size="10.00">SceneChanger</text>
 <polyline fill="none" stroke="black" points="3206,-385 3304,-385 "/>
@@ -806,7 +806,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node30 -->
 <g id="node31" class="node"><title>Node30</title>
-<g id="a_node31"><a xlink:href="class_sound_manager.html" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
+<g id="a_node31"><a xlink:href="class_sound_manager.html" target="_top" target="_top" xlink:title="A script to manage all background music and sound effects in the game ">
 <polygon fill="none" stroke="black" points="3322,-242.5 3322,-376.5 3404,-376.5 3404,-242.5 3322,-242.5"/>
 <text text-anchor="middle" x="3363" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">SoundManager</text>
 <polyline fill="none" stroke="black" points="3322,-357.5 3404,-357.5 "/>
@@ -830,7 +830,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node31 -->
 <g id="node32" class="node"><title>Node31</title>
-<g id="a_node32"><a xlink:href="class_stats_script.html" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
+<g id="a_node32"><a xlink:href="class_stats_script.html" target="_top" target="_top" xlink:title="A script used to manage and update all of the stat displays in the battle scene ">
 <polygon fill="none" stroke="black" points="3422.5,-242.5 3422.5,-376.5 3515.5,-376.5 3515.5,-242.5 3422.5,-242.5"/>
 <text text-anchor="middle" x="3469" y="-364.5" font-family="Helvetica,sans-Serif" font-size="10.00">StatsScript</text>
 <polyline fill="none" stroke="black" points="3422.5,-357.5 3515.5,-357.5 "/>
@@ -854,7 +854,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node32 -->
 <g id="node33" class="node"><title>Node32</title>
-<g id="a_node33"><a xlink:href="class_switch_players_script.html" target="_top" xlink:title="Script to handle the menu allowing users to switch players in and out of battle ">
+<g id="a_node33"><a xlink:href="class_switch_players_script.html" target="_top" target="_top" xlink:title="Script to handle the menu allowing users to switch players in and out of battle ">
 <polygon fill="none" stroke="black" points="3534,-264.5 3534,-354.5 3638,-354.5 3638,-264.5 3534,-264.5"/>
 <text text-anchor="middle" x="3586" y="-342.5" font-family="Helvetica,sans-Serif" font-size="10.00">SwitchPlayersScript</text>
 <polyline fill="none" stroke="black" points="3534,-335.5 3638,-335.5 "/>
@@ -874,7 +874,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node33 -->
 <g id="node34" class="node"><title>Node33</title>
-<g id="a_node34"><a xlink:href="class_vendor.html" target="_top" xlink:title="To be attatched to the Dialogue component of characters if they are to sell items ...">
+<g id="a_node34"><a xlink:href="class_vendor.html" target="_top" target="_top" xlink:title="To be attatched to the Dialogue component of characters if they are to sell items ...">
 <polygon fill="none" stroke="black" points="3656.5,-220.5 3656.5,-398.5 3781.5,-398.5 3781.5,-220.5 3656.5,-220.5"/>
 <text text-anchor="middle" x="3719" y="-386.5" font-family="Helvetica,sans-Serif" font-size="10.00">Vendor</text>
 <polyline fill="none" stroke="black" points="3656.5,-379.5 3781.5,-379.5 "/>
@@ -902,7 +902,7 @@ var sectionId = 'dynsection-0';
 </g>
 <!-- Node34 -->
 <g id="node35" class="node"><title>Node34</title>
-<g id="a_node35"><a xlink:href="class_world_map_script.html" target="_top" xlink:title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately">
+<g id="a_node35"><a xlink:href="class_world_map_script.html" target="_top" target="_top" xlink:title="A controler for the world map, stopping players from entering old or future levels, and colouring the departments approriately">
 <polygon fill="none" stroke="black" points="3800,-275.5 3800,-343.5 3890,-343.5 3890,-275.5 3800,-275.5"/>
 <text text-anchor="middle" x="3845" y="-331.5" font-family="Helvetica,sans-Serif" font-size="10.00">WorldMapScript</text>
 <polyline fill="none" stroke="black" points="3800,-324.5 3890,-324.5 "/>
@@ -922,29 +922,29 @@ var sectionId = 'dynsection-0';
 </svg>
         <g id="navigator" transform="translate(0 0)" fill="#404254">
                 <rect fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width=".5" x="0" y="0" width="60" height="60"/>
-                <use id="zoomplus" xlink:href="#zoomPlus" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
-                <use id="zoomminus" xlink:href="#zoomMin" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
-                <use id="reset" xlink:href="#resetDef" x="30" y="36" onmousedown="handleReset()"/>
-                <g id="arrowUp" xlink:href="#dirArrow" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
-                  <use xlink:href="#rim" fill="#404040">
+                <use id="zoomplus" xlink:href="#zoomPlus" target="_top" x="17" y="9" onmousedown="handleZoom(evt,'in')"/>
+                <use id="zoomminus" xlink:href="#zoomMin" target="_top" x="42" y="9" onmousedown="handleZoom(evt,'out')"/>
+                <use id="reset" xlink:href="#resetDef" target="_top" x="30" y="36" onmousedown="handleReset()"/>
+                <g id="arrowUp" xlink:href="#dirArrow" target="_top" transform="translate(30 24)" onmousedown="handlePan(0,-1)">
+                  <use xlink:href="#rim" target="_top" fill="#404040">
                         <set attributeName="fill" to="#808080" begin="arrowUp.mouseover" end="arrowUp.mouseout"/>
                   </use>
                   <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
                 </g>
-                <g id="arrowRight" xlink:href="#dirArrow" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
-                  <use xlink:href="#rim" fill="#404040">
+                <g id="arrowRight" xlink:href="#dirArrow" target="_top" transform="rotate(90) translate(36 -43)" onmousedown="handlePan(1,0)">
+                  <use xlink:href="#rim" target="_top" fill="#404040">
                         <set attributeName="fill" to="#808080" begin="arrowRight.mouseover" end="arrowRight.mouseout"/>
                   </use>
                   <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
                 </g>
-                <g id="arrowDown" xlink:href="#dirArrow" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
-                  <use xlink:href="#rim" fill="#404040">
+                <g id="arrowDown" xlink:href="#dirArrow" target="_top" transform="rotate(180) translate(-30 -48)" onmousedown="handlePan(0,1)">
+                  <use xlink:href="#rim" target="_top" fill="#404040">
                         <set attributeName="fill" to="#808080" begin="arrowDown.mouseover" end="arrowDown.mouseout"/>
                   </use>
                   <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
                 </g>
-                <g id="arrowLeft" xlink:href="#dirArrow" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
-                  <use xlink:href="#rim" fill="#404040">
+                <g id="arrowLeft" xlink:href="#dirArrow" target="_top" transform="rotate(270) translate(-36 17)" onmousedown="handlePan(-1,0)">
+                  <use xlink:href="#rim" target="_top" fill="#404040">
                         <set attributeName="fill" to="#808080" begin="arrowLeft.mouseover" end="arrowLeft.mouseout"/>
                   </use>
                   <path fill="none" stroke="white" stroke-width="1.5" d="M0,-3.0v7 M-2.5,-0.5L0,-3.0L2.5,-0.5"/>
@@ -952,7 +952,7 @@ var sectionId = 'dynsection-0';
         </g>
         <svg viewBox="0 0 15 15" width="100%" height="30px" preserveAspectRatio="xMaxYMin meet">
          <g id="arrow_out" transform="scale(0.3 0.3)">
-          <a xlink:href="class_mono_behaviour__inherit__graph_org.svg" target="_base">
+          <a xlink:href="class_mono_behaviour__inherit__graph_org.svg" target="_top" target="_base">
            <rect id="button" ry="5" rx="5" y="6" x="6" height="38" width="38"
                 fill="#f2f5e9" fill-opacity="0.5" stroke="#606060" stroke-width="1.0"/>
            <path id="arrow"
