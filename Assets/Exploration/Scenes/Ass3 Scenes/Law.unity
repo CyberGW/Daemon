@@ -550,7 +550,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossObjectName: Boss
-  worldMapExitPosition: {x: 30, y: -24}
+  worldMapExitPosition: {x: 34.44, y: -28.99}
 --- !u!4 &508021646
 Transform:
   m_ObjectHideFlags: 0
@@ -893,7 +893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: WorldMap
-  newPosition: {x: 30, y: -24}
+  newPosition: {x: 34.44, y: -28.99}
 --- !u!61 &857054212
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -926,7 +926,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 857054210}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.22, y: -2.81, z: -0.0078125}
+  m_LocalPosition: {x: 1.14, y: -3.34, z: -0.0078125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

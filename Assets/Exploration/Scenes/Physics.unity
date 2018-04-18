@@ -399,7 +399,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossObjectName: BattleCharacter
-  worldMapExitPosition: {x: -50, y: -34}
+  worldMapExitPosition: {x: -8.03, y: -35.46}
 --- !u!4 &680035511
 Transform:
   m_ObjectHideFlags: 0
@@ -565,7 +565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: WorldMap
-  newPosition: {x: -50, y: -34}
+  newPosition: {x: -8.03, y: -35.46}
 --- !u!61 &893006271
 BoxCollider2D:
   m_ObjectHideFlags: 0

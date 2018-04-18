@@ -639,6 +639,11 @@ Prefab:
       propertyPath: special2Value
       value: 22
       objectReference: {fileID: 0}
+    - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
+        type: 2}
+      propertyPath: canRunAway
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e53c9bf3ee6cdb4c9186451d197c985, type: 2}
   m_IsPrefabParent: 0
@@ -1037,7 +1042,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossObjectName: Boss
-  worldMapExitPosition: {x: -37, y: -4}
+  worldMapExitPosition: {x: -10, y: -15.57}
 --- !u!4 &1999561699
 Transform:
   m_ObjectHideFlags: 0

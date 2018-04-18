@@ -252,7 +252,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: WorldMap
-  newPosition: {x: 47, y: -33}
+  newPosition: {x: 45.06, y: -34.85}
 --- !u!61 &244762239
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -503,7 +503,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: WorldMap
-  newPosition: {x: 47, y: -33}
+  newPosition: {x: 45.06, y: -34.85}
 --- !u!61 &893006271
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -913,7 +913,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bossObjectName: Boss
-  worldMapExitPosition: {x: 47, y: -33}
+  worldMapExitPosition: {x: 45.06, y: -34.85}
 --- !u!4 &1413663492
 Transform:
   m_ObjectHideFlags: 0

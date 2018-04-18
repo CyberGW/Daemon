@@ -230,7 +230,6 @@ public class MagicAmulet : Item
     public override void applyBuffs(Player player)
     {
         player.MaximumMagic += 3;
-        player.Magic += 3;
     }
 
     public override void revertBuffs(Player player)

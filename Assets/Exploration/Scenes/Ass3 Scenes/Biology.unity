@@ -647,7 +647,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: WorldMap
-  newPosition: {x: -37, y: -4}
+  newPosition: {x: -10, y: -15.57}
 --- !u!61 &763987699
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1269,6 +1269,11 @@ Prefab:
         type: 2}
       propertyPath: special2Text
       value: 'ran at '
+      objectReference: {fileID: 0}
+    - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
+        type: 2}
+      propertyPath: canRunAway
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4e53c9bf3ee6cdb4c9186451d197c985, type: 2}

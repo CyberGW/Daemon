@@ -387,7 +387,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   newScene: WorldMap
-  newPosition: {x: -24, y: -18}
+  newPosition: {x: -2.17, y: -24.12}
 --- !u!61 &1170023562
 BoxCollider2D:
   m_ObjectHideFlags: 0

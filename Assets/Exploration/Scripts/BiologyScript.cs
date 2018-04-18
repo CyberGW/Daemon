@@ -26,9 +26,9 @@ public class BiologyScript : MonoBehaviour {
 		if (GlobalFunctions.instance.takenPlayer == null) { //if a player hasn't already been taken
 			GlobalFunctions.instance.takenPlayer = data.Players [0]; //take the first party member
 			//replace with Gorilla
-			data.Players [0] = new Player ("Gorilla", 15, 100, 40, 20, 10, 10, 40, 30, 0, null,
-				new MagicAttack ("dabbed at", "dab like DK", 2, 20),
-				new RaiseAttack ("buff up", "increase attack", 3, 0.15f),
+			data.Players [0] = new Player ("Gorilla", 15, 100, 60, 45, 15, 15, 50, 40, 0, null,
+				new MagicAttack ("threw a barrel at", "Throw a barrel with power 15", 2, 15),
+				new LowerDefence ("threw a banana peel at", "Decrease the enemy's defence", 3, 0.15f),
 				(Texture2D)Resources.Load ("Gorilla", typeof(Texture2D)));
 		}
 		Debug.Log (GlobalFunctions.instance.takenPlayer.Name);

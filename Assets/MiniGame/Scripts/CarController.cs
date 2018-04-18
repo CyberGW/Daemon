@@ -126,9 +126,9 @@ public class CarController : MonoBehaviour
 			GameObject.FindObjectOfType<MiniMove> ().setCanMove(false);
 			SoundManager.instance.playBGM(Resources.Load("Audio/bgm", typeof(AudioClip)) as AudioClip);
 			if (SceneManager.GetActiveScene ().name == "MiniGame") {
-				sceneChanger.loadLevel ("WorldMap", new Vector2 (-27, -42));
+				sceneChanger.loadLevel ("WorldMap", new Vector2 (-4.16f, -41f));
 			} else {
-				sceneChanger.loadLevel ("WorldMap", new Vector2 (23, -45));
+				sceneChanger.loadLevel ("WorldMap", new Vector2 (29.91f, -45f));
 			}
 		} else {
 			//otherwise increase level, car speed and call ChangeSpeed to change car spawn rate
