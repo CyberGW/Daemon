@@ -36,6 +36,7 @@ public class WorldMapScript : MonoBehaviour {
 	/// <param name="colour">The colour to colour the building as</param>
 	/// <param name="removeCollider">If set to <c>true</c> remove collider. <c>false</c> by default</param>
 	private void renderBuilding (string buildingName, Color colour, bool removeCollider = false) {
+		Debug.Log (buildingName);
 		GameObject building = GameObject.FindWithTag (buildingName);
 		GameObject image = building.transform.Find(buildingName).gameObject; //Get the image part
 		image.GetComponent<MeshRenderer> ().material.color = colour; //Set mesh colour
