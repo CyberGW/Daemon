@@ -32,17 +32,20 @@ public class MenuScript : MonoBehaviour {
 
 	/// <summary>
 	/// Sets us variable references
+	/// [EXTENSION] - Set text for sound and autosave buttons to their current value
 	/// </summary>
 	void Start () {		
 		quitMenu = quitMenu.GetComponent<Canvas> ();
 		startText = startText.GetComponent<Button> ();
 		exitText = exitText.GetComponent<Button> ();
 		audioText = GameObject.Find ("Audio").GetComponent<Text> ();
+		soundOn = SoundManager.instance.isSoundOn ();
+		audioText.text = "Sound: " + ((soundOn) ? "On" : "Off");
 		autosaveText = GameObject.Find ("Autosave").GetComponent<Text> ();
+		autosaveText.text = "Autosave: " + ((GlobalFunctions.instance.autoSave) ? "On" : "Off");
 		quitMenu.enabled = false;
 		player = GameObject.Find ("Player");
 		player.SetActive (false);
-		soundOn = SoundManager.instance.BGMSource.mute;
 	}
 
 	/// <summary>

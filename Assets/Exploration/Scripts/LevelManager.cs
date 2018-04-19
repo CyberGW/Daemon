@@ -126,12 +126,13 @@ public class LevelManager : MonoBehaviour {
 			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer (); //restore original player
 		}
 
-		GlobalFunctions.instance.currentLevel += 1;
-		QManagerObj.manager.updateCurrentQuest (GlobalFunctions.instance.levelOrder [GlobalFunctions.instance.currentLevel]);
-        if(GlobalFunctions.instance.currentLevel== GlobalFunctions.instance.lastLevel)
-            SceneChanger.instance.loadLevel("EndScene", worldMapExitPosition);
-        else
-            SceneChanger.instance.loadLevel ("WorldMap", worldMapExitPosition);
+		if (GlobalFunctions.instance.currentLevel == GlobalFunctions.instance.lastLevel) {
+			SceneChanger.instance.loadLevel ("EndScene");
+		} else {
+			GlobalFunctions.instance.currentLevel += 1;
+			QManagerObj.manager.updateCurrentQuest (GlobalFunctions.instance.levelOrder [GlobalFunctions.instance.currentLevel]);
+			SceneChanger.instance.loadLevel ("WorldMap", worldMapExitPosition);
+		}
 	}
 
 	/// <summary>
