@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 80
+  controlID: 114
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 32
+  controlID: 115
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 12
+  controlID: 116
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -176,8 +176,8 @@ MonoBehaviour:
     y: 0
     width: 354
     height: 357
-  m_MinSize: {x: 202, y: 221}
-  m_MaxSize: {x: 4002, y: 4021}
+  m_MinSize: {x: 200, y: 200}
+  m_MaxSize: {x: 4000, y: 4000}
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -446,9 +446,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: d0dcfdffbaddfdffd6dffdffdedffdff92e0fdff2ce1fdffb6e1fdff40e2fdffd4e2fdffdee2fdff18e4fdff1ce4fdff20e5fdff92e6fdffcae7fdff38e9fdff28eafdff3eebfdff8eecfdff10edfdff98edfdff9eedfdffacedfdffeaedfdff72effdffcaf0fdffd4f1fdff60f3fdff6cf3fdff76f4fdffa2f5fdff8af6fdffc6f7fdffcaf8fdff64fafdff9cfafdffa6fafdffc0fafdfff4fafdff44fdfdff16fefdff88fefdff3815fefffe17feff4621feff4459ffff5a6bffff5e6bffff866bffff60aeffffeab4ffffeebbffffc4c5ffffdecefffffaf6ffff3ef7ffff9efbffff00000000
+    m_SelectedIDs: 12d9feff
+    m_LastClickedID: -75502
+    m_ExpandedIDs: d8d9feff52f1feffbc02ffff0403ffff144cffff344cffff3a4cffff3c4cffffe47affff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -467,7 +467,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - Biology-Floor1
+  - HesHall-Floor1
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -499,14 +499,14 @@ MonoBehaviour:
     height: 336
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 5550.291006368422
+  lastFramingTime: 691.2931291912384
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 2.2585144, y: 1.8869119, z: -0.0546875}
+    m_Target: {x: -27.605696, y: -28.314684, z: -0.3203125}
     speed: 2
-    m_Value: {x: 2.2585144, y: 1.8869119, z: -0.0546875}
+    m_Value: {x: -27.605696, y: -28.314684, z: -0.3203125}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -534,9 +534,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-    m_Target: 17.401823
+    m_Target: 34.81431
     speed: 2
-    m_Value: 17.401823
+    m_Value: 34.81431
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -620,13 +620,14 @@ MonoBehaviour:
   m_LastFolders:
   - Assets/Exploration/Scenes/Ass3 Scenes
   m_LastFoldersGridSize: -1
-  m_LastProjectPath: C:\Users\CyberGW\Documents\Unity\SEPRPhase4
+  m_LastProjectPath: C:\Users\Chris\Google Drive\York Uni\2nd Year\SEPR\Daemon - Assessment
+    4\Daemon
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 223}
-    m_SelectedIDs: 7c320000
-    m_LastClickedID: 12924
-    m_ExpandedIDs: 000000003e28000058280000f028000030290000662900009c290000bc2a0000f82c0000002d0000282d0000142f0000742f00001230000072310000f4310000223200008c320000c63200004e3300000e3600004a36000068360000ac370000ae370000b0370000b2370000b437000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 79}
+    m_SelectedIDs: 864c0000
+    m_LastClickedID: 19590
+    m_ExpandedIDs: 00000000224c0000244c0000564c00005c4c00005e4c0000824c0000c24c0000c44c0000c84d0000ce4d0000d24d0000044e0000064e0000244e0000444e00004a4e00007a4e0000804e0000864e00009a4e0000d45000006c5200000457000006570000085700000a5700000c57000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -654,7 +655,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000003e28000058280000f028000030290000662900009c290000bc2a0000f82c0000002d0000282d0000142f0000742f00001230000072310000f4310000223200008c320000c63200004e3300000e3600004a36000068360000ac370000ae370000b0370000b2370000b4370000
+    m_ExpandedIDs: 00000000224c0000244c0000564c00005c4c00005e4c0000824c0000c24c0000c44c0000c84d0000ce4d0000d24d0000044e0000064e0000244e0000444e00004a4e00007a4e0000804e0000864e00009a4e0000d45000006c5200000457000006570000085700000a5700000c570000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1272,9 +1273,11 @@ MonoBehaviour:
       ignoredOrSkipped: 0
       description: 
       isSuite: 1
-    - id: '[C:/Users/CyberGW/Documents/Unity/SEPRPhase4/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
+    - id: '[C:/Users/Chris/Google Drive/York Uni/2nd Year/SEPR/Daemon - Assessment
+        4/Daemon/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll][suite]'
       name: Assembly-CSharp-Editor.dll
-      fullName: C:/Users/CyberGW/Documents/Unity/SEPRPhase4/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
+      fullName: C:/Users/Chris/Google Drive/York Uni/2nd Year/SEPR/Daemon - Assessment
+        4/Daemon/Library/ScriptAssemblies/Assembly-CSharp-Editor.dll
       resultStatus: 0
       duration: 0
       messages: 
