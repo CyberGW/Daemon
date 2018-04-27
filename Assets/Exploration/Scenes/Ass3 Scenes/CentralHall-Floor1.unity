@@ -878,11 +878,11 @@ MonoBehaviour:
   luck: 30
   speed: 15
   special1: 0
-  special1Text: Spartial Disparity
+  special1Text: exploits space-time againtst
   special1Magic: 5
   special1Value: 30
   special2: 4
-  special2Text: 'Rewind '
+  special2Text: forsaw the attacks of
   special2Magic: 1
   special2Value: 0.5
 --- !u!1001 &2038705930
@@ -1001,11 +1001,11 @@ MonoBehaviour:
   luck: 20
   speed: 20
   special1: 4
-  special1Text: see patern
+  special1Text: predicted the attacks of
   special1Magic: 5
   special1Value: 0.3
   special2: 0
-  special2Text: nows the time
+  special2Text: chose the perfect time to strike
   special2Magic: 2
   special2Value: 20
 --- !u!1 &2117964028
