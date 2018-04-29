@@ -27,25 +27,25 @@ public class QuestInstances : MonoBehaviour {
 			10, 200);
 		
 		defs["PHY"] = new Quest ("BSc Physics", "PHY",
-			new QuestDef ("Beat the boss", questTypes.defeatEnemy, "Physics Boss"),
+			new QuestDef ("Beat the Boss", questTypes.defeatEnemy, "Physics Boss"),
 			new QuestDef ("Defy Physics", questTypes.talkToNPC, "RoomGuy"),
 			new QuestDef ("Complete in under 200 seconds", questTypes.inTimeLimit, "200"),
 			10, 200);
 		
 		defs["LAW"] = new Quest ("LLB Law", "LAW",
-			new QuestDef ("Beat the boss", questTypes.defeatEnemy, "The Future Priminister"),
+			new QuestDef ("Beat the Boss", questTypes.defeatEnemy, "The Future Priminister"),
 			new QuestDef ("Talk to Bartholomew", questTypes.talkToNPC, "Bartholomew"),
 			new QuestDef ("Don't use any special moves", questTypes.noSpecialMoves),
 			10, 200);
 		
 		defs["MUS"] = new Quest ("BA Music", "MUS",
-			new QuestDef ("Beat the boss", questTypes.defeatEnemy, "Melody Madness Mandy"),
+			new QuestDef ("Beat the Boss", questTypes.defeatEnemy, "Melody Madness Mandy"),
 			new QuestDef ("Take down a Goose", questTypes.defeatEnemy, "Goose"),
 			new QuestDef ("Only use Jamie", questTypes.onlyOneCharacter, "Jamie"),
 			10, 200);
 		
 		defs["BIO"] = new Quest ("BSc Biology", "BIO",
-			new QuestDef ("Beat the boss", questTypes.defeatEnemy, "Sayan Goose"),
+			new QuestDef ("Beat the Boss", questTypes.defeatEnemy, "Sayan Goose"),
 			new QuestDef ("Get a Rabbit Carcass", questTypes.gainItem, "Rabbit Carcass"),
 			new QuestDef ("Don't let the Gorilla faint", questTypes.noFainting, "Gorilla"),
 			10, 20);

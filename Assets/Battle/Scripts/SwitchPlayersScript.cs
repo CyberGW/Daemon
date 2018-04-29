@@ -15,6 +15,7 @@ public class SwitchPlayersScript : MonoBehaviour {
 	/// <summary>
 	/// On start, show all existing players and their stats. Also disable back button if entered
 	/// after the current player has just died
+	/// [EXTENSION] - If a player has faded, grey out their cell to make it clearer to see
 	/// </summary>
 	void Start () {
 		players = PlayerData.instance.data.Players;
@@ -31,7 +32,10 @@ public class SwitchPlayersScript : MonoBehaviour {
 
 			//If player exits
 			if (players [i] != null) {
-
+				//If player fainted, fade out
+				if (players [i].Health == 0) {
+					container.transform.Find("Backdrop").GetComponent<Image> ().color = Color.grey;
+				}
 				//Setup all sprites and player stats display
 				image = players [i].Image;
 				container.transform.Find("Image").GetComponent<Image>().sprite = 

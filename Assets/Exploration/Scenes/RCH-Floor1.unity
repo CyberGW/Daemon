@@ -165,7 +165,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &154325373
 Prefab:
@@ -204,7 +204,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4290607715011858, guid: ea7c5059cdf4be84b9700d537ca06158, type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ea7c5059cdf4be84b9700d537ca06158, type: 2}
@@ -275,7 +275,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &660158154
 Prefab:
@@ -314,7 +314,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 1344385287322598, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
       propertyPath: m_Name
@@ -419,7 +419,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4977817364209186, guid: 4e53c9bf3ee6cdb4c9186451d197c985, type: 2}
       propertyPath: m_RootOrder
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 114038952352095808, guid: 4e53c9bf3ee6cdb4c9186451d197c985,
         type: 2}
@@ -516,6 +516,93 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 39c6f442aa2174047910f10f0c6b8e8f, type: 2}
   m_IsPrefabParent: 0
+--- !u!1001 &1615022008
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 4.8382907
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -21.479578
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4704459060425080, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212996946334501392, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: bd105bbd8f241744bb390e58b2547dbb,
+        type: 3}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[1]
+      value: I bet there's something really good in that chest if you can get to the
+        middle.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[2]
+      value: I seem completely stuck here though. Nevermind though, finally have an
+        excuse to apply for exceptional circumstances.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[3]
+      value: I don't know why I'm here, but it's a bit awkward to just walk out isn't
+        it?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114485212689137276, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: dialogue.Array.data[0]
+      value: Hey, this floor is really weird. It seems to be like an invisible maze
+        or something.
+      objectReference: {fileID: 0}
+    - target: {fileID: 58004800574002856, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: m_Offset.y
+      value: -0.1853035
+      objectReference: {fileID: 0}
+    - target: {fileID: 58004800574002856, guid: 029c17544fabbde43bb73a9f1d1359b7,
+        type: 2}
+      propertyPath: m_Radius
+      value: 1.3853035
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 029c17544fabbde43bb73a9f1d1359b7, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &2061106847
 Prefab:
   m_ObjectHideFlags: 0
@@ -553,7 +640,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4298724935928480, guid: d80f42b483c98df4c929276420278c2a, type: 2}
       propertyPath: m_RootOrder
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d80f42b483c98df4c929276420278c2a, type: 2}

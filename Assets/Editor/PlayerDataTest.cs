@@ -60,9 +60,21 @@ public class PlayerDataTest {
 		Assert.AreEqual (itemObject, data.Items [0]);
 	}
 
+	/// <summary>
+	/// [EXTENSION] - Test giveExpToAll method
+	/// </summary>
 	[Test]
 	public void GiveExpToAll() {
-		data.giveExpToAll (99 / 2);
+		//Add new players
+		Player newPlayer = new Player ("Player2", 1, 1, 1, 1, 1, 1, 1, 1, 0, null, null, null);
+		data.addPlayer (newPlayer);
+		Player newPlayer2 = new Player ("Player3", 1, 1, 1, 1, 1, 1, 1, 1, 0, null, null, null);
+		data.addPlayer (newPlayer2);
+		//Give 10 exp to all players except Player3
+		data.giveExpToAll (10, "Player3");
+		Assert.AreEqual (playerObject.Exp, 10);
+		Assert.AreEqual (newPlayer.Exp, 10);
+		Assert.AreNotEqual (newPlayer2.Exp, 10);
 	}
 
 	[Test]
@@ -88,6 +100,14 @@ public class PlayerDataTest {
 		Item itemObject = new Hammer ();
 		data.addItem (itemObject);
 		Assert.AreEqual (1, data.countItems ());
+	}
+
+	/// <summary>
+	/// [EXTENSION] - Test index of a given player name can be retrieved
+	/// </summary>
+	[Test]
+	public void GetPlayerIndex() {
+		Assert.AreEqual (0, data.getPlayerIndex("George"));
 	}
 
 }

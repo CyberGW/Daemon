@@ -161,4 +161,30 @@ public class BattleScriptTest {
 		Assert.True (manager.playerFainted ());
 	}
 
+
+	DataManager data;
+
+
+	/// <summary>
+	/// [EXTENSION] - Test the Gorilla from biology can hit players in party.
+	/// </summary>
+	[Test]
+	public void GorillaHitsParty() {
+		data = new DataManager (playerObject);
+		//Add Gorilla
+		Player gorilla = new Player ("Gorilla", 15, 100, 40, 20, 10, 10, 40, 30, 0, null,
+			new MagicAttack ("dabbed at", "dab like DK", 2, 20),
+			new RaiseAttack ("buff up", "increase attack", 3, 0.15f),
+			(Texture2D)Resources.Load ("Gorilla", typeof(Texture2D)));
+		data.addPlayer (gorilla);
+		manager.switchPlayers (gorilla);
+		Assert.AreEqual (gorilla, manager.Player);
+		enemy.Health = int.MaxValue;
+		Assert.AreEqual (100, player.Health);
+		//Check Gorilla can hurt party member
+		playerMove = new StandardAttack (manager, manager.Player, data.getAlivePlayer());
+		playerMove.performMove ();
+		Assert.AreNotEqual(100, player.Health);
+	}
+
 }

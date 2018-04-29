@@ -11,7 +11,7 @@ public class PlayerTest {
 
 	[SetUp]
 	public void Init() {
-		this.player= new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 0, null, new MagicAttack("fireballed", "Fireball", 30, 5), null);
+		this.player = new Player ("Player", 10, 100, 10, 10, 10, 10, 10, 10, 0, null, new MagicAttack("fireballed", "Fireball", 30, 5), null);
 	}
 
 	[Test]
@@ -72,5 +72,32 @@ public class PlayerTest {
 		Assert.AreEqual (2200, player.ExpToNextLevel);
 	}
 
+	/// <summary>
+	/// [EXTENSION] - Test the cloning method works
+	/// </summary>
+	[Test]
+	public void Cloning() {
+		//Clone player
+		Player clonedPlayer = player.Clone ();
+		//Check attributes of clone are the same
+		Assert.AreEqual (clonedPlayer.Name, player.Name);
+		Assert.AreEqual (clonedPlayer.Level, player.Level);
+		Assert.AreEqual (clonedPlayer.Health, player.Health);
+		Assert.AreEqual (clonedPlayer.Attack, player.Attack);
+		Assert.AreEqual (clonedPlayer.Defence, player.Defence);
+		Assert.AreEqual (clonedPlayer.MaximumMagic, player.MaximumMagic);
+		Assert.AreEqual (clonedPlayer.Magic, player.Magic);
+		Assert.AreEqual (clonedPlayer.Luck, player.Luck);
+		Assert.AreEqual (clonedPlayer.Speed, player.Speed);
+		Assert.AreEqual (clonedPlayer.Exp, player.Exp);
+		Assert.AreEqual (clonedPlayer.Item, player.Item);
+		Assert.AreEqual (clonedPlayer.Special1, player.Special1);
+		Assert.AreEqual (clonedPlayer.Special2, player.Special2);
+		Assert.AreEqual (clonedPlayer.Image, player.Image);
+		//Change an attribute of clone
+		clonedPlayer.levelUp ();
+		//Check clone is no longer the same
+		Assert.AreNotEqual (clonedPlayer.Level, player.Level);
+	}
 
 }

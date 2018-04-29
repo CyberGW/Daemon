@@ -184,6 +184,7 @@ public class MainBattle : MonoBehaviour {
 		if (!gorillaMove) {
 			yield return updateBars (move, previousHealth, previousMagic);
 		} else {
+			textBox.text = "The Gorilla went mad and attacked " + move.Target.Name;
 			SoundManager.instance.playSFX ("gorilla");
 			yield return new WaitForSeconds (1.5f);
 			gorillaMove = false;
@@ -402,9 +403,6 @@ public class MainBattle : MonoBehaviour {
 		Player temp = originalCopy [0];
 		originalCopy [0] = originalCopy [playerIndex];
 		originalCopy [playerIndex] = temp;
-		//update sprite shown
-		playerSprite.sprite = Sprite.Create (newPlayer.Image, new Rect (0.0f, 0.0f, newPlayer.Image.width, newPlayer.Image.height),
-			new Vector2 (0.5f, 0.5f));
 
 		prepareTurn();
 	}
@@ -418,6 +416,9 @@ public class MainBattle : MonoBehaviour {
 		//Update references
 		playerHealthBar.setUpDisplay(player.Health, 100);
 		playerMagicBar.setUpDisplay (player.Magic, player.MaximumMagic);
+		//update sprite shown
+		playerSprite.sprite = Sprite.Create (player.Image, new Rect (0.0f, 0.0f, player.Image.width, player.Image.height),
+			new Vector2 (0.5f, 0.5f));
 		Debug.Log (player.ExpToNextLevel);
 		expBar.setUpDisplay (player.Exp, player.ExpToNextLevel);
 		
