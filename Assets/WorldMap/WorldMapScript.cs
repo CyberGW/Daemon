@@ -15,12 +15,15 @@ public class WorldMapScript : MonoBehaviour {
 	void Start () {
 		string[] levelOrder = GlobalFunctions.instance.levelOrder;
 		int currentLevel = GlobalFunctions.instance.currentLevel;
-		for (int i = 0; i < levelOrder.Length; i++) { //For all levels already beat
-			if (i < currentLevel) {
+		for (int i = 0; i < levelOrder.Length; i++) { //For all levels
+			if (i < currentLevel) { //if the level has been beat
+				//set building to red
 				renderBuilding (levelOrder [i], Color.red, true);
-			} else if (i == currentLevel) {
+			} else if (i == currentLevel) { //if the current level
+				//set building to green
 				renderBuilding (levelOrder [i], Color.green);
 			} else { //if future level
+				//set building to grey
 				renderBuilding (levelOrder [i], Color.grey, true);
 			}			
 		}

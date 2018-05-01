@@ -97,9 +97,9 @@ public class DataManager {
 	/// <returns>The player's index</returns>
 	/// <param name="name">The name of the player to find</param>
 	public int getPlayerIndex(string name) {
-		for (int i = 0; i < players.Length; i++) {
-			if (players[i].Name == name) {
-				return i;
+		for (int i = 0; i < players.Length; i++) { //for all players
+			if (players[i].Name == name) { //if player looking for
+				return i; //return their index
 			}
 		}
 		return -1; //if player is not present
@@ -167,10 +167,12 @@ public class DataManager {
 	/// </summary>
 	/// <param name="item">The item to add</param>
 	public void addItem(Item item) {
-		for (int i = 0; i < items.Length; i++) {
+		for (int i = 0; i < items.Length; i++) { //for all items
 			if (items [i] == null) { //find first free slot
 				items [i] = item; //give item
-				QManagerObj.manager.logQuestVariable (questTypes.gainItem, item.Name); //log that the player has gained this item
+				if (QManagerObj.manager != null) {
+					QManagerObj.manager.logQuestVariable (questTypes.gainItem, item.Name); //log that the player has gained this item
+				}
 				break;
 			}
 		}
@@ -262,6 +264,7 @@ public class DataManager {
         // Save current level.
         savedData.currentLevel = GlobalFunctions.instance.currentLevel;
 
+		//write to file
         BinaryFormatter bf = new BinaryFormatter();
         FileStream file = File.Create(Application.persistentDataPath + "/savedGame.dat");
         bf.Serialize(file, savedData);
@@ -277,8 +280,9 @@ public class DataManager {
     /// </summary>
     public void Load()
     {
-        if (File.Exists(Application.persistentDataPath + "/savedGame.dat"))
+        if (File.Exists(Application.persistentDataPath + "/savedGame.dat")) //if there is a valid save file
         {
+			//load the file
             BinaryFormatter bf = new BinaryFormatter();
             FileStream file = File.Open(Application.persistentDataPath + "/savedGame.dat", FileMode.Open);
             SaveData savedGame = (SaveData)bf.Deserialize(file);

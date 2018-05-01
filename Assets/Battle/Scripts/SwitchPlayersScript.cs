@@ -52,7 +52,8 @@ public class SwitchPlayersScript : MonoBehaviour {
 				stats.transform.Find ("Speed").GetComponent<Text> ().text = "Speed: " + players [i].Speed.ToString ();
 				stats.transform.Find ("Exp").GetComponent<Text> ().text = "Exp: " + players [i].Exp.ToString () + " / "
 					+ players[i].ExpToNextLevel.ToString();
-				if (players [i].Health == 0) {
+				if (players [i].Health == 0) { //if the player has fainted
+					//colour then grey to make it easier to say, and also destroy button component so that they can't be selected
 					container.GetComponent<Image> ().color = Color.grey;
 					Destroy (cell.GetComponent<Button> ());
 				}

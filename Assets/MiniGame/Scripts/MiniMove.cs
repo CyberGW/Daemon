@@ -144,15 +144,16 @@ public class MiniMove : MonoBehaviour {
       //reduce lives by 1 and if less than or equal to zero restart the minigame
         if (collision.tag=="Car")
         {
-			SoundManager.instance.playSFX ("horn");
-            lives -= 1;
-            if (lives<=0)
+			SoundManager.instance.playSFX ("horn"); //play sound effect
+            lives -= 1; //take level
+            if (lives<=0) //if used last live
             {
+				//restart minigame, setting lvies to 3
                 controller.GetComponent<CarController>().Restart();
                 lives = 3;
 
             }
-
+			//set player back to the starting side of the road
             transform.position = new Vector2(xstart, ystart);
         }
     }

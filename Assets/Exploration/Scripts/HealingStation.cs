@@ -16,7 +16,8 @@ public class HealingStation : MonoBehaviour {
 	/// <summary>
 	/// Holds whether the user is in range of the station, so that it is not continually triggered when the user
 	/// is within range
-	/// [CHANGE] - Make static so not reset when menu is loaded
+	/// [CHANGE] - Make the variable static, so if a menu item is selected and scene is loaded, this value does not change.
+	/// This stops the healing station being retriggered when returning from a menu screen.
 	/// </summary>
 	private static bool inRange = false;
 

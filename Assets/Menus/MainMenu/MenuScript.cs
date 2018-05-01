@@ -39,10 +39,10 @@ public class MenuScript : MonoBehaviour {
 		startText = startText.GetComponent<Button> ();
 		exitText = exitText.GetComponent<Button> ();
 		audioText = GameObject.Find ("Audio").GetComponent<Text> ();
-		soundOn = SoundManager.instance.isSoundOn ();
-		audioText.text = "Sound: " + ((soundOn) ? "On" : "Off");
-		autosaveText = GameObject.Find ("Autosave").GetComponent<Text> ();
-		autosaveText.text = "Autosave: " + ((GlobalFunctions.instance.autoSave) ? "On" : "Off");
+		soundOn = SoundManager.instance.isSoundOn (); //get initial sound state
+		audioText.text = "Sound: " + ((soundOn) ? "On" : "Off"); //set text appropriately for curret sound state
+		autosaveText = GameObject.Find ("Autosave").GetComponent<Text> (); //get current autosave option
+		autosaveText.text = "Autosave: " + ((GlobalFunctions.instance.autoSave) ? "On" : "Off"); //set text according to current option
 		quitMenu.enabled = false;
 		player = GameObject.Find ("Player");
 		player.SetActive (false);
@@ -70,7 +70,9 @@ public class MenuScript : MonoBehaviour {
 	/// [CHANGE] - Load the quest selection screen instead of going straight into the game
 	/// </summary>
 	public void StartLevel() {
+		//make the player object active
 		player.SetActive (true);
+		//go to quest selection before starting the game
 		SceneChanger.instance.loadLevel ("QuestSelection");
 	}
 

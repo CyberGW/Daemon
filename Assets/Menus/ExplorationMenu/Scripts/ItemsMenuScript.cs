@@ -57,16 +57,18 @@ public class ItemsMenuScript : MonoBehaviour {
 
 	/// <summary>
 	/// Prints the stats of a player onto the screen
-	/// [EXTENSION] - Code has been separated into a new function, so it can be called to update the stats
+	/// [EXTENSION] - This code has been separated into a new function, so it can be called to update the stats
 	/// when an item has been moved
 	/// </summary>
 	/// <param name="i">The index of the player whose stats need updating</param>
 	private void updatePlayerStats(int i) {
+		//set references
 		GameObject container;
 		GameObject stats;
 		Texture2D image;
 		Player player = players [i];
 
+		//get container and set image and name appropriately
 		container = playerContainers [i].transform.Find ("Container").gameObject;
 		image = players [i].Image;
 		container.transform.Find("Image").GetComponent<Image>().sprite = 
@@ -74,6 +76,7 @@ public class ItemsMenuScript : MonoBehaviour {
 		container.transform.Find ("Name").GetComponent<Text> ().text = players [i].Name;
 		stats = container.transform.Find ("Stats").gameObject;
 
+		//update all stats
 		stats.transform.Find ("Attack").GetComponent<Text> ().text = "Attack: " + player.Attack.ToString ();
 		Debug.Log (player.Attack);
 		stats.transform.Find ("Defence").GetComponent<Text> ().text = "Defence: " + player.Defence.ToString ();
@@ -106,12 +109,14 @@ public class ItemsMenuScript : MonoBehaviour {
 		ContainerData dest = desc.destinationCell.gameObject.GetComponent<ContainerData> ();
 		Player[] players = data.Players;
 		Item temp;
-		if (dest.type == "Item") {
-			if (source.type == "Item") {
+		if (dest.type == "Item") { //if being drapped to an item slot
+			if (source.type == "Item") { //if being dragged from an item slot
+				//just swap the item positions
 				temp = items [source.Index];
 				items [source.Index] = items [dest.Index];
 				items [dest.Index] = temp;
 			} else { //if source.type == "Player"
+				//update player stats as necessary
 				temp = players [source.Index].Item;
 				players [source.Index].Item = items [dest.Index];
 				items [dest.Index] = temp;
@@ -129,11 +134,13 @@ public class ItemsMenuScript : MonoBehaviour {
 		    }
 		}
         else  { //if dest.type == "Player"
-			if (source.type == "Item") {
+			if (source.type == "Item") { //if from an item slot
+				//just update player being drapped to
 				temp = items [source.Index];
 				items [source.Index] = players [dest.Index].Item;
 				players [dest.Index].Item = temp;
 			} else { //if source.type == "Player"
+				//update both source and destination player stats
 				temp = players [source.Index].Item;
 				players [source.Index].Item = players [dest.Index].Item;
 				players [dest.Index].Item = temp;

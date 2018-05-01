@@ -109,26 +109,27 @@ public class LevelManager : MonoBehaviour {
 	/// </summary>
 	private IEnumerator EndLevel() {
 
-		bool questFinished = QManagerObj.manager.CurrentQuest != null;
+		bool questFinished = QManagerObj.manager.CurrentQuest != null; //set to true if a quest has been active
 		int exp = 0;
 		int money = 0;
-		if (questFinished) {
+		if (questFinished) { //if finished a quest, save the exp and money rewards into variables
 			exp = QManagerObj.manager.CurrentQuest.exp;
 			money = QManagerObj.manager.CurrentQuest.money;
 		}
-		bool completed = QManagerObj.manager.finishQuest ();
-		yield return finishLevelText (questFinished, completed, exp, money);
+		bool completed = QManagerObj.manager.finishQuest (); //tell the QuestManager to finish the quest, and return true if completed successfully
+		yield return finishLevelText (questFinished, completed, exp, money); //display the finish level text, and wait until user presses space to continue
 
-		if (addPlayer) {
-			PlayerData.instance.data.addPlayer (newPlayer);
+		if (addPlayer) { //if a level where a player should be gained
+			PlayerData.instance.data.addPlayer (newPlayer); //gain that player
 		}
 		if (GlobalFunctions.instance.currentLevel == 8) { //if on biology level
 			GameObject.Find ("Biology Script").GetComponent<BiologyScript> ().restorePlayer (); //restore original player
 		}
 
-		if (GlobalFunctions.instance.currentLevel == GlobalFunctions.instance.lastLevel) {
-			SceneChanger.instance.loadLevel ("EndScene");
-		} else {
+		if (GlobalFunctions.instance.currentLevel == GlobalFunctions.instance.lastLevel) { //if the last level of the game that's been beat
+			SceneChanger.instance.loadLevel ("EndScene"); //load credits scene
+		} else { //if not last level
+			//move onto next level, loading the world map and starting the next quest
 			GlobalFunctions.instance.currentLevel += 1;
 			QManagerObj.manager.updateCurrentQuest (GlobalFunctions.instance.levelOrder [GlobalFunctions.instance.currentLevel]);
 			SceneChanger.instance.loadLevel ("WorldMap", worldMapExitPosition);

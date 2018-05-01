@@ -60,6 +60,7 @@ public class MainBattle : MonoBehaviour {
 	/// <summary>
 	/// Includes finding game objects, setting references and changing background music
 	/// [EXTENSION] - Log the player initally being sent into battle
+	/// 			- Create an original copy of all the player stats to be restored to revert stat changes
 	/// </summary>
 	void Start () {
 		
@@ -82,6 +83,7 @@ public class MainBattle : MonoBehaviour {
 		moneyReward = GlobalFunctions.instance.getMoney ();
 		itemReward = GlobalFunctions.instance.getItem ();
 
+		//create a copy of player stats before battle
 		originalCopy = createOriginalCopy (playerArray);
 		manager = new BattleManager (playerArray[0], enemyObject, moneyReward);
 		player = manager.Player;
@@ -95,7 +97,7 @@ public class MainBattle : MonoBehaviour {
 		//Log player being used
 		QManagerObj.manager.logQuestVariable(questTypes.onlyOneCharacter, player.Name);
 
-
+		//setup references and inital displays of all bars
 		expBar = playerStats.transform.Find ("Exp").GetComponent<StatsScript> ();
 		playerHealthBar = playerStats.transform.Find("Health").GetComponent<StatsScript> ();
 		playerMagicBar = playerStats.transform.Find ("Magic").GetComponent<StatsScript> ();
@@ -214,12 +216,14 @@ public class MainBattle : MonoBehaviour {
 	/// If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle
 	/// [EXTENSION] - Log the enemy defeated, call <see cref="PlayerData.expShare"/> 
 	/// 			- Give half exp to all other players
+	/// 			- Restore the original stats of the players, before levelling up
 	/// </summary>
 	/// <returns>Coroutine function to update exp bar</returns>
 	private IEnumerator checkIfPlayerWon() {
 		if (manager.battleWon()) {
 			SoundManager.instance.playBGM(victory);
 			enemySprite.gameObject.SetActive (false);
+			//restore stats from before battle
 			playerArray = restoreOriginalStats(playerArray);
 			//Reassign player to restored copy before giving exp
 			player = playerArray [0];
@@ -335,12 +339,14 @@ public class MainBattle : MonoBehaviour {
 				textBox.text = "All players have fainted! Game Over.";
 				yield return new WaitForSeconds (2);
 				GlobalFunctions.instance.player.SetActive (true); //Make player active so it can be found again in main menu
+				//go back to main menu
 				SoundManager.instance.playBGM(GlobalFunctions.instance.previousBGM);
 				SceneChanger.instance.loadLevel ("mainmenu1");
 			} else { //if other players alive
 				playerDied = true;
 				textBox.text = player.Name + " fainted!";
 				yield return new WaitForSeconds (3);
+				//load the switch player menu
 				SceneManager.LoadSceneAsync ("SwitchPlayer", LoadSceneMode.Additive);
 				QManagerObj.manager.logQuestVariable (questTypes.noFainting, ""); //log that a player has fainted
 			}
@@ -431,8 +437,8 @@ public class MainBattle : MonoBehaviour {
 	/// [EXTENSION] - If Gorilla, randomly swap to an attack that damages a team member 25% of the time
 	/// </summary>
 	private void prepareTurn() {
-		if (!playerDied) {
-			if (player.Name == "Gorilla") {
+		if (!playerDied) { //so long as the player has not just died, so a move should go ahead
+			if (player.Name == "Gorilla") { //if the player is the gorilla
 				if (Random.value <= 0.25) { //on a 25% chance
 					Player alivePlayer = PlayerData.instance.data.getAlivePlayer (); //get an alive player
 					if (alivePlayer == null) { //if there is no other player alive
@@ -447,7 +453,7 @@ public class MainBattle : MonoBehaviour {
 			attacksPanel.SetActive (false);
 			setButtonsInteractable (false);
 			BattleButtons.panelActive = false;
-		} else {
+		} else { //if player just died
 			//Perform the switch character move
 			StartCoroutine(performTurn(playerMove));
 			playerDied = false;

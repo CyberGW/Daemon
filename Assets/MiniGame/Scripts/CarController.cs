@@ -125,10 +125,10 @@ public class CarController : MonoBehaviour
 			SoundManager.instance.playSFX ("transition");
 			GameObject.FindObjectOfType<MiniMove> ().setCanMove(false);
 			SoundManager.instance.playBGM(Resources.Load("Audio/bgm", typeof(AudioClip)) as AudioClip);
-			if (SceneManager.GetActiveScene ().name == "MiniGame") {
-				sceneChanger.loadLevel ("WorldMap", new Vector2 (-4.16f, -41f));
-			} else {
-				sceneChanger.loadLevel ("WorldMap", new Vector2 (29.91f, -45f));
+			if (SceneManager.GetActiveScene ().name == "MiniGame") { //if currently on "MiniGame"
+				sceneChanger.loadLevel ("WorldMap", new Vector2 (-4.16f, -41f)); //load on Hes West side
+			} else { //if currently on "MinigameR"
+				sceneChanger.loadLevel ("WorldMap", new Vector2 (29.91f, -45f)); //load on Hes East side
 			}
 		} else {
 			//otherwise increase level, car speed and call ChangeSpeed to change car spawn rate
@@ -139,13 +139,16 @@ public class CarController : MonoBehaviour
 	}
 
     /// <summary>
-    /// [CHANGE] - Code that changes the level the player is on separated into new function.
-	/// Now only changes the car spawn rate
+    /// [CHANGE] - Originally this function also handelled changing the level and potentially completion of the minigame.
+	/// To increase modularity, this code has been separated into <see cref="levelUp"/> 
+	/// Now, this only changes the car spawn rate
     /// </summary>
     /// <param name="amount">the amount of which to increase the car speeds</param>
-    public void ChangeSpeed(float amount) {        
+    public void ChangeSpeed(float amount) {      
+		//For all spawners
         for (int i = 0; i < Spawners.Length; i++) {
             Spawners[i].GetComponent<CarSpawner>().Harder(amount);
+			//Make them spawn more cars
         }  
     }
 
