@@ -117,7 +117,7 @@ Private Attributes</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
 <tr class="memitem:a24f76fd931ab565ac0073ea8633d2e18"><td class="memItemLeft" align="right" valign="top">static bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_healing_station.html#a24f76fd931ab565ac0073ea8633d2e18">inRange</a> = false</td></tr>
-<tr class="memdesc:a24f76fd931ab565ac0073ea8633d2e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds whether the user is in range of the station, so that it is not continually triggered when the user is within range [CHANGE] - Make static so not reset when menu is loaded  <a href="#a24f76fd931ab565ac0073ea8633d2e18">More...</a><br /></td></tr>
+<tr class="memdesc:a24f76fd931ab565ac0073ea8633d2e18"><td class="mdescLeft">&#160;</td><td class="mdescRight">Holds whether the user is in range of the station, so that it is not continually triggered when the user is within range [CHANGE] - Make the variable static, so if a menu item is selected and scene is loaded, this value does not change. This stops the healing station being retriggered when returning from a menu screen.  <a href="#a24f76fd931ab565ac0073ea8633d2e18">More...</a><br /></td></tr>
 <tr class="separator:a24f76fd931ab565ac0073ea8633d2e18"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -239,7 +239,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Holds whether the user is in range of the station, so that it is not continually triggered when the user is within range [CHANGE] - Make static so not reset when menu is loaded </p>
+<p>Holds whether the user is in range of the station, so that it is not continually triggered when the user is within range [CHANGE] - Make the variable static, so if a menu item is selected and scene is loaded, this value does not change. This stops the healing station being retriggered when returning from a menu screen. </p>
 
 </div>
 </div>

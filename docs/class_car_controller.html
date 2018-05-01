@@ -71,7 +71,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>A controller to controll the sataus of the minigame and most of its components [EXTENSIONS] - New function added to manage the change of a level [CHANGES] - Level handling code removed from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> and placed in <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a>  
+<p>A controller to controll the sataus of the minigame and most of its components [EXTENSIONS] - New function added to manage the change of a level [CHANGES] - Level handling code removed from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Originally this function also handelled changing the level and potentially completion of t...">ChangeSpeed</a> and placed in <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a>  
  <a href="class_car_controller.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for CarController:</div>
@@ -90,10 +90,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a0486c8b9ca9564a584ac0f4dc5073380"><td class="mdescLeft">&#160;</td><td class="mdescRight">Draw the current level on the screen  <a href="#a0486c8b9ca9564a584ac0f4dc5073380">More...</a><br /></td></tr>
 <tr class="separator:a0486c8b9ca9564a584ac0f4dc5073380"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9800241264c2a5d3a54c74e0e79e9dde"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde">levelUp</a> ()</td></tr>
-<tr class="memdesc:a9800241264c2a5d3a54c74e0e79e9dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - New function taking code from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> to separate functionality when a level is beat and to increase the car's speed  <a href="#a9800241264c2a5d3a54c74e0e79e9dde">More...</a><br /></td></tr>
+<tr class="memdesc:a9800241264c2a5d3a54c74e0e79e9dde"><td class="mdescLeft">&#160;</td><td class="mdescRight">[EXTENSION] - New function taking code from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Originally this function also handelled changing the level and potentially completion of t...">ChangeSpeed</a> to separate functionality when a level is beat and to increase the car's speed  <a href="#a9800241264c2a5d3a54c74e0e79e9dde">More...</a><br /></td></tr>
 <tr class="separator:a9800241264c2a5d3a54c74e0e79e9dde"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39678b7428a72e420085b5b352ee7d2c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c">ChangeSpeed</a> (float amount)</td></tr>
-<tr class="memdesc:a39678b7428a72e420085b5b352ee7d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate  <a href="#a39678b7428a72e420085b5b352ee7d2c">More...</a><br /></td></tr>
+<tr class="memdesc:a39678b7428a72e420085b5b352ee7d2c"><td class="mdescLeft">&#160;</td><td class="mdescRight">[CHANGE] - Originally this function also handelled changing the level and potentially completion of the minigame. To increase modularity, this code has been separated into <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a> Now, this only changes the car spawn rate  <a href="#a39678b7428a72e420085b5b352ee7d2c">More...</a><br /></td></tr>
 <tr class="separator:a39678b7428a72e420085b5b352ee7d2c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a95e567fdb8689f821c1c9c364eef809b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_car_controller.html#a95e567fdb8689f821c1c9c364eef809b">Restart</a> ()</td></tr>
 <tr class="memdesc:a95e567fdb8689f821c1c9c364eef809b"><td class="mdescLeft">&#160;</td><td class="mdescRight">When the player runs out of lives this is called It resets level back to 0 and sets all the car speeds back to what they were origionally  <a href="#a95e567fdb8689f821c1c9c364eef809b">More...</a><br /></td></tr>
@@ -139,7 +139,7 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a13772cbdeafdaca089f8fc0180f035bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>A controller to controll the sataus of the minigame and most of its components [EXTENSIONS] - New function added to manage the change of a level [CHANGES] - Level handling code removed from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> and placed in <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a> </p>
+<div class="textblock"><p>A controller to controll the sataus of the minigame and most of its components [EXTENSIONS] - New function added to manage the change of a level [CHANGES] - Level handling code removed from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Originally this function also handelled changing the level and potentially completion of t...">ChangeSpeed</a> and placed in <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a> </p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a id="a39678b7428a72e420085b5b352ee7d2c"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a39678b7428a72e420085b5b352ee7d2c">&#9670;&nbsp;</a></span>ChangeSpeed()</h2>
@@ -165,7 +165,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate </p>
+<p>[CHANGE] - Originally this function also handelled changing the level and potentially completion of the minigame. To increase modularity, this code has been separated into <a class="el" href="class_car_controller.html#a9800241264c2a5d3a54c74e0e79e9dde" title="[EXTENSION] - New function taking code from ChangeSpeed to separate functionality when a level is bea...">levelUp</a> Now, this only changes the car spawn rate </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">amount</td><td>the amount of which to increase the car speeds</td></tr>
@@ -198,7 +198,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>[EXTENSION] - New function taking code from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Code that changes the level the player is on separated into new function. Now only changes the car spawn rate ">ChangeSpeed</a> to separate functionality when a level is beat and to increase the car's speed </p>
+<p>[EXTENSION] - New function taking code from <a class="el" href="class_car_controller.html#a39678b7428a72e420085b5b352ee7d2c" title="[CHANGE] - Originally this function also handelled changing the level and potentially completion of t...">ChangeSpeed</a> to separate functionality when a level is beat and to increase the car's speed </p>
 <ul>
 <li>Change music back to main </li>
 </ul>

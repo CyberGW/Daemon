@@ -314,7 +314,8 @@ AudioClip&#160;</td><td class="memItemRight" valign="bottom"><b>victory</b></td>
 <p>Checks if the player has won<br />
 If they have, exp is given and shown on screen, before saving player data, adding money, adding the item and ending the battle [EXTENSION] - Log the enemy defeated, call PlayerData.expShare </p>
 <ul>
-<li>Give half exp to all other players </li>
+<li>Give half exp to all other players</li>
+<li>Restore the original stats of the players, before levelling up </li>
 </ul>
 <dl class="section return"><dt>Returns</dt><dd>Coroutine function to update exp bar</dd></dl>
 
@@ -704,6 +705,9 @@ Re-enables attack button afterwards </p>
 </div><div class="memdoc">
 
 <p>Includes finding game objects, setting references and changing background music [EXTENSION] - Log the player initally being sent into battle </p>
+<ul>
+<li>Create an original copy of all the player stats to be restored to revert stat changes </li>
+</ul>
 
 </div>
 </div>
